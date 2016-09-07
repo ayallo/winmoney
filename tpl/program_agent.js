@@ -30,10 +30,11 @@
       }
     }
     if (($(".swiper-container_abo").length > 0)){/*тут после последнего слайда идет текст*/
-      $('body,html').animate({scrollTop: 0}, 1);
+      //$('body,html').animate({scrollTop: 0}, 1);
       var program_abo_Swiper = new Swiper ('.swiper-container_abo', {
         direction: 'vertical', loop: false, mousewheelControl: true, slidesPerView: 1,
       });
+      program_abo_Swiper.slideTo(0, 1);
       program_abo_Swiper.on('slideChangeStart', function (e) {
           $(".head__nav").removeClass("sfonom");
           $(".head__but").hide();
