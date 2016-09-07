@@ -400,7 +400,7 @@
   display: none;
 }
 .pgpartners_internet .swiper-container_pi1 .swiper-wrapper .swiper-slide.slide_pgpartners_internet {
-  background-image: url('../img/partners_internet_bg.png');
+  background-image: url('../img/partners_internet_bg.jpg');
   -webkit-background-size: 120% 120%;
      -moz-background-size: 120% 120%;
        -o-background-size: 120% 120%;
@@ -422,7 +422,7 @@
   display: none;
 }
 .pgprogramagent .swiper-container .swiper-wrapper .swiper-slide.slide_pgprogramagent {
-  background-image: url('../img/pgprogramagent_back.png');
+  background-image: url('../img/pgprogramagent_back.jpg');
   -webkit-background-size: 120% 120%;
      -moz-background-size: 120% 120%;
        -o-background-size: 120% 120%;
@@ -444,7 +444,7 @@
   display: none;
 }
 .pgabout .swiper-container_abo .swiper-wrapper .swiper-slide.slide_pgabout {
-  background-image: url('../img/about_bg.png');
+  background-image: url('../img/about_bg.jpg');
   -webkit-background-size: 120% 120%;
      -moz-background-size: 120% 120%;
        -o-background-size: 120% 120%;

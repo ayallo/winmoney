@@ -108,7 +108,7 @@ a .getbonus {
   text-decoration: none;
 }
 .pgbonus .slide_01 {
-  background-image: url('../img/pgbonus_back.png');
+  background-image: url('../img/pgbonus_back.jpg') !important;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
      -moz-background-size: cover;
