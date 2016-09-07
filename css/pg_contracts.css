@@ -1,0 +1,87 @@
+a .getbonus,
+a .openschet {
+  font-weight: bold;
+  color: #fff;
+}
+.pgcontracts .head__nav {
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 70px;
+  background: #33373e;
+  background: -moz-linear-gradient(top, #33373e 0%, #25282d 100%);
+  background: -webkit-linear-gradient(top, #33373e 0%, #25282d 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#33373e), to(#25282d));
+  background: -o-linear-gradient(top, #33373e 0%, #25282d 100%);
+  background: linear-gradient(to bottom, #33373e 0%, #25282d 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#33373e', endColorstr='#25282d', GradientType=0);
+  -webkit-box-shadow: 0px -4px 40px 10px #908989;
+     -moz-box-shadow: 0px -4px 40px 10px #908989;
+          box-shadow: 0px -4px 40px 10px #908989;
+  z-index: 999;
+}
+.pgcontracts .head__but {
+  display: none;
+}
+.pgcontracts .head__but.openschet {
+  display: block;
+}
+.pgcontracts .main__left h2 {
+  letter-spacing: 0.03em;
+  margin-bottom: 27px;
+}
+.pgcontracts .main__left--menu01 {
+  margin-left: 73px;
+}
+.pgcontracts .main__left--menu01--item {
+  margin: 20px 0px;
+}
+.pgcontracts .main__left--menu01--item a {
+  font-weight: bold;
+  color: #2675eb;
+  font-size: 16px;
+  text-decoration: none;
+}
+.pgcontracts .main__left--menu01--item a:hover {
+  font-weight: bold;
+  color: #e94f86;
+  font-size: 16px;
+  text-decoration: none;
+}
+.pgcontracts .main__left--menu01--item a:active,
+.pgcontracts .main__left--menu01--item a.act {
+  font-weight: bold;
+  color: #7f8081;
+  font-size: 16px;
+  text-decoration: none;
+}
+.pgcontracts .main__left--menu01.small {
+  margin-top: 48px;
+}
+.pgcontracts .main__left--menu01.small .main__left--menu01--item {
+  margin: 5px 0px;
+}
+.pgcontracts .main__left--menu01.small a {
+  font-weight: bold;
+  color: #2675eb;
+  font-size: 12px;
+  text-decoration: none;
+}
+.pgcontracts .main__left--menu01.small a:hover,
+.pgcontracts .main__left--menu01.small a.act {
+  font-weight: bold;
+  color: #e94f86;
+  font-size: 12px;
+  text-decoration: none;
+}
+.pgcontracts .main__left--menu01.small a:active,
+.pgcontracts .main__left--menu01.small a.act {
+  font-weight: bold;
+  color: #7f8081;
+  font-size: 12px;
+  text-decoration: none;
+}
+.pgcontracts .main__right--main table th br {
+  font-size: 12px;
+  line-height: 12px;
+}

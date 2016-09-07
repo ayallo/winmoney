@@ -1,0 +1,130 @@
+a .getbonus,
+a .openschet {
+  font-weight: bold;
+  color: #fff;
+}
+.pgbonuses .head__nav {
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 70px;
+  z-index: 999;
+  background: #33373e;
+  background: -moz-linear-gradient(top, #33373e 0%, #25282d 100%);
+  background: -webkit-linear-gradient(top, #33373e 0%, #25282d 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#33373e), to(#25282d));
+  background: -o-linear-gradient(top, #33373e 0%, #25282d 100%);
+  background: linear-gradient(to bottom, #33373e 0%, #25282d 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#33373e', endColorstr='#25282d', GradientType=0);
+}
+.pgbonuses .head__but {
+  display: none;
+}
+.pgbonuses .head__but.openschet {
+  display: block;
+}
+.pgbonuses .main__head {
+  padding: 10px;
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+}
+.pgbonuses .main__head h2 {
+  font: 400 20px 'Open Sans', sans-serif;
+}
+.pgbonuses .main__head .flbut02 {
+  position: absolute;
+  left: 120px;
+  top: 16px;
+  font-size: 12px;
+}
+.pgbonuses .main__center {
+  /*background: #000;*/
+}
+.pgbonuses .main__center-ctnblocks {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.pgbonuses .main__center-ctnblocks .mcct_block {
+  width: 20%;
+  height: 260px;
+  margin: 10px;
+  -webkit-border-radius: 8px;
+     -moz-border-radius: 8px;
+          border-radius: 8px;
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 10px -4px #7d7d7d;
+     -moz-box-shadow: 0px 0px 10px -4px #7d7d7d;
+          box-shadow: 0px 0px 10px -4px #7d7d7d;
+  cursor: pointer;
+  position: relative;
+  background-image: url('../img/bonuses_bg_r.png');
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+}
+.pgbonuses .main__center-ctnblocks .mcct_block .header_1 {
+  font-weight: bold;
+  font-size: 22px;
+  color: #000;
+  margin-top: 60px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+.pgbonuses .main__center-ctnblocks .mcct_block .text_1 {
+  font-size: 16px;
+  color: #000;
+  margin-left: 30px;
+  margin-right: 5px;
+}
+.pgbonuses .main__center-ctnblocks .mcct_block .pgbonuses_bghover {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 121px;
+  height: 63px;
+  opacity: 1;
+}
+.pgbonuses .main__center-ctnblocks .mcct_block:hover {
+  background: #4a8ff7;
+  background-image: url('../img/bonuses_bg_h.png');
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+}
+.pgbonuses .main__center-ctnblocks .mcct_block:hover .header_1 {
+  color: #fff;
+}
+.pgbonuses .main__center-ctnblocks .mcct_block:hover .text_1 {
+  color: #fff;
+}
+.pgbonuses .main__center-ctnblocks .mcct_block:hover .pgbonuses_item1 {
+  opacity: 0;
+}

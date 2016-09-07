@@ -1,0 +1,222 @@
+@header-font: 'Open Sans', sans-serif;
+@header-bgcolor: #2a2e34;
+@header-ftcolor: #ffffff;
+@header-ftsize: 16px;
+@debug_border_red: 1px solid red;
+@debug_border_green: 1px solid green;
+@debug_border_blue: 1px solid blue;
+
+@color_blue_2675eb: #2675eb;
+@color_red_e94f86:  #e94f86;
+@color_gray1_4c4d4f:#4c4d4f;
+@color_gray2_7f8081:#7f8081;
+@color_gray3_a8a8a8:#a8a8a8;
+@color_gray4_d7d7d7:#d7d7d7;
+@color_gray5_f5f5f5:#f5f5f5;
+
+.pgpartners_reward, .pgpartners_vidy, .pgpartners_net, .pgpartners_rules{
+  &__but{
+    display:none;
+    &.openschet{ display:none;}
+    &.getbonus{ display:none;}
+    &.statpartner{ display:block;}
+  }
+  &__right-wrapr{
+      margin-top: 0px;
+      &-r01,&-r02,&-r03{ border:2px solid #2c5ca9; }
+    }
+  .head{
+    &__nav{
+      background: #33373e;
+      background: -moz-linear-gradient(top, #33373e 0%, #25282d 100%);
+      background: -webkit-linear-gradient(top, #33373e 0%,#25282d 100%);
+      background: linear-gradient(to bottom, #33373e 0%,#25282d 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33373e', endColorstr='#25282d',GradientType=0 );
+      box-shadow: 0 0px 26px 0 #000;
+    }
+    &__but{
+      &.statpartner { display: block; colror:#fff; }
+    }
+  }
+
+  & .main__menu{
+    margin: 0px; display: fixed; width: 100%;
+    position: relative; top: 30px; right: 10px; z-index: 100;
+    & .myslide_nav{
+      text-align: right;
+      & a{ color:@color_blue_2675eb; font-weight: bold; font-size: 14px; margin: 12px 12px; text-decoration: none; }
+      & a.act, & a:hover{ color:@color_gray1_4c4d4f; font-weight: bold; font-size: 14px; margin: 12px 12px; text-decoration: none; }
+    }
+  }
+}
+//страница program_agent_reward
+.pgpartners_reward{
+  .swiper-container_re {
+      width: 100%;
+      height: 90%;
+      margin: 0px auto;
+  }
+  .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+  }
+  & .head__nav {z-index: 999;}
+  & .main__menu{ padding-top:40px; top:0px; }
+  & .footer{ display: none;     position: absolute; bottom: 0;}
+  & .slide_01,& .slide_02, & .slide_03  {
+    & .center{
+      background-image: url("../img/partners_reward_05.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative; width: 80%; height: 80%;
+      text-align: left; padding-left:40px;
+      & h2{ font-size: 40px; margin-bottom: 25px; }
+      & p.left{ font-size:16px; margin-bottom: 100px; }
+      & .footer1{
+        position: absolute;
+        right:20px; bottom:20px;
+        width: 24%;
+        & p{
+          font-size:10px;
+          & a{ font-size:10px; }
+        }
+      }
+    }
+  }
+  & .slide_02 {
+    & .center{
+      background-image: url("../img/partners_reward_06.png");
+      & p.bullet{ font-size:16px; margin-bottom: 40px; }
+    }
+  }
+  & .slide_03 {
+    & .center{
+      background-image: url("../img/partners_reward_07.png");
+      & p.bullet{ font-size:16px; margin-bottom: 40px; }
+    }
+  }
+}
+//страница partners_vidy
+.pgpartners_vidy{
+  & .main{
+    background-color: #fff;
+    &__center{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 0 15%;
+      &--block{
+        margin-top:150px;     text-align: center;
+        & h2{ font-size:48px; color: @color_gray1_4c4d4f; margin-bottom: 32px; }
+        & p{ font-size:16px; color: @color_gray1_4c4d4f; }
+        & table{
+          margin-top: 60px;
+          & td:nth-child(1){ text-align: center; padding-right: 10px;}
+          & td{
+            color: #4c4d4f;
+            vertical-align: top;
+            text-align: left;
+            padding:6px 18px;
+            font-size: 14px;
+            font-weight: bold;
+            padding:50px 0px;
+            vertical-align: middle;
+            & img { margin: 0 auto; }
+            & span{
+              color:#2675eb;
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.pgpartners_net{
+  & .main{
+    background-color: #fff;
+    &__center{
+      padding-top: 100px;
+      &-footer{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0 15%;
+        & .mcft_block{
+          width:45%;
+          margin:10px;
+          position: relative;
+          & h2{
+            font-size: 48px;
+            color:#58595b;
+            margin-bottom: 20px;
+            margin-top: 80px;
+          }
+          & p{
+              font-family: 'PT Serif', serif;
+              font-size: 16px;
+              color:#4c4d4f;
+              margin-bottom: 10px;
+          }
+          & .text_muted{
+            font-family: 'Open Sans', sans-serif;
+            font-size: 12px;
+            color:#7f8081;
+          }
+          & .text_muted p{
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+.pgpartners_rules{
+  & .main{
+    background-color: #fff;
+    padding-top: 100px;
+    &__center{
+      display: flex;
+      flex-direction: row;
+      width: 80%;
+      align-items: flex-start;
+      margin: 0 auto;
+      & div{
+        & p{ font-size:14px; }
+      }
+      & div:nth-child(1){
+        padding-right: 84px;
+        width:70%;
+        & li:nth-child(1){ margin-top: 0px; }
+      }
+      & div:nth-child(2){
+        width:30%;
+        & p{
+          font-size:12px;
+          margin-bottom: 20px;
+          & a{ font-size:12px; font-weight: normal; }
+        }
+        & a{ font-size:13px; font-weight: bold; }
+      }
+    }
+  }
+}

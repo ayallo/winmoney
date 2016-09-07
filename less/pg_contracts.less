@@ -1,0 +1,71 @@
+@header-font: 'Open Sans', sans-serif;
+@header-bgcolor: #2a2e34;
+@header-ftcolor: #ffffff;
+@header-ftsize: 16px;
+@debug_border_red: 1px solid red;
+@debug_border_green: 1px solid green;
+@debug_border_blue: 1px solid blue;
+
+@color_blue_2675eb: #2675eb;
+@color_red_e94f86:  #e94f86;
+@color_gray1_4c4d4f:#4c4d4f;
+@color_gray2_7f8081:#7f8081;
+@color_gray3_a8a8a8:#a8a8a8;
+@color_gray4_d7d7d7:#d7d7d7;
+@color_gray5_f5f5f5:#f5f5f5;
+
+a .getbonus, a .openschet{ font-weight:bold; color:#fff;}
+//СТРАНИЦа pgcontracts
+.pgcontracts{
+  .head{
+    &__nav{
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      height: 70px;
+      z-index: 999;
+      background: #33373e;
+      background: -moz-linear-gradient(top, #33373e 0%, #25282d 100%);
+      background: -webkit-linear-gradient(top, #33373e 0%,#25282d 100%);
+      background: linear-gradient(to bottom, #33373e 0%,#25282d 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33373e', endColorstr='#25282d',GradientType=0 );
+      box-shadow: 0px -4px 40px 10px #908989;
+      z-index: 999;
+    }
+    &__but{
+      display:none;
+      &.openschet{ display: block; }
+      &.getbonus{}
+    }
+  }
+  .main{
+    &__left{
+      & h2{
+        letter-spacing: 0.03em;
+        margin-bottom: 27px;
+      }
+      &--menu01{
+        margin-left: 73px;
+        &--item{
+          margin: 20px 0px;
+          & a{font-weight: bold; color:#2675eb;font-size: 16px; text-decoration: none;}
+          & a:hover{font-weight: bold; color:@color_red_e94f86;font-size: 16px; text-decoration: none;}
+          & a:active,& a.act{font-weight: bold; color:@color_gray2_7f8081;font-size: 16px; text-decoration: none;}
+        }
+        &.small{
+          margin-top: 48px;
+          & .main__left--menu01--item{ margin: 5px 0px; }
+          & a{font-weight: bold; color:#2675eb;font-size: 12px; text-decoration: none;}
+          & a:hover,& a.act{font-weight: bold; color:@color_red_e94f86;font-size: 12px; text-decoration: none;}
+          & a:active,& a.act{font-weight: bold; color:@color_gray2_7f8081;font-size: 12px; text-decoration: none;}
+        }
+      }
+    }
+    &__right{
+      &--main{
+        & table th br{font-size: 12px;line-height: 12px;}
+      }
+    }
+  }
+
+}

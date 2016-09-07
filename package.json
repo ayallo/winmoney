@@ -1,0 +1,24 @@
+{
+  "name": "winmoney.lc",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "alneo.ru",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-connect": "^3.2.2",
+    "gulp-less": "^3.0.5",
+    "less-plugin-autoprefix": "^1.5.1"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-less": "^3.1.0",
+    "gulp-util": "^3.0.7",
+    "less-plugin-autoprefix": "^1.5.1"
+  },
+  "description": ""
+}

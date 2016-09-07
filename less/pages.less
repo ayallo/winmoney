@@ -1,0 +1,299 @@
+@header-font: 'Open Sans', sans-serif;
+@header-bgcolor: #2a2e34;
+@header-ftcolor: #ffffff;
+@header-ftsize: 16px;
+
+@color_blue_2675eb: #2675eb;
+@color_red_e94f86:  #e94f86;
+@color_gray1_4c4d4f:#4c4d4f;
+@color_gray2_7f8081:#7f8081;
+@color_gray3_a8a8a8:#a8a8a8;
+@color_gray4_d7d7d7:#d7d7d7;
+@color_gray5_f5f5f5:#f5f5f5;
+
+.pgabout{/*все на белом фоне*/
+  & .head{
+    &__tel{
+      & a {
+        color: #4c4d4f;
+        font-weight: bold;
+        font-size: 16px;
+      }
+      &::before{
+        content: "";
+        background: url('../img/head_tel.png') no-repeat;
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        left: -16px;
+        top: 6px;
+      }
+    }
+
+    &__nav{
+      position: fixed; z-index: 999;
+      top: 0px; left: 0px; right: 0px; height: 70px;
+      &.sfonom{
+        &__a{ color:#fff;}
+        &__a:hover{ color:@color_blue_2675eb;}
+        &__a--act{ color:@color_blue_2675eb;}
+        & .nav{
+          &__a{
+            color: #fff;
+          }
+        }
+        & .head__tel{
+          color:#fff;
+        }
+      }
+      & .nav{
+        &__a{
+          color:  @color_gray1_4c4d4f;
+        }
+      }
+      &__a {
+          color:  @color_gray1_4c4d4f;
+          text-decoration: none;
+          font-size: 16px;
+          font-weight: bold;;
+          /*padding: 26px 24px 20px 24px*/
+          margin: 2px 10px 12px 10px;
+          padding-top: 24px;
+      }
+      &__a--act {
+          /*padding: 24px 24px 12px 24px;*/
+          border-top-width: 2px;
+          border-top-color: @color_blue_2675eb;
+          border-top-style: solid;
+          color: @color_blue_2675eb;
+          margin: 0px 10px 12px 10px;
+          padding-top: 24px;
+      }
+      &__a--act:hover {
+          /*padding: 24px 24px 12px 24px;*/
+          border-top-width: 2px;
+          border-top-color: @color_blue_2675eb;
+          border-top-style: solid;
+          margin: 0px 10px 12px 10px;
+          padding-top: 24px;
+      }
+      &__a:hover {
+          /*padding: 24px 24px 12px 24px;*/
+          border-top-width: 2px;
+          border-top-color: @color_blue_2675eb;
+          border-top-style: solid;
+          color: @color_blue_2675eb;
+          margin: 0px 10px 12px 10px;
+          padding-top: 24px;
+      }
+      & .box {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+    }
+    &__logo{
+      background-image: url("../img/logo_b.png");
+    }
+    &__but{ display:none; color:#fff; }
+    &__right-wrapr-r01{
+      color: @color_gray1_4c4d4f;
+      border: 2px solid #e7ebf0;
+      &:hover{
+        color: @color_blue_2675eb;
+        border: 2px solid @color_blue_2675eb;
+        &::before{
+          background-image: url("../img/head_acc_b.png");
+        }
+      }
+      &::before{
+        background-image: url("../img/head_acc_g.png");
+      }
+    }
+    &__right-wrapr-r02{
+      color: @color_gray1_4c4d4f;
+      border: 2px solid #e7ebf0;
+      &:hover{
+        color: @color_blue_2675eb;
+        border: 2px solid @color_blue_2675eb;
+        &::before{
+          background-image: url("../img/head_mt4_hover.png");
+        }
+      }
+      &::before{
+        background-image: url("../img/head_mt4_g.png");
+      }
+    }
+    &__right-wrapr-r03{
+      color: @color_gray1_4c4d4f;
+      border: 2px solid #e7ebf0;
+      &:hover{
+        color: @color_blue_2675eb;
+        border: 2px solid @color_blue_2675eb;
+        &::before{
+          background-image: url("../img/head_arr_hover.png");
+        }
+      }
+      &::before{
+        background-image: url("../img/head_arr_g.png");
+      }
+    }
+  }
+  & .menu{
+    &-global {
+      border-top: 2px solid @color_blue_2675eb;
+    }
+  }
+}
+.pgprogramagent, .pgprogram_cpa, .pgprogram_region, .pgabout_inworld, .pgpartners_internet{/*все на темном фоне*/
+  .nav {
+    &__a { color:  #ffffff;
+      &:hover{ margin: 0px 12px 12px 12px;}
+    }
+    &__a--act{ color: @color_blue_2675eb; }
+  }
+  & .head{
+    &__nav{
+      position: fixed; z-index: 999;
+      top: 0px; left: 0px; right: 0px; height: 70px;
+      //background: transparent;
+    }
+    &__but{ display:none; color:#fff; }
+    &__tel::before{
+      content: "";
+      background: url('../img/head_tel_b.png') no-repeat;
+      width: 16px;
+      height: 16px;
+      position: absolute;
+      left: -16px;
+      top: 6px;
+    }
+  }
+  & .main{
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    &__center{
+      margin: 14% 25% 0 12%;
+      &-text{
+        font-size: 40px;
+        color: #fff;
+        margin-bottom: 40px;
+      }
+      &-button{
+        /*width:210px;*/
+        font-size: 16px;
+        color: #fff;
+        background-color: #ef568d;
+      }
+    }
+    &__footer{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin: 5% 10% 0 12%;
+      &-block{
+        padding:10px;
+        color: #fff;
+        font-size: 16px;
+        /*font-weight: bold;*/
+        width: 25%;
+      }
+      &-block.item1::before{
+        content: "";
+        background: url('../img/pgprogramagent_footer_1.png') no-repeat;
+        display: block;
+        width: 64px;
+        height: 50px;
+        float: left;
+      }
+      &-block.item2::before{
+        content: "";
+        background: url('../img/pgprogramagent_footer_2.png') no-repeat;
+        display: block;
+        width: 64px;
+        height: 50px;
+        float: left;
+      }
+      &-block.item3::before{
+        content: "";
+        background: url('../img/pgprogramagent_footer_3.png') no-repeat;
+        display: block;
+        width: 64px;
+        height: 50px;
+        float: left;
+      }
+      &-block.item4::before{
+        content: "";
+        background: url('../img/pgprogramagent_footer_4.png') no-repeat;
+        display: block;
+        width: 64px;
+        height: 80px;
+        float: left;
+        background-position: 50% 50%;
+      }
+    }
+  }
+  & .main__menu{
+    margin: 0px; padding-top: 10px; padding-bottom: 10px;
+    position: fixed; top: 70px; right: 10px; z-index: 100;
+    display: none; width: 100%;
+    background: #fff;
+    & .myslide_nav{
+      text-align: right;
+      & a{ color:@color_blue_2675eb; font-weight: bold; font-size: 14px; margin: 12px 12px; text-decoration: none; }
+      & a.act, & a:hover{ color:@color_gray1_4c4d4f; font-weight: bold; font-size: 14px; margin: 12px 12px; text-decoration: none; }
+    }
+  }
+}
+
+.pgpartners_internet{
+    & .openschet{ display: none; }
+    & .getbonus{ display: none; }
+    & .statpartner{ display: none; }
+    & .swiper-container_pi1 .swiper-wrapper .swiper-slide.slide_pgpartners_internet{
+      background-image: url('../img/partners_internet_bg.png');
+      background-size: 120% 120%;
+    }
+    & .slide{
+      & .centerblock {
+        & .mainpage {
+          & h2{
+            color:#ffffff;
+          }
+        }
+      }
+    }
+    & .footer{ display:none; }
+}
+.pgprogramagent{
+  & .openschet{ display: none; }
+  & .getbonus{ display: none; }
+  & .statpartner{ display: none; }
+  & .swiper-container .swiper-wrapper .swiper-slide.slide_pgprogramagent{
+    background-image: url('../img/pgprogramagent_back.png');
+    background-size: 120% 120%;
+  }
+  & .slide{
+    & .centerblock {
+      & .mainpage {
+        & h2{
+          color:#ffffff;
+        }
+      }
+    }
+  }
+  & .footer{ display:none; }
+}
+.pgabout{
+  & .openschet{ display: block; }
+  & .getbonus{ display: none; }
+  & .statpartner{ display: none; }
+  & .swiper-container_abo .swiper-wrapper .swiper-slide.slide_pgabout{
+    background-image: url('../img/about_bg.png');
+    background-size: 120% 120%;
+  }
+
+  & .footer{ display:none; position: fixed; bottom: 0px; }
+}

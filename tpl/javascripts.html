@@ -1,0 +1,261 @@
+<!--script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script-->
+<script src="js/jquery-1.12.4.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/Swiper-3.3.1/dist/js/swiper.min.js"></script>
+<script src="js/masked.js"></script>
+
+<script type="text/javascript" src="js/tablesorter/jquery.tablesorter.js"></script>
+<script src="js/nicescroll/jquery.nicescroll.js"></script>
+<script src="js/jquery.paralax/jquery.parallax-0.2-min.js"></script>
+
+<script type="text/javascript">
+  $(function () {
+        $('.slide_pgabout, .slide_pgprogramagent, .slide_pgpartners_internet').parallax({
+          'elements': [
+            {'selector': '.slide_pgabout, .slide_pgprogramagent, .slide_pgpartners_internet',
+              'properties': {
+                'x': {
+                  'background-position-x': {
+                    'initial': 80,
+                    'multiplier': 0.1,
+                    'invert': true,
+                    //'unit': '%'
+                  }
+                },
+                'y': {
+                  'background-position-y': {
+                    'initial': 50,
+                    'multiplier': 0.1,
+                    'invert': true,
+                    //'unit': '%'
+                  }
+                }
+              }
+            }
+          ]
+        });
+
+        $('.faqbody').niceScroll('.faqbody_scroll', {
+          cursorcolor: '#000',
+          cursorwidth: 2,
+        });
+
+        $('.main__right--main323').on('mouseover', function (e) {
+          // положение элемента
+          var pos = $(this).offset();
+          var elem_left = pos.left;
+          var elem_top = pos.top;
+          // положение курсора внутри элемента
+          var Xinner = e.pageX - elem_left;
+          var Yinner = e.pageY - elem_top;
+          //console.log("X: " + Xinner + " Y: " + Yinner); // вывод результата в
+          $(".scroll").animate({
+              top: (parseInt(Yinner)-20).toString() + 'px',
+            },100);
+        });
+        $(".sort_table").tablesorter();
+        $(".afly").hover(
+          function() {
+            var id=$(this).attr("id");
+            $(".fly").html('<img src="/png/'+id+'.png">');
+          }, function() {
+            $(".fly").html('');
+          }
+        );
+        /*меню из гамбургера*/
+        $(".fly__menu").hide();
+        $(".menu-left-position").click(function(){
+          if ( $(".fly__menu").css('opacity') == '0' ){
+            $(".fly__menu").css({"opacity":"1"}).show();
+            $("body").css("overflow","hidden");
+          }else{
+            $(".fly__menu").css({"opacity":"0"}).hide();
+            $("body").css("overflow","auto");
+          }
+        });
+        /*правая панель калькулятор*/
+        $(".fly__calculator-panel").hide();
+        $(".fly__calculator-close").click(function(){
+          $(".fly__calculator-panel").css({"opacity":"0"}).hide();
+          $("body").css("overflow","auto");
+        });
+        $(".fly__calculator").click(function(){
+          $(".fly__calculator-panel").css({"opacity":"1"}).show();
+          $("body").css("overflow","hidden");
+        });
+        $(".calcresult_more").click(function() {
+          if ( $(".calcresult .hide").css('display') == 'none' ){
+            $(".calcresult .hide").show();
+            $(this).html("свернуть");
+          }else{
+            $(".calcresult .hide").hide();
+            $(this).html("подробнее");
+          }
+        });
+        /*правая панель чата*/
+        $(".fly__feedback-panel").hide();
+        $(".fly__feedback-close").click(function(){
+          $(".fly__feedback-panel").css({"opacity":"0"}).hide();
+          $("body").css("overflow","auto");
+        });
+        $(".slide_01__center-chat, .fly__chat, .fly__feedback").click(function(){
+          $(".fly__feedback-panel").css({"opacity":"1"}).show();
+          $("body").css("overflow","hidden");
+        });
+        $(".faqpanel").hide();
+        $(".fb_item").click(function(){
+          $(".faqbody_scroll > .answer").hide();
+          $(".faqbody_scroll > .fb_item").removeClass("hover");
+          $(this).parent(".faqbody_scroll").addClass("hover");
+          $(this).addClass("hover");
+          $(this).find(".answer").toggle();
+        })
+        $(".fed").click(function(){
+          if ($(this).hasClass("act")){
+          }else{
+            $(".faqpanel").hide();
+            $(".feedbackpanel").show();
+          }
+        });
+        $(".faq").click(function(){
+          if ($(this).hasClass("act")){
+          }else{
+            $(".faqpanel").show();
+            $(".feedbackpanel").hide();
+          }
+        });
+
+        $(".phone").mask("+7 (999) 999-9999");
+        $(".phone1").mask("+7 (999) 999 99 99");
+
+        $(".click_video").click(function(){
+          var url=$(this).attr("id");
+          var label=$(this).attr("atr-title");
+          var iframe='<iframe width="1000" height="600" src="'+url+'" frameborder="0" allowfullscreen></iframe>';
+          $(".video_video").html(iframe);
+          $(".video_label").html(label);
+          $(".video_div").css({"z-index":"1500","opacity":"1"});
+        });
+        $(".video_close").click(function(){
+          $(".video_div").css({"z-index":"0","opacity":"0"});
+          $(".video_video").html("");
+          $(".video_label").html("");
+        });
+
+        $(".tpayments tr").hover(  function() {
+            $(".tpayments tr").addClass("nehover");
+            $( this ).removeClass("nehover").addClass("hover");
+          }, function() {
+            $(".tpayments tr").removeClass("nehover");
+            $( this ).removeClass("hover");
+        });
+
+        $(".calendar_table .row").click(  function() {
+            $(".calendar_table .row").removeClass("hover");
+            $( this ).addClass("hover");
+        });
+        $(".calendar_table .row").hover(  function() {
+            $( this ).addClass("hover0");
+            $(".calendar_table .row").removeClass("hover");
+          }, function() {
+            $( this ).removeClass("hover0");
+            $(".calendar_table .row").removeClass("hover");
+        });
+        $(".col .item").hover(  function() {
+            $( this ).addClass("hover");
+            $( this ).parent(".col").addClass("hover");
+          }, function() {
+            $( this ).removeClass("hover");
+            $( this ).parent(".col").removeClass("hover");
+        });
+        $(".select_content_item").hover(  function() {
+            $( this ).addClass("hover");
+            $( this ).parent(".col").addClass("hover");
+          }, function() {
+            $( this ).removeClass("hover");
+            $( this ).parent(".col").removeClass("hover");
+        });
+        $(".select01").click(function(){
+          if($(this).hasClass("open")) $(this).removeClass("open");
+          else $(this).addClass("open");
+        })
+
+        $('a[href^="#"]').click(function(){
+          var target = $(this).attr('href');
+          //$('html, body').animate({scrollTop: $(target).offset().top}, 800);//800 - длительность скроллинга в мс
+          //return false;
+        });
+        $('a.disable').attr("href","#");
+        $(".slider-range-min").slider({
+          range: "min", /*value: 8, min: 1, max: 20,*/
+          slide: function( event, ui ) {
+            var id=$(this).attr("id").split("_");
+            $("#slider-range-min-val_"+id[1]).val(ui.value);
+            $("#slider-range-min-label_"+id[1]).text(ui.value);
+          },
+          create: function( event, ui ) {
+            //console.log(event);//slidecreate
+            var value=	parseFloat($(this).attr("value"));
+            $(this).slider( "option", "value", 	value );
+            var min1=parseFloat($(this).attr("min"));
+            $(this).slider( "option", "min",  min1 );
+            var max1=parseFloat($(this).attr("max"));
+            $(this).slider( "option", "max", max1 );
+            var step=parseFloat($(this).attr("step"));
+            $(this).slider( "option", "step", step );
+
+            var id=$(this).attr("id");
+            var ida=id.split("_");
+            $('<div class="slider-range-min-label" id="slider-range-min-label_'+ida[1]+'">'+value+'</div>').prependTo("#"+id+" .ui-slider-handle");
+          }
+        });
+        $(".calc_program_agent_reward, .calc_program_agent_reward .slider-range-min").click(function(){
+          var sel_1 = parseFloat($("#sel_1 option:selected").val());
+          var sel_2 = parseFloat($("#sel_2 option:selected").val());
+          var sli_1 = parseFloat($("#slider-range-min-val_1").val());
+          var sli_2 = parseFloat($("#slider-range-min-val_2").val());
+
+          var doh_ag_zd=(sli_1 * sli_2)*sel_1*sel_2;
+          console.log(sel_1+" | "+sel_2+" | "+sli_1+" | "+sli_2+" = "+doh_ag_zd);
+
+          $(".doh_ag_zd").text(doh_ag_zd.toFixed(0)+" USD");
+          $(".doh_ag_zm").text((doh_ag_zd*30).toFixed(0)+" USD");
+          //alert("123");//slider-range-min-val_1
+        });
+    });
+</script>
+%SCRIPT%
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter39220565 = new Ya.Metrika({
+                    id:39220565,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true,
+                    trackHash:true,
+                    ut:"noindex"
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/39220565?ut=noindex" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</body>
+</html>
