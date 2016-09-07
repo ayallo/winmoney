@@ -929,14 +929,11 @@ a .openschet {
   color: #ffffff;
   text-decoration: none;
   font-size: 16px;
-  font-weight: bold;
-  /*padding: 26px 24px 20px 24px*/
   margin: 2px 12px 12px;
-  padding-top: 22px;
+  padding-top: 21px;
   display: inline-block;
 }
 .nav__a:hover {
-  /*padding: 24px 24px 12px 24px;*/
   border-top-width: 2px;
   border-top-color: #488ef7;
   border-top-style: solid;
@@ -946,22 +943,20 @@ a .openschet {
   display: inline-block;
 }
 .nav__a--act {
-  /*padding: 24px 24px 12px 24px;*/
   border-top-width: 2px;
   border-top-color: #488ef7;
   border-top-style: solid;
   color: #2675eb;
   margin: 0 12px 12px;
-  padding-top: 24px;
+  padding-top: 22px;
   display: inline-block;
 }
 .nav__a--act:hover {
-  /*padding: 24px 24px 12px 24px;*/
   border-top-width: 2px;
   border-top-color: #488ef7;
   border-top-style: solid;
   margin: 0 12px 12px;
-  padding-top: 24px;
+  padding-top: 22px;
   display: inline-block;
 }
 .nav .box {
@@ -1051,6 +1046,13 @@ a .openschet {
   width: 22px;
   height: 17px;
   margin-left: 22px;
+}
+.menu-left--open {
+  display: none;
+  background: url('../img/topmenu_close.png') no-repeat;
+  width: 70px;
+  height: 70px;
+  background-position: 50%;
 }
 .menu-left-position {
   display: -webkit-box;
@@ -1193,6 +1195,7 @@ a .openschet {
   bottom: 0;
   z-index: 2000;
   color: #fff;
+  margin-left: -200px;
 }
 .fly__menu .left {
   width: 420px;

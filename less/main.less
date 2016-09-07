@@ -757,15 +757,11 @@ a .getbonus,a .openschet {
         color: #ffffff;
         text-decoration: none;
         font-size: 16px;
-        font-weight: bold;
-        /*padding: 26px 24px 20px 24px*/
         margin: 2px 12px 12px;
-        padding-top: 22px;
+        padding-top: 21px;
         display: inline-block;
     }
-
     &__a:hover {
-        /*padding: 24px 24px 12px 24px;*/
         border-top-width: 2px;
         border-top-color: #488ef7;
         border-top-style: solid;
@@ -774,28 +770,23 @@ a .getbonus,a .openschet {
         padding-top: 22px;
         display: inline-block;
     }
-
     &__a--act {
-        /*padding: 24px 24px 12px 24px;*/
         border-top-width: 2px;
         border-top-color: #488ef7;
         border-top-style: solid;
         color: @color_blue_2675eb;
         margin: 0 12px 12px;
-        padding-top: 24px;
+        padding-top: 22px;
         display: inline-block;
     }
-
     &__a--act:hover {
-        /*padding: 24px 24px 12px 24px;*/
         border-top-width: 2px;
         border-top-color: #488ef7;
         border-top-style: solid;
         margin: 0 12px 12px;
-        padding-top: 24px;
+        padding-top: 22px;
         display: inline-block;
     }
-
     & .box {
         display: flex;
         justify-content: space-between;
@@ -839,128 +830,118 @@ a .getbonus,a .openschet {
 }
 /*ГАМБУРГЕР*/
 .menu {
-    &-global {
+  &-global {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    left: 0;
+    /* border-top: 7px solid white;*/
+    border-top: 2px solid #fff;
+    width: 100%;
+    -webkit-transition: 0.55s;
+    -moz-transition: 0.55s;
+    -o-transition: 0.55s;
+    transition: 0.55s;
+  }
+    &-left {
+      cursor: pointer;
+      margin: 0 auto;
+      padding-left: 30px;
+      position: relative;
+      width: 22px;
+      height: 17px;
+      margin-left: 22px;
+      &--open{
+        display: none;
+        background: url('../img/topmenu_close.png') no-repeat;
+        width: 70px; height: 70px;
+        background-position: 50%;
+      }
+      &-position {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        width: 70px;
+        height: 70px;
+        left: 0;
+        z-index: 999;
+      }
+      &-top { top: 0; }
+      &-middle { top: 9px; }
+      &-bottom { top: 18px; }
+      &-top-click {
         -webkit-backface-visibility: hidden;
         -moz-backface-visibility: hidden;
         backface-visibility: hidden;
-        position: absolute;
-        left: 0;
-        /* border-top: 7px solid white;*/
-        border-top: 2px solid #fff;
-        width: 100%;
-        -webkit-transition: 0.55s;
-        -moz-transition: 0.55s;
-        -o-transition: 0.55s;
-        transition: 0.55s;
+        -webkit-transform: rotate(315deg);
+        -ms-transform: rotate(315deg);
+        -moz-transform: rotate(315deg);
+        -o-transform: rotate(315deg);
+        transform: rotate(315deg);
+        -webkit-transition: 0.55s 0.5s;
+        -moz-transition: 0.55s 0.5s;
+        -o-transition: 0.55s 0.5s;
+        transition: 0.55s 0.5s;
+        /* width: 50%;*/
+        /* top: 15px;*/
+        /* top: 9px;*/
+        width: 60%;
+        top: 3px;
+        left: -1px;
+      }
+      &-middle-click {
+          /* width: 90%;*/
+          /* top: 7px;*/
+          /* left: 3px;*/
+      }
+      &-bottom-click {
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        backface-visibility: hidden;
+        /* top: 32px;*/
+        -webkit-transform: rotate(-315deg);
+        -ms-transform: rotate(-315deg);
+        -moz-transform: rotate(-315deg);
+        -o-transform: rotate(-315deg);
+        transform: rotate(-315deg);
+        -webkit-transition: 0.55s 0.5s;
+        -moz-transition: 0.55s 0.5s;
+        -o-transition: 0.55s 0.5s;
+        transition: 0.55s 0.5s;
+        /* width: 50%;*/
+        /* top: 19px;*/
+        width: 60%;
+        top: 11px;
+        left: -1px;
+      }
+      &-middle-click {
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        backface-visibility: hidden;
+        /* top: 24px;*/
+        /* left:5px;*/
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+        -webkit-transition: 0.55s 0.5s;
+        -moz-transition: 0.55s 0.5s;
+        -o-transition: 0.55s 0.5s;
+        transition: 0.55s 0.5s;
+        /* width: 70%;*/
+        /* top: 24px;*/
+        /* width: 90%;*/
+        /* top: 14px;*/
+        /* left:5px;*/
+        width: 90%;
+        top: 7px;
+        left: 3px;
+      }
     }
-
-    &-left {
-        cursor: pointer;
-        margin: 0 auto;
-        padding-left: 30px;
-        position: relative;
-        width: 22px;
-        height: 17px;
-        margin-left: 22px;
-
-        &-position {
-            display: flex;
-            align-items: center;
-            margin: 0;
-            position: absolute;
-            top: 0;
-            width: 70px;
-            height: 70px;
-            left: 0;
-            z-index: 999;
-        }
-
-        &-top {
-            top: 0;
-        }
-
-        &-middle {
-            top: 9px;
-        }
-
-        &-bottom {
-            top: 18px;
-        }
-
-        &-top-click {
-            -webkit-backface-visibility: hidden;
-            -moz-backface-visibility: hidden;
-            backface-visibility: hidden;
-            -webkit-transform: rotate(315deg);
-            -ms-transform: rotate(315deg);
-            -moz-transform: rotate(315deg);
-            -o-transform: rotate(315deg);
-            transform: rotate(315deg);
-            -webkit-transition: 0.55s 0.5s;
-            -moz-transition: 0.55s 0.5s;
-            -o-transition: 0.55s 0.5s;
-            transition: 0.55s 0.5s;
-            /* width: 50%;*/
-            /* top: 15px;*/
-            /* top: 9px;*/
-            width: 60%;
-            top: 3px;
-            left: -1px;
-        }
-
-        &-middle-click {
-            /* width: 90%;*/
-            /* top: 7px;*/
-            /* left: 3px;*/
-        }
-
-        &-bottom-click {
-            -webkit-backface-visibility: hidden;
-            -moz-backface-visibility: hidden;
-            backface-visibility: hidden;
-            /* top: 32px;*/
-            -webkit-transform: rotate(-315deg);
-            -ms-transform: rotate(-315deg);
-            -moz-transform: rotate(-315deg);
-            -o-transform: rotate(-315deg);
-            transform: rotate(-315deg);
-            -webkit-transition: 0.55s 0.5s;
-            -moz-transition: 0.55s 0.5s;
-            -o-transition: 0.55s 0.5s;
-            transition: 0.55s 0.5s;
-            /* width: 50%;*/
-            /* top: 19px;*/
-            width: 60%;
-            top: 11px;
-            left: -1px;
-        }
-
-        &-middle-click {
-            -webkit-backface-visibility: hidden;
-            -moz-backface-visibility: hidden;
-            backface-visibility: hidden;
-            /* top: 24px;*/
-            /* left:5px;*/
-            -webkit-transform: rotate(360deg);
-            -ms-transform: rotate(360deg);
-            -moz-transform: rotate(360deg);
-            -o-transform: rotate(360deg);
-            transform: rotate(360deg);
-            -webkit-transition: 0.55s 0.5s;
-            -moz-transition: 0.55s 0.5s;
-            -o-transition: 0.55s 0.5s;
-            transition: 0.55s 0.5s;
-            /* width: 70%;*/
-            /* top: 24px;*/
-            /* width: 90%;*/
-            /* top: 14px;*/
-            /* left:5px;*/
-            width: 90%;
-            top: 7px;
-            left: 3px;
-        }
-    }
-
     &__item {
         margin: 20px;
     }
@@ -983,7 +964,7 @@ a .getbonus,a .openschet {
     bottom: 0;
     z-index: 2000;
     color: #fff;
-
+     margin-left: -200px;
     & .left {
         width: 420px;
         background: #2a2e34;
