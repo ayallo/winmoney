@@ -38,8 +38,6 @@ if($page=='index'){
   $html .= get_shablon($tpl.'/head_nav.html');
   $html .= get_shablon($tpl.'/index.html');
   $html .= '</div>';
-  if(isset($_GET['png'])) $html .= '<div style="position:absolute;background-image:url(\'img/index_clients_png.png\');top:0px;left:0px;right:0px;bottom:0px;opacity: 0.5;background-size: cover;background-repeat: no-repeat;"></div>';
-
   $m[1][]='%SCRIPT%'; $m[2][] = get_shablon($tpl.'/program_agent.js');
 }
 
@@ -413,43 +411,4 @@ function count_proj($dir,$what){
   return $out;
 }
 
-/*
-    <a href="/" class="menu__item ">
-        <div class="menu__bg"></div>
-        <div class="menu__text">index только 1 экран</div>
-    </a>
-    <!--a href="?p=about" class="menu__item ">
-        <div class="menu__bg"></div>
-        <div class="menu__text">about</div>
-    </a-->
-    <a href="?p=bonus" class="menu__item ">
-        <div class="menu__bg"></div>
-        <div class="menu__text">bonus</div>
-    </a>
-    <a href="?p=bonuses" class="menu__item ">
-        <div class="menu__bg"></div>
-        <div class="menu__text">bonuses</div>
-    </a>
-    <!--a href="?p=bonus_01" class="menu__item ">
-        <div class="menu__bg"></div>
-        <div class="menu__text">bonus 01</div>
-    </a-->
-    <a href="?p=accounts" class="menu__item ">
-        <div class="menu__bg"></div>
-        <div class="menu__text">accounts</div>
-    </a>
-    <a href="?p=contracts" class="menu__item ">
-        <div class="menu__bg"></div>
-        <div class="menu__text">contracts</div>
-    </a>
-    <a href="?p=partners" class="menu__item ">
-        <div class="menu__bg"></div>
-        <div class="menu__text">partners</div>
-    </a>
-    <!--a href="?p=program_agent" class="menu__item ">
-        <div class="menu__bg"></div>
-        <div class="menu__text">program_agent в новых макетах нет</div>
-    </a-->
-
-*/
  ?>

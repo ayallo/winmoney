@@ -257,6 +257,7 @@
 .slide .footerblock--block {
   width: 840px;
   margin: 0 auto;
+  overflow: hidden;
 }
 .slide .footerblock--block-wrap {
   /*width:80%; margin:0 auto;
