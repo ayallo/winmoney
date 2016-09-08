@@ -75,13 +75,29 @@ a .getbonus, a .openschet{ font-weight:bold; color:#fff;}
   }
 
   & .slide_01{
-    background-image: url('../img/index_clients_bg.jpg');
+    background-image: url('../img/paralax/Client_back.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     height: 100%;
     overflow: auto;
+    position: relative;
+    &_paralax_top{
+      background-image: url('../img/paralax/Top_client.png');
+      background-repeat: no-repeat;
+      background-size: 120%;
+      background-position: 100% 100%;
+      width: 100%; height: 100%;
+      position: absolute;
+      height: 250px;
+      position: absolute;
+      bottom: 0px;
+      z-index: 1;
+      left: 0px;
+      right: 0px;
+    }
     & .main{
+      z-index:2;
       background: transparent;
       display: flex;
       flex-direction: column;

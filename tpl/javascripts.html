@@ -10,6 +10,54 @@
 
 <script type="text/javascript">
   $(function () {
+        $('.slide_partner_client').parallax({
+          'elements': [
+            {'selector': '.slide_01_paralax_top1',
+              'properties': {
+                'x': {
+                  'background-position-x': {
+                    'initial': -170,
+                    'multiplier': 0.01,
+                    'invert': true,
+                    'unit': '%'
+                  }
+                },
+                'y': {
+                  'background-position-y': {
+                    'initial': 55,
+                    'multiplier': 0.01,
+                    'invert': true,
+                    //'unit': '%'
+                  }
+                }
+              }
+            }
+          ]
+        });
+        $('.slide_index_client').parallax({
+          'elements': [
+            {'selector': '.slide_01_paralax_top',
+              'properties': {
+                'x': {
+                  'background-position-x': {
+                    'initial': 100,
+                    'multiplier': 0.1,
+                    'invert': true,
+                    //'unit': '%'
+                  }
+                },
+                'y': {
+                  'background-position-y': {
+                    'initial': 0,
+                    'multiplier': 0,
+                    'invert': false,
+                    //'unit': '%'
+                  }
+                }
+              }
+            }
+          ]
+        });
         $('.slide_pgabout, .slide_pgprogramagent, .slide_pgpartners_internet').parallax({
           'elements': [
             {'selector': '.slide_pgabout, .slide_pgprogramagent, .slide_pgpartners_internet',
