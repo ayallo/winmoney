@@ -351,8 +351,8 @@ a.icon_pdf::before {
   position: absolute;
   /*background: url("../img/calculator01.png") no-repeat;
       width: 16px; height: 22px; */
-  background-position: -335px -5px;
-  width: 14px;
+  background-position: -334px -5px;
+  width: 15px;
   height: 20px;
   background-image: url(../img/spritesheet.png);
   background-repeat: no-repeat;
@@ -913,7 +913,7 @@ strong {
   width: 20px;
   height: 20px;
   display: block;
-  left: 0px;
+  left: -4px;
 }
 .column_2 .col .item .hide .country a {
   font-size: inherit;
@@ -1487,7 +1487,7 @@ p.bullet::before {
   content: "";
   position: absolute;
   /*background: url("../img/ts_standart_big_b.png") no-repeat;width: 50px; height: 57px;*/
-  background-position: -425px -230px;
+  background-position: -424px -230px;
   width: 42px;
   height: 53px;
   background-image: url(../img/spritesheet.png);

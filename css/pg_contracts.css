@@ -26,9 +26,16 @@ a .openschet {
 .pgcontracts .head__but.openschet {
   display: block;
 }
+.pgcontracts .main__left {
+  width: 420px;
+}
 .pgcontracts .main__left h2 {
   letter-spacing: 0.03em;
+  margin-top: 36px;
   margin-bottom: 27px;
+  color: #5e5f62;
+  /*font-family: 'Pragmatica Light', sans-serif;
+        font-weight: 300;*/
 }
 .pgcontracts .main__left--menu01 {
   margin-left: 73px;
@@ -51,7 +58,7 @@ a .openschet {
 .pgcontracts .main__left--menu01--item a:active,
 .pgcontracts .main__left--menu01--item a.act {
   font-weight: bold;
-  color: #7f8081;
+  color: #4c4d4f;
   font-size: 16px;
   text-decoration: none;
 }
@@ -77,9 +84,12 @@ a .openschet {
 .pgcontracts .main__left--menu01.small a:active,
 .pgcontracts .main__left--menu01.small a.act {
   font-weight: bold;
-  color: #7f8081;
+  color: #4c4d4f;
   font-size: 12px;
   text-decoration: none;
+}
+.pgcontracts .main__right {
+  width: initial;
 }
 .pgcontracts .main__right--main table th br {
   font-size: 12px;

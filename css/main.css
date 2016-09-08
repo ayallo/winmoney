@@ -749,13 +749,14 @@ a .openschet {
   border: 2px solid #727b85;
   position: relative;
   overflow: hidden;
-  padding-left: 26px;
+  padding-left: 28px;
   padding-top: 3px;
   -webkit-transition: width 0.3s;
   -o-transition: width 0.3s;
   -moz-transition: width 0.3s;
   transition: width 0.3s;
   cursor: pointer;
+  font-size: 13px;
 }
 .head__right-wrapr-r01::before {
   content: "";
@@ -763,7 +764,7 @@ a .openschet {
   width: 16px;
   height: 16px;
   top: 50%;
-  left: 5px;
+  left: 6px;
   margin-top: -8px;
   background: transparent url("../img/head_acc.png") center no-repeat;
   z-index: 51;
@@ -786,7 +787,7 @@ a .openschet {
   width: 16px;
   height: 16px;
   top: 50%;
-  left: 5px;
+  left: 6px;
   margin-top: -8px;
   background: transparent url("../img/head_acc.png") center no-repeat;
 }
@@ -796,7 +797,7 @@ a .openschet {
   width: 16px;
   height: 16px;
   top: 50%;
-  left: 5px;
+  left: 6px;
   margin-top: -8px;
   background: transparent url("../img/head_acc.png") center no-repeat;
   z-index: 51;
@@ -812,13 +813,14 @@ a .openschet {
   border: 2px solid #727b85;
   position: relative;
   overflow: hidden;
-  padding-left: 26px;
+  padding-left: 28px;
   padding-top: 3px;
   -webkit-transition: width 0.3s;
   -o-transition: width 0.3s;
   -moz-transition: width 0.3s;
   transition: width 0.3s;
   cursor: pointer;
+  font-size: 13px;
 }
 .head__right-wrapr-r02::before {
   content: "";
@@ -826,7 +828,7 @@ a .openschet {
   width: 16px;
   height: 10px;
   top: 50%;
-  left: 5px;
+  left: 6px;
   margin-top: -5px;
   background: transparent url("../img/head_mt4.png") center no-repeat;
   z-index: 51;
@@ -843,7 +845,7 @@ a .openschet {
   width: 17px;
   height: 10px;
   top: 50%;
-  left: 5px;
+  left: 6px;
   margin-top: -5px;
   background: transparent url("../img/head_mt4_hover_r.png") center no-repeat;
   z-index: 51;
@@ -859,13 +861,14 @@ a .openschet {
   border: 2px solid #727b85;
   position: relative;
   overflow: hidden;
-  padding-left: 26px;
+  padding-left: 28px;
   padding-top: 3px;
   -webkit-transition: width 0.3s;
   -o-transition: width 0.3s;
   -moz-transition: width 0.3s;
   transition: width 0.3s;
   cursor: pointer;
+  font-size: 13px;
 }
 .head__right-wrapr-r03::before {
   content: "";
