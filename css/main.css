@@ -2041,7 +2041,32 @@ a .openschet {
   display: block;
 }
 .pgpayments strong {
-  font-size: 13px;
+  font-size: 16px;
+}
+.pgpayments .pay_name {
+  color: #2675eb;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+.pgpayments .hover .pay_name {
+  color: #e94f86;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+.pgpayments .tpayments tr.nehover td {
+  background-color: #fafafa;
+}
+.pgpayments .tpayments tr.hover {
+  /*box-shadow: 0px 0px 10px gray;
+        margin: 10px;
+        display: flex;*/
+}
+.pgpayments .tpayments td {
+  height: 110px;
+  min-height: 110px;
+  cursor: pointer;
 }
 .pgpayments .sel_platsys {
   position: relative;
@@ -2101,7 +2126,7 @@ a .openschet {
   top: 0px;
 }
 .pgpayments .main__left {
-  padding-top: 20px;
+  padding-top: 36px;
   width: 420px;
 }
 .pgpayments .main__left .head {
@@ -2123,22 +2148,35 @@ a .openschet {
 .pgpayments .main__left .head img {
   margin-right: 10px;
 }
+.pgpayments .main__left .head .button02.gray {
+  font-size: 13px;
+  font-weight: bold;
+  padding-bottom: 4px;
+}
 .pgpayments .main__left .item {
   margin: 10px 20px;
   -webkit-border-radius: 5px;
      -moz-border-radius: 5px;
           border-radius: 5px;
   padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #2675eb;
+  cursor: pointer;
 }
 .pgpayments .main__left .item.menu {
   margin: 40px 60px;
   text-align: left;
+}
+.pgpayments .main__left .item.menu div {
+  margin-bottom: 34px;
 }
 .pgpayments .main__left .item h3 {
   font-size: 16px;
   font-weight: bold;
   margin-top: 20px;
   margin-left: 35px;
+  color: #4c4d4f;
 }
 .pgpayments .main__left .item.hover {
   -webkit-box-shadow: 0px 0px 9px gray;
