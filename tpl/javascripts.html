@@ -26,55 +26,15 @@
           frictionX: 0.2,     frictionY: 0.8,
           originX: 0.0,       originY: 1.0
         });
+        $('#slide_pgabout, #slide_pgprogramagent, #slide_pgpartners_internet').parallax({
+          calibrateX: false,  calibrateY: true,
+          invertX: false,     invertY: true,
+          limitX: 500,         limitY: 500,
+          scalarX: 16,         scalarY: 16,
+          frictionX: 0.9,     frictionY: 0.8,
+          originX: 5,       originY: 5
+        });
 
-        $('.slide_index_client').parallax({
-          'elements': [
-            {'selector': '.slide_01_paralax_top',
-              'properties': {
-                'x': {
-                  'background-position-x': {
-                    'initial': 100,
-                    'multiplier': 0.1,
-                    'invert': true,
-                    //'unit': '%'
-                  }
-                },
-                'y': {
-                  'background-position-y': {
-                    'initial': 0,
-                    'multiplier': 0,
-                    'invert': false,
-                    //'unit': '%'
-                  }
-                }
-              }
-            }
-          ]
-        });
-        $('.slide_pgabout, .slide_pgprogramagent, .slide_pgpartners_internet').parallax({
-          'elements': [
-            {'selector': '.slide_pgabout, .slide_pgprogramagent, .slide_pgpartners_internet',
-              'properties': {
-                'x': {
-                  'background-position-x': {
-                    'initial': 80,
-                    'multiplier': 0.1,
-                    'invert': true,
-                    //'unit': '%'
-                  }
-                },
-                'y': {
-                  'background-position-y': {
-                    'initial': 50,
-                    'multiplier': 0.1,
-                    'invert': true,
-                    //'unit': '%'
-                  }
-                }
-              }
-            }
-          ]
-        });
 
         $('.faqbody').niceScroll('.faqbody_scroll', {
           cursorcolor: '#000',
