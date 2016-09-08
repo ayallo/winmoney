@@ -75,24 +75,39 @@
      -moz-background-size: cover;
        -o-background-size: cover;
           background-size: cover;
+  background-position: 100% 0%;
   width: 100%;
   height: 100%;
-  overflow: auto;
+  overflow: hidden;
 }
-.pgpartners .slcont-slide.slide_01 .slide_01_paralax_top1 {
-  background-image: url('../img/paralax/Top_partner.png');
+.pgpartners .slcont-slide.slide_01 .slide_01_paralax_top0 {
+  background-image: url('../img/paralax/Back_partner.jpg');
   background-repeat: no-repeat;
-  -webkit-background-size: 80% 80%;
-     -moz-background-size: 80%;
-       -o-background-size: 80%;
-          background-size: 80%;
-  background-position: 100% 100%;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0px;
   right: 0px;
   z-index: 0;
+}
+.pgpartners .slcont-slide.slide_01 .slide_01_paralax_top1 {
+  background-image: url('../img/paralax/Top_partner.png');
+  background-repeat: no-repeat;
+  -webkit-background-size: 66% 66%;
+     -moz-background-size: 66%;
+       -o-background-size: 66%;
+          background-size: 66%;
+  background-position: 100% 0%;
+  width: 100%;
+  height: 100%;
+  position: absolute!important;
+  top: 55px!important;
+  right: 0px;
+  z-index: 1;
 }
 .pgpartners .slcont-slide.slide_01 .main {
   background: transparent;

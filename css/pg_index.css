@@ -74,7 +74,7 @@ a .openschet {
           background-size: cover;
   width: 100%;
   height: 100%;
-  overflow: auto;
+  overflow: hidden;
   position: relative;
 }
 .pgindex .slide_01_paralax_top {
@@ -87,7 +87,8 @@ a .openschet {
   background-position: 100% 100%;
   width: 100%;
   height: 100%;
-  height: 250px;
+  position: absolute!important;
+  /*height: 250px;*/
   position: absolute;
   bottom: 0px;
   z-index: 1;

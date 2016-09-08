@@ -6,34 +6,27 @@
 
 <script type="text/javascript" src="js/tablesorter/jquery.tablesorter.js"></script>
 <script src="js/nicescroll/jquery.nicescroll.js"></script>
-<script src="js/jquery.paralax/jquery.parallax-0.2-min.js"></script>
-
+<!--script src="js/jquery.paralax/jquery.parallax-0.2-min.js"></script-->
+<script src="js/parallax-master/deploy/jquery.parallax.js"></script>
 <script type="text/javascript">
   $(function () {
-        $('.slide_partner_client').parallax({
-          'elements': [
-            {'selector': '.slide_01_paralax_top1',
-              'properties': {
-                'x': {
-                  'background-position-x': {
-                    'initial': -170,
-                    'multiplier': 0.01,
-                    'invert': true,
-                    'unit': '%'
-                  }
-                },
-                'y': {
-                  'background-position-y': {
-                    'initial': 55,
-                    'multiplier': 0.01,
-                    'invert': true,
-                    //'unit': '%'
-                  }
-                }
-              }
-            }
-          ]
+        $('#scene_index_partners').parallax({
+          calibrateX: false,  calibrateY: true,
+          invertX: false,     invertY: true,
+          limitX: 10,         limitY: 5,
+          scalarX: 2,         scalarY: 8,
+          frictionX: 0.2,     frictionY: 0.8,
+          originX: 0.0,       originY: 1.0
         });
+        $('#scene_index_client').parallax({
+          calibrateX: false,  calibrateY: true,
+          invertX: false,     invertY: true,
+          limitX: 15,         limitY: 10,
+          scalarX: 2,         scalarY: 8,
+          frictionX: 0.2,     frictionY: 0.8,
+          originX: 0.0,       originY: 1.0
+        });
+
         $('.slide_index_client').parallax({
           'elements': [
             {'selector': '.slide_01_paralax_top',
