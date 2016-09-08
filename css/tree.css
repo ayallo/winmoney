@@ -8,45 +8,42 @@
   stroke-linecap: round;
   stroke-linejoin: round;
   cursor: pointer;
-  -webkit-transition: 0.3s ease-in-out;
-  -o-transition: 0.3s ease-in-out;
-  -moz-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  /*transition: 0.3s ease-in-out;*/
 }
 .l1 {
   stroke-width: 4;
   stroke: #2675eb;
 }
 .l1:hover {
-  stroke-width: 8;
+  /*stroke-width:8;*/
 }
 .l2 {
   stroke-width: 4;
   stroke: #68a4eb;
 }
 .l2:hover {
-  stroke-width: 8;
+  /*stroke-width:8;*/
 }
 .l3 {
   stroke-width: 3;
   stroke: #49f2e7;
 }
 .l3:hover {
-  stroke-width: 6;
+  /*stroke-width:6;*/
 }
 .l4 {
   stroke-width: 3;
   stroke: #e94f86;
 }
 .l4:hover {
-  stroke-width: 6;
+  /*stroke-width:6;*/
 }
 .l5 {
   stroke-width: 2;
   stroke: #c8c8c8;
 }
 .l5:hover {
-  stroke-width: 4;
+  /*stroke-width:4;*/
 }
 .tree .l1_text {
   font-size: 12px;

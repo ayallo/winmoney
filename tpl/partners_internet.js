@@ -28,7 +28,7 @@
               $(".main__menu").show();
           }
           if(e.activeIndex==1){ $("#myslideTo_1").addClass("act"); }
-          if(e.activeIndex==4){ $(".footer").css({"display":"flex"}); }
+          if(e.activeIndex==4){ $(".footer").css({"display":"flex","position":"fixed","bottom":"0px","left":"0px"}); }
       });
       }
     });

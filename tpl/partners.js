@@ -158,7 +158,7 @@
           $(".treelegend__descrip").html(text);
           //$('[class ^= treelegend__level-lev_]').css({"font-weight":"normal"});
           $(".treelegend__level-lev_"+id[1]).css({"font-weight":"bold"});
-          $("line.l"+id[1]).css({"stroke-width":sw});
+          //$("line.l"+id[1]).css({"stroke-width":sw});
         }, function() {
           var id = $(this).attr("id").split("_");
           if(id[1]==1) { sw=4; }
@@ -168,7 +168,7 @@
           if(id[1]==5) { sw=2; }
           $(".treelegend__descrip").html("");
           $(".treelegend__level-lev_"+id[1]).css({"font-weight":"normal"});
-          $("line.l"+id[1]).css({"stroke-width":sw});
+          //$("line.l"+id[1]).css({"stroke-width":sw});
         }
       );
       $("line").hover(

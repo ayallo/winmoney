@@ -52,6 +52,18 @@ a .getbonus, a .openschet{ font-weight:bold; color:#fff;}
       flex-grow: 0;
       flex-shrink: 1;
       flex-basis: auto;
+      & h2{
+        margin-top: 36px;
+        margin-bottom: 36px;
+      }
+      &--menu{
+        &--item{
+          & a {
+            &:hover{ color: #4c4d4f; }
+          }
+          &.act a { color: #4c4d4f; }
+        }
+      }
     }
     &__right{ position: relative; /*width:initial;*/ }
     &__right--table{
@@ -75,8 +87,8 @@ a .getbonus, a .openschet{ font-weight:bold; color:#fff;}
           text-align: left;
           padding-left: 10px;
           & .col-01{ width:16%; font-weight: bold; font-size: 15px; }
-          & .col-02{ width:31%; font-weight: bold; font-size: 15px; }
-          & .col-03{ width:51%; font-weight: bold; font-size: 15px; }
+          & .col-02{ width:41%; font-weight: bold; font-size: 15px; padding-left: 15px; }
+          & .col-03{ width:41%; font-weight: bold; font-size: 15px; padding-left: 30px; }
         }
       }
       &--body{
@@ -123,10 +135,11 @@ a .getbonus, a .openschet{ font-weight:bold; color:#fff;}
             text-transform: uppercase;
             & br{ font-size: 10px; line-height: 10px; }
           }
-          & .col-02{width:31%;}
-          & .col-03{width:51%;}
+          & .col-02{width:41%;font-family: 'PT Serif', serif;}
+          & .col-03{width:41%;font-family: 'PT Serif', serif;}
           & .col-02, & .col-03{
             font-size: 16px;
+            font-family: 'PT Serif', serif;
             color: #4c4d4f;
             vertical-align: middle;
             text-align: left;

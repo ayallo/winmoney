@@ -1778,7 +1778,7 @@ a .openschet {
       -ms-flex-wrap: nowrap;
           flex-wrap: nowrap;
   padding-right: 20px;
-  padding-top: 12px;
+  padding-top: 4px;
 }
 .footer__right--soc_vk {
   background: url('../img/footer_soc_vk.png') no-repeat;

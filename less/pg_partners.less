@@ -183,6 +183,7 @@
         & .main{
           &__center{
             margin-bottom: 50px;
+            padding-top: 50px;
           }
         }
       }
@@ -205,25 +206,37 @@
         justify-content: center;
         flex-wrap: wrap;
         & .mcct_block{
-          width:273px;
-          height:364px;
+          width:362px;
+          height:480px;
           margin:10px;
           border-radius: 8px;
           background: url('../img/pgpartners_regular.png') no-repeat;
-          background-size: contain;
+          background-size: 101%;
           box-shadow: 0px 0px 10px -4px #7d7d7d;
           cursor: pointer;
           position: relative;
+          &.mb_ip{
+            background: url('../img/pgpartners_regular_01.png') no-repeat;
+            background-size: 101%;
+          }
+          &.mb_rp{
+            background: url('../img/pgpartners_regular_02.png') no-repeat;
+            background-size: 101%;
+          }
+          &.mb_wl{
+            background: url('../img/pgpartners_regular_03.png') no-repeat;
+            background-size: 101%;
+          }
           & .header_1{
             font-weight: bold;
-            font-size: 18px;
+            font-size: 22px;
             color:#4c4d4f;
             margin-top: 60px;
             margin-left: 30px;
             margin-bottom: 12px;
           }
           & .text_1{
-            font-size: 14px;
+            font-size: 16px;
             color:#000;
             margin-left: 30px;
             margin-right: 15px;
@@ -238,18 +251,21 @@
             margin-left: 30px;
             margin-right: 5px;
             font-size: 0px;
+            margin-bottom: 10px;
           }
           & .text_3{
             color:#fff;
             margin-left: 30px;
-            margin-right: 5px;
+            margin-right: 30px;
+            margin-bottom: 30px;
             font-size: 0px;
           }
           .text45_regular{
             position:absolute;
-            bottom:16px;
+            bottom:32px;
             right:0px;
             text-align: right;
+            padding-right:30px;
           }
           & .text_4{
             font-size: 16px;
@@ -280,7 +296,7 @@
             font-size: 10px;
           }
           & .text_3{
-            font-size: 14px;
+            font-size: 16px;
           }
           & .text_4{
             font-size: 0px;
@@ -288,6 +304,18 @@
           & .text_5{
             font-size: 0px;
           }
+        }
+        & .mcct_block.mb_ip:hover{
+          background: url('../img/pgpartners_hover_01.png') no-repeat;
+          background-size: 101%;
+        }
+        & .mcct_block.mb_rp:hover{
+          background: url('../img/pgpartners_hover_02.png') no-repeat;
+          background-size: 101%;
+        }
+        & .mcct_block.mb_wl:hover{
+          background: url('../img/pgpartners_hover_03.png') no-repeat;
+          background-size: 101%;
         }
       }
       &-footer{
@@ -297,8 +325,9 @@
         justify-content: center;
         flex-wrap: wrap;
         padding: 0 15%;
+        padding-bottom: 90px;
         & .mcft_block{
-          width:45%;
+          width:500px;
           margin:10px;
           position: relative;
           & h2{

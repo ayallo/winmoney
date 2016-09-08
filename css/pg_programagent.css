@@ -475,7 +475,7 @@
 .pgprogramagent .footer {
   display: none;
 }
-.pgprogram_cpa .slide_01 {
+.pgprogram_cpa .swiper-container_cpa .swiper-wrapper .swiper-slide.slide_01 {
   background-image: url('../img/program_cpa_bg.png');
   background-repeat: no-repeat;
   -webkit-background-size: cover;

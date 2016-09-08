@@ -76,6 +76,16 @@ a .openschet {
       -ms-flex-preferred-size: auto;
           flex-basis: auto;
 }
+.pgaccounts .main__left h2 {
+  margin-top: 36px;
+  margin-bottom: 36px;
+}
+.pgaccounts .main__left--menu--item a:hover {
+  color: #4c4d4f;
+}
+.pgaccounts .main__left--menu--item.act a {
+  color: #4c4d4f;
+}
 .pgaccounts .main__right {
   position: relative;
   /*width:initial;*/
@@ -145,14 +155,16 @@ a .openschet {
   font-size: 15px;
 }
 .pgaccounts .main__right--table--head .row .col-02 {
-  width: 31%;
+  width: 41%;
   font-weight: bold;
   font-size: 15px;
+  padding-left: 15px;
 }
 .pgaccounts .main__right--table--head .row .col-03 {
-  width: 51%;
+  width: 41%;
   font-weight: bold;
   font-size: 15px;
+  padding-left: 30px;
 }
 .pgaccounts .main__right--table--body {
   width: 74%;
@@ -245,14 +257,17 @@ a .openschet {
   line-height: 10px;
 }
 .pgaccounts .main__right--table--body .row .col-02 {
-  width: 31%;
+  width: 41%;
+  font-family: 'PT Serif', serif;
 }
 .pgaccounts .main__right--table--body .row .col-03 {
-  width: 51%;
+  width: 41%;
+  font-family: 'PT Serif', serif;
 }
 .pgaccounts .main__right--table--body .row .col-02,
 .pgaccounts .main__right--table--body .row .col-03 {
   font-size: 16px;
+  font-family: 'PT Serif', serif;
   color: #4c4d4f;
   vertical-align: middle;
   text-align: left;
