@@ -346,7 +346,7 @@
 .pgabout_inworld .main__menu,
 .pgpartners_internet .main__menu {
   margin: 0px;
-  padding-top: 10px;
+  padding-top: 50px;
   padding-bottom: 10px;
   position: fixed;
   top: 70px;
@@ -405,6 +405,27 @@
      -moz-background-size: 120% 120%;
        -o-background-size: 120% 120%;
           background-size: 120% 120%;
+  overflow: hidden;
+}
+.pgpartners_internet .swiper-container_pi1 .swiper-wrapper .swiper-slide.slide_pgpartners_internet .slide_01_paralax_top {
+  background-image: url('../img/partners_internet_bg.jpg');
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+  background-position: 50% 100%;
+  width: 110%;
+  height: 110%;
+  position: absolute!important;
+  top: -5% !important;
+  bottom: -5% !important;
+  left: -5% !important;
+  right: -5% !important;
+  z-index: 1;
+}
+.pgpartners_internet .slide .centerblock {
+  z-index: 2;
 }
 .pgpartners_internet .slide .centerblock .mainpage h2 {
   color: #ffffff;
@@ -432,19 +453,19 @@
 .pgprogramagent .swiper-container .swiper-wrapper .swiper-slide.slide_pgprogramagent .slide_01_paralax_top {
   background-image: url('../img/pgprogramagent_back.jpg');
   background-repeat: no-repeat;
-  -webkit-background-size: 100% 100%;
-     -moz-background-size: 100%;
-       -o-background-size: 100%;
-          background-size: 100%;
-  background-position: 100% 100%;
-  width: 120%;
-  height: 120%;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+  background-position: 50% 100%;
+  width: 110%;
+  height: 110%;
   position: absolute!important;
-  position: absolute;
-  bottom: 0px;
+  top: -5% !important;
+  bottom: -5% !important;
+  left: -5% !important;
+  right: -5% !important;
   z-index: 1;
-  left: 0px;
-  right: 0px;
 }
 .pgprogramagent .slide .centerblock {
   z-index: 2;
@@ -475,19 +496,19 @@
 .pgabout .swiper-container_abo .swiper-wrapper .swiper-slide.slide_pgabout .slide_01_paralax_top {
   background-image: url('../img/about_bg.jpg');
   background-repeat: no-repeat;
-  -webkit-background-size: 120% 120%;
-     -moz-background-size: 120%;
-       -o-background-size: 120%;
-          background-size: 120%;
-  background-position: 100% 100%;
-  width: 100%;
-  height: 100%;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+  background-position: 50% 100%;
+  width: 110%;
+  height: 110%;
   position: absolute!important;
-  position: absolute;
-  bottom: 0px;
+  top: -5% !important;
+  bottom: -5% !important;
+  left: -5% !important;
+  right: -5% !important;
   z-index: 1;
-  left: 0px;
-  right: 0px;
 }
 .pgabout .swiper-container_abo .swiper-wrapper .swiper-slide.slide_pgabout .centerblock {
   z-index: 2;

@@ -236,7 +236,7 @@
     }
   }
   & .main__menu{
-    margin: 0px; padding-top: 10px; padding-bottom: 10px;
+    margin: 0px; padding-top: 50px; padding-bottom: 10px;
     position: fixed; top: 70px; right: 10px; z-index: 100;
     display: none; width: 100%;
     background: #fff;
@@ -255,9 +255,21 @@
     & .swiper-container_pi1 .swiper-wrapper .swiper-slide.slide_pgpartners_internet{
       background-image: url('../img/partners_internet_bg.jpg');
       background-size: 120% 120%;
+      overflow: hidden;
+      & .slide_01_paralax_top{
+        background-image: url('../img/partners_internet_bg.jpg');
+        background-repeat: no-repeat; background-size: cover;
+        background-position: 50% 100%;
+        width: 110%; height: 110%;
+        position: absolute!important;
+        top: -5%!important; bottom: -5%!important;
+        left: -5%!important; right: -5%!important;
+        z-index: 1;
+      }
     }
     & .slide{
       & .centerblock {
+        z-index:2;
         & .mainpage {
           & h2{
             color:#ffffff;
@@ -278,15 +290,13 @@
     & .slide_01_paralax_top{
       background-image: url('../img/pgprogramagent_back.jpg');
       background-repeat: no-repeat;
-      background-size: 100%;
-      background-position: 100% 100%;
-      width: 120%; height: 120%;
+      background-size: cover;
+      background-position: 50% 100%;
+      width: 110%; height: 110%;
       position: absolute!important;
-      position: absolute;
-      bottom: 0px;
+      top: -5%!important; bottom: -5%!important;
+      left: -5%!important; right: -5%!important;
       z-index: 1;
-      left: 0px;
-      right: 0px;
     }
   }
   & .slide{
@@ -312,15 +322,13 @@
     & .slide_01_paralax_top{
       background-image: url('../img/about_bg.jpg');
       background-repeat: no-repeat;
-      background-size: 120%;
-      background-position: 100% 100%;
-      width: 100%; height: 100%;
+      background-size: cover;
+      background-position: 50% 100%;
+      width: 110%; height: 110%;
       position: absolute!important;
-      position: absolute;
-      bottom: 0px;
+      top: -5%!important; bottom: -5%!important;
+      left: -5%!important; right: -5%!important;
       z-index: 1;
-      left: 0px;
-      right: 0px;
     }
     & .centerblock{ z-index: 2; }
   }

@@ -152,7 +152,7 @@
   background-repeat: no-repeat;
   position: relative;
   width: 80%;
-  height: 80%;
+  height: 60%;
   text-align: left;
   padding-left: 40px;
 }
@@ -174,7 +174,7 @@
   position: absolute;
   right: 20px;
   bottom: 20px;
-  width: 24%;
+  width: 285px;
 }
 .pgpartners_reward .slide_01 .center .footer1 p,
 .pgpartners_reward .slide_02 .center .footer1 p,

@@ -120,7 +120,7 @@
 .slide .centerblock.div1row_img .fonimg {
   position: absolute;
   right: 0px;
-  bottom: 0px;
+  top: 40%;
 }
 .slide .centerblock.div1row_img .fonimg img {
   width: 80%;
@@ -238,6 +238,16 @@
   /*width:80%;
       margin: 0 30%;*/
 }
+.slide .centerblock_540 {
+  width: 1080px;
+  -webkit-box-align: baseline!important;
+  -webkit-align-items: baseline!important;
+     -moz-box-align: baseline!important;
+      -ms-flex-align: baseline!important;
+              -ms-grid-row-align: baseline!important;
+          align-items: baseline!important;
+  margin-top: 150px;
+}
 .slide .footerblock {
   /*низ слайдера*/
   background: #f5f5f5;
@@ -303,7 +313,7 @@
 .swiper-container_abo .swiper-wrapper .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
+  background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;

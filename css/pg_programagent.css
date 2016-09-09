@@ -244,7 +244,7 @@
   text-decoration: none;
 }
 .pgprogramagent .slide_01 {
-  background-image: url('../img/pgprogramagent_back.png');
+  background-image: url('../img/pgprogramagent_back.png') !important;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
      -moz-background-size: cover;
@@ -711,7 +711,7 @@
   bottom: 0px;
 }
 .pgprogram_region .slide_01 {
-  background-image: url('../img/program_region_bg.png');
+  background-image: url('../img/program_region_bg.png') !important;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
      -moz-background-size: cover;
@@ -719,11 +719,29 @@
           background-size: cover;
   width: 100%;
   height: 100%;
-  overflow: auto;
+  overflow: hidden;
+}
+.pgprogram_region .slide_01 .slide_01_paralax_top {
+  background-image: url('../img/program_region_bg.png');
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+  background-position: 50% 100%;
+  width: 110%;
+  height: 110%;
+  position: absolute!important;
+  top: -5% !important;
+  bottom: -5% !important;
+  left: -5% !important;
+  right: -5% !important;
+  z-index: 1;
 }
 .pgprogram_region .slide_01__center {
   text-align: left;
   width: 80%;
+  z-index: 3;
 }
 .pgprogram_region .slide_01__center-text {
   font-size: 48px;

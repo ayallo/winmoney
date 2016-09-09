@@ -9,6 +9,20 @@
 <!--script src="js/jquery.paralax/jquery.parallax-0.2-min.js"></script-->
 <script src="js/parallax-master/deploy/jquery.parallax.js"></script>
 <script type="text/javascript">
+(function() {
+  "use strict";
+  var toggles = document.querySelectorAll(".c-hamburger");
+  for (var i = toggles.length - 1; i >= 0; i--) {
+    var toggle = toggles[i];
+    toggleHandler(toggle);
+  };
+  function toggleHandler(toggle) {
+    toggle.addEventListener( "click", function(e) {
+      e.preventDefault();
+      (this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
+    });
+  }
+})();
   $(function () {
         $('#scene_index_partners').parallax({
           calibrateX: false,  calibrateY: true,
@@ -26,19 +40,20 @@
           frictionX: 0.2,     frictionY: 0.8,
           originX: 0.0,       originY: 1.0
         });
-        $('#slide_pgabout, #slide_pgprogramagent, #slide_pgpartners_internet').parallax({
+        $('#slide_pgabout, #slide_pgprogramagent, #slide_pgpartners_internet, #slide_pgprogramregion, #slide_pgbonus').parallax({
           calibrateX: false,  calibrateY: true,
           invertX: false,     invertY: true,
-          limitX: 500,         limitY: 500,
+          limitX: 50,         limitY: 50,
           scalarX: 16,         scalarY: 16,
           frictionX: 0.9,     frictionY: 0.8,
-          originX: 5,       originY: 5
+          originX: 0.5,       originY: 0.5
         });
 
-
+        $('.feedbackbdody1').niceScroll('.feedback_scroll', {
+          cursorcolor: '#000', cursorwidth: 2,
+        });
         $('.faqbody').niceScroll('.faqbody_scroll', {
-          cursorcolor: '#000',
-          cursorwidth: 2,
+          cursorcolor: '#000', cursorwidth: 2,
         });
 
         $('.main__right--main323').on('mouseover', function (e) {
@@ -67,18 +82,28 @@
         $(".fly__menu").hide();
         $(".menu-left-position").click(function(){
           if ( $(".fly__menu").css('opacity') == '0' ){
-            $(".fly__menu").css({"opacity":"0"}).show().animate({opacity: 1, marginLeft: "0"}, 400 );
             $("body").css("overflow","hidden");
-            $('.menu-left').hide();
-            $('.menu-left--open').show().effect('bounce','up','show');
+            //$(".fly__menu").css({"opacity":"0"}).show().animate({opacity: 1, marginLeft: "0"}, 400 );
+            //$('.menu-left').hide();
+            //$('.menu-left--open').show().effect('bounce','up','show');
+            $(".fly__menu").css({"opacity":"1","margin-left":"0px"}).stop().fadeTo(200, 1);
           }else{
-            $(".fly__menu").css({"opacity":"1"}).animate({opacity: 0, marginLeft: "-200px"}, 400 ).hide();
             $("body").css("overflow","auto");
+            //$(".fly__menu").css({"opacity":"1"}).animate({opacity: 0, marginLeft: "-200px"}, 400 ).hide();
+            $(".fly__menu").css({"opacity":"1","margin-left":"-200px"}).stop().fadeTo(100, 0);
 
-            $('.menu-left--open').hide();
-            $('.menu-left').show().effect('bounce','up','show');
+            //$('.menu-left--open').hide();
+            //$('.menu-left').show().effect('bounce','up','show');
           }
         });
+        $(".fly__menu").click(function(){
+          if ( $(".fly__menu").css('opacity') == '0' ){
+          }else{
+            $("body").css("overflow","auto");
+            $(".fly__menu").css({"opacity":"1","margin-left":"-200px"}).stop().fadeTo(100, 0);
+          }
+        });
+
         /*правая панель калькулятор*/
         $(".fly__calculator-panel").hide();
         $(".fly__calculator-close").click(function(){
@@ -100,7 +125,7 @@
         });
         /*правая панель чата*/
         $(".fly__feedback-panel").hide();
-        $(".fly__feedback-close").click(function(){
+        $(".fly__feedback-close, .fly__feedback-panel").click(function(){
           $(".fly__feedback-panel").css({"opacity":"0"}).hide();
           $("body").css("overflow","auto");
         });
