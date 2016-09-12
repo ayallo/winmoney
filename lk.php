@@ -6,7 +6,7 @@ $page = 'dashboard'; if(isset($_GET['p'])){ $page=htmlspecialchars($_GET['p']); 
 
 $html = ''; $m=array();
 
-if($page=='dashboard'){
+if($page=='dashboard'||$page=='account'){
   $m[1][]='%CSS%'; $m[2][] = '';
   $m[1][]='%SCRIPT%'; $m[2][] = '';
   $m[1][]='%DATE%'; $m[2][] = date_rus();

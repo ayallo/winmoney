@@ -6,6 +6,24 @@
 <script src="js/ie10-viewport-bug-workaround.js"></script>
 <script>
   $(function () {
+    /*модальное размытие*/
+    $('.modal').on('hidden.bs.modal', function (e) {
+      $('.body_page').removeClass('modal_blur');
+    })
+    $('.modal').on('show.bs.modal', function (e) {
+      $('.body_page').addClass('modal_blur');
+    })
+    /*checkbox checkbox*/
+    $('.fi_checkbox .checkbox').click(function(){
+      var id=$(this).attr('id').split('_');
+      if($(this).hasClass('checked')){
+        $(this).removeClass('checked');
+        $('#'+id[0]).val('0');
+      }else{
+        $(this).addClass('checked');
+        $('#'+id[0]).val('1');
+      }
+    });
     /*radio checkbox*/
     $('.fi_radio_wrap span').click(function(){
       var id=$(this).attr('id').split('_');
