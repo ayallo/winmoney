@@ -6,7 +6,26 @@
 <script src="js/ie10-viewport-bug-workaround.js"></script>
 <script>
   $(function () {
-
+    /*radio checkbox*/
+    $('.fi_radio_wrap span').click(function(){
+      var id=$(this).attr('id').split('_');
+      $('#'+id[0]).val(id[1]);
+      $('[id^="'+id[0]+'_"]').removeClass('checked');
+      $(this).addClass('checked');
+    });
+    /*selects */
+    $('.fi_select ul li a').click(function(){
+      var id = $(this).attr("id").split("_");
+      var tx = $(this).html();
+      var fi_select = $(this).closest('.fi_select');
+      fi_select.removeClass('open');
+      var button = $(this).closest('.fi_select').find('button');
+      button.attr("aria-expanded","false");
+      var buttontx = $(this).closest('.fi_select').find('button').find('.tx');
+      buttontx.html(tx).removeClass('nosel');
+      $('#'+id[0]).val(id[1]);
+      return false;
+    })
   });
   %SCRIPT%
   /*gamburger*/

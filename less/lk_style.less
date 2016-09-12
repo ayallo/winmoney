@@ -109,28 +109,21 @@ a{
     }
 }
 .button_round{/*кнопка закругленная с границей*/
-  border: 1px solid #eceff3;
+  border: 2px solid #eceff3;
   border-radius: 13px;
   font-size: 13px;
   font-weight: bold;
   color: #2675eb;
-  padding: 3px 10px;
+      padding: 3px 17px 4px 10px;
   display: inline-block;
   cursor: pointer;
   &.br_blue{
-    border: 1px solid #68a4fd;
+    border: 2px solid #68a4fd;
   }
   & span{
     font-size: 11px;
     font-weight: normal;
   }
-}
-.fi_wrap{/*оболочка для радио кнопки*/
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  cursor: pointer;
 }
 .fi_radio{/*радио кнопка*/
   width: 26px; height: 26px;
@@ -150,17 +143,68 @@ a{
       left:8px; top:8px;
     }
   }
+  &_wrap{/*оболочка для радио кнопки*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+  }
 }
 .fi_input{
    font-weight: bold;
    width:100%;
+   padding-right:30px;
+   padding-bottom: 10px;
    &.regular{
      font-weight: normal;
    }
    &.border_bottom{
-     border-bottom: 1px solid #f5f5f5;
+     border-bottom:2px solid #f5f5f5;
    }
-
+   &_span{
+     color:#a8a8a8;
+     font-weight:normal;
+     position:absolute!important;
+     top:7px!important;right:24px!important;
+   }
+}
+.fi_select{
+  border-bottom: 2px solid #f5f5f5;
+  padding-bottom: 10px;
+  & button{
+    width: 100%;
+    text-align: left;
+    position:relative;
+    background: transparent;
+    & .tx{
+      font-size: 16px;
+      color: #4c4d4f;
+      font-weight: bold;
+      &.nosel{
+        font-size: 16px;
+        color: #a8a8a8;
+        font-weight: normal;
+      }
+    }
+    & .caret{
+      position: absolute;
+      right:10px; top:10px;
+      border: none;
+      &::before{
+        content: "";
+        background-image: url("../img/arr_down_b.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        right: 0px;      top: 0px;
+        width: 10px;     height: 10px;
+        position: absolute;
+      }
+    }
+  }
+  & ul{
+    width: 100%;
+  }
 }
 
 .col-mini{
