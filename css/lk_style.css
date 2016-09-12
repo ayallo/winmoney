@@ -196,6 +196,27 @@ a:hover {
   font-size: 11px;
   font-weight: normal;
 }
+.flag {
+  width: 22px;
+  height: 16px;
+  display: inline-block;
+  margin: 0px 10px;
+}
+.flag.rus {
+  background: url("../img/flags/rus.png") no-repeat;
+}
+.flag.usa {
+  background: url("../img/flags/usa.png") no-repeat;
+}
+.flag.canada {
+  background: url("../img/flags/canada.png") no-repeat;
+}
+.flag.hz {
+  background: url("../img/flags/hz.png") no-repeat;
+}
+.flag.japan {
+  background: url("../img/flags/japan.png") no-repeat;
+}
 .fi_radio {
   /*радио кнопка*/
   width: 26px;
@@ -250,7 +271,6 @@ a:hover {
 .fi_input {
   font-weight: bold;
   width: 100%;
-  padding-right: 30px;
   padding-bottom: 10px;
 }
 .fi_input.regular {
@@ -258,6 +278,9 @@ a:hover {
 }
 .fi_input.border_bottom {
   border-bottom: 2px solid #f5f5f5;
+}
+.fi_input .fi_input_sspan {
+  padding-right: 30px;
 }
 .fi_input_span {
   color: #a8a8a8;
@@ -407,14 +430,20 @@ a:hover {
 .margint_40 {
   margin-top: 40px;
 }
+.marginb_6 {
+  margin-bottom: 6px;
+}
+.marginb_18 {
+  margin-bottom: 18px;
+}
+.marginb_20 {
+  margin-bottom: 20px;
+}
 .marginb_30 {
   margin-bottom: 30px;
 }
 .marginb_40 {
   margin-bottom: 40px;
-}
-.marginb_20 {
-  margin-bottom: 20px;
 }
 .paddingl_80 {
   padding-left: 80px;
@@ -863,6 +892,10 @@ a:hover {
 #modal_payment .modal-dialog .modal-content {
   width: 360px;
   height: 480px;
+}
+#modal_registration .modal-dialog .modal-content {
+  width: 360px;
+  height: 700px;
 }
 .navbar {
   z-index: 9999;

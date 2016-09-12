@@ -66,7 +66,8 @@
 
         <div class="row marginb_20">
           <div class="col-xs-12 text_head fs_w400">
-            <input type="TEXT" name="" class="fi_input border_bottom" value="" placeholder="Пароль трейдера">
+            <input type="TEXT" name="" class="fi_input fi_input_sspan border_bottom" value="" placeholder="Пароль трейдера">
+            <span class="glyphicon glyphicon-eye-open fi_input_span" aria-hidden="true"></span>
           </div>
         </div>
         <div class="row marginb_20">
@@ -84,6 +85,131 @@
           </div>
         </div>
         <div class="row marginb_20">
+          <div class="col-xs-12 fs_w400">
+            <div class="button_round br_blue" data-dismiss="modal">
+              Сохранить
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" tabindex="-1" role="dialog" id="modal_registration">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Закрыть"><span aria-hidden="true">&times;</span></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="row marginb_20">
+          <div class="col-xs-12 text-center">
+            <h2 class="fs_s20 fs_wbold" style="margin-top:0px;">Регистрация</h2>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12 text_head fs_w400">Фамилия</div>
+        </div>
+        <div class="row marginb_6">
+          <div class="col-xs-12 text_head fs_w400">
+            <input type="TEXT" name="register_famil" class="fi_input border_bottom" value="" placeholder="Неизвестный">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-6 text_head fs_w400">Имя</div>
+          <div class="col-xs-6 text_head fs_w400">Отчество</div>
+        </div>
+        <div class="row marginb_6">
+          <div class="col-xs-6 text_head fs_w400">
+            <input type="TEXT" name="register_name" class="fi_input border_bottom" value="Аркадий" placeholder="Имя">
+          </div>
+          <div class="col-xs-6 text_head fs_w400">
+            <input type="TEXT" name="register_otchestvo" class="fi_input border_bottom" value="Николаевич" placeholder="Отчество">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12 text_head fs_w400">Телефон</div>
+        </div>
+        <div class="row marginb_6">
+          <div class="col-xs-12 text_head fs_w400">
+            <input type="TEXT" name="register_tel" class="fi_input border_bottom" value="" placeholder="+7 (995) 995 55 55">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12 text_head fs_w400">E-mail</div>
+        </div>
+        <div class="row marginb_6">
+          <div class="col-xs-12 text_head fs_w400">
+            <input type="TEXT" name="register_email" class="fi_input border_bottom" value="arkady@mail.ru" placeholder="E-mail">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12 text_head fs_w400">Страна</div>
+        </div>
+        <div class="row marginb_6">
+          <div class="col-xs-12 fs_w400">
+            <div class="dropdown fi_select">
+              <input type="hidden" name="register_starna" id="registerstarna" value="1">
+              <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="tx"><span class="flag rus"></span> Россия</span><span class="caret"></span></button>
+              <ul class="dropdown-menu" aria-labelledby="dLabel">
+                <li><a href="#" id="registerstarna_1"><span class="flag rus"></span> Россия</a></li>
+                <li><a href="#" id="registerstarna_2"><span class="flag canada"></span> Канада</a></li>
+                <li><a href="#" id="registerstarna_3"><span class="flag japan"></span> Япония</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12 text_head fs_w400">пароль</div>
+        </div>
+        <div class="row marginb_6">
+          <div class="col-xs-12 text_head fs_w400">
+            <input type="TEXT" name="register_pass1" class="fi_input fi_input_sspan border_bottom" value="" placeholder="123sd!4">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 text_head fs_w400">подтверждение</div>
+        </div>
+        <div class="row marginb_6">
+          <div class="col-xs-12 text_head fs_w400">
+            <input type="TEXT" name="register_pass2" class="fi_input border_bottom" value="" placeholder="123sd!4">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 text_head fs_w400">введено верно</div>
+        </div>
+
+        <div class="row marginb_6">
+          <div class="col-xs-12 text_head fs_w400">
+            <input type="TEXT" name="" class="fi_input border_bottom" value="1234fr!" placeholder="Пароль трейдера">
+            <span class="glyphicon glyphicon-eye-open fi_input_span" aria-hidden="true"></span>
+          </div>
+        </div>
+        <div class="row marginb_6">
+          <div class="col-xs-12 text_head fs_w400">
+            <input type="TEXT" name="" class="fi_input border_bottom" value="1234fr!" placeholder="Пароль инвестора">
+          </div>
+        </div>
+
+        <div class="row marginb_6">
+          <div class="col-xs-12">
+            <div class="fi_checkbox">
+              <input type="HIDDEN" name="register_rules" id="registerrules" value="1">
+              <div class="checkbox checked" id="registerrules_1"></div>
+              <div class="text fs_s10 fs_w400">Я принимаю условия пользовательского соглашения</div>
+            </div>
+          </div>
+        </div>
+        <div class="row marginb_6">
           <div class="col-xs-12 fs_w400">
             <div class="button_round br_blue" data-dismiss="modal">
               Сохранить
