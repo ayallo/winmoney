@@ -69,7 +69,7 @@
           justify-content: center;
 }
 .pgpartners .slcont-slide.slide_01 {
-  background-image: url('../img/paralax/Back_partner.jpg');
+  background-image: url('../img/index_partners_bg.jpg');
   background-repeat: no-repeat;
   -webkit-background-size: cover;
      -moz-background-size: cover;
@@ -95,19 +95,14 @@
   z-index: 0;
 }
 .pgpartners .slcont-slide.slide_01 .slide_01_paralax_top1 {
-  background-image: url('../img/paralax/Top_partner.png');
-  background-repeat: no-repeat;
-  -webkit-background-size: 69% 69%;
-     -moz-background-size: 69%;
-       -o-background-size: 69%;
-          background-size: 69%;
-  background-position: 114% 0%;
-  width: 100%;
-  height: 100%;
-  position: absolute!important;
-  top: 55px!important;
-  right: 0px;
-  z-index: 1;
+  /*background-image: url('../img/index_partners_bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 114% 65%;
+        width: 100%; height: 100%;
+        position: absolute!important;
+        top:55px!important; right: 0px;
+        z-index: 1;*/
 }
 .pgpartners .slcont-slide.slide_01 .main {
   background: transparent;
@@ -183,7 +178,7 @@
           align-items: center;
 }
 .pgpartners .slcont-slide.slide_01 .main__center-text .social {
-  border: 2px solid #2647a9;
+  border: 2px solid #8aa8c6;
   width: 30px;
   height: 30px;
   display: inline-block;
@@ -198,17 +193,29 @@
   background-position: center;
   margin: 0px 10px;
 }
+.pgpartners .slcont-slide.slide_01 .main__center-text .social.social__vk:hover {
+  background-image: url("../img/social_vk_p.png");
+  border: 2px solid #fff;
+}
 .pgpartners .slcont-slide.slide_01 .main__center-text .social.social__fb {
   background-image: url("../img/social_fb.png");
   background-repeat: no-repeat;
   background-position: center;
   margin: 0px 10px;
 }
+.pgpartners .slcont-slide.slide_01 .main__center-text .social.social__fb:hover {
+  background-image: url("../img/social_fb_p.png");
+  border: 2px solid #fff;
+}
 .pgpartners .slcont-slide.slide_01 .main__center-text .social.social__ok {
   background-image: url("../img/social_ok.png");
   background-repeat: no-repeat;
   background-position: center;
   margin: 0px 10px;
+}
+.pgpartners .slcont-slide.slide_01 .main__center-text .social.social__ok:hover {
+  background-image: url("../img/social_ok_p.png");
+  border: 2px solid #fff;
 }
 .pgpartners .slcont-slide.slide_01 .main__footer {
   display: -webkit-box;
@@ -386,10 +393,10 @@
 }
 .pgpartners .main__center-ctnblocks .mcct_block.mb_rp {
   background: url('../img/pgpartners_regular_02.png') no-repeat;
-  -webkit-background-size: 101% 101%;
-     -moz-background-size: 101%;
-       -o-background-size: 101%;
-          background-size: 101%;
+  -webkit-background-size: 102% 102%;
+     -moz-background-size: 102%;
+       -o-background-size: 102%;
+          background-size: 102%;
 }
 .pgpartners .main__center-ctnblocks .mcct_block.mb_wl {
   background: url('../img/pgpartners_regular_03.png') no-repeat;
@@ -527,7 +534,7 @@
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  padding: 0 15%;
+  /*padding: 0 15%;*/
   padding-bottom: 90px;
 }
 .pgpartners .main__center-footer .mcft_block {

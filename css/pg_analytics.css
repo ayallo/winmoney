@@ -517,6 +517,9 @@
           justify-content: center;
   z-index: 0;
 }
+.pganalytics_video .video_div.noshow {
+  display: none;
+}
 .pganalytics_video .video_div .video_show {
   width: 1000px;
   height: 600px;
@@ -800,7 +803,7 @@
   color: #4c4d4f;
 }
 .pganalytics_articles .column_2 .col.articles.hover .item.hover h3 a {
-  color: #4c4d4f;
+  color: #e94f86;
 }
 .pganalytics_articles .column_2 .col.articles.hover .item.hover p {
   color: #4c4d4f;

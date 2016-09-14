@@ -444,7 +444,7 @@
   color: #2675eb;
   padding: 0px;
   border-bottom: 3px solid #2675eb;
-  letter-spacing: 7px;
+  letter-spacing: 2px;
 }
 .pgprogramagent .slide_05 .main__center-text .statpartner {
   margin-left: 13px;
@@ -677,7 +677,7 @@
   color: #2675eb;
   padding: 0px;
   border-bottom: 3px solid #2675eb;
-  letter-spacing: 7px;
+  letter-spacing: 2px;
 }
 .pgprogram_cpa .slide_05 .main__center-text .statpartner {
   margin-left: 13px;
@@ -691,6 +691,10 @@
   margin: 0px 8px;
   border: 2px solid #e9e9e9;
 }
+.pgprogram_cpa .slide_05 .main__center-text .social.social__vk:hover {
+  background-image: url("../img/social_vk_b.png");
+  border: 2px solid #e94f86;
+}
 .pgprogram_cpa .slide_05 .main__center-text .social.social__fb {
   background-image: url("../img/social_fb_g.png");
   background-repeat: no-repeat;
@@ -698,12 +702,20 @@
   margin: 0px 8px;
   border: 2px solid #e9e9e9;
 }
+.pgprogram_cpa .slide_05 .main__center-text .social.social__fb:hover {
+  background-image: url("../img/social_fb_b.png");
+  border: 2px solid #e94f86;
+}
 .pgprogram_cpa .slide_05 .main__center-text .social.social__ok {
   background-image: url("../img/social_ok_g.png");
   background-repeat: no-repeat;
   background-position: center;
   margin: 0px 8px;
   border: 2px solid #e9e9e9;
+}
+.pgprogram_cpa .slide_05 .main__center-text .social.social__ok:hover {
+  background-image: url("../img/social_ok_b.png");
+  border: 2px solid #e94f86;
 }
 .pgprogram_cpa .footer {
   display: none;
@@ -816,6 +828,11 @@
 .pgprogram_region .slide_04 .center div p.bullet {
   margin-bottom: 50px;
 }
+.pgprogram_region .slide_02 .center div p.bullet a,
+.pgprogram_region .slide_03 .center div p.bullet a,
+.pgprogram_region .slide_04 .center div p.bullet a {
+  font-size: inherit;
+}
 .pgprogram_region .slide_03 .center div h2 {
   font-size: 48px;
   margin-bottom: 26px;
@@ -920,7 +937,7 @@
   color: #2675eb;
   padding: 0px;
   border-bottom: 3px solid #2675eb;
-  letter-spacing: 7px;
+  letter-spacing: 2px;
 }
 .pgprogram_region .slide_05 .main__center-text .statpartner {
   margin-left: 13px;
@@ -934,6 +951,10 @@
   margin: 0px 8px;
   border: 2px solid #e9e9e9;
 }
+.pgprogram_region .slide_05 .main__center-text .social.social__vk:hover {
+  background-image: url("../img/social_vk_b.png");
+  border: 2px solid #e94f86;
+}
 .pgprogram_region .slide_05 .main__center-text .social.social__fb {
   background-image: url("../img/social_fb_g.png");
   background-repeat: no-repeat;
@@ -941,12 +962,20 @@
   margin: 0px 8px;
   border: 2px solid #e9e9e9;
 }
+.pgprogram_region .slide_05 .main__center-text .social.social__fb:hover {
+  background-image: url("../img/social_fb_b.png");
+  border: 2px solid #e94f86;
+}
 .pgprogram_region .slide_05 .main__center-text .social.social__ok {
   background-image: url("../img/social_ok_g.png");
   background-repeat: no-repeat;
   background-position: center;
   margin: 0px 8px;
   border: 2px solid #e9e9e9;
+}
+.pgprogram_region .slide_05 .main__center-text .social.social__ok:hover {
+  background-image: url("../img/social_ok_b.png");
+  border: 2px solid #e94f86;
 }
 .pgprogram_region .footer {
   display: none;

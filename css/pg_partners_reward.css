@@ -151,7 +151,7 @@
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  width: 80%;
+  width: 100%;
   height: 60%;
   text-align: left;
   padding-left: 40px;
@@ -179,6 +179,13 @@
 .pgpartners_reward .slide_01 .center .footer1 p,
 .pgpartners_reward .slide_02 .center .footer1 p,
 .pgpartners_reward .slide_03 .center .footer1 p {
+  font-size: 10px;
+  line-height: 12px;
+}
+.pgpartners_reward .slide_01 .center .footer1 p br,
+.pgpartners_reward .slide_02 .center .footer1 p br,
+.pgpartners_reward .slide_03 .center .footer1 p br {
+  line-height: 12px;
   font-size: 10px;
 }
 .pgpartners_reward .slide_01 .center .footer1 p a,
@@ -355,6 +362,11 @@
 .pgpartners_rules .main__center div p {
   font-size: 14px;
 }
+.pgpartners_rules .main__center div ol li {
+  font-family: 'PT Serif', serif;
+  font-weight: normal;
+  font-size: 16px;
+}
 .pgpartners_rules .main__center div:nth-child(1) {
   padding-right: 84px;
   width: 70%;
@@ -367,6 +379,7 @@
 }
 .pgpartners_rules .main__center div:nth-child(2) p {
   font-size: 12px;
+  color: #7f8081;
   margin-bottom: 20px;
 }
 .pgpartners_rules .main__center div:nth-child(2) p a {

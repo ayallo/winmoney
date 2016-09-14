@@ -12,7 +12,7 @@
   <div class="main__center">
       <div class="main__center--block">
         <h2>Схема вознаграждения</h2>
-        <p>Вы привлекаете клиентов в Win Money<br>и получате вознагрождение</p>
+        <p class="fs_s16 fs_wbold">Вы привлекаете клиентов в Win Money<br>и получате вознагрождение</p>
         <img src="img/scheme_01.png">
       </div>
       <div class="main__center--block calc">
@@ -20,12 +20,32 @@
           <h2>Рассчет ежедневного дохода партнёра</h2>
           <form method="POST" class="calc_program_agent_reward"><table>
             <tr>
-              <td class="head">Тип торгового счета</td>
-              <td class="head">Спред по паре</td>
+              <td class="head" width="50%">Тип торгового счета</td>
+              <td class="head" width="50%">Спред по паре</td>
             </tr>
             <tr>
-              <td class="select"><select id="sel_1"><option value="0.5">Fix-cent</option><option value="0.8">Fix-cent2</option></select></td>
-              <td class="select"><select id="sel_2"><option value="8">GBPUSD</option><option value="5">GBPRUB</option></select></td>
+              <td class="">
+                <div class="fi_select">
+                  <input type="hidden" name="calctts" value="0.5" id="sel_1">
+                  <div class="tx sel">Fix-cent</div>
+                  <div class="pn">
+                    <div class="it" id="calctts_0.5">Fix-cent</div>
+                    <div class="it" id="calctts_0.8">Fix-cent1</div>
+                    <div class="it" id="calctts_0.9">Fix-cent2</div>
+                  </div>
+                </div>
+              </td>
+              <td class="">
+                <div class="fi_select">
+                  <input type="hidden" name="calctts" value="8" id="sel_2">
+                  <div class="tx sel">GBPUSD</div>
+                  <div class="pn">
+                    <div class="it" id="calctts_8">GBPUSD</div>
+                    <div class="it" id="calctts_1">GBPRUB</div>
+                    <div class="it" id="calctts_1.5">GBPEUR</div>
+                  </div>
+                </div>
+              </td>
             </tr>
             <tr>
               <td colspan="2" class="head">Количество клиентов</td>
