@@ -6,7 +6,8 @@
 <script src="js/masked.js"></script>
 
 <script type="text/javascript" src="js/tablesorter/jquery.tablesorter.js"></script>
-<script src="js/nicescroll/jquery.nicescroll.js"></script>
+<!-- <script src="js/nicescroll/jquery.nicescroll.js"></script> -->
+<script src="js/jquery.scrollbar/jquery.scrollbar.min.js"></script>
 <!--script src="js/jquery.paralax/jquery.parallax-0.2-min.js"></script-->
 <script src="js/parallax-master/deploy/jquery.parallax.js"></script>
 <script type="text/javascript">
@@ -133,7 +134,7 @@
             $('.c-hamburger').addClass('is-active');
           }else{
             $("body").css("overflow","auto");
-            $(".fly__menu").hide().css({"opacity":"0","margin-left":"-200px"}).stop().fadeOut(100, 0);
+            $(".fly__menu").hide().css({"opacity":"0","margin-left":"-2000px"}).stop().fadeOut(100, 0);
             $('.c-hamburger').removeClass('is-active');
           }
         });
@@ -142,7 +143,8 @@
           }else{
             $('.c-hamburger').removeClass('is-active');
             $("body").css("overflow","auto");
-            $(".fly__menu").hide().css({"opacity":"0","margin-left":"-200px"}).stop().fadeTo(100, 0);
+            //$(".fly__menu").hide().css({"opacity":"0","margin-left":"-200px"}).stop().fadeTo(100, 0);
+            $(".fly__menu").hide().css({"opacity":"0","margin-left":"-2000px"}).stop().fadeOut(100, 0);
           }
         });
 
@@ -188,15 +190,18 @@
           $("body").css("overflow","auto");
         });
         /*скроллинг правой и левой панели*/
-        $('.feedbackbdody1').niceScroll('.feedback_scroll', {
-          cursorcolor: '#000', cursorwidth: 2,
+        /*$('.feedbackbdody1').niceScroll('.feedback_scroll', {
+          cursorcolor: '#000', cursorwidth: 2,horizrailenabled:false,
         });
         $('.faqbody').niceScroll('.faqbody_scroll', {
-          cursorcolor: '#000', cursorwidth: 2,
+          cursorcolor: '#000', cursorwidth: 2,horizrailenabled:false,
         });
         $('.niceScroll_lm1').niceScroll('.niceScroll_lm2', {
-          cursorcolor: '#000', cursorwidth: 2,
-        });
+          cursorcolor: '#000', cursorwidth: 2,horizrailenabled:false,
+        });*/
+
+        /* scrollbar */
+        $('.scrollbar-other').scrollbar();
 
         /*закрытие левой и правой панелей*/
         $('.fly__calculator-panel').click(function(){

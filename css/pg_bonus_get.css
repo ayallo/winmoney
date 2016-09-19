@@ -123,12 +123,13 @@ a .getbonus {
   color: #4c4d4f;
   font-size: 48px;
   margin-bottom: 30px;
+  text-align: center;
 }
 .pgbonus_get .slcont-slide.slide_04 p {
   color: #4c4d4f;
   font-weight: bold;
-  font-size: 18px;
-  margin-bottom: 40px;
+  font-size: 16px;
+  margin-bottom: 100px;
   text-align: center;
 }
 .pgbonus_get .slcont-slide.slide_04 table {
@@ -148,6 +149,8 @@ a .getbonus {
   height: 70px;
   float: left;
   padding: 11px;
+  padding-top: 6px;
+  padding-right: 6px;
 }
 .pgbonus_get .slcont-slide.slide_04 table td img {
   margin: 0 auto;
@@ -325,6 +328,11 @@ a .getbonus {
 .pgbonus_get .slcont-slide.slide_07 {
   padding: 80px 160px;
   padding-top: 150px;
+  width: 1100px;
+  margin: 0 auto;
+}
+.pgbonus_get .slcont-slide.slide_07 .marrig {
+  padding-right: 230px;
 }
 .pgbonus_get .slcont-slide.slide_07 .mt150 {
   margin-top: 150px;

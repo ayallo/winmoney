@@ -98,9 +98,11 @@
   }
 }
 .pgnews_all{
-  & .column_2{ margin-top:50px; }
   & .column_2{/*блок из 2х колонок*/
+    margin-top:50px;
+    width:1000px;
     & .col.news_all{
+      width:620px;
       &.hover{
         & .item{
           &.hover{
@@ -162,6 +164,9 @@
         }
       }
     }
+    & div:nth-child(2){
+      width:380px;
+    }
   }
 }
 .pgnews_one{
@@ -195,6 +200,7 @@
     display: flex;
     flex-direction: column;
     &.video{
+      width:740px;
       & .item-half{
         display: flex;
         flex-direction: row;
@@ -266,6 +272,9 @@
           }
         }
       }
+    }
+    &.w_30{
+      width:400px;
     }
   }
   & .video_div{
@@ -418,11 +427,10 @@
 }
 //страница analytics_articles
 .pganalytics_articles{
-  & .column_2{
-    margin-top:50px;
-  }
   & .w_30{ width:400px; }
   & .column_2{/*блок из 2х колонок*/
+    margin-top:50px;
+    width:1000px;
     & .col.articles{
       & .item{
         & img {

@@ -444,10 +444,10 @@
 }
 .pgprogramagent .swiper-container .swiper-wrapper .swiper-slide.slide_pgprogramagent {
   background-image: url('../img/pgprogramagent_back.jpg');
-  -webkit-background-size: 120% 120%;
-     -moz-background-size: 120% 120%;
-       -o-background-size: 120% 120%;
-          background-size: 120% 120%;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
   overflow: hidden;
 }
 .pgprogramagent .swiper-container .swiper-wrapper .swiper-slide.slide_pgprogramagent .slide_01_paralax_top {
@@ -469,9 +469,14 @@
 }
 .pgprogramagent .slide .centerblock {
   z-index: 2;
+  width: 1140px;
+}
+.pgprogramagent .slide .centerblock .mainpage {
+  width: 611px;
 }
 .pgprogramagent .slide .centerblock .mainpage h2 {
   color: #ffffff;
+  margin-bottom: 50px;
 }
 .pgprogramagent .footer {
   display: none;

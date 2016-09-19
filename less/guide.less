@@ -74,7 +74,9 @@ a .head__but{
   &--htx {
     background-color: transparent;
     & span {
-      transition: background 0s 0.3s;
+      transition-duration: 0.3s, 0.3s;
+      transition-delay: 0.3s, 0s;
+      transition-property: top, transform;
     }
     & span::before,& span::after {
       transition-duration: 0.3s, 0.3s;

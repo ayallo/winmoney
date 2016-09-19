@@ -13,13 +13,20 @@
           $(".main__menu").hide();
           $(".footer").hide();
           //$(".myslide_nav > a").removeClass("act");
+          if (e.activeIndex==0) {
+            //$(".getbonus").show();
+          }
           if (e.activeIndex>=1) {
               $(".getbonus").show();
               $(".head__nav").addClass("sfonom");
               $(".main__menu").show();
           }
-          if(e.activeIndex==1){ $("#myslideTo_1").addClass("act"); }
-          if(e.activeIndex==2){ $(".footer").css({"display":"flex"}); }
+          if(e.activeIndex==1){
+            $("#myslideTo_1").addClass("act");
+          }
+          if(e.activeIndex==2){
+            $(".footer").css({"display":"flex"});
+          }
       });
     });
 </script>
