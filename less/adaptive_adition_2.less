@@ -1,0 +1,245 @@
+@font-face {
+    font-family: 'Open Sans Light';
+    src: url(../fonts/OpenSans-Light.ttf);
+}
+
+.pgprogramagent .slide .centerblock {
+
+    width: 80%;
+    display: flex;
+    align-items: center !important;
+    padding: 0;
+
+     .mainpage {
+        width: 620px;
+        text-align: left;
+        margin: 0;
+    }
+}
+
+.pgprogramagent .slide-zarabotok {
+
+    position: relative;
+    width: 900px;
+    height: 50%;
+    background-image: url('/img/partnersprogram_01.png');
+    background-repeat: no-repeat;
+    background-position-x: 110%;
+    background-position-y: 20px;
+    background-size: contain;
+    margin-top: 70px;
+    max-height: 430px;
+
+    .zarabotok-title {
+        width: 61%;
+    }
+    .zarabotok-title h2 {
+        font: 48px/66px 'Open Sans Light';
+        letter-spacing: 0.01em;
+        margin-bottom: 20px;
+    }
+    .zarabotok-text {
+        width: 42%;
+    }
+    .zarabotok-text p {
+        font-weight: normal;
+    }
+    p.bullet {
+        margin-bottom: 50px;
+    }
+}
+
+/* второй слайд */
+.pgprogramagent .slide-zarabotok.zarabotok2 {
+    background-image:url('/img/partnersprogram_02.png');
+    background-position-x: 116%;
+    background-position-y: 12px;
+    .zarabotok-title p {
+        width: 75%;
+    }
+    a {
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+}
+/*  слайд "мы поможем вам" */
+.pgprogramagent .slide-help {
+    background-image:url('/img/partnersprogram_03.png');
+    background-repeat: no-repeat;
+    background-size: 35%;
+    background-position-x: 100%;
+    background-position-y: 100%;
+
+    .slide-zarabotok.help {
+        background-image: none;
+    }
+    .zarabotok-title p {
+        width: 90% !important;
+    }
+}
+
+.pgprogramagent .lastsslide {
+    flex-direction: column;
+    padding: 0;
+
+    .agent-container {
+        width: 900px;
+        margin-top: 70px;
+    }
+    .agent-wrapper {
+        width: 67%;
+    }
+    .agent-wrapper h2 {
+        font: 48px/66px 'Open Sans Light';
+        letter-spacing: 0.01em;
+        margin-bottom: 20px;
+    }
+    .get_partners {
+        margin-bottom: 0;
+    }
+}
+
+.pgprogramagent .slide .centerblock_540 {
+    margin-top: 0;
+}
+
+.pgprogramagent .slide.lastsslide .centerblock_540 {
+    padding-top: 0 !important;
+}
+
+@media (max-width: 768px) {
+    .pgprogramagent {
+        .slide .centerblock .mainpage h2 {
+            font-size: 2em;
+        }
+        .slide-zarabotok {
+            background-size: 52%;
+        }
+        .slide-zarabotok .zarabotok-title {
+            width: auto;
+        }
+        .slide-zarabotok .zarabotok-title p,
+        .slide-zarabotok .zarabotok-text {
+            width: 60%;
+        }
+
+        .lastsslide .agent-wrapper {
+            width: 100%;
+            h2 {
+                font: 48px/50px 'Open Sans Light';
+            }
+            p {
+                margin-bottom: 40px;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .pgprogramagent {
+        .slide .centerblock {
+            width: 90%;
+        }
+        .slide .centerblock .mainpage h2 {
+            font-size: 1.3em;
+        }
+        .slide-zarabotok,
+        .slide-help {
+            background-image: none !important;
+        }
+        .slide-zarabotok .zarabotok-title,
+        .slide-zarabotok .zarabotok-title p {
+            width: 90%;
+        }
+        .slide-zarabotok .zarabotok-text {
+            width: 95%;
+        }
+
+        .lastsslide .agent-wrapper {
+            h2 {
+                font: 36px/50px 'Open Sans Light';
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+/* слайд "мы поможем вам" */
+@media (max-width: 425px) {
+    .pgprogramagent {
+        .slide-zarabotok .zarabotok-title {
+            width: 100%;
+        }
+        .zarabotok-title h2 {
+            font: 32px/44px 'Open Sans Light' !important;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .pgprogramagent .slide .centerblock {
+
+        flex-direction: row;
+
+        .mainpage h2 {
+            font-size: 1.1em;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        .zarabotok-title h2 {
+            margin-left: 0;
+        }
+        .zarabotok-title p {
+            font-size: 14px;
+            margin-left: 0;
+            margin-bottom: 40px;
+        }
+        p.bullet {
+            font-size: initial;
+            margin-left: 50px;
+            margin-bottom: 40px;
+        }
+        .zarabotok-text p {
+            font-size: 14px;
+        }
+    }
+    .pgprogramagent .slide-zarabotok {
+        margin-top: 20px;
+    }
+
+     .agent-container {
+         width: 100% !important;
+     }
+
+    .agent-wrapper h2 {
+        margin: 10px 0 10px 0 !important;
+        font: 22px/34px 'Open Sans Light' !important;
+    }
+    .agent-wrapper p {
+        font-size: 13px !important;
+        margin: 0 !important;
+    }
+
+    .agent-wrapper .get_partners input {
+        width: auto;
+        margin: 10px 0 16px 0;
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 980px) {
+    .pgprogram_agent_rules .main__center {
+        width: auto !important;
+    }
+    .pgprogram_agent_rules .main__center div:nth-child(1) {
+        padding-right: 10px;
+    }
+    .pgprogram_agent_rules .main__center div:nth-child(2) {
+        margin: 0 auto 50px auto;
+    }
+    .pgprogram_agent_rules .main__center div:nth-child(2) a {
+        margin-left: 45px;
+    }
+}

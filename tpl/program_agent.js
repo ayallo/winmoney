@@ -19,8 +19,12 @@
         });
       }else{
         var posSlide_02 = $('.slide_02').offset();
+        $('.pgindex').css({'height':'initial'});
+        $('.slide_01').css({'height':+$(window).height()});
+        $('.swiper-container_ind').css({'overflow':'auto'});
         window.onscroll = function() {
           var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+          //console.log(scrolled+"="+posSlide_02.top );
           if( scrolled > posSlide_02.top ){
             $(".head__nav").addClass("sfonom");
           }else {
@@ -28,6 +32,14 @@
           }
         }
       }
+        //
+        // var swiper_container_ind_free = new Swiper('.swiper-container_ind_free', {
+        //     scrollbar: '.swiper-scrollbar',
+        //     direction: 'vertical',
+        //     slidesPerView: 'auto',
+        //     mousewheelControl: true,
+        //     freeMode: true
+        // });
     }
     if (($(".swiper-container_abo").length > 0)){/*тут после последнего слайда идет текст*/
       //$('body,html').animate({scrollTop: 0}, 1);
@@ -102,7 +114,7 @@
         direction: 'vertical',
         loop: false,
         mousewheelControl: true,
-        slidesPerView: 'auto',
+        slidesPerView: 1,
       });
       program_agent_Swiper.on('slideChangeStart', function (e) {
           $(".head__nav").removeClass("sfonom");

@@ -1,0 +1,159 @@
+.pgindex .slide_01 .main__footer .index_clients_01,
+.pgindex .slide_01 .main__footer .index_clients_02,
+.pgindex .slide_01 .main__footer .index_clients_03,
+.pgindex .slide_01 .main__footer .index_clients_04 {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+              -ms-grid-row-align: center;
+          align-items: center;
+}
+.slide .centerblock {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.pganalytics_video .col.video .item {
+  width: 100%;
+  padding-left: 13px;
+  padding-right: 13px;
+}
+.pgprogramagent .main__menu .myslide_nav a.act,
+.pgprogram_cpa .main__menu .myslide_nav a.act,
+.pgprogram_region .main__menu .myslide_nav a.act,
+.pgabout_inworld .main__menu .myslide_nav a.act,
+.pgpartners_internet .main__menu .myslide_nav a.act,
+.pgprogramagent .main__menu .myslide_nav a:hover,
+.pgprogram_cpa .main__menu .myslide_nav a:hover,
+.pgprogram_region .main__menu .myslide_nav a:hover,
+.pgabout_inworld .main__menu .myslide_nav a:hover,
+.pgpartners_internet .main__menu .myslide_nav a:hover {
+  white-space: nowrap;
+}
+.head__right-wrapr {
+  margin-top: 0;
+}
+.head__right-wrapr a {
+  height: 30px;
+}
+@media (max-width: 1200px) {
+  .column_4 .col .item,
+  .column_4 .col .head {
+    padding-left: 0;
+  }
+}
+@media (max-width: 980px) {
+  .content .main {
+    width: 100%;
+  }
+  .head__right {
+    width: 100%;
+  }
+  .pgindex .slide_01 .main {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100%;
+  }
+  .pgindex .slide_01 .main__center {
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 60px;
+  }
+  .pgindex .slide_01 .main__center-text input {
+    margin: 20px 0;
+    width: 100%;
+    max-width: 320px;
+  }
+}
+@media (max-width: 749px) {
+  .head__left {
+    width: 70px;
+    -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+            flex-shrink: 0;
+  }
+}
+@media (max-width: 768px) {
+  .head__logo {
+    display: block;
+    width: 120px;
+    background-position: left center;
+  }
+  .head__right {
+    width: 100%;
+  }
+}
+@media (max-width: 470px) {
+  .column_2 .col .item,
+  .column_2 .col .head {
+    padding-left: 0;
+  }
+  .column_2 .col .item.banner,
+  .column_2 .col .item.idei,
+  .column_2 .col .item.awebinars,
+  .column_2 .col .item.subscribe {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .head__logo {
+    display: none;
+  }
+  .head__left {
+    width: 62px;
+  }
+}
+.head__right-wrapr-r01,
+.head__right-wrapr-r02,
+.head__right-wrapr-r03 {
+  margin-top: 0;
+}
+/* Adaptive */
+@media screen and (max-width: 400px) {
+  .pgindex .slide_01 {
+    height: 100%;
+  }
+  .pganalytics_video .col.video {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .pgprogramagent .main__menu,
+  .pgprogram_cpa .main__menu,
+  .pgprogram_region .main__menu,
+  .pgabout_inworld .main__menu,
+  .pgpartners_internet .main__menu {
+    padding-top: 12px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .head__tel {
+    display: none;
+  }
+}
+@media screen and (max-width: 979px) and (min-width: 750px) {
+  .head__right {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 560px) {
+  .column_2 {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 560px) and (min-width: 401px) {
+  .pgpartners .slcont-slide.slide_01 .main__center {
+    margin: 0 20px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .pgpartners .slcont-slide.slide_01 .main__center {
+    margin: 0 20px;
+  }
+}

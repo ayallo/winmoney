@@ -145,6 +145,10 @@
 .pgabout .menu-global {
   border-top: 2px solid #2675eb;
 }
+.pgabout .slide .centerblock.afterslides img {
+  position: relative;
+  left: -65px;
+}
 .pgprogramagent,
 .pgprogram_cpa,
 .pgprogram_region,
@@ -506,10 +510,10 @@
 }
 .pgabout .swiper-container_abo .swiper-wrapper .swiper-slide.slide_pgabout {
   background-image: url('../img/about_bg.jpg');
-  -webkit-background-size: 120% 120%;
-     -moz-background-size: 120% 120%;
-       -o-background-size: 120% 120%;
-          background-size: 120% 120%;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
   overflow: hidden;
 }
 .pgabout .swiper-container_abo .swiper-wrapper .swiper-slide.slide_pgabout .slide_01_paralax_top {
