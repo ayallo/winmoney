@@ -22,6 +22,15 @@
   .head__but {
     display: none;
   }
+  .slide .centerblock p.bullet {
+    margin-bottom: 10px;
+  }
+  .slide .centerblock.slide-form {
+    padding-top: 200px!important;
+  }
+  .slide .centerblock_540 {
+    margin-top: 50px;
+  }
 }
 @media screen and (min-width: 980px) and (max-width: 1199px) {
   .pgaccounts .main {
@@ -714,6 +723,15 @@
   }
   .nav {
     display: none;
+  }
+  .head__left {
+    width: 40%;
+  }
+  .head__logo {
+    width: 10%;
+  }
+  .head__right {
+    width: 65%;
   }
   .head__tel {
     display: none;
@@ -1422,6 +1440,15 @@
   }
   .nav {
     display: none;
+  }
+  .head__left {
+    width: 10%;
+  }
+  .head__logo {
+    width: 10%;
+  }
+  .head__right {
+    width: 65%;
   }
   .head__tel {
     display: none;
@@ -2132,6 +2159,15 @@
   }
   .nav {
     display: none;
+  }
+  .head__left {
+    width: 0%;
+  }
+  .head__logo {
+    width: 0%;
+  }
+  .head__right {
+    width: 80%;
   }
   .head__tel {
     display: none;
@@ -3297,7 +3333,8 @@
   .slide_02 .center div img,
   .slide_03 .center div img,
   .slide_04 .center div img {
-    width: 60px!important;
+    /*width: 60px!important;*/
+    display: none;
   }
   .pgabout_inworld .myslide_nav a,
   .pgabout_buisness .myslide_nav a,
@@ -3955,6 +3992,13 @@
     width: 100%;
     height: 380px;
   }
+  .pgprogramagent .main__menu,
+  .pgprogram_cpa .main__menu,
+  .pgprogram_region .main__menu,
+  .pgabout_inworld .main__menu,
+  .pgpartners_internet .main__menu {
+    padding-top: 0px;
+  }
   .pgprogramagent.pgsfonom {
     -webkit-background-size: inherit inherit;
        -moz-background-size: inherit;
@@ -3997,6 +4041,31 @@
   }
   .pgprogramagent .slide .centerblock {
     width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .pgprogramagent .slide .centerblock .divleft,
+  .pgprogramagent .slide .centerblock .divright {
+    width: 100%;
+    padding: 10px;
+  }
+  .pgprogramagent .slide .centerblock .divleft h2,
+  .pgprogramagent .slide .centerblock .divright h2 {
+    font-size: 22px;
+  }
+  .pgprogramagent .slide .centerblock .divleft p,
+  .pgprogramagent .slide .centerblock .divright p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .pgprogramagent .slide .centerblock .divleft img,
+  .pgprogramagent .slide .centerblock .divright img {
+    display: none;
   }
   .pgprogramagent .slide .centerblock .mainpage {
     width: 90%;
@@ -4006,6 +4075,25 @@
     margin: 10px;
     font-size: 28px;
     margin-bottom: 50px;
+  }
+  .pgprogramagent .slide .centerblock h2 {
+    margin: 10px;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .pgprogramagent .slide .centerblock p {
+    font-size: 12px;
+    margin: 10px;
+  }
+  .pgprogramagent .slide .centerblock .get_partners {
+    margin: 2px;
+  }
+  .pgprogramagent .slide .centerblock_540 {
+    padding-right: 10px;
+  }
+  .pgprogramagent .slide.lastsslide .centerblock_540 {
+    height: 100%;
+    padding-top: 210px!important;
   }
   .pgprogramagent .slide_05 .main {
     width: 98%;
@@ -4029,6 +4117,12 @@
     margin: 10px 0px;
     width: 95%;
     border-bottom: 1px solid #2675eb;
+  }
+  .pgprogramagent .fonimg {
+    display: none;
+  }
+  .pgprogramagent .lastsslide {
+    padding-top: 35px;
   }
   .pgprogram_agent_reward {
     /*добавлял 040916*/
@@ -4282,7 +4376,10 @@
             align-items: flex-start;
   }
   .slide .centerblock_540 {
-    margin-top: 50px;
+    margin-top: 10px;
+  }
+  .social {
+    margin: 0px 2px!important;
   }
   .fly__menu .left .menu-footer .tel {
     width: initial!important;

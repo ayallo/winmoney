@@ -371,7 +371,7 @@ a.syl_arrowa_left:hover::before {
   background-repeat: no-repeat;
   width: 10px;
   height: 10px;
-  top: 45px;
+  top: 7px;
   left: -14px;
   margin-top: -4px;
   z-index: 51;
@@ -383,7 +383,7 @@ a.syl_arrowa_left:hover::before {
   background-repeat: no-repeat;
   width: 10px;
   height: 10px;
-  top: 50%;
+  top: 7px;
   left: -14px;
   margin-top: -4px;
   z-index: 51;

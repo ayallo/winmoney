@@ -25,6 +25,12 @@
     });
   }
 })();
+jQuery(document).ready(function(){
+  /* scrollbar */
+  $('.scrollbar-other').scrollbar({
+      "ignoreMobile": false
+  });
+});
   $(function () {
     /*календарь*/
     $('.datepicker_button').click(function(){
@@ -200,8 +206,7 @@
           cursorcolor: '#000', cursorwidth: 2,horizrailenabled:false,
         });*/
 
-        /* scrollbar */
-        $('.scrollbar-other').scrollbar();
+
 
         /*закрытие левой и правой панелей*/
         $('.fly__calculator-panel').click(function(){

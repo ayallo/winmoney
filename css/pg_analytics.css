@@ -309,7 +309,7 @@
   content: "";
   background: none;
 }
-.pgnews_all .column_2 div:nth-child(2) {
+.pgnews_all .column_2 .col.col_right {
   width: 380px;
 }
 .pgnews_one .column_2 {

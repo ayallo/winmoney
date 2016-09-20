@@ -430,6 +430,9 @@
 .pgpartners_internet .slide .centerblock .mainpage h2 {
   color: #ffffff;
 }
+.pgpartners_internet .slide .centerblock.slide-form {
+  padding-top: 300px;
+}
 .pgpartners_internet .footer {
   display: none;
 }
@@ -467,9 +470,16 @@
   right: -5% !important;
   z-index: 1;
 }
+.pgprogramagent .slide {
+  /*margin-top: 70px;*/
+  height: 100%;
+}
+.pgprogramagent .slide.sfonom {
+  margin-top: 0px;
+}
 .pgprogramagent .slide .centerblock {
   z-index: 2;
-  width: 1140px;
+  /*width:1140px;*/
 }
 .pgprogramagent .slide .centerblock .mainpage {
   width: 611px;
@@ -477,6 +487,10 @@
 .pgprogramagent .slide .centerblock .mainpage h2 {
   color: #ffffff;
   margin-bottom: 50px;
+}
+.pgprogramagent .slide .centerblock_540 {
+  /*padding-right: 450px;*/
+  /*margin-top: 0px;*/
 }
 .pgprogramagent .footer {
   display: none;

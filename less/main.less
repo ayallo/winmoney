@@ -48,6 +48,11 @@ a .getbonus,a .openschet {
     color: #fff!important;
 }
 
+.scrollbar-other{
+  height: 100%;
+  overflow: auto;
+  overflow-x: hidden;
+}
 .slide_01__center-chat {
     position: absolute;
     right: 20px;
@@ -314,7 +319,7 @@ a .getbonus,a .openschet {
                             padding-top: 28px;
                         }
                         & .btn_close_left {
-                            padding: 37px 0;
+                            margin: 37px 0;
                         }
                     }
                     & .feedbackbdody1 {
@@ -441,7 +446,7 @@ a .getbonus,a .openschet {
                         }
 
                         & .btn_close_left {
-                            padding: 37px 0;
+                            margin: 37px 0;
                         }
                     }
 
@@ -564,9 +569,9 @@ a .getbonus,a .openschet {
         overflow: auto;
         height: 100%;
         padding-bottom: 60px;
-        width: 620px;*/
+        width: 620px;
         padding-left: 80px;
-        padding-top: 80px;
+        padding-top: 80px;*/
         height: 100%;
       }
         & .menu {
@@ -1172,126 +1177,116 @@ a .getbonus,a .openschet {
     }
 }
 
+.pgcontracts .content.main{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
 .main {
     background-color: #f5f5f5;
 
     &__left {
         width: 26%;
         float: left;
-
         & h2 {
-            font-weight: lighter;
-            font-size: 20px;
-            margin-left: 76px;
-            margin-top: 23px;
-            margin-bottom: 20px;
-            letter-spacing: 0.008em;
+          font-weight: lighter;
+          font-size: 20px;
+          margin-left: 76px;
+          margin-top: 23px;
+          margin-bottom: 20px;
+          letter-spacing: 0.008em;
         }
-
         &--menu {
             margin-left: 94px;
-
             &--item {
+              font-size: 16px;
+              position: relative;
+              margin: 8px 0;
+              & a {
+                color: #2675eb;
+                text-decoration: none;
+                font-weight: bold;
                 font-size: 16px;
-                position: relative;
-                margin: 8px 0;
-
-                & a {
-                    color: #2675eb;
-                    text-decoration: none;
-                    font-weight: bold;
-                    font-size: 16px;
-
-                    &:active {
-                        color: @color_gray2_7f8081;
-                        text-decoration: none;
-                        font-weight: bold;
-                    }
-
-                    &:hover {
-                        color: @color_red_e94f86;
-                        text-decoration: none;
-                        font-weight: bold;
-                    }
+                &:active {
+                  color: @color_gray2_7f8081;
+                  text-decoration: none;
+                  font-weight: bold;
                 }
-
-                &.ts_standart {
-                    padding: 10px 10px 10px 30px;
-
-                    &::before {
-                        content: "";
-                        background: url('../img/ts_standart.png') no-repeat;
-                        width: 23px;
-                        height: 30px;
-                        position: absolute;
-                        left: -16px;
-                        top: 4px;
-                    }
-
-                    &:hover::before {
-                        content: "";
-                        background: url('../img/ts_standart_h.png') no-repeat;
-                        width: 23px;
-                        height: 30px;
-                        position: absolute;
-                        left: -16px;
-                        top: 4px;
-                    }
-
-                    &.act::before,
-                    &:active::before {
-                        content: "";
-                        background: url('../img/ts_standart_a.png') no-repeat;
-                        width: 23px;
-                        height: 30px;
-                        position: absolute;
-                        left: -16px;
-                        top: 4px;
-                    }
-
-                    &.act a {
-                        color: @color_gray2_7f8081;
-                    }
+                &:hover {
+                  color: @color_red_e94f86;
+                  text-decoration: none;
+                  font-weight: bold;
                 }
-
-                &.ts_centovye {
-                    padding: 10px 10px 10px 30px;
-
-                    &::before {
-                        content: "";
-                        background: url('../img/ts_centovye.png') no-repeat;
-                        width: 23px;
-                        height: 30px;
-                        position: absolute;
-                        left: -16px;
-                        top: 4px;
-                    }
-
-                    &:hover::before {
-                        content: "";
-                        background: url('../img/ts_centovye_h.png') no-repeat;
-                        width: 23px;
-                        height: 30px;
-                        position: absolute;
-                        left: -16px;
-                        top: 4px;
-                    }
-
-                    &.act::before,
-                    &:active::before {
-                        content: "";
-                        background: url('../img/ts_centovye_a.png') no-repeat;
-                        width: 23px;
-                        height: 30px;
-                        position: absolute;
-                        left: -16px;
-                        top: 4px;
-                    }
-
-                    &.act a {
-                        color: @color_gray2_7f8081;
-                    }
+              }
+              &.ts_standart {
+                padding: 10px 10px 10px 30px;
+                &::before {
+                  content: "";
+                  background: url('../img/ts_standart.png') no-repeat;
+                  width: 23px;
+                  height: 30px;
+                  position: absolute;
+                  left: -16px;
+                  top: 4px;
                 }
+                &:hover::before {
+                  content: "";
+                  background: url('../img/ts_standart_h.png') no-repeat;
+                  width: 23px;
+                  height: 30px;
+                  position: absolute;
+                  left: -16px;
+                  top: 4px;
+                }
+                &.act::before,
+                &:active::before {
+                  content: "";
+                  background: url('../img/ts_standart_a.png') no-repeat;
+                  width: 23px;
+                  height: 30px;
+                  position: absolute;
+                  left: -16px;
+                  top: 4px;
+                }
+                &.act a {
+                  color: @color_gray2_7f8081;
+                }
+              }
+              &.ts_centovye {
+                padding: 10px 10px 10px 30px;
+                &::before {
+                  content: "";
+                  background: url('../img/ts_centovye.png') no-repeat;
+                  width: 23px;
+                  height: 30px;
+                  position: absolute;
+                  left: -16px;
+                  top: 4px;
+                }
+                &:hover::before {
+                  content: "";
+                  background: url('../img/ts_centovye_h.png') no-repeat;
+                  width: 23px;
+                  height: 30px;
+                  position: absolute;
+                  left: -16px;
+                  top: 4px;
+                }
+                &.act::before,
+                &:active::before {
+                  content: "";
+                  background: url('../img/ts_centovye_a.png') no-repeat;
+                  width: 23px;
+                  height: 30px;
+                  position: absolute;
+                  left: -16px;
+                  top: 4px;
+                }
+                &.act a {
+                  color: @color_gray2_7f8081;
+                }
+              }
 
                 &.ts_affiliate {
                     padding: 10px 10px 10px 30px;

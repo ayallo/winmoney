@@ -48,6 +48,11 @@ a .openschet {
   font-weight: bold;
   color: #fff!important;
 }
+.scrollbar-other {
+  height: 100%;
+  overflow: auto;
+  overflow-x: hidden;
+}
 .slide_01__center-chat {
   position: absolute;
   right: 20px;
@@ -416,7 +421,7 @@ a .openschet {
 }
 .fly__chat-panel .right-wrap .feedbackpanel .feedbackhead .btn_close_left,
 .fly__feedback-panel .right-wrap .feedbackpanel .feedbackhead .btn_close_left {
-  padding: 37px 0;
+  margin: 37px 0;
 }
 .fly__chat-panel .right-wrap .feedbackpanel .feedbackbdody1,
 .fly__feedback-panel .right-wrap .feedbackpanel .feedbackbdody1 {
@@ -591,7 +596,7 @@ a .openschet {
 }
 .fly__chat-panel .right-wrap .faqpanel .faqhead .btn_close_left,
 .fly__feedback-panel .right-wrap .faqpanel .faqhead .btn_close_left {
-  padding: 37px 0;
+  margin: 37px 0;
 }
 .fly__chat-panel .right-wrap .faqpanel .faqbody,
 .fly__feedback-panel .right-wrap .faqpanel .faqbody {
@@ -753,9 +758,9 @@ a .openschet {
         overflow: auto;
         height: 100%;
         padding-bottom: 60px;
-        width: 620px;*/
-  padding-left: 80px;
-  padding-top: 80px;
+        width: 620px;
+        padding-left: 80px;
+        padding-top: 80px;*/
   height: 100%;
 }
 .fly__menu .left .menu-main {
@@ -1472,6 +1477,30 @@ a .openschet {
 }
 .menu__item {
   margin: 20px;
+}
+.pgcontracts .content.main {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+     -moz-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .main {
   background-color: #f5f5f5;
