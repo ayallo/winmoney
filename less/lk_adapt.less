@@ -1,4 +1,5 @@
-@media screen and (min-width: 401px) and (max-width: 1024px) {
+//@media screen and (min-width: 401px) and (max-width: 1024px) {
+@media screen and (max-width: 1146px) {
   .head{
     &__left_text{
       display:none;
@@ -11,6 +12,13 @@
       }
     }
   }
+  .pg_account{
+    .paddingl_80 {
+      padding-left: 40px;
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
   .button{
     /*padding: 2px 12px;
     margin: 0px 0px;*/
@@ -24,6 +32,136 @@
   }
   .copy-md{
     display: none;
+  }
+  #modal{
+    &_payment .modal-dialog .modal-content{
+      width: 360px;
+      height: 82%; //480px;
+      overflow: auto;
+      padding: 20px 0px;
+    }
+    &_registration .modal-dialog .modal-content{
+      width: 360px;
+      height: 82%;//700px;
+      overflow: auto;
+      padding: 20px 0px;
+    }
+  }
+  .body_page .block.bl_blue .divtext input{
+    width:99%;
+  }
+  .show_hover{
+    display: block;
+    & a{
+      font-size: 10px!important;
+      & span{
+        font-size: 8px!important;
+      }
+    }
+  }
+  .pg_account{
+    .paddingl_80 {
+      padding-left: 10px;
+    }
+  }
+
+  .tablediv01{
+    background-color: #fff;
+    & .tablediv01_tr_td_head{
+      display: block;
+    }
+    & div{
+
+    }
+    &_head{
+      display: none;
+    }
+  }
+  .fly__profile{
+    & .right{
+      flex-direction: column;
+      & .profile{
+        &-menu{
+          width:100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center;
+          background-color: #f5f5f5;
+          padding:0px;
+          padding-left: 20px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 570px) {
+  .fly__profile{
+    & .right{
+      flex-direction: column;
+      width: 100%;
+      & .profile{
+        &-body{
+          width:100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: center;
+          & .profile-body-form{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;;
+            align-items: flex-start;
+            height: 100%;
+            padding-top: 40px;
+            padding-left: 45px;
+            width: 380px;
+            & .row{
+              width:100%;
+              height:46px;
+              & .col-xs-4{
+                padding-top: 5px;
+              }
+              & .col-xs-8{
+                &.edt{
+                  color:#2675eb;
+                  & img{
+                    float:left;
+                  }
+                }
+              }
+            }
+            & .in_profile_pass_p{
+              box-shadow: 0px 0px 64px #dfdfdf;
+              padding:10px;
+              margin-left: 30px;
+              & div{
+                display: flex;
+                flex-direction: row;
+                & input{
+                  margin:10px;
+                }
+                & .fi_input_sm{
+                  font-size: 10px;
+                  font-weight: bold;
+                  color:#a8a8a8;
+                }
+                &.last_div{
+                  margin-top: 40px;
+                }
+              }
+            }
+          }
+          & .profile-body-foto-but{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            align-content: space-between;
+          }
+        }
+      }
+    }
   }
 }
 @media screen and (max-width: 400px) {
@@ -52,5 +190,66 @@
   }
   .copy-md{
     display: none;
+  }
+  #modal{
+    &_payment .modal-dialog .modal-content{
+      width: 90%;
+      height: 82%; //480px;
+      overflow: auto;
+      padding: 20px 0px;
+    }
+    &_registration .modal-dialog .modal-content{
+      width: 90%;
+      height: 82%;//700px;
+      overflow: auto;
+      padding: 20px 0px;
+    }
+  }
+  .fly__profile{
+    & .right{
+      flex-direction: column;
+      width: 100%;
+      & .profile{
+        &-menu{
+          //padding:0px;
+          & div{
+            & a{
+              font-size: 10px;
+              & img {
+                margin:5px 0px;
+                margin-right: 10px;
+              }
+            }
+          }
+        }
+        &-body{
+          & .profile-body-form{
+            & .row{
+              & .col-xs-4{
+              }
+              & .col-xs-8{
+                &.edt{
+                  & img{}
+                }
+                & input{
+                  width: 83%;
+                }
+              }
+            }
+            & .in_profile_pass_p{
+              z-index:100;
+              margin-left: 0px;
+              background-color: #fff;
+              & div{
+                & input{}
+                & .fi_input_sm{}
+                &.last_div{}
+              }
+            }
+          }
+          & .profile-body-foto-but{}
+        }
+      }
+    }
   }
 }

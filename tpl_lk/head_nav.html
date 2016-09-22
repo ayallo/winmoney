@@ -11,7 +11,7 @@
         <div class="head__logo" style="margin:0 auto;"></div>
       </div>
       <div class="col-xs-4 col-md-5 text-right head__right">
-        <a href="#"><div class="button blue fs_s16 fs_cw">Пополнить счет</div></a>
+        <a href="#"><div class="button blue fs_s16 fs_cw" data-toggle="modal" data-target="#modal_payment">Пополнить счет</div></a>
         <a href="#"><div class="button pink fs_s16 fs_cw">Открыть счет</div></a>
         <a href="#"><div class="head__avatar"><img src="img/avtor_01_big.png"></div></a>
       </div>
@@ -96,7 +96,6 @@
     </div>
   </div>
 </div>
-
 <div class="modal fade" tabindex="-1" role="dialog" id="modal_registration">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -217,6 +216,120 @@
           </div>
         </div>
 
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="fly__menu">
+    <div class="left">
+      <div class="left-menu-head-client">
+        <div><a href="lk.php?p=account"><img src="img/lk/pocket_wallet.png"> Ваши счета</a></div>
+        <div><a href="index.php?p=payments"><img src="img/lk/arrow.png"> Ввод/вывод</a></div>
+        <div><a href="lk.php?p=advertising"><img src="img/lk/case.png"> Партнёры</a></div>
+        <div><a href="lk.php?p=documents"><img src="img/lk/document.png"> Документы</a></div>
+      </div>
+      <!--div class="left-menu-head hide">
+        <a href="/" class="clients act">Клиенты</a>
+        <a href="/?p=partners" class="partners">Партнёры</a>
+      </div-->
+      <div class="scroller" style="">
+        <div class="left-wrap niceScroll_lm1 scrollbar-other">
+          <div class="niceScroll_lm2" style="">
+            <div class="menu-main">
+              <a href="index.php?p=analytics_articles">Аналитика</a>
+              <a href="index.php?p=webinars">Обучение</a>
+              <a href="index.php?p=news_all">Новости</a>
+              <a href="index.php?p=about">О нас</a>
+            </div>
+            <div class="menu-dop">
+              <h3>Клиентские сервисы</h3>
+              <a href="index.php?p=contracts">Спецификация контрактов</a>
+              <a href="index.php?p=payments">Пополнение и снятие</a>
+              <a href="index.php?p=bonus">Бонусы</a>
+              <a href="index.php?p=accounts">Счета</a>
+            </div>
+            <div class="menu-dop">
+              <h3>Партнёрские программы</h3>
+              <a href="index.php?p=program_agent">Партнёр «Агент»</a>
+              <a href="index.php?p=partners_internet">Интернет-партнёр</a>
+              <a href="index.php?p=program_region">Региональный партнёр</a>
+              <a href="index.php?p=program_cpa">CPA</a>
+            </div>
+            <div class="menu-dop">
+              <h3>доп.страницы</h3>
+              <a href="index.php?p=auth">Авторизация</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-footer">
+        <div class="lang">EN</div>
+        <div class="tel"><a href="tel:+7 (499) 643 34 56">+7 (499) 643 34 56</a></div>
+        <a href="http://vk.com/"><div class="vk">Вконтакте</div></a>
+        <a href="http://facebook.com/"><div class="fb">Фейсбук</div></a>
+      </div>
+  </div>
+</div>
+<div class="fly__profile">
+  <div class="right">
+    <div class="profile-menu">
+      <div><a href="#"><img src="img/lk/profile_profil.png"> Мой профиль</a></div>
+      <div><a href="#" class="act"><img src="img/lk/profile_docs.png"> Документы</a></div>
+      <div><a href="#"><img src="img/lk/profile_exit.png"> Выйти</a></div>
+    </div>
+    <div class="profile-body scroller scrollbar-other">
+      <div class="profile-body-form container-fluid">
+          <div class="row">
+            <div class="col-xs-4 text_head fs_w400 text_align_right">Фамилия</div>
+            <div class="col-xs-8 text_16b">Неизвестный</div>
+          </div>
+          <div class="row">
+            <div class="col-xs-4 text_head fs_w400 text_align_right">Имя</div>
+            <div class="col-xs-8 text_16b">Аркадий</div>
+          </div>
+          <div class="row">
+            <div class="col-xs-4 text_head fs_w400 text_align_right">Отчество</div>
+            <div class="col-xs-8 text_16b">Николаевич</div>
+          </div>
+          <div class="row">
+            <div class="col-xs-4 text_head fs_w400 text_align_right">Страна</div>
+            <div class="col-xs-8 text_16b"><span class="flag rus"></span> Россия</div>
+          </div>
+          <div class="row">
+            <div class="col-xs-4 text_head fs_w400 text_align_right">E-mail</div>
+            <div class="col-xs-8 text_16b edt"><img src="img/lk/edit_pencil.png"> arkady@mail.ru</div>
+          </div>
+          <div class="row">
+            <div class="col-xs-4 text_head fs_w400 text_align_right">Телефон</div>
+            <div class="col-xs-8 text_16b edt"><img src="img/lk/edit_pencil.png"> +7 (***) *** 55 55</div>
+          </div>
+          <div class="row">
+            <div class="col-xs-4 text_head fs_w400 text_align_right">пароль</div>
+            <div class="col-xs-8 text_16b">
+              <input type="TEXT" name="pass0" value="" class="fi_input in_profile_pass" placeholder="введите пароль">
+
+            </div>
+          </div>
+          <div class="in_profile_pass_p">
+            <div>
+              <input type="TEXT" name="pass1" value="" class="fi_input fi_input_sm" placeholder="новый пароль">
+            </div>
+            <div>
+              <input type="TEXT" name="pass2" value="" class="fi_input fi_input_sm" placeholder="повторите пароль">
+            </div>
+            <div>
+              <img src="img/lk/captcha.png">
+              <input type="TEXT" name="code" value="" class="fi_input fi_input_sm" placeholder="код">
+            </div>
+            <div class="last_div">
+              <div class="button_round br_blue in_profile_pass_c">Подтвердить</div>
+            </div>
+          </div>
+      </div>
+      <div class="profile-body-foto-but">
+        <img src="img/lk/bradpitt.png">
+        <a href="#"><div class="button pink fs_s16 fs_cw">Сохранить</div></a>
       </div>
     </div>
   </div>

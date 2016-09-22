@@ -32,7 +32,7 @@
     margin-top: 50px;
   }
 }
-@media screen and (min-width: 980px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .pgaccounts .main {
     position: relative;
   }
@@ -47,7 +47,8 @@
     width: 50%;
   }
   .head__right {
-    width: 60%;
+    width: auto;
+    /*60%;*/
   }
   .head__tel {
     display: none;
@@ -58,8 +59,96 @@
   .pganalytics_articles .column_2 {
     width: 98%;
   }
+  .table_div {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 40px;
+    margin-right: 50px;
+  }
+  .table_div .row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+       -moz-box-orient: horizontal;
+       -moz-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+  .table_div .row:hover {
+    -webkit-box-shadow: 0px 0px 64px #e4e4e4;
+       -moz-box-shadow: 0px 0px 64px #e4e4e4;
+            box-shadow: 0px 0px 64px #e4e4e4;
+    z-index: 99;
+  }
+  .table_div .row:hover .col.col2t {
+    color: #e94f86;
+  }
+  .table_div .row:hover .col.col5t .hide {
+    display: inline-block;
+  }
+  .table_div .col {
+    cursor: pointer;
+    color: #4c4d4f;
+    padding: 10px 10px;
+    background-color: #FFF;
+    vertical-align: top;
+    font-size: 16px;
+    font-family: 'PT Serif', serif;
+  }
+  .table_div .col.colwp10 {
+    width: 50%;
+  }
+  .table_div .col.colwp15 {
+    width: 50%;
+  }
+  .table_div .col.colwp20 {
+    width: 50%;
+  }
+  .table_div .col.colwp25 {
+    width: 50%;
+  }
+  .table_div .col.colwp30 {
+    width: 50%;
+  }
+  .table_div .col.colwp40 {
+    width: 50%;
+  }
+  .table_div .col.colwp50 {
+    width: 50%;
+  }
+  .table_div .col .hide {
+    display: none;
+  }
+  .table_div .col .rc_title {
+    display: block;
+    font-size: 10px;
+    font-weight: bold;
+    color: #b2b2b2;
+    text-transform: uppercase;
+  }
+  .table_div .row_head {
+    display: none;
+  }
 }
-@media screen and (min-width: 750px) and (max-width: 979px) {
+@media screen and (max-width: 979px) {
   .nav {
     display: none;
   }
@@ -71,7 +160,8 @@
     width: 50%;
   }
   .head__right {
-    width: 60%;
+    width: auto;
+    /*60%;*/
   }
   .head__right-wrapr-r01:hover {
     width: 30px;
@@ -743,19 +833,19 @@
     margin: 0px 10px 18px 20px;
   }
   .pgcontracts .main__left {
-    width: 20%;
+    width: 40%;
   }
   .pgcontracts .main__left h2 {
-    margin: 10px 10px;
+    /*margin: 10px 10px;*/
   }
   .pgcontracts .main__left--menu01 {
-    margin-left: 10px;
+    /*margin-left: 10px;*/
   }
   .pgcontracts .main__left--menu01 .small {
-    margin-left: 10px;
+    /*margin-left: 10px;*/
   }
   .pgcontracts .main__right {
-    width: 80%;
+    width: 60%;
   }
   .pgcontracts table.tablesorter th {
     padding: 5px;
@@ -894,8 +984,96 @@
     padding: 1px;
     font-size: 12px;
   }
+  .table_div {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+  .table_div .row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .table_div .row:hover {
+    -webkit-box-shadow: 0px 0px 64px #e4e4e4;
+       -moz-box-shadow: 0px 0px 64px #e4e4e4;
+            box-shadow: 0px 0px 64px #e4e4e4;
+    z-index: 99;
+  }
+  .table_div .row:hover .col.col2t {
+    color: #e94f86;
+  }
+  .table_div .row:hover .col.col5t .hide {
+    display: inline-block;
+  }
+  .table_div .col {
+    /*height: 110px;
+      min-height: 110px;*/
+    cursor: pointer;
+    color: #4c4d4f;
+    padding: 10px 10px;
+    background-color: #FFF;
+    vertical-align: top;
+    font-size: 16px;
+    font-family: 'PT Serif', serif;
+  }
+  .table_div .col.colwp10 {
+    width: 100%;
+  }
+  .table_div .col.colwp15 {
+    width: 100%;
+  }
+  .table_div .col.colwp20 {
+    width: 100%;
+  }
+  .table_div .col.colwp25 {
+    width: 100%;
+  }
+  .table_div .col.colwp30 {
+    width: 100%;
+  }
+  .table_div .col.colwp40 {
+    width: 100%;
+  }
+  .table_div .col.colwp50 {
+    width: 100%;
+  }
+  .table_div .col .hide {
+    display: none;
+  }
+  .table_div .col .rc_title {
+    display: block;
+    font-size: 10px;
+    font-weight: bold;
+    color: #b2b2b2;
+    text-transform: uppercase;
+  }
+  .table_div .row_head {
+    display: none;
+  }
 }
-@media screen and (min-width: 641px) and (max-width: 749px) {
+@media screen and (max-width: 749px) {
   body.pgbonus {
     background-position: 70%;
   }
@@ -909,7 +1087,8 @@
     width: 10%;
   }
   .head__right {
-    width: 65%;
+    width: auto;
+    /*65%;*/
   }
   .head__tel {
     display: none;
@@ -1632,11 +1811,11 @@
     font-size: 14px;
   }
   .pgcontracts .main__left {
-    width: 20%;
+    /*width:50%;*/
   }
   .pgcontracts .main__left h2 {
     margin: 20px 10px;
-    font-size: 14px;
+    font-size: 20px;
   }
   .pgcontracts .main__left--menu01 {
     margin-left: 10px;
@@ -1648,10 +1827,10 @@
     margin: 2px 0px;
   }
   .pgcontracts .main__left--menu01--item a {
-    font-size: 12px;
+    font-size: 16px;
   }
   .pgcontracts .main__right {
-    width: 80%;
+    /*width:50%;*/
   }
   .pgcontracts table.tablesorter th {
     padding: 5px;
@@ -1811,8 +1990,11 @@
     padding: 1px;
     font-size: 12px;
   }
+  .pgindicators .content .main__right .main__right_body {
+    width: 95%;
+  }
 }
-@media screen and (min-width: 561px) and (max-width: 640px) {
+@media screen and (max-width: 640px) {
   body.pgbonus {
     background-position: 70%;
   }
@@ -1826,7 +2008,8 @@
     width: 10%;
   }
   .head__right {
-    width: 65%;
+    width: auto;
+    /*65%;*/
   }
   .head__tel {
     display: none;
@@ -2549,11 +2732,11 @@
     font-size: 14px;
   }
   .pgcontracts .main__left {
-    width: 20%;
+    /*width:50%;*/
   }
   .pgcontracts .main__left h2 {
     margin: 20px 10px;
-    font-size: 13px;
+    font-size: 20px;
   }
   .pgcontracts .main__left--menu01 {
     margin-left: 10px;
@@ -2565,10 +2748,10 @@
     margin: 2px 0px;
   }
   .pgcontracts .main__left--menu01--item a {
-    font-size: 11px;
+    font-size: 16px;
   }
   .pgcontracts .main__right {
-    width: 80%;
+    /*width:50%;*/
   }
   .pgcontracts table.tablesorter th {
     padding: 5px;
@@ -2731,7 +2914,7 @@
     font-size: 12px;
   }
 }
-@media screen and (min-width: 401px) and (max-width: 560px) {
+@media screen and (max-width: 560px) {
   body.pgbonus {
     background-position: 70%;
   }
@@ -2745,7 +2928,8 @@
     width: 0%;
   }
   .head__right {
-    width: 80%;
+    width: auto;
+    /*80%;*/
   }
   .head__tel {
     display: none;
@@ -3591,11 +3775,11 @@
     font-size: 14px;
   }
   .pgcontracts .main__left {
-    width: 16%;
+    /*width:50%;*/
   }
   .pgcontracts .main__left h2 {
     margin: 24px 6px;
-    font-size: 9px;
+    font-size: 20px;
   }
   .pgcontracts .main__left--menu01 {
     margin-left: 10px;
@@ -3603,23 +3787,23 @@
   .pgcontracts .main__left--menu01.small {
     margin-top: 32px;
     margin-left: 0px;
-    font-size: 9px;
+    font-size: 14px;
   }
   .pgcontracts .main__left--menu01.small a {
-    font-size: 8px;
+    font-size: 14px;
   }
   .pgcontracts .main__left--menu01.small .main__left--menu01--item {
     margin: 16px 10px;
   }
   .pgcontracts .main__left--menu01--item {
     margin: 16px 0px;
-    font-size: 9px;
+    font-size: 16px;
   }
   .pgcontracts .main__left--menu01--item a {
-    font-size: 9px;
+    font-size: 16px;
   }
   .pgcontracts .main__right {
-    width: 84%;
+    /*width:50%;*/
   }
   .pgcontracts table.tablesorter th {
     padding: 5px;
@@ -3829,7 +4013,8 @@
     width: 0%;
   }
   .head__right {
-    width: 80%;
+    width: auto;
+    /*80%;*/
   }
   .head__but {
     padding: 10px 10px;
@@ -4829,12 +5014,12 @@
     background: transparent;
   }
   .pgcontracts .main__left {
-    width: 16%;
+    /*width:50%;*/
   }
   .pgcontracts .main__left h2 {
     /*display: none;*/
     margin: 24px 4px;
-    font-size: 0px;
+    font-size: 16px;
   }
   .pgcontracts .main__left--menu01 {
     margin-left: 4px;
@@ -4848,30 +5033,30 @@
     margin: 8px 4px;
   }
   .pgcontracts .main__left--menu01.small .main__left--menu01--item a {
-    font-size: 8px;
+    font-size: 14px;
   }
   .pgcontracts .main__left--menu01.small .main__left--menu01--item a:hover {
-    font-size: 8px;
+    font-size: 14px;
   }
   .pgcontracts .main__left--menu01.small .main__left--menu01--item a:active {
-    font-size: 8px;
+    font-size: 14px;
   }
   .pgcontracts .main__left--menu01--item {
     margin: 8px 0px;
-    font-size: 9px;
+    font-size: 16px;
   }
   .pgcontracts .main__left--menu01--item a {
-    font-size: 9px;
+    font-size: 16px;
   }
   .pgcontracts .main__left--menu01--item a:hover {
-    font-size: 9px;
+    font-size: 16px;
   }
   .pgcontracts .main__left--menu01--item a:active,
   .pgcontracts .main__left--menu01--item a.act {
-    font-size: 9px;
+    font-size: 16px;
   }
   .pgcontracts .main__right {
-    width: 84%;
+    /*width:50%;*/
   }
   .pgcontracts table.tablesorter th {
     padding: 5px;
