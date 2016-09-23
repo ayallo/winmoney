@@ -119,6 +119,23 @@ a.a1:hover {
   text-decoration: none;
   font-weight: bold;
 }
+.a_13b {
+  /*13 синие ссылки ховер - серые*/
+  font-size: 13px;
+  color: #2675eb;
+  text-decoration: none;
+  font-weight: bold;
+}
+.a_13b span {
+  font-size: 9px;
+}
+.a_13b.act,
+.a_13b:hover {
+  color: #4c4d4f;
+  font-size: 13px;
+  text-decoration: none;
+  font-weight: bold;
+}
 .button {
   /*кнопка с фоном закругленная*/
   -webkit-border-radius: 21px;
@@ -198,7 +215,7 @@ a.a1:hover {
   font-size: 13px;
   font-weight: bold;
   color: #2675eb;
-  padding: 3px 17px 4px 10px;
+  padding: 3px 17px 4px 17px;
   display: inline-block;
   cursor: pointer;
 }
@@ -208,6 +225,9 @@ a.a1:hover {
 .button_round span {
   font-size: 11px;
   font-weight: normal;
+}
+.button_round:hover .buttondiv span {
+  color: #fff!important;
 }
 .flag {
   width: 22px;
@@ -281,6 +301,16 @@ a.a1:hover {
           justify-content: space-around;
   cursor: pointer;
 }
+.fi_radio_wrap.al {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  font-size: 13px;
+  font-weight: bold;
+  color: #4c4d4f;
+}
 .fi_input {
   font-weight: bold;
   width: 100%;
@@ -304,6 +334,16 @@ a.a1:hover {
 }
 .fi_input:focus {
   border-bottom: 2px solid #2675eb;
+}
+.fi_input_bsh {
+  cursor: pointer;
+}
+.fi_input_bsh .tx {
+  font-size: 16px;
+  font-weight: bold;
+}
+.fi_input_inp {
+  display: none;
 }
 .fi_select {
   border-bottom: 2px solid #f5f5f5;
@@ -344,6 +384,75 @@ a.a1:hover {
 }
 .fi_select ul {
   width: 100%;
+}
+.fi_select_v1 .buttondiv {
+  width: 100%;
+  text-align: left;
+  position: relative;
+  background: transparent;
+}
+.fi_select_v1 .buttondiv .tx {
+  font-size: 16px;
+  color: #4c4d4f;
+  font-weight: bold;
+}
+.fi_select_v1 .buttondiv .tx.nosel {
+  font-size: 16px;
+  color: #a8a8a8;
+  font-weight: normal;
+}
+.fi_select_v1 .buttondiv .caret {
+  /*position: relative;;
+      right:0px; top:0px;
+      border: none;*/
+}
+.fi_select_v1 .buttondiv .caret::before {
+  content: "";
+  /*background-image: url("../img/arr_down_b.png");
+        background-repeat: no-repeat;
+        background-position: center;*/
+  right: 0px;
+  top: 0px;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+}
+.fi_select_v1 ul {
+  width: 100%;
+}
+.dropdown-menu {
+  background: #fff;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+  -webkit-border-top-left-radius: 0px;
+     -moz-border-radius-topleft: 0px;
+          border-top-left-radius: 0px;
+  -webkit-border-top-right-radius: 0px;
+     -moz-border-radius-topright: 0px;
+          border-top-right-radius: 0px;
+  top: 28px;
+  left: 0px;
+  -webkit-box-shadow: 0px 0px 63px #d2d2d2;
+     -moz-box-shadow: 0px 0px 63px #d2d2d2;
+          box-shadow: 0px 0px 63px #d2d2d2;
+  z-index: 9999;
+}
+.dropdown-menu li {
+  padding: 5px 0px;
+  cursor: pointer;
+}
+.dropdown-menu li a {
+  color: #2675eb;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 3px 0px;
+}
+.dropdown-menu li a:hover {
+  color: #e94f86;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: transparent;
 }
 .fi_checkbox {
   display: -webkit-box;
@@ -500,6 +609,9 @@ a.a1:hover {
 .marginb_6 {
   margin-bottom: 6px;
 }
+.marginb_16 {
+  margin-bottom: 16px;
+}
 .marginb_18 {
   margin-bottom: 18px;
 }
@@ -511,6 +623,12 @@ a.a1:hover {
 }
 .marginb_40 {
   margin-bottom: 40px;
+}
+.margint_120 {
+  margin-top: 120px;
+}
+.paddingb_40 {
+  padding-bottom: 40px;
 }
 .paddingl_80 {
   padding-left: 80px;
@@ -1385,9 +1503,21 @@ a.a1:hover {
   background: #fff;
   border-top: 2px solid #f5f5f5!important;
 }
-.adv_400x240 {
-  /*width:400px;*/
-  height: 240px;
+.adv_one_text {
+  width: 100%;
+  text-align: center;
+  font-size: 13px;
+  color: #4c4d4f;
+  font-weight: bold;
+}
+.adv_one_img {
+  width: 100%;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+  margin-bottom: 24px;
+}
+.adv_plitka_img {
   background-repeat: no-repeat;
   -webkit-background-size: cover;
      -moz-background-size: cover;
@@ -1403,6 +1533,48 @@ a.a1:hover {
   -moz-transition: background-color 0.5s linear;
   transition: background-color 0.5s linear;
 }
+.adv_120x600 {
+  width: 120px;
+  height: 600px;
+}
+.adv_plitka_wrap_120x600 {
+  width: 120px;
+  height: 600px;
+  float: left;
+  margin: 10px;
+}
+.adv_row_120x600 {
+  width: 1300px;
+  margin: 0 auto;
+}
+.adv_485x90 {
+  /*width:400px;*/
+  height: 90px;
+}
+.adv_plitka_wrap_485x90 {
+  width: 485px;
+  height: 90px;
+  float: left;
+  margin: 10px;
+}
+.adv_row_485x90 {
+  width: 1520px;
+  margin: 0 auto;
+}
+.adv_400x240 {
+  /*width:400px;*/
+  height: 240px;
+}
+.adv_plitka_wrap_400x240 {
+  width: 400px;
+  height: 240px;
+  float: left;
+  margin: 10px;
+}
+.adv_row_400x240 {
+  width: 1300px;
+  margin: 0 auto;
+}
 .adv.hover::before {
   content: "";
   position: absolute;
@@ -1416,6 +1588,9 @@ a.a1:hover {
   -moz-transition: background-color ease-out 0.5s;
   transition: background-color ease-out 0.5s;
 }
+.adv.unhover {
+  position: relative;
+}
 .adv.unhover::before {
   content: "";
   position: absolute;
@@ -1428,6 +1603,11 @@ a.a1:hover {
   -o-transition: background-color 0.5s linear;
   -moz-transition: background-color 0.5s linear;
   transition: background-color 0.5s linear;
+}
+.adv_plitka_blok:hover div .adv:not(:hover) {
+  opacity: .75;
+  -webkit-filter: brightness(1) opacity(0.5);
+          filter: brightness(1) opacity(0.5);
 }
 .modal-dialog {
   /*центровка модального окна по вертикали*/

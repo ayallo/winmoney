@@ -770,7 +770,7 @@ a.icon_pdf::before {
 .filter_p div.select02::after {
   content: "";
   display: inline-block;
-  top: 14px;
+  top: 10px;
   right: -15px;
   position: absolute;
   background-position: -21px -72px;

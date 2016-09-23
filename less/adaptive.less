@@ -1,4 +1,5 @@
 @media screen and (min-width: 1200px) {
+  .left-menu-head.hide{ display: none; }
   .pgaccounts{
     & .main{
       position: relative;
@@ -47,6 +48,7 @@
 
 }
 @media screen and (max-width: 1199px) {
+  .left-menu-head.hide{ display: none; }
   .pgaccounts{
     & .main{
       position: relative;
@@ -124,6 +126,7 @@
 }
 @media screen and (max-width: 979px) {
   .nav{ display: none; }
+  .left-menu-head.hide{ display: flex; }
   .fly__menu {
     & .left{
       &-menu-head{
@@ -936,6 +939,9 @@
     & .row_head{
       display: none;
     }
+  }
+  .pgindicators .main__right .main__right_body{
+    width:94%;
   }
 }
 @media screen and (max-width: 749px) {
@@ -1760,13 +1766,13 @@
     }
   }
   .pgindicators{
-    & .content{
+    //& .content{
       & .main__right{
         & .main__right_body{
           width: 95%;
         }
       }
-    }
+    //}
   }
 }
 @media screen and (max-width: 640px) {

@@ -4,12 +4,14 @@
 <script src="js/datepicker-ru.js"></script>
 <script src="js/Swiper-3.3.1/dist/js/swiper.min.js"></script>
 <script src="js/masked.js"></script>
-
+<script src="js/jquery.ui.touch-punch.min.js"></script>
+<script src="js/perfect-scrollbar.jquery.js"></script>
 <script type="text/javascript" src="js/tablesorter/jquery.tablesorter.js"></script>
 <!-- <script src="js/nicescroll/jquery.nicescroll.js"></script> -->
 <script src="js/jquery.scrollbar/jquery.scrollbar.min.js"></script>
 <!--script src="js/jquery.paralax/jquery.parallax-0.2-min.js"></script-->
 <script src="js/parallax-master/deploy/jquery.parallax.js"></script>
+
 <script type="text/javascript">
 (function() {/*анимация гамбургера*/
   "use strict";
@@ -26,9 +28,43 @@
   }
 })();
 jQuery(document).ready(function(){
+  // функция, которая по заданному селектору
+  // найдет соответствующие ему элементы, которые
+  // при этом попадают в видимую область окна
+  function inWindow(s){
+    var scrollTop = $(window).scrollTop();
+    var windowHeight = $(window).height();
+    var currentEls = $(s);
+    var result = [];
+    currentEls.each(function(){
+      var el = $(this);
+      var offset = el.offset();
+      if(scrollTop <= offset.top && (el.height() + offset.top) < (scrollTop + windowHeight))
+        result.push(this);
+    });
+    return $(result);
+  }
   /* scrollbar */
   $('.scrollbar-other').scrollbar({
       "ignoreMobile": false
+  });
+  $('.scrollbar-other-bukvas').scrollbar({
+      "ignoreMobile": false,
+      'onScroll':function(e){
+        $('.bukvas_one').removeClass('act');
+        var bukvasW = inWindow("h3.bukvasW");
+        bukvasW.each(function( index ) {
+          var id=$(this).attr('id');
+          $('#bukvas_'+id).addClass('act');
+        });
+      }
+  });
+  $('.bukvas_one').click(function(){
+    var id=$(this).attr('id').split('_');
+    var etop = $('#a.bukvasW').offset();
+    var y = $('#'+id[1]+'.bukvasW').offset();
+    var vy = Math.abs(etop.top) + y.top - 340;
+    $('.scrollbar-other-bukvas').scrollTop(vy);
   });
 });
   $(function () {
@@ -178,6 +214,7 @@ jQuery(document).ready(function(){
           var parent = $(this).closest('.fi_select');
           var pn = parent.find('.pn');
           pn.show();
+          pn.addClass('open');
         });
         $(".fi_select .pn .it").click(function(){/*выпадающий список select - items*/
           var parent = $(this).closest('.fi_select');
@@ -188,6 +225,17 @@ jQuery(document).ready(function(){
           input.val(id[1]);
           tx.html($(this).html()).addClass('sel');
           pn.hide();
+        });
+        $(".main__center").click(function(e) {    /* закрыть выпадающий список */
+            var select = $('.fi_select .pn.open');
+            var status = $(select).css('display');
+            if ($(e.target).hasClass('tx')) {
+              return false;
+            }
+            if (status == 'block') {
+              $(select).hide();
+              select.removeClass('open');
+            }
         });
         /*правая панель чата*/
         $(".fly__feedback-panel").hide();
@@ -340,12 +388,26 @@ jQuery(document).ready(function(){
           //return false;
         });
         $('a.disable').attr("href","#");
+
+        function calcUSD() {
+          var sel_1 = parseFloat($("#sel_1").val());
+          var sel_2 = parseFloat($("#sel_2").val());
+          var sli_1 = parseFloat($("#slider-range-min-val_1").val());
+          var sli_2 = parseFloat($("#slider-range-min-val_2").val());
+          var doh_ag_zd=(sli_1 * sli_2)*sel_1*sel_2;
+
+          $(".doh_ag_zd").text(doh_ag_zd.toFixed(0)+" USD");
+          $(".doh_ag_zm").text((doh_ag_zd*30).toFixed(0)+" USD");
+        }
+
         $(".slider-range-min").slider({
           range: "min", /*value: 8, min: 1, max: 20,*/
           slide: function( event, ui ) {
             var id=$(this).attr("id").split("_");
             $("#slider-range-min-val_"+id[1]).val(ui.value);
             $("#slider-range-min-label_"+id[1]).text(ui.value);
+
+            calcUSD();
           },
           create: function( event, ui ) {
             //console.log(event);//slidecreate
@@ -363,20 +425,24 @@ jQuery(document).ready(function(){
             $('<div class="slider-range-min-label" id="slider-range-min-label_'+ida[1]+'">'+value+'</div>').prependTo("#"+id+" .ui-slider-handle");
           }
         });
-        $(".calc_program_agent_reward, .calc_program_agent_reward .slider-range-min, .calc_program_agent_reward .fi_select .pn .it").click(function(){
-          var sel_1 = parseFloat($("#sel_1").val());
-          var sel_2 = parseFloat($("#sel_2").val());
-          var sli_1 = parseFloat($("#slider-range-min-val_1").val());
-          var sli_2 = parseFloat($("#slider-range-min-val_2").val());
 
-          var doh_ag_zd=(sli_1 * sli_2)*sel_1*sel_2;
-          //console.log(sel_1+" | "+sel_2+" | "+sli_1+" | "+sli_2+" = "+doh_ag_zd);
+        $(".slider-range-min").draggable();
 
-          $(".doh_ag_zd").text(doh_ag_zd.toFixed(0)+" USD");
-          $(".doh_ag_zm").text((doh_ag_zd*30).toFixed(0)+" USD");
-          //alert("123");//slider-range-min-val_1
+        $(".calc_program_agent_reward, .calc_program_agent_reward .slider-range-min, .calc_program_agent_reward .fi_select .pn .it").click(function() {
+          calcUSD();
         });
         //$('.footer').css({'position':'relative','bottom':'-8px'});
+
+
+        // scrollbar
+        if ($(window).width() > 750) {
+          $('.scroller_ind').perfectScrollbar({
+            wheelSpeed: 0.3,
+            suppressScrollX: true,
+            wheelPropagation: true,
+            swipePropagation: true });
+        }
+    	  $('.scroller').perfectScrollbar({ wheelSpeed: 0.3, suppressScrollX: true });
     });
 </script>
 %SCRIPT%

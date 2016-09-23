@@ -87,6 +87,21 @@ a.a1{
     font-weight: bold;
   }
 }
+.a_13b{/*13 синие ссылки ховер - серые*/
+  font-size: 13px;
+  color:#2675eb;
+  text-decoration: none;
+  font-weight: bold;
+  & span{
+    font-size: 9px;
+  }
+  &.act, &:hover{
+    color: #4c4d4f;
+    font-size: 13px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+}
 .button{/*кнопка с фоном закругленная*/
     border-radius: 21px;
     padding: 9px 30px;
@@ -144,7 +159,7 @@ a.a1{
   font-size: 13px;
   font-weight: bold;
   color: #2675eb;
-      padding: 3px 17px 4px 10px;
+  padding: 3px 17px 4px 17px;
   display: inline-block;
   cursor: pointer;
   &.br_blue{
@@ -153,6 +168,9 @@ a.a1{
   & span{
     font-size: 11px;
     font-weight: normal;
+  }
+  &:hover{
+    & .buttondiv span{ color:#fff!important; }
   }
 }
 
@@ -189,6 +207,12 @@ a.a1{
     align-items: center;
     justify-content: space-around;
     cursor: pointer;
+    &.al{
+      justify-content: flex-start;
+      font-size: 13px;
+      font-weight: bold;
+      color: #4c4d4f;
+    }
   }
 }
 .fi_input{
@@ -213,7 +237,15 @@ a.a1{
    &:focus{
      border-bottom:2px solid #2675eb;
    }
+   &_bsh{ cursor: pointer;
+     & .tx{
+      font-size: 16px;
+      font-weight: bold;
+     }
+   }
+   &_inp{ display: none; }
 }
+
 .fi_select{
   border-bottom: 2px solid #f5f5f5;
   padding-bottom: 10px;
@@ -251,6 +283,68 @@ a.a1{
     width: 100%;
   }
 }
+.fi_select_v1{
+  & .buttondiv{
+    width: 100%;
+    text-align: left;
+    position:relative;
+    background: transparent;
+    & .tx{
+      font-size: 16px;
+      color: #4c4d4f;
+      font-weight: bold;
+      &.nosel{
+        font-size: 16px;
+        color: #a8a8a8;
+        font-weight: normal;
+      }
+    }
+    & .caret{
+      /*position: relative;;
+      right:0px; top:0px;
+      border: none;*/
+      &::before{
+        content: "";
+        /*background-image: url("../img/arr_down_b.png");
+        background-repeat: no-repeat;
+        background-position: center;*/
+        right: 0px;      top: 0px;
+        width: 10px;     height: 10px;
+        position: absolute;
+      }
+    }
+  }
+  & ul{
+    width: 100%;
+  }
+}
+
+.dropdown-menu{
+  background: #fff;
+  border-radius: 5px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  top: 28px; left: 0px;
+  box-shadow: 0px 0px 63px #d2d2d2;
+  z-index: 9999;
+  & li{
+    padding:5px 0px;
+    cursor: pointer;
+    & a{
+      color:#2675eb;
+      font-size: 16px;
+      font-weight: bold;
+      padding: 3px 0px;
+      &:hover{
+        color:#e94f86;
+        font-size: 16px;
+        font-weight: bold;
+        background-color:transparent;
+      }
+    }
+  }
+}
+
 .fi_checkbox{
   display:flex;
   flex-direction: row;
@@ -378,10 +472,13 @@ a.a1{
 .text_align_right{ text-align: right; }
 .margint_40{ margin-top: 40px; }
 .marginb_6{ margin-bottom: 6px; }
+.marginb_16{ margin-bottom: 16px; }
 .marginb_18{ margin-bottom: 18px; }
 .marginb_20{ margin-bottom: 20px; }
 .marginb_30{ margin-bottom: 30px; }
 .marginb_40{ margin-bottom: 40px; }
+.margint_120{ margin-top: 120px; }
+.paddingb_40{ padding-bottom: 40px; }
 .paddingl_80{ padding-left: 80px; }
 .paddingb_10{ padding-bottom: 10px; }
 .margin_v18{ margin: 18px 0px; }
@@ -930,9 +1027,19 @@ a.a1{
 }
 
 .adv{
-  &_400x240{
-    /*width:400px;*/
-    height:240px;
+  &_one_text{
+    width:100%;
+    text-align: center;
+    font-size:13px;
+    color:#4c4d4f;
+    font-weight: bold;
+  }
+  &_one_img{
+    width:100%;
+    border-radius: 5px;
+    margin-bottom: 24px;
+  }
+  &_plitka_img{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -940,6 +1047,52 @@ a.a1{
     border-radius: 5px;
     transition: background-color .5s linear;
   }
+
+  &_120x600{
+    width:120px;
+    height:600px;
+  }
+  &_plitka_wrap_120x600{
+    width:120px;
+    height:600px;
+    float:left;
+    margin:10px;
+  }
+  &_row_120x600{
+    width:1300px;
+    margin: 0 auto;
+  }
+
+  &_485x90{
+    /*width:400px;*/
+    height:90px;
+  }
+  &_plitka_wrap_485x90{
+    width:485px;
+    height:90px;
+    float:left;
+    margin:10px;
+  }
+  &_row_485x90{
+    width:1520px;
+    margin: 0 auto;
+  }
+
+  &_400x240{
+    /*width:400px;*/
+    height:240px;
+  }
+  &_plitka_wrap_400x240{
+    width:400px;
+    height:240px;
+    float:left;
+    margin:10px;
+  }
+  &_row_400x240{
+    width:1300px;
+    margin: 0 auto;
+  }
+
   &.hover::before{
     content: "";
     position: absolute;
@@ -947,12 +1100,22 @@ a.a1{
     background-color: rgba(255,255,255,0);
     transition: background-color ease-out 0.5s;
   }
-  &.unhover::before{
-    content: "";
-    position: absolute;
-    top:0px; left:0px; right:0px; bottom:0px;
-    background-color: rgba(255,255,255,0.7);
-    transition: background-color .5s linear;
+  &.unhover{
+    position:relative;
+    &::before{
+      content: "";
+      position: absolute;
+      top:0px; left:0px; right:0px; bottom:0px;
+      background-color: rgba(255,255,255,0.7);
+      transition: background-color .5s linear;
+    }
+  }
+  &:hover{
+
+  }
+  &_plitka_blok:hover div .adv:not(:hover) {
+    opacity: .75;
+    filter: brightness(1) opacity(0.5);
   }
 }
 

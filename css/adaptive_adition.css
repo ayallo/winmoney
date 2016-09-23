@@ -58,10 +58,20 @@
 /* /Кнопки в шапке */
 /* Анимация бургера */
 .c-hamburger--htx span {
-  -webkit-transition: 0.3s all ease-in-out;
-  -o-transition: 0.3s all ease-in-out;
-  -moz-transition: 0.3s all ease-in-out;
-  transition: 0.3s all ease-in-out;
+  -webkit-transition-duration: 0.3s, 0.3s;
+     -moz-transition-duration: 0.3s, 0.3s;
+       -o-transition-duration: 0.3s, 0.3s;
+          transition-duration: 0.3s, 0.3s;
+  -webkit-transition-delay: 0.3s, 0s;
+     -moz-transition-delay: 0.3s, 0s;
+       -o-transition-delay: 0.3s, 0s;
+          transition-delay: 0.3s, 0s;
+  -webkit-transition-property: top, -webkit-transform;
+  transition-property: top, -webkit-transform;
+  -o-transition-property: top, -o-transform;
+  -moz-transition-property: top, transform, -moz-transform;
+  transition-property: top, transform;
+  transition-property: top, transform, -webkit-transform, -moz-transform, -o-transform;
 }
 /* /Анимация бургера */
 @media (max-width: 1200px) {
@@ -162,6 +172,9 @@
     font-size: 16px;
     font-weight: bold;
     margin-bottom: 40px;
+  }
+  .pgwebinars .column_2 .item table td.webinars .webin:hover {
+    padding: 12px 10px;
   }
 }
 @media (max-width: 768px) {

@@ -60,6 +60,7 @@
 .pgprogramagent .slide-zarabotok.zarabotok2 {
   background-image: url('/img/partnersprogram_02.png');
   background-position: 112% 12px;
+  width: 900px;
 }
 .pgprogramagent .slide-zarabotok.zarabotok2 .zarabotok-title p {
   width: 75%;
@@ -506,4 +507,35 @@
   .treelegend {
     width: 100% !important;
   }
+}
+.page-about .a-slide1 .centerblock .mainpage {
+  width: 580px;
+  margin: 0;
+}
+.page-about .a-slide1 .centerblock .mainpage p {
+  line-height: 25px;
+}
+.page-about .a-slide1 .centerblock .mainpage h2 {
+  margin-bottom: 35px;
+}
+.page-about .a-slide1 .centerblock {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+}
+.page-about .slide .centerblock {
+  height: 100vh;
+}
+.swiper-container_abo.page-about,
+.page-about .swiper-slide,
+.page-about .swiper-wrapper,
+.pgabout,
+.wrapper {
+  height: 100vh !important;
+}
+.big-slide {
+  display: block;
 }

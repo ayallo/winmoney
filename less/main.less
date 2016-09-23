@@ -34,7 +34,7 @@
     }
 }
 body,html {
-    height: 100%;
+    height: 100%!important;
 }
 a .head__but {
     display: none;
@@ -551,6 +551,11 @@ a .getbonus,a .openschet {
         background-position: center;
         height: 47px;
         /*margin:0 auto;*/
+        & a{
+          width: 100%;
+          height: 100%;
+          display: block;
+        }
     }
     &__right {
         width:45%;
@@ -1918,12 +1923,17 @@ a .getbonus,a .openschet {
 .pgindicators{
   & .content{
     /*flex: 1 0!important;*/
+    flex-grow: 1!important;
+    flex-shrink: 0!important;
+    flex-basis: 0%!important;
+    overflow: hidden!important;
   }
   & .main__left{
     width:420px;
+    padding-bottom: 30px;
   }
   & .main__right{
-    /*width:initial!important;*/
+    padding-bottom: 0px;
     & .main__right_head-left{
       width:100%;
       margin-top:50px;
@@ -1943,6 +1953,7 @@ a .getbonus,a .openschet {
       width:570px;
       padding-top: 34px;
       padding-left: 45px;
+      //padding-bottom:70px;
       & h2{
         margin-top:150px;
         margin-bottom:27px;
@@ -1964,6 +1975,9 @@ a .getbonus,a .openschet {
         margin-bottom: 20px;
         & a{ font-size: 16px;}
       }
+      &.indicator{
+        margin-bottom: 200px;
+      }
     }
   }
 }
@@ -1971,6 +1985,7 @@ a .getbonus,a .openschet {
   display:flex;
   flex-direction: row;
   height: 95%;
+  padding-bottom: 45px;
   & .bukvas-left{
     margin:0 24px;
     & .fons{

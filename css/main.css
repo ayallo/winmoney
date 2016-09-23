@@ -38,7 +38,7 @@
 }
 body,
 html {
-  height: 100%;
+  height: 100%!important;
 }
 a .head__but {
   display: none;
@@ -709,6 +709,11 @@ a .openschet {
   background-position: center;
   height: 47px;
   /*margin:0 auto;*/
+}
+.head__logo a {
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 .head__right {
   width: 45%;
@@ -2379,12 +2384,25 @@ a .openschet {
 }
 .pgindicators .content {
   /*flex: 1 0!important;*/
+  -webkit-box-flex: 1!important;
+  -webkit-flex-grow: 1!important;
+     -moz-box-flex: 1!important;
+      -ms-flex-positive: 1!important;
+          flex-grow: 1!important;
+  -webkit-flex-shrink: 0!important;
+      -ms-flex-negative: 0!important;
+          flex-shrink: 0!important;
+  -webkit-flex-basis: 0%!important;
+      -ms-flex-preferred-size: 0%!important;
+          flex-basis: 0%!important;
+  overflow: hidden!important;
 }
 .pgindicators .main__left {
   width: 420px;
+  padding-bottom: 30px;
 }
 .pgindicators .main__right {
-  /*width:initial!important;*/
+  padding-bottom: 0px;
 }
 .pgindicators .main__right .main__right_head-left {
   width: 100%;
@@ -2430,6 +2448,9 @@ a .openschet {
 .pgindicators .main__right .main__right_body p a {
   font-size: 16px;
 }
+.pgindicators .main__right .main__right_body.indicator {
+  margin-bottom: 200px;
+}
 .ueva_listalka {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2444,6 +2465,7 @@ a .openschet {
       -ms-flex-direction: row;
           flex-direction: row;
   height: 95%;
+  padding-bottom: 45px;
 }
 .ueva_listalka .bukvas-left {
   margin: 0 24px;

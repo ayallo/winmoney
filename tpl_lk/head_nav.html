@@ -8,7 +8,7 @@
         <div class="head__left_text">%DATE%</div>
       </div>
       <div class="col-xs-4 col-md-2 text-center head__logo">
-        <div class="head__logo" style="margin:0 auto;"></div>
+        <a href="/"><div class="head__logo" style="margin:0 auto;"></div></a>
       </div>
       <div class="col-xs-4 col-md-5 text-right head__right">
         <a href="#"><div class="button blue fs_s16 fs_cw" data-toggle="modal" data-target="#modal_payment">Пополнить счет</div></a>
@@ -280,38 +280,44 @@
     </div>
     <div class="profile-body scroller scrollbar-other">
       <div class="profile-body-form container-fluid">
-          <div class="row">
-            <div class="col-xs-4 text_head fs_w400 text_align_right">Фамилия</div>
-            <div class="col-xs-8 text_16b">Неизвестный</div>
+        <div class="row">
+          <div class="col-xs-4 text_head fs_w400 text_align_right">Фамилия</div>
+          <div class="col-xs-8 text_16b">Неизвестный</div>
+        </div>
+        <div class="row">
+          <div class="col-xs-4 text_head fs_w400 text_align_right">Имя</div>
+          <div class="col-xs-8 text_16b">Аркадий</div>
+        </div>
+        <div class="row">
+          <div class="col-xs-4 text_head fs_w400 text_align_right">Отчество</div>
+          <div class="col-xs-8 text_16b">Николаевич</div>
+        </div>
+        <div class="row">
+          <div class="col-xs-4 text_head fs_w400 text_align_right">Страна</div>
+          <div class="col-xs-8 text_16b"><span class="flag rus"></span> Россия</div>
+        </div>
+        <div class="row">
+          <div class="col-xs-4 text_head fs_w400 text_align_right">E-mail</div>
+          <div class="col-xs-8 text_16b edt">
+            <span class="fi_input_bsh"><img src="img/lk/edit_pencil.png"> <span class="tx">arkady@mail.ru</span></span>
+            <span class="fi_input_inp"><input type="TEXT" class="fi_input" value="arkady@mail.ru"></span>
           </div>
-          <div class="row">
-            <div class="col-xs-4 text_head fs_w400 text_align_right">Имя</div>
-            <div class="col-xs-8 text_16b">Аркадий</div>
+        </div>
+        <div class="row">
+          <div class="col-xs-4 text_head fs_w400 text_align_right">Телефон</div>
+          <div class="col-xs-8 text_16b edt">
+            <span class="fi_input_bsh"><img src="img/lk/edit_pencil.png"> <span class="tx">+7 (***) *** 55 55</span></span>
+            <span class="fi_input_inp"><input type="TEXT" class="fi_input" value="+7 (903) 444 55 55"></span>
           </div>
-          <div class="row">
-            <div class="col-xs-4 text_head fs_w400 text_align_right">Отчество</div>
-            <div class="col-xs-8 text_16b">Николаевич</div>
-          </div>
-          <div class="row">
-            <div class="col-xs-4 text_head fs_w400 text_align_right">Страна</div>
-            <div class="col-xs-8 text_16b"><span class="flag rus"></span> Россия</div>
-          </div>
-          <div class="row">
-            <div class="col-xs-4 text_head fs_w400 text_align_right">E-mail</div>
-            <div class="col-xs-8 text_16b edt"><img src="img/lk/edit_pencil.png"> arkady@mail.ru</div>
-          </div>
-          <div class="row">
-            <div class="col-xs-4 text_head fs_w400 text_align_right">Телефон</div>
-            <div class="col-xs-8 text_16b edt"><img src="img/lk/edit_pencil.png"> +7 (***) *** 55 55</div>
-          </div>
-          <div class="row">
-            <div class="col-xs-4 text_head fs_w400 text_align_right">пароль</div>
-            <div class="col-xs-8 text_16b">
-              <input type="TEXT" name="pass0" value="" class="fi_input in_profile_pass" placeholder="введите пароль">
+        </div>
+        <div class="row">
+          <div class="col-xs-4 text_head fs_w400 text_align_right">пароль</div>
+          <div class="col-xs-8 text_16b">
+            <input type="TEXT" name="pass0" value="" class="fi_input in_profile_pass" placeholder="введите пароль">
 
-            </div>
           </div>
-          <div class="in_profile_pass_p">
+        </div>
+        <div class="in_profile_pass_p">
             <div>
               <input type="TEXT" name="pass1" value="" class="fi_input fi_input_sm" placeholder="новый пароль">
             </div>

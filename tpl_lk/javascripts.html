@@ -68,6 +68,41 @@
     $('.modal').on('show.bs.modal', function (e) {
       $('.body_page').addClass('modal_blur');
     })
+    /*иконка около инпута*/
+    $('.fi_input_bsh').click(function(){
+      var parent = $(this).closest('.edt');
+      $(this).hide();
+      parent.find('.fi_input_inp').show();
+      parent.find('.fi_input_inp input').focus();
+    });
+    $(".fi_input_inp input").hover(function(){
+    }, function(){
+      var parent = $(this).closest('.edt');
+      parent.find('.fi_input_inp').hide();
+      parent.find('.fi_input_bsh .tx').html($(this).val());
+      parent.find('.fi_input_bsh').show();
+    });
+/*скрытие панелей*/
+/*$(window).click(function() {
+  if($('.in_profile_pass_p').is(":visible")) {
+    $('.in_profile_pass_p').hide();
+  }
+});
+
+$('.in_profile_pass').click(function(event){
+    event.stopPropagation();
+});*/
+    /*$(document).click(function(event) {
+
+      if(!$(event.target).closest('.in_profile_pass_p').length) {
+        if($('.in_profile_pass_p').is(":visible")) {
+          $('.in_profile_pass_p').hide();
+        }else{
+          $('.in_profile_pass_p').show();
+        }
+      }
+    })*/
+
     /*checkbox checkbox*/
     $('.fi_checkbox .checkbox').click(function(){
       var id=$(this).attr('id').split('_');
@@ -98,7 +133,26 @@
       buttontx.html(tx).removeClass('nosel');
       $('#'+id[0]).val(id[1]);
       return false;
-    })
+    });
+    /*adv select*/
+    $('.adv_select ul li a').click(function(){
+      var id = $(this).attr("id").split("_");
+      var tx = $(this).html();
+      var fi_select = $(this).closest('.fi_select_v1');
+      fi_select.removeClass('open');
+      var button = $(this).closest('.fi_select_v1').find('.buttondiv');
+      button.attr("aria-expanded","false");
+      var buttontx = $(this).closest('.fi_select_v1').find('.buttondiv').find('.tx');
+      buttontx.html(tx).removeClass('nosel');
+      var oldclass= $('#'+id[0]).val();
+      $('#'+id[0]).val(id[1]);
+
+      $('.adv_plitka_img').removeClass('adv_'+oldclass).addClass('adv_'+id[1]);
+      $('[class ^= adv_plitka_wrap_]').removeClass('adv_plitka_wrap_'+oldclass).addClass('adv_plitka_wrap_'+id[1]);
+      $('.adv_plitka_blok').removeClass('adv_row_'+oldclass).addClass('adv_row_'+id[1]);
+
+      return false;
+    });
     /*фильтр в статьях новостях*/
     $('.filter_p').hide();
     $('.filter_wrap .filter_r').click(function(){/*раскрытие фильтра*/
@@ -135,15 +189,17 @@
       $('.in_profile_pass_p').hide();
     })
     /*adv hovers*/
-    $('.adv_plitka_img').hover(
+    /*$('.adv_plitka_img').hover(
       function() {
+        $('.adv_plitka_img').removeClass('unhover');
         $('.adv_plitka_img').addClass('unhover');
-        $( this ).removeClass('unhover').addClass('hover');
+        $( this ).removeClass('unhover');
+        $( this ).addClass('hover');
       }, function() {
         $('.adv_plitka_img').removeClass('unhover');
         $( this ).removeClass('hover');
       }
-    );
+    );*/
   });
   %SCRIPT%
   /*gamburger*/
