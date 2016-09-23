@@ -1,0 +1,174 @@
+body, html{
+  height: 100%;
+  width:100%;
+}
+br{
+  font-size: inherit;
+}
+.button{
+  padding: 12px 40px;
+  font-weight: bold;
+  margin: 10px 0px;
+}
+.parent {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+  background: #b1c8eb;
+  z-index: 5;
+}
+.block {
+  background: #fff;
+  border-radius: 5px;
+  padding:20px;
+  position: relative;
+  & .btn_close{
+    text-align: right;
+  }
+  & h2{
+    margin-top: 15px;
+    margin-bottom: 45px;
+    font-size:24px;
+    font-weight: normal;
+  }
+  & input{
+    margin: 0 auto;
+    width: 70%;
+    border-bottom: 2px solid #e5e5e5;
+  }
+  & p{
+    & img{
+      margin: 10px auto;
+    }
+  }
+  &_footer{
+    border-top: 1px solid #e5e5e5;
+    margin: 20px -20px;
+    padding: 20px 10px;
+    & p{
+      color:#b3b3b3;
+      font-size: 13px;
+    }
+  }
+  &.step_1{
+    width: 306px;
+    height: 358px;
+  }
+  &.step_2{
+    width: 306px;
+    height: 440px;
+  }
+  &.step_3{
+    width: 440px;
+    height: 700px;
+    & input{
+      width:80%;
+      font-size:13px;
+      &.reg_otc{
+        width:35%;
+        margin-right: 10%;
+        margin-left: 5%;
+      }
+      &.reg_imy{
+        width:35%; float:left;
+        margin-left: 10%;
+        margin-right: 10%;
+      }
+    }
+    & .fi_select{
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+}
+
+.vk {
+  position: relative;
+  font-size: 13px;
+  font-weight: bold;
+  color: #2675eb;
+  cursor:pointer;
+  padding-left: 10px;
+  &::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: -8px;
+    top: 1px;
+    background-image: url("../img/lk/vk_b.png");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  &:hover{
+      color:#e94f86;
+      &::before {
+        content: "";
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        left: -8px;
+        top: 1px;
+        background-image: url("../img/lk/vk_p.png");
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+}
+.fb {
+  position: relative;
+  font-size: 13px;
+  font-weight: bold;
+  color: #2675eb;
+  cursor:pointer;
+  padding-left: 10px;
+  margin-right: 10px;
+  &::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: -8px;
+    top: 1px;
+    background-image: url("../img/lk/fb_b.png");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  &:hover{
+      color:#e94f86;
+      &::before {
+        content: "";
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        left: -8px;
+        top: 1px;
+        background-image: url("../img/lk/fb_p.png");
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+}
+
+.hide{
+  opacity: 0;
+  z-index: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.sprite{
+  background-repeat: no-repeat;
+  background-position: center;
+  &_close{
+    background-image: url('../img/lk/x_g.png');
+    width: 16px; height: 16px;
+    display: inline-block;
+  }
+}

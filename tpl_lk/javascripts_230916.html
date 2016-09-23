@@ -1,7 +1,7 @@
 
 <script src="js/jquery-1.12.4.js"></script>
+
 <script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.pwstrength.js"></script>
 <!--script src="js/docs.min.js"></script>
 <script src="js/ie10-viewport-bug-workaround.js"></script-->
 <script src="js/jquery.scrollbar/jquery.scrollbar.min.js"></script>
@@ -68,21 +68,6 @@
     $('.modal').on('show.bs.modal', function (e) {
       $('.body_page').addClass('modal_blur');
     })
-
-    /* закрыть модальное окно */
-    /*
-    $("body").click(function(e) {
-        var modal = $('.modal');
-
-        if ($(e.target).hasClass('modal-content')) {
-          return false;
-        }
-        if ($('body').hasClass('modal-open')) {
-          modal.fadeOut();
-        }
-    });
-    */
-    
     /*иконка около инпута*/
     $('.fi_input_bsh').click(function(){
       var parent = $(this).closest('.edt');
@@ -91,30 +76,24 @@
       parent.find('.fi_input_inp input').focus();
     });
     $(".fi_input_inp input").hover(function(){
-      }, function(){
-        var parent = $(this).closest('.edt');
-        parent.find('.fi_input_inp').hide();
-        parent.find('.fi_input_bsh .tx').html($(this).val());
-        parent.find('.fi_input_bsh').show();
+    }, function(){
+      var parent = $(this).closest('.edt');
+      parent.find('.fi_input_inp').hide();
+      parent.find('.fi_input_bsh .tx').html($(this).val());
+      parent.find('.fi_input_bsh').show();
     });
-    /*скрытие панелей*/
-    $(window).click(function(event) {
-      if($(event.target).closest('.in_profile_pass').length) {
-        //если щелкаемв поле для ввода то не скрываем панель
-        return false;
-      }
-      if(!$(event.target).closest('.in_profile_pass_p').length) {
-        //если щелчок в не панели скрываем ее
-        if($('.in_profile_pass_p').is(":visible")) {
-          $('.in_profile_pass_p').hide();
-        }
-      }
-    });
-    /*
-    $('.in_profile_pass').click(function(event){
-        event.stopPropagation();
-    });*/
+/*скрытие панелей*/
+$(window).click(function() {
+  if($('.in_profile_pass_p').is(":visible")) {
+    $('.in_profile_pass_p').hide();
+  }
+});
+
+$('.in_profile_pass').click(function(event){
+    event.stopPropagation();
+});
     /*$(document).click(function(event) {
+
       if(!$(event.target).closest('.in_profile_pass_p').length) {
         if($('.in_profile_pass_p').is(":visible")) {
           $('.in_profile_pass_p').hide();
@@ -209,36 +188,7 @@
     $('.in_profile_pass_c').click(function(){
       $('.in_profile_pass_p').hide();
     })
-
-    /* отображжение пароля */
-
-    function toggle_password() {
-        
-        var btnShowPass = $('.btn-show-pass');
-
-        btnShowPass.on('click', function() {
-
-            var inputsPass = $('.modal').find('.input-password');
-            var inputType  = $('.modal').find('.input-password').first().attr('type');
-
-            if (inputType == 'password') {
-                $(inputsPass).each(function() {
-                   $("<input type='text'/>").attr({ name: this.name, value: this.value, class: this.className }).insertBefore(this);
-                }).remove();
-            } else {
-                $(inputsPass).each(function() {
-                   $("<input type='password'/>").attr({ name: this.name, value: this.value, class: this.className }).insertBefore(this);
-                }).remove();
-            }
-        });
-    }
-
-    toggle_password();
-
-    $("input[name='register_pass1']").pwstrength();
-
-
-    /* adv hovers */
+    /*adv hovers*/
     /*$('.adv_plitka_img').hover(
       function() {
         $('.adv_plitka_img').removeClass('unhover');

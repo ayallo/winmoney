@@ -442,7 +442,11 @@ jQuery(document).ready(function(){
             wheelPropagation: true,
             swipePropagation: true });
         }
-    	  $('.scroller').perfectScrollbar({ wheelSpeed: 0.3, suppressScrollX: true });
+    	  $('.scroller').perfectScrollbar({ 
+          wheelSpeed: 0.3, 
+          suppressScrollX: true,
+          wheelPropagation: true,
+          swipePropagation: true  });
     });
 </script>
 %SCRIPT%

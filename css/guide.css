@@ -249,13 +249,10 @@ a .head__but:hover {
 .butround02::before {
   content: "";
   position: absolute;
-  /*
-    background: url("../img/head_arr_hover.png") no-repeat;
-    width: 8px;height: 12px;*/
-  background-position: -165px -54px;
+  background-position: -76px -97px;
   width: 6px;
   height: 10px;
-  background-image: url(../img/spritesheet.png);
+  background-image: url(../img/spritesheet1.png);
   background-repeat: no-repeat;
   display: block;
   left: 13px;
@@ -264,12 +261,10 @@ a .head__but:hover {
 .butround02.calend::before {
   content: "";
   position: absolute;
-  /*background: url("../img/calendar01.png") no-repeat;
-    width: 16px; height: 16px;*/
-  background-position: -359px -5px;
+  background-position: -211px -5px;
   width: 13px;
   height: 16px;
-  background-image: url(../img/spritesheet.png);
+  background-image: url(../img/spritesheet1.png);
   background-repeat: no-repeat;
   display: block;
   left: 9px;
@@ -307,9 +302,12 @@ a.syl_arrowa {
 a.syl_arrowa::after {
   content: "";
   position: absolute;
-  background-image: url('../img/head_arr_hover.png');
+  background-position: -76px -97px;
   width: 6px;
   height: 10px;
+  background-image: url(../img/spritesheet1.png);
+  background-repeat: no-repeat;
+  display: block;
   top: 50%;
   right: -10px;
   margin-top: -4px;
@@ -318,9 +316,12 @@ a.syl_arrowa::after {
 a.syl_arrowa:hover::after {
   content: "";
   position: absolute;
-  background-image: url('../img/head_arr_hover_r.png');
+  background-position: -143px -97px;
   width: 6px;
   height: 10px;
+  background-image: url(../img/spritesheet1.png);
+  background-repeat: no-repeat;
+  display: block;
   top: 50%;
   right: -10px;
   margin-top: -4px;
@@ -336,9 +337,12 @@ a.syl_arrowa_left:hover {
 a.syl_arrowa_left::before {
   content: "";
   position: absolute;
-  background-image: url('../img/head_arr_left_hover.png');
+  background-position: -159px -97px;
   width: 6px;
   height: 10px;
+  background-image: url(../img/spritesheet1.png);
+  background-repeat: no-repeat;
+  display: block;
   top: 50%;
   left: -10px;
   margin-top: -4px;
@@ -347,9 +351,12 @@ a.syl_arrowa_left::before {
 a.syl_arrowa_left:hover::before {
   content: "";
   position: absolute;
-  background-image: url('../img/head_arr_left_hover_r.png');
+  background-position: -175px -97px;
   width: 6px;
   height: 10px;
+  background-image: url(../img/spritesheet1.png);
+  background-repeat: no-repeat;
+  display: block;
   top: 50%;
   left: -10px;
   margin-top: -4px;
@@ -367,10 +374,12 @@ a.syl_arrowa_left:hover::before {
 .btn_close_left::before {
   content: "";
   position: absolute;
-  background-image: url('../img/close.png');
-  background-repeat: no-repeat;
+  background-position: -5px -31px;
   width: 10px;
   height: 10px;
+  background-image: url(../img/spritesheet1.png);
+  background-repeat: no-repeat;
+  display: block;
   top: 7px;
   left: -14px;
   margin-top: -4px;
@@ -379,10 +388,12 @@ a.syl_arrowa_left:hover::before {
 .btn_close_left:hover::before {
   content: "";
   position: absolute;
-  background-image: url('../img/close.png');
-  background-repeat: no-repeat;
+  background-position: -5px -31px;
   width: 10px;
   height: 10px;
+  background-image: url(../img/spritesheet1.png);
+  background-repeat: no-repeat;
+  display: block;
   top: 7px;
   left: -14px;
   margin-top: -4px;
@@ -423,16 +434,17 @@ a.icon_pdf::before {
   background-position: -25px -5px;
   width: 10px;
   height: 6px;
-  background-image: url(../img/spritesheet.png);
+  background-image: url(../img/spritesheet1.png);
   background-repeat: no-repeat;
   display: block;
   display: inline-block !important;
 }
 .arr.up_green {
+  background-image: url(../img/spritesheet.png);
   background-position: -111px -5px;
   width: 10px;
   height: 6px;
-  background-image: url(../img/spritesheet.png);
+  background-image: url(../img/spritesheet1.png);
   background-repeat: no-repeat;
   display: block;
   display: inline-block !important;
@@ -501,10 +513,10 @@ a.icon_pdf::before {
   position: absolute;
   /*background: url("../img/calculator01.png") no-repeat;
       width: 16px; height: 22px; */
-  background-position: -334px -5px;
+  background-position: -161px -17px;
   width: 15px;
   height: 20px;
-  background-image: url(../img/spritesheet.png);
+  background-image: url(../img/spritesheet1.png);
   background-repeat: no-repeat;
   display: block;
   left: 21px;
@@ -513,10 +525,13 @@ a.icon_pdf::before {
 .block_round_big01__calculator:hover::before {
   content: "";
   position: absolute;
-  background: url("../img/calculator01_r.png") no-repeat;
+  background-position: -185px -17px;
   width: 15px;
   height: 20px;
-  left: 22px;
+  background-image: url(../img/spritesheet1.png);
+  background-repeat: no-repeat;
+  display: block;
+  left: 21px;
   top: 20px;
 }
 .block_round_small {
@@ -660,15 +675,20 @@ a.icon_pdf::before {
   background: url("../img/flags/japan.png") no-repeat;
 }
 .rss {
-  display: block;
+  background-position: -120px -117px;
   width: 48px;
   height: 14px;
-  background-image: url('../img/rss_g.png');
-  background-position: center;
+  background-image: url(../img/spritesheet1.png);
   background-repeat: no-repeat;
+  display: block;
 }
 .rss:hover {
-  background-image: url('../img/rss_r.png');
+  background-position: -118px -141px;
+  width: 48px;
+  height: 14px;
+  background-image: url(../img/spritesheet1.png);
+  background-repeat: no-repeat;
+  display: block;
 }
 .filter_r {
   position: relative;
@@ -685,13 +705,14 @@ a.icon_pdf::before {
 .filter_r::after {
   content: "";
   position: absolute;
-  /*.stitches-sprite("../img/spritesheet.png",-261px, -122px, 12px, 12px);*/
-  background-image: url('../img/icon_filter_r.png');
-  background-repeat: no-repeat;
   right: 4px;
   top: 6px;
+  background-position: -76px -139px;
   width: 14px;
   height: 13px;
+  background-image: url(../img/spritesheet1.png);
+  background-repeat: no-repeat;
+  display: block;
 }
 .filter_r.act,
 .filter_r:hover {
@@ -773,10 +794,10 @@ a.icon_pdf::before {
   top: 10px;
   right: -15px;
   position: absolute;
-  background-position: -21px -72px;
+  background-position: -213px -132px;
   width: 10px;
   height: 6px;
-  background-image: url(../img/spritesheet.png);
+  background-image: url(../img/spritesheet1.png);
   background-repeat: no-repeat;
   display: block;
 }
@@ -788,9 +809,9 @@ a.icon_pdf::before {
 }
 .filter_p div.select02 .filter_flymenu {
   display: none;
-  z-index: 9999;
+  z-index: 1500;
   position: absolute;
-  width: 200px;
+  /*width: 200px;*/
   background: #fff;
   -webkit-border-radius: 5px;
      -moz-border-radius: 5px;
@@ -1056,6 +1077,9 @@ strong {
   width: 100%!important;
   margin-bottom: 20px!important;
   margin-top: 50px;
+}
+.col.filter_wrap {
+  overflow: visible!important;
 }
 .column_1 {
   /*блок из 1ой колонки*/
@@ -1620,12 +1644,10 @@ strong {
   height: 32px;
 }
 .social__vk {
-  /*background-image: url('../img/social_vk.png');
-    background-repeat: no-repeat;*/
-  background-position: -373px -168px;
+  background-position: -141px -174px;
   width: 15px;
   height: 8px;
-  background-image: url(../img/spritesheet.png);
+  background-image: url(../img/spritesheet1.png);
   background-repeat: no-repeat;
   display: block;
 }
@@ -1668,10 +1690,10 @@ p.bullet::before {
   position: absolute;
   left: -50px;
   top: 10px;
-  background-position: -201px -5px;
+  background-position: -161px -5px;
   width: 40px;
   height: 2px;
-  background-image: url(../img/spritesheet.png);
+  background-image: url(../img/spritesheet1.png);
   background-repeat: no-repeat;
   display: block;
 }
@@ -1776,10 +1798,10 @@ p.bullet::before {
   content: "";
   /*width:12px; height:12px;
       background: url("../img/select_arr_g.png") no-repeat 95%;*/
-  background-position: -147px -144px;
+  background-position: -176px -148px;
   width: 10px;
   height: 6px;
-  background-image: url(../img/spritesheet.png);
+  background-image: url(../img/spritesheet1.png);
   background-repeat: no-repeat;
   display: block;
   display: inline-block;
@@ -1792,9 +1814,12 @@ p.bullet::before {
 }
 .select01 strong:hover::after {
   content: "";
+  background-position: -25px -5px;
   width: 10px;
   height: 6px;
-  background: url("../img/arr_down_r.png") no-repeat 95%;
+  background-image: url(../img/spritesheet1.png);
+  background-repeat: no-repeat;
+  display: block;
   display: inline-block;
   top: 15px;
   right: -13px;
@@ -1998,16 +2023,16 @@ p.bullet::before {
   content: "";
   /*background: url("../img/select_arr.png") no-repeat 95%;
     width:12px; height:12px;*/
+  background-position: -213px -132px;
+  width: 10px;
+  height: 6px;
+  background-image: url(../img/spritesheet1.png);
+  background-repeat: no-repeat;
+  display: block;
   display: inline-block;
   top: 8px;
   right: -15px;
   position: absolute;
-  background-position: -21px -72px;
-  width: 10px;
-  height: 6px;
-  background-image: url(../img/spritesheet.png);
-  background-repeat: no-repeat;
-  display: block;
 }
 .select02.open::after {
   content: "";
@@ -2057,8 +2082,8 @@ p.bullet::before {
   position: relative;
   border-bottom: 2px solid #f5f5f5;
   height: 34px;
-  background: url("../img/select_arr.png") no-repeat 95%;
   width: 100%;
+  background: url("../img/select_arr.png") no-repeat 95%;
 }
 .fi_select .tx {
   cursor: pointer;

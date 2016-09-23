@@ -740,9 +740,12 @@ a .openschet {
 }
 .head__tel::before {
   content: "";
-  background: url('../img/head_tel.png') no-repeat;
+  background-position: -191px -114px;
   width: 16px;
   height: 16px;
+  background-image: url(../img/spritesheet1.png);
+  background-repeat: no-repeat;
+  display: block;
   position: absolute;
   left: -16px;
   top: 6px;
@@ -781,12 +784,15 @@ a .openschet {
 .head__right-wrapr-r01::before {
   content: "";
   position: absolute;
-  width: 16px;
-  height: 16px;
+  background-position: -207px -54px;
+  width: 12px;
+  height: 13px;
+  background-image: url(../img/spritesheet1.png);
+  background-repeat: no-repeat;
+  display: block;
   top: 50%;
-  left: 6px;
-  margin-top: -8px;
-  background: transparent url("../img/head_acc.png") center no-repeat;
+  left: 8px;
+  margin-top: -7px;
   z-index: 51;
 }
 .head__right-wrapr-r01:hover {
@@ -795,6 +801,20 @@ a .openschet {
   /*color: #2675eb;*/
   color: #fff;
   font-size: 13px;
+}
+.head__right-wrapr-r01:hover::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  margin-top: -7px;
+  background-position: -207px -54px;
+  width: 12px;
+  height: 13px;
+  background-image: url(../img/spritesheet1.png);
+  background-repeat: no-repeat;
+  display: block;
+  z-index: 51;
 }
 .head__right-wrapr-r01:active {
   width: 80px;
@@ -806,23 +826,15 @@ a .openschet {
 .head__right-wrapr-r01:active::before {
   content: "";
   position: absolute;
-  width: 16px;
-  height: 16px;
   top: 50%;
-  left: 6px;
-  margin-top: -8px;
-  background: transparent url("../img/head_acc.png") center no-repeat;
-}
-.head__right-wrapr-r01:hover::before {
-  content: "";
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  top: 50%;
-  left: 6px;
-  margin-top: -8px;
-  background: transparent url("../img/head_acc.png") center no-repeat;
-  z-index: 51;
+  left: 8px;
+  margin-top: -7px;
+  background-position: -207px -54px;
+  width: 12px;
+  height: 13px;
+  background-image: url(../img/spritesheet1.png);
+  background-repeat: no-repeat;
+  display: block;
 }
 .head__right-wrapr-r02 {
   margin: 5px 5px 0px 5px;
@@ -847,12 +859,14 @@ a .openschet {
 .head__right-wrapr-r02::before {
   content: "";
   position: absolute;
-  width: 16px;
-  height: 10px;
-  top: 50%;
   left: 6px;
-  margin-top: -5px;
-  background: transparent url("../img/head_mt4.png") center no-repeat;
+  margin-top: 7px;
+  background-position: -191px -97px;
+  width: 18px;
+  height: 7px;
+  background-image: url(../img/spritesheet1.png);
+  background-repeat: no-repeat;
+  display: block;
   z-index: 51;
 }
 .head__right-wrapr-r02:hover {
@@ -865,12 +879,14 @@ a .openschet {
 .head__right-wrapr-r02:hover::before {
   content: "";
   position: absolute;
-  width: 17px;
-  height: 10px;
-  top: 50%;
   left: 6px;
-  margin-top: -5px;
-  background: transparent url("../img/head_mt4_hover_r.png") center no-repeat;
+  margin-top: 7px;
+  background-position: -92px -114px;
+  width: 18px;
+  height: 7px;
+  background-image: url(../img/spritesheet1.png);
+  background-repeat: no-repeat;
+  display: block;
   z-index: 51;
 }
 .head__right-wrapr-r03 {
@@ -896,13 +912,15 @@ a .openschet {
 .head__right-wrapr-r03::before {
   content: "";
   position: absolute;
+  left: 12px;
+  margin-top: 5px;
+  z-index: 51;
+  background-position: -127px -77px;
   width: 6px;
   height: 10px;
-  top: 50%;
-  left: 10px;
-  margin-top: -5px;
-  background: transparent url("../img/head_arr.png") center no-repeat;
-  z-index: 51;
+  background-image: url(../img/spritesheet1.png);
+  background-repeat: no-repeat;
+  display: block;
 }
 .head__right-wrapr-r03:hover {
   width: 165px;
@@ -921,22 +939,26 @@ a .openschet {
 .head__right-wrapr-r03:active::before {
   content: "";
   position: absolute;
+  left: 12px;
+  margin-top: 5px;
+  background-position: -127px -97px;
   width: 6px;
   height: 10px;
-  top: 50%;
-  left: 10px;
-  margin-top: -5px;
-  background: transparent url("../img/head_arr_hover_a.png") center no-repeat;
+  background-image: url(../img/spritesheet1.png);
+  background-repeat: no-repeat;
+  display: block;
 }
 .head__right-wrapr-r03:hover::before {
   content: "";
   position: absolute;
+  left: 12px;
+  margin-top: 5px;
+  background-position: -143px -97px;
   width: 6px;
   height: 10px;
-  top: 50%;
-  left: 10px;
-  margin-top: -5px;
-  background: transparent url("../img/head_arr_hover_r.png") center no-repeat;
+  background-image: url(../img/spritesheet1.png);
+  background-repeat: no-repeat;
+  display: block;
   z-index: 51;
 }
 .box {
@@ -1458,10 +1480,10 @@ a .openschet {
   overflow: auto;
   /*bottom: 50px;*/
   /*& table tr:hover{
-        border-top: 1px solid #68a4fd;
-        border-bottom: 1px solid #68a4fd;
-        color: #68a4fd;
-      }*/
+          border-top: 1px solid #68a4fd;
+          border-bottom: 1px solid #68a4fd;
+          color: #68a4fd;
+        }*/
 }
 .main__right--main table {
   width: 100%;
@@ -1469,7 +1491,7 @@ a .openschet {
 }
 .main__right--main table tr {
   /*border-top: 1px solid #e6e6e6;
-        border-bottom: 1px solid #e6e6e6;*/
+          border-bottom: 1px solid #e6e6e6;*/
 }
 .main__right--main .td_1 {
   font-size: 10px;
@@ -1593,47 +1615,76 @@ a .openschet {
   padding-top: 4px;
 }
 .footer__right--soc_vk {
-  background: url('../img/footer_soc_vk.png') no-repeat;
-  width: 32px;
+  background-position: -107px -54px;
+  width: 15px;
   height: 8px;
+  background-image: url(../img/spritesheet1.png);
+  background-repeat: no-repeat;
+  display: block;
   cursor: pointer;
+  margin: 0px 12px;
 }
 .footer__right--soc_vk:hover {
-  background: url('../img/footer_soc_vk_r.png') no-repeat;
+  background-position: -132px -54px;
+  width: 15px;
+  height: 8px;
+  background-image: url(../img/spritesheet1.png);
+  background-repeat: no-repeat;
+  display: block;
 }
 .footer__right--soc_fc {
-  background: url('../img/footer_soc_fc.png') no-repeat;
-  width: 32px;
+  background-position: -111px -31px;
+  width: 6px;
   height: 13px;
+  background-image: url(../img/spritesheet1.png);
+  background-repeat: no-repeat;
+  display: block;
   cursor: pointer;
-  /*margin-top: 18px;*/
-  margin-left: 8px;
+  margin: 0px 12px;
 }
 .footer__right--soc_fc:hover {
-  background: url('../img/footer_soc_fc_r.png') no-repeat;
-  margin-left: 8px;
+  background-position: -209px -31px;
+  width: 6px;
+  height: 13px;
+  background-image: url(../img/spritesheet1.png);
+  background-repeat: no-repeat;
+  display: block;
 }
 .footer__right--soc_ok {
-  background: url('../img/footer_soc_ok.png') no-repeat;
-  width: 32px;
+  background-position: -5px -54px;
+  width: 8px;
   height: 14px;
+  background-image: url(../img/spritesheet1.png);
+  background-repeat: no-repeat;
+  display: block;
   cursor: pointer;
+  margin: 0px 12px;
 }
 .footer__right--soc_ok:hover {
-  background: url('../img/footer_soc_ok_r.png') no-repeat;
+  background-position: -89px -54px;
+  width: 8px;
+  height: 14px;
+  background-image: url(../img/spritesheet1.png);
+  background-repeat: no-repeat;
+  display: block;
 }
 .footer__right--studio {
-  background: url('../img/footer_studio.png') no-repeat;
-  width: 54px;
-  height: 32px;
+  background-position: -157px -54px;
+  width: 41px;
+  height: 18px;
+  background-image: url(../img/spritesheet1.png);
+  background-repeat: no-repeat;
+  display: block;
   cursor: pointer;
-  margin-top: 16px;
+  margin-left: 12px;
 }
 .footer__right--studio:hover {
-  background: url('../img/footer_studio_r.png') no-repeat;
-  width: 54px;
-  height: 32px;
-  margin-top: 16px;
+  background-position: -5px -82px;
+  width: 41px;
+  height: 18px;
+  background-image: url(../img/spritesheet1.png);
+  background-repeat: no-repeat;
+  display: block;
 }
 .pgsfonom {
   -webkit-background-size: cover;

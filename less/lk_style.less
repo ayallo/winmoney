@@ -103,54 +103,54 @@ a.a1{
   }
 }
 .button{/*кнопка с фоном закругленная*/
-    border-radius: 21px;
-    padding: 9px 30px;
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
-    white-space: nowrap;
-    display: inline-block;
-    margin: 0px 8px;
-    &.pink{
-      background: #fb84ae;
-      background: -moz-linear-gradient(top,  #fb84ae 0%, #e94f86 100%);
-      background: -webkit-linear-gradient(top,  #fb84ae 0%,#e94f86 100%);
-      background: linear-gradient(to bottom,  #fb84ae 0%,#e94f86 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fb84ae', endColorstr='#e94f86',GradientType=0 );
-      &:hover{
-        background: #ffa2c3;
-        background: -moz-linear-gradient(top,  #ffa2c3 0%, #f45d93 100%);
-        background: -webkit-linear-gradient(top,  #ffa2c3 0%,#f45d93 100%);
-        background: linear-gradient(to bottom,  #ffa2c3 0%,#f45d93 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa2c3', endColorstr='#f45d93',GradientType=0 );
-        border-radius: 21px;
-        cursor: pointer;
-      }
+  border-radius: 21px;
+  padding: 9px 30px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  white-space: nowrap;
+  display: inline-block;
+  margin: 0px 8px;
+  &.pink{
+    background: #fb84ae;
+    background: -moz-linear-gradient(top,  #fb84ae 0%, #e94f86 100%);
+    background: -webkit-linear-gradient(top,  #fb84ae 0%,#e94f86 100%);
+    background: linear-gradient(to bottom,  #fb84ae 0%,#e94f86 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fb84ae', endColorstr='#e94f86',GradientType=0 );
+    color:#fff;
+    &:hover{
+      background: #ffa2c3;
+      background: -moz-linear-gradient(top,  #ffa2c3 0%, #f45d93 100%);
+      background: -webkit-linear-gradient(top,  #ffa2c3 0%,#f45d93 100%);
+      background: linear-gradient(to bottom,  #ffa2c3 0%,#f45d93 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa2c3', endColorstr='#f45d93',GradientType=0 );
+      border-radius: 21px;
+      cursor: pointer;
     }
-    &.blue{
+  }
+  &.blue{
+    background: #2c7bf0;
+    background: -moz-linear-gradient(top,  #2c7bf0 0%, #2675eb 100%);
+    background: -webkit-linear-gradient(top,  #2c7bf0 0%,#2675eb 100%);
+    background: linear-gradient(to bottom,  #2c7bf0 0%,#2675eb 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c7bf0', endColorstr='#2675eb',GradientType=0 );
+    &:hover{
       background: #2c7bf0;
       background: -moz-linear-gradient(top,  #2c7bf0 0%, #2675eb 100%);
       background: -webkit-linear-gradient(top,  #2c7bf0 0%,#2675eb 100%);
       background: linear-gradient(to bottom,  #2c7bf0 0%,#2675eb 100%);
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c7bf0', endColorstr='#2675eb',GradientType=0 );
-      &:hover{
-        background: #2c7bf0;
-        background: -moz-linear-gradient(top,  #2c7bf0 0%, #2675eb 100%);
-        background: -webkit-linear-gradient(top,  #2c7bf0 0%,#2675eb 100%);
-        background: linear-gradient(to bottom,  #2c7bf0 0%,#2675eb 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c7bf0', endColorstr='#2675eb',GradientType=0 );
-        border-radius: 21px;
-        cursor: pointer;
-      }
+      border-radius: 21px;
+      cursor: pointer;
     }
-
-    &:active {
-      box-shadow: inset 2px 5px 12px -3px #000;
-    }
-    &.size1{
-      padding: 9px 20px;
-      font-size: 16px;
-      margin-left:26px;
-    }
+  }
+  &:active {
+    box-shadow: inset 2px 5px 12px -3px #000;
+  }
+  &.size1{
+    padding: 9px 20px;
+    font-size: 16px;
+    margin-left:26px;
+  }
 }
 .button_round{/*кнопка закругленная с границей*/
   white-space: nowrap;
@@ -168,6 +168,10 @@ a.a1{
   & span{
     font-size: 11px;
     font-weight: normal;
+  }
+  & img{
+    display: inline-block;
+    margin: 0px 10px;
   }
   &:hover{
     & .buttondiv span{ color:#fff!important; }
@@ -470,11 +474,13 @@ a.a1{
   font-size: 48px;
 }
 .text_align_right{ text-align: right; }
+.text_align_center{ text-align: center; }
 .margint_40{ margin-top: 40px; }
 .marginb_6{ margin-bottom: 6px; }
 .marginb_16{ margin-bottom: 16px; }
 .marginb_18{ margin-bottom: 18px; }
 .marginb_20{ margin-bottom: 20px; }
+.marginb_20i{ margin-bottom: 20px!important; }
 .marginb_30{ margin-bottom: 30px; }
 .marginb_40{ margin-bottom: 40px; }
 .margint_120{ margin-top: 120px; }
@@ -637,33 +643,35 @@ a.a1{
   &_r{
     position: relative; padding-right: 20px; line-height: 10px;
     border: 1px solid #eceff3;
-    border-radius: 10px;
-    padding: 5px 22px 5px 9px;
+    border-radius: 14px;
+    padding: 8px 22px 6px 9px;
     color: #4c4d4f;
     cursor: pointer;
-    width:80px;
+    width:90px;
     font-size:13px;
+    font-weight: bold;
     &::after{
       content: "";
       position: absolute;
       /*.stitches-sprite("../img/spritesheet.png",-261px, -122px, 12px, 12px);*/
       background-image: url('../img/icon_filter_r.png');
       background-repeat: no-repeat;
-      right: 4px; top: 6px; width: 14px; height: 13px;
+      right: 8px; top: 6px; width: 14px; height: 13px;
     }
   }
   &_r.act, &_r:hover{
-    position: relative; padding-right: 20px; line-height: 10px;
+    position: relative;
+    padding-right: 20px;
+    line-height: 10px;
     border: 1px solid #eceff3;
-    border-radius: 10px;
-    padding: 5px 22px 5px 9px;
+    /*border-radius: 10px;
+    padding: 5px 22px 5px 9px;*/
     color: #4c4d4f;
     &::after{
       content: "";
       position: absolute;
       .stitches-sprite("../img/spritesheet.png",-261px, -122px, 12px, 12px);
-      right: 6px;
-      top: 6px;
+      right: 8px;  top: 6px;
     }
   }
   &_p{/*панель фильтра статей и новостей*/
@@ -676,6 +684,7 @@ a.a1{
     padding-left: 0px;
     padding-right: 14px;
     margin: 0px;
+    margin-top: 20px;
     margin-bottom: 20px;
     & div{
       margin: 2px 21px 6px 18px;
@@ -700,7 +709,7 @@ a.a1{
           display: none;
           z-index: 9999;
           position: absolute;
-          width: 200px;
+          /*width: 200px;*/
           background: #fff;
           border-radius: 5px;
           border-top-left-radius: 0px;
@@ -739,7 +748,7 @@ a.a1{
       flex-direction: row;
       justify-content: center;
       align-items: center;
-      & div{
+      & div.item{
         width: 25%;
         text-align: center;
         padding-top: 26px;
@@ -750,6 +759,39 @@ a.a1{
           font-size:10px;
           & img{
             margin:0 auto;
+          }
+          & div.us_menu{
+            background-repeat: no-repeat;
+            background-position: center;
+            width:100%;
+            height:36px;
+            &.pocket_wallet{
+              background-image: url('../img/lk/pocket_wallet.png');
+              &:hover{
+                background-image: url('../img/lk/pocket_wallet_r.png');
+              }
+            }
+            &.arrow{
+              background-image: url('../img/lk/arrow.png');
+              &:hover{
+                background-image: url('../img/lk/arrow_r.png');
+              }
+            }
+            &.case{
+              background-image: url('../img/lk/case.png');
+              &:hover{
+                background-image: url('../img/lk/case_r.png');
+              }
+            }
+            &.document{
+              background-image: url('../img/lk/document.png');
+              &:hover{
+                background-image: url('../img/lk/document_r.png');
+              }
+            }
+          }
+          &:hover{
+            color:#ea5087;
           }
         }
       }
@@ -1010,7 +1052,7 @@ a.a1{
   background-color: #f5f5f5;
 }
 .head_wrap_table{/*отступ в основной части от верха и до содержимого - фильтры там*/
-  padding-top: 40px;
+  padding-top: 30px;
   padding-bottom: 10px;
   background-color: #fff;
   padding-left: 36px;
@@ -1164,7 +1206,7 @@ a.a1{
     & .modal-content{
       margin-top: 70px;
       width: 360px;
-      height: 700px;
+      height: 600px;
       /*overflow: auto;
       padding: 20px 0px;*/
     }
@@ -1220,4 +1262,87 @@ a.a1{
       cursor: pointer;
     }
   }
+}
+
+.fi_input.pass1:focus {
+    border-bottom: none;
+}
+
+.fi_input.pass1 {
+    padding-bottom: 0;
+}
+
+#pwindicator {
+    margin-top: 4px;
+    width: 150px;
+}
+
+.bar {
+    height: 2px;
+}
+
+#pwindicator .label {
+    padding-left: 0;
+    font-size: 10px;
+}
+
+.pw-very-weak .bar {
+    background: #d00;
+    width: 30px;
+}
+
+.pw-very-weak .label {
+    color: #d00;
+}
+
+.pw-weak .bar {
+    background: #d00;
+    width: 60px;
+}
+
+.pw-weak .label {
+    color: #d00;
+}
+
+.pw-mediocre .bar {
+    background: #f3f01a;
+    width: 90px;
+}
+
+.pw-mediocre .label {
+    color: #f3f01a;
+}
+
+.pw-strong .bar {
+    background: #f3b31a;
+    width: 120px;
+}
+
+.pw-strong .label {
+    color: #f3b31a;
+}
+
+.pw-very-strong .bar {
+    background: #0d0;
+    width: 150px;
+}
+
+.pw-very-strong .label {
+    color: #0d0;
+}
+.img-x {
+ display: none;
+}
+.is-active .img-x {
+    position: absolute !important;
+    top: 0 !important;
+    border-radius: 22px;
+}
+
+.head__avatar.is-active img {
+    display: block;
+}
+
+.head__avatar.is-active {
+    top: 0;
 }
