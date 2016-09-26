@@ -6,7 +6,7 @@ $page = 'dashboard'; if(isset($_GET['p'])){ $page=htmlspecialchars($_GET['p']); 
 
 $html = ''; $m=array();
 
-if($page=='registration'){
+if($page=='registration'||$page=='popup1'||$page=='popup2'){
   $html .= get_shablon($tpl.'/lk_'.$page.'.html');
 }
 if($page=='dashboard'||$page=='account'||$page=='payments'||$page=='advertising'||$page=='advertising_one'||$page=='documents'){

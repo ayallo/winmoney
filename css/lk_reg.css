@@ -2,6 +2,7 @@ body,
 html {
   height: 100%;
   width: 100%;
+  margin: 0px;
 }
 br {
   font-size: inherit;
@@ -56,10 +57,25 @@ br {
 .block input {
   margin: 0 auto;
   width: 70%;
-  border-bottom: 2px solid #e5e5e5;
+}
+.block p {
+  cursor: default;
 }
 .block p img {
   margin: 10px auto;
+}
+.block p span {
+  font-size: inherit;
+  color: inherit;
+}
+.block p a {
+  font-size: 14px;
+  color: #2675eb;
+  text-decoration: none;
+}
+.block p a:hover {
+  color: #e94f86;
+  text-decoration: none;
 }
 .block_footer {
   border-top: 1px solid #e5e5e5;
@@ -69,6 +85,7 @@ br {
 .block_footer p {
   color: #b3b3b3;
   font-size: 13px;
+  cursor: default;
 }
 .block.step_1 {
   width: 306px;
@@ -86,26 +103,117 @@ br {
   width: 80%;
   font-size: 13px;
 }
-.block.step_3 input.reg_otc {
-  width: 35%;
-  margin-right: 10%;
-  margin-left: 5%;
-}
-.block.step_3 input.reg_imy {
-  width: 35%;
-  float: left;
-  margin-left: 10%;
-  margin-right: 10%;
-}
 .block.step_3 .fi_select {
   width: 80%;
   margin: 0 auto;
+  border-bottom: 2px solid #e5e5e5;
+}
+.block.step_3 .fi_input_span {
+  right: 48px!important;
+  cursor: pointer;
+}
+.block.step_3 .pass1 {
+  padding-bottom: 10px;
+}
+.block.step_3 #pwindicator {
+  WIDTH: 80%;
+  margin: 0 auto;
+  text-align: left;
+}
+.block.step_3 .inp_wrap {
+  position: relative;
+}
+.block.step_3 .inp_wrap .span {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.block.step_3 .inp_wrap_2 {
+  width: 80%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.block.step_3 .inp_wrap_2 .left {
+  width: 40%;
+  margin-right: 10%;
+  float: left;
+}
+.block.step_3 .inp_wrap_2 .left input {
+  width: 100%;
+}
+.block.step_3 .inp_wrap_2 .left .input_mess {
+  width: 100%;
+}
+.block.step_3 .inp_wrap_2 .right {
+  width: 40%;
+  float: left;
+  margin-left: 10%;
+}
+.block.step_3 .inp_wrap_2 .right input {
+  width: 100%;
+}
+.block.step_3 .inp_wrap_2 .right .input_mess {
+  width: 100%;
+}
+.block.step_3 .wrap_p {
+  width: 80%;
+  text-align: left;
+  margin: 0 auto;
+}
+.block.step_3 .fi_checkbox .checkbox {
+  width: 22px;
+}
+.block.step_3 .checkbox,
+.block.step_3 .radio {
+  margin-top: 0px;
+}
+.block.step_3 .pass_check_status {
+  font-size: 10px;
+  color: #3b5998;
+  width: 80%;
+  margin: 0 auto;
+  text-align: left;
+}
+.block.step_3 .pass_check_status.err {
+  color: red;
+}
+.block.step_3 .input_mess {
+  font-size: 10px;
+  color: #3b5998;
+  width: 80%;
+  margin: 0 auto;
+  text-align: left;
+}
+.block.step_3 .input_mess.err {
+  color: red;
+}
+.block.popup_1 {
+  width: 510px;
+  height: 470px;
+}
+.block.popup_1 img {
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+.block.popup_2 {
+  width: 368px;
+  height: 521px;
+}
+.block.popup_2 img {
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 30px;
 }
 .vk {
   position: relative;
   font-size: 13px;
   font-weight: bold;
-  color: #2675eb;
+  color: #45668e;
   cursor: pointer;
   padding-left: 10px;
 }
@@ -138,7 +246,7 @@ br {
   position: relative;
   font-size: 13px;
   font-weight: bold;
-  color: #2675eb;
+  color: #45668e;
   cursor: pointer;
   padding-left: 10px;
   margin-right: 10px;

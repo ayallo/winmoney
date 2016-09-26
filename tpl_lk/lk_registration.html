@@ -21,10 +21,10 @@
         <div class="btn_close"><a href="/"><span class="sprite sprite_close"></span></a></div>
 
         <h2 class="text_align_center">Регистрация</h2>
-        <input type="text" class="fi_input" name="reg_code" value="" placeholder="код" tabindex="0">
+        <input type="text" class="fi_input brb_norm" name="reg_code" value="" placeholder="код" tabindex="0">
         <p class="text_align_center fs_g1 fs_OpenSans fs_s10 fs_wbold marginb_20">SMS с кодом отправлено<br>на номер +7 (995) 995 95 95</p>
         <p class="text_align_center marginb_20">
-          <a href="" class="fs_b fs_OpenSans fs_s14 fs_wbold">Отправить SMS повторно</a>
+          <a href="" class="fs_bni fs_OpenSans fs_s14 fs_wbold">Отправить SMS повторно</a>
         </p>
         <div class="button pink step_go" id="step_1_2">Продолжить</div>
       </div>
@@ -32,7 +32,7 @@
         <div class="btn_close"><a href="/"><span class="sprite sprite_close"></span></a></div>
 
         <h2 class="text_align_center">Регистрация</h2>
-        <input type="text" class="fi_input" name="reg_tel" value="" placeholder="телефон" tabindex="0">
+        <input type="text" class="fi_input phone1 brb_norm" name="reg_tel" value="" placeholder="телефон" tabindex="0">
         <p class="text_align_center marginb_20">
           <img src="img/lk/recaptcha.png">
         </p>
@@ -48,14 +48,32 @@
       </div>
       <div class="block step_3 hide text_align_center">
         <div class="btn_close"><a href="/"><span class="sprite sprite_close"></span></a></div>
-
+        <form method="POST" name="step_3" id="step_3">
         <h2 class="text_align_center">Регистрация</h2>
-        <input type="text" class="fi_input marginb_20i" name="reg_fam" value="" placeholder="Фамилия" tabindex="0">
-        <input type="text" class="fi_input marginb_20i reg_imy" name="reg_imy" value="" placeholder="Имя" tabindex="1">
-        <input type="text" class="fi_input marginb_20i reg_otc" name="reg_otc" value="" placeholder="Отчество" tabindex="2">
-        <input type="text" class="fi_input marginb_20i" name="reg_tel" value="" placeholder="Телефон" tabindex="3">
-        <input type="text" class="fi_input marginb_20i" name="reg_eml" value="" placeholder="E-mail" tabindex="4">
-        <div class="dropdown fi_select">
+
+        <div class="inp_wrap marginb_20i">
+          <input type="text" class="fi_input surnameInput brb_norm" name="reg_fam" value="" placeholder="Фамилия" tabindex="0">
+          <div class="input_mess"></div>
+        </div>
+
+        <div class="inp_wrap_2 marginb_20i">
+          <div class="left">
+            <input type="text" class="fi_input reg_imy nameInput brb_norm" name="reg_imy" value="" placeholder="Имя" tabindex="1">
+            <div class="input_mess"></div>
+          </div>
+          <div class="right">
+            <input type="text" class="fi_input reg_otc otchinput brb_norm" name="reg_otc" value="" placeholder="Отчество" tabindex="2">
+            <div class="input_mess"></div>
+          </div>
+        </div>
+
+        <input type="text" class="fi_input marginb_20i phone1 brb_norm" name="reg_tel" value="" placeholder="Телефон" tabindex="3">
+
+        <div class="inp_wrap marginb_20i">
+          <input type="text" class="fi_input inp_email brb_norm" name="reg_eml" value="" placeholder="E-mail" tabindex="4">
+          <div class="input_mess"></div>
+        </div>
+        <div class="dropdown fi_select marginb_20i">
           <input type="hidden" name="reg_str" id="registerstarna" value="1">
           <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="tx"><span class="flag rus"></span> Россия</span><span class="caret"></span></button>
           <ul class="dropdown-menu" aria-labelledby="dLabel">
@@ -65,18 +83,29 @@
           </ul>
         </div>
 
-        <input type="password" name="register_pass1" data-indicator="pwindicator" class="fi_input fi_input_sspan input-password pass1" value="" placeholder="123sd!4">
-        <span class="btn-show-pass glyphicon glyphicon-eye-open fi_input_span" aria-hidden="true"></span>
-        <div id="pwindicator">
-          <div class="bar"></div>
-          <div class="label"></div>
+        <div class="inp_wrap">
+          <input type="password" name="register_pass1" data-indicator="pwindicator" class="fi_input fi_input_sspan input-password pass1 brb_norm" value="" placeholder="Введите пароль">
+          <span class="btn-show-pass glyphicon glyphicon-eye-open fi_input_span marginb_20i" aria-hidden="true"></span>
+          <div id="pwindicator" class="marginb_20i">
+            <div class="bar"></div>
+            <div class="label"></div>
+          </div>
+        </div>
+        <div class="inp_wrap marginb_20i">
+          <input type="password" class="fi_input pass2 brb_norm" name="reg_pod" value="" placeholder="Подтверждение" tabindex="7">
+          <div class="pass_check_status"></div>
         </div>
 
-        <input type="text" class="fi_input marginb_20i" name="reg_pas" value="" placeholder="Пароль" tabindex="6">
-        <input type="text" class="fi_input marginb_20i" name="reg_pod" value="" placeholder="Подтверждение" tabindex="7">
-        <p>Я принимаю условия пользовательского положения</p>
+        <div class="wrap_p marginb_40i">
+          <div class="fi_checkbox">
+            <input type="HIDDEN" name="register_rules" id="registerrules" value="1">
+            <div class="checkbox checked" id="registerrules_1"></div>
+            <div class="text fs_s13 fs_w400">Я принимаю условия пользовательского соглашения</div>
+          </div>
+        </div>
 
         <div class="button pink step_go" id="step_3_4">Начать работу</div>
+      </form>
       </div>
 
     </div>
@@ -86,30 +115,16 @@
       $(function () {
         /*переход на слайд*/
         $('.step_go').click(function(){
-          var id=$(this).attr('id').split('_');
-          $('.step_'+id[1]).addClass('hide');
-          $('.step_'+id[2]).removeClass('hide');
+          if ($(this).hasClass('disable')){
+            alert('Исправьте ошибки');
+          }else{
+            var id=$(this).attr('id').split('_');
+            $('.step_'+id[1]).addClass('hide');
+            $('.step_'+id[2]).removeClass('hide');
+          }
           return false;
         });
-        /* отображжение пароля */
-        function toggle_password() {
-            var btnShowPass = $('.btn-show-pass');
-            btnShowPass.on('click', function() {
-                var inputsPass = $('.modal').find('.input-password');
-                var inputType  = $('.modal').find('.input-password').first().attr('type');
-                if (inputType == 'password') {
-                    $(inputsPass).each(function() {
-                       $("<input type='text'/>").attr({ name: this.name, value: this.value, class: this.className }).insertBefore(this);
-                    }).remove();
-                } else {
-                    $(inputsPass).each(function() {
-                       $("<input type='password'/>").attr({ name: this.name, value: this.value, class: this.className }).insertBefore(this);
-                    }).remove();
-                }
-            });
-        }
-        toggle_password();
-        $("input[name='register_pass1']").pwstrength();
+
       });
     </script>
   </body>

@@ -2,6 +2,10 @@
 <script src="js/jquery-1.12.4.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.pwstrength.js"></script>
+<script src="js/masked.js"></script>
+<script src="js/countdown/jquery.plugin.min.js"></script>
+<script src="js/countdown/jquery.countdown.js"></script>
+<script src="js/countdown/jquery.countdown-ru.js"></script>
 <!--script src="js/docs.min.js"></script>
 <script src="js/ie10-viewport-bug-workaround.js"></script-->
 <script src="js/jquery.scrollbar/jquery.scrollbar.min.js"></script>
@@ -38,7 +42,7 @@
     /*профиль из аватара*/
     $(".fly__profile").hide();
     /*щелчок по гамбургеру*/
-    $(".head__avatar").click(function(){
+    $(".head__avatar, .head__fio").click(function(){
       if ( $(".fly__profile").css('opacity') == '0' ){
         $("body").css("overflow","hidden");
         $(".fly__profile").show().css({"opacity":"1","margin-left":"0px"}).stop().fadeTo(200, 1);
@@ -82,7 +86,7 @@
         }
     });
     */
-    
+
     /*иконка около инпута*/
     $('.fi_input_bsh').click(function(){
       var parent = $(this).closest('.edt');
@@ -211,33 +215,70 @@
     })
 
     /* отображжение пароля */
-
     function toggle_password() {
-        
-        var btnShowPass = $('.btn-show-pass');
-
-        btnShowPass.on('click', function() {
-
-            var inputsPass = $('.modal').find('.input-password');
-            var inputType  = $('.modal').find('.input-password').first().attr('type');
-
-            if (inputType == 'password') {
-                $(inputsPass).each(function() {
-                   $("<input type='text'/>").attr({ name: this.name, value: this.value, class: this.className }).insertBefore(this);
-                }).remove();
-            } else {
-                $(inputsPass).each(function() {
-                   $("<input type='password'/>").attr({ name: this.name, value: this.value, class: this.className }).insertBefore(this);
-                }).remove();
-            }
-        });
+      var btnShowPass = $('.btn-show-pass');
+      btnShowPass.on('click', function() {
+        var inputsPass = $('body').find('.input-password');
+        var inputType  = $('body').find('.input-password').first().attr('type');
+        if (inputType == 'password') {
+          $(inputsPass).each(function() {
+           $("<input type='text'/>").attr({ name: this.name, value: this.value, class: this.className }).insertBefore(this);
+          }).remove();
+        } else {
+          $(inputsPass).each(function() {
+           $("<input type='password'/>").attr({ name: this.name, value: this.value, class: this.className }).insertBefore(this);
+          }).remove();
+        }
+      });
     }
-
     toggle_password();
-
     $("input[name='register_pass1']").pwstrength();
-
-
+    $("input[name='edit_pass1']").pwstrength();
+    /*убираем границу привводе пароля*/
+    $('.pass1').change(function(){
+      var val = $(this).val();
+      if(val==''){
+        $(this).addClass('brb_norm');
+        $('#pwindicator .label').html('пароль не может быть пустым!');
+        $('.button.pink.step_go').addClass('disable');
+      }else {
+        $(this).removeClass('brb_norm');
+        $('.button.pink.step_go').removeClass('disable');
+      }
+      var form = $(this).closest('form').first();
+      check_pass(form);
+    });
+    /*проверка на ввод одинакового пароля*/
+    $(".pass2").change(function(){
+      var form = $(this).closest('form').first();
+      check_pass(form);
+    });
+    /*ввод фамили*/
+    $('.surnameInput, .nameInput, .otchinput').keypress(function(key) {
+      //if((key.charCode < 97 || key.charCode > 122) && (key.charCode < 65 || key.charCode > 90) && (key.charCode < 1040 || key.charCode > 1071) && (key.charCode < 1072 || key.charCode > 1103) && (key.charCode != 45) && (key.charCode != 1025) && (key.charCode != 1105)) return false; //+англ
+      if( (key.charCode < 1040 || key.charCode > 1071) && (key.charCode < 1072 || key.charCode > 1103) && (key.charCode != 45) && (key.charCode != 1025) && (key.charCode != 1105)) return false;
+    });
+    /*проверка вставленного текста*/
+    $('.surnameInput, .nameInput, .otchinput').change(function(key) {
+      var val = $(this).val();
+      var input_mess = $(this).siblings('.input_mess');
+      if(val!=''){
+        //var re = /^[A-Za-zа-яА-Я\-]+$/i;//+англ
+        var re = /^[а-яА-Я\-]+$/i;
+        var valid = re.test(val);
+        if(valid){
+          $(this).removeClass('err').addClass('brb_norm');
+          input_mess.removeClass('err').html('');
+        }else{
+          $(this).removeClass('brb_norm').addClass('err');
+          input_mess.addClass('err').html('Введите только русские буквы');
+        }
+      }else{
+        $(this).removeClass('brb_norm').addClass('err');
+        input_mess.addClass('err').html('Заполните поле!');
+      }
+    });
+    $(".phone1").mask("+7 (999) 999 99 99");
     /* adv hovers */
     /*$('.adv_plitka_img').hover(
       function() {
@@ -250,6 +291,56 @@
         $( this ).removeClass('hover');
       }
     );*/
+    $('.inp_email').change(function(){
+      var valid = ValidMail('.inp_email');
+      var input_mess = $(this).siblings('.input_mess');
+      if (valid) {
+        input_mess.removeClass('err').html('');}
+      else {
+        input_mess.addClass('err').html('Адрес электронной почты введен неправильно!');
+      }
+    });
+    $('#step_3').change(function(){
+      form_check();
+    });
+
+    $('#registerrules_1').click(function(){
+      if($(this).hasClass('checked')){
+        form_check();
+      }else{
+        form_check(1);
+      }
+    });
+    function form_check(err=0){
+      if(err==1) {
+        $('.button.pink.step_go').addClass('disable');
+        return false;
+      }
+      if($('#step_3').find('.err').length){
+        $('.button.pink.step_go').addClass('disable');
+      }else{
+        $('.button.pink.step_go').removeClass('disable');
+      }
+    }
+    function check_pass(form){
+      var val1 = form.find('.pass1').val();
+      var val2 = form.find('.pass2').val();
+      if(val1!=''&&val1 == val2){
+        $('.pass_check_status').removeClass('err').html('Введенео верно');
+      }else{
+        $('.pass_check_status').addClass('err').html('Введенео не верно');
+      }
+    }
+    function ValidMail(class1) {
+        //var re = /^[\w-\.]+@[\w-]+\.[a-z]{2,4}$/i;
+        var re = /^[\wа-яА-Я]{1}[\w-\.а-яА-Я]*@[\w-а-яА-Я]+\.[a-zа-я]{2,4}$/i;
+        var myMail = $(class1).val();
+        var valid = re.test(myMail);
+        //if (valid) output = 'Адрес эл. почты введен правильно!';
+        //else output = 'Адрес электронной почты введен неправильно!';
+        //document.getElementById('message').innerHTML = output;
+        return valid;
+    }
   });
   %SCRIPT%
   /*gamburger*/

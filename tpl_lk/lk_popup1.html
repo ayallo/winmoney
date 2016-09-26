@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="img/favicon.ico">
+    <title>Регистрация AWIN money</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/lk_style.css">
+    <link rel="stylesheet" href="css/lk_reg.css">
+  </head>
+  <body>
+    <div class="parent">
+      <div class="block popup_1 text_align_center">
+        <!--div class="btn_close"><a href="/"><span class="sprite sprite_close"></span></a></div-->
+        <img src="img/lk/popup_1.png">
+        <h2 class="text_align_center">Ваши данные под защитой</h2>
+        <p class="text_align_center fs_g1 fs_OpenSans fs_s16 marginb_20">Сеанс работы был приостановлен ввиду вашей неактивности. Авторизуйтесь, пожалуйста.</p>
+        <p class="text_align_center marginb_20">
+          <a href="lk.php"><div class="button pink marginr_30i" id="">Войти</div></a>
+          <a href="/" class="fs_bni fs_OpenSans fs_s14 fs_wbold">Завершить работу</a>
+        </p>
+
+      </div>
+    </div>
+
+    <script src="js/jquery-1.12.4.js"></script>
+    <script>
+      $(function () {
+        /*переход на слайд*/
+        $('.step_go').click(function(){
+          if ($(this).hasClass('disable')){
+            alert('Исправьте ошибки');
+          }else{
+            var id=$(this).attr('id').split('_');
+            $('.step_'+id[1]).addClass('hide');
+            $('.step_'+id[2]).removeClass('hide');
+          }
+          return false;
+        });
+
+      });
+    </script>
+  </body>
+</html>

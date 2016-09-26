@@ -1,10 +1,12 @@
 body, html{
   height: 100%;
   width:100%;
+  margin:0px;
 }
 br{
   font-size: inherit;
 }
+
 .button{
   padding: 12px 40px;
   font-weight: bold;
@@ -40,11 +42,25 @@ br{
   & input{
     margin: 0 auto;
     width: 70%;
-    border-bottom: 2px solid #e5e5e5;
+    //border-bottom: 2px solid #e5e5e5;
   }
   & p{
+    cursor: default;
     & img{
       margin: 10px auto;
+    }
+    & span{
+      font-size: inherit;
+      color:inherit;
+    }
+    & a{
+      font-size: 14px;
+      color:#2675eb;
+      text-decoration: none;
+      &:hover{
+        color:#e94f86;
+        text-decoration: none;
+      }
     }
   }
   &_footer{
@@ -54,6 +70,7 @@ br{
     & p{
       color:#b3b3b3;
       font-size: 13px;
+      cursor: default;
     }
   }
   &.step_1{
@@ -70,20 +87,96 @@ br{
     & input{
       width:80%;
       font-size:13px;
-      &.reg_otc{
-        width:35%;
-        margin-right: 10%;
-        margin-left: 5%;
-      }
-      &.reg_imy{
-        width:35%; float:left;
-        margin-left: 10%;
-        margin-right: 10%;
-      }
+      &.reg_otc{}
+      &.reg_imy{}
     }
     & .fi_select{
       width: 80%;
       margin: 0 auto;
+      border-bottom: 2px solid #e5e5e5;
+    }
+    & .fi_input_span{
+      right: 48px!important;
+      cursor: pointer;
+    }
+    & .pass1{
+      padding-bottom: 10px;
+    }
+    #pwindicator {
+      WIDTH: 80%;
+      margin: 0 auto;
+      text-align: left;
+    }
+    & .inp_wrap{
+      position: relative;
+      & .span{
+        position: absolute;
+        left:0px; top:0px;
+      }
+      &_2{
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        & .left{
+          width: 40%;
+          margin-right: 10%;
+          float: left;
+          & input{ width: 100%; }
+          & .input_mess{ width:100%;}
+        }
+        & .right{
+          width: 40%;
+          float: left;
+          margin-left: 10%;
+          & input{ width: 100%; }
+          & .input_mess{ width:100%;}
+        }
+      }
+    }
+    & .wrap_p{
+      width:80%;
+      text-align: left;
+      margin: 0 auto;
+    }
+    & .fi_checkbox .checkbox{ width:22px;}
+    & .checkbox, .radio{ margin-top: 0px;}
+    & .pass_check_status{
+      font-size: 10px;
+      color: #3b5998;
+      width: 80%;
+      margin: 0 auto;
+      text-align: left;
+      &.err{
+        color: red;
+      }
+    }
+    & .input_mess{
+      font-size: 10px;
+      color: #3b5998;
+      width: 80%;
+      margin: 0 auto;
+      text-align: left;
+      &.err{
+        color: red;
+      }
+    }
+  }
+  &.popup_1{
+    width: 510px;
+    height: 470px;
+    & img{
+      margin: 0 auto;
+      margin-top:40px;
+      margin-bottom:30px;
+    }
+  }
+  &.popup_2{
+    width: 368px;
+    height: 521px;
+    & img{
+      margin: 0 auto;
+      margin-top:40px;
+      margin-bottom:30px;
     }
   }
 }
@@ -92,7 +185,7 @@ br{
   position: relative;
   font-size: 13px;
   font-weight: bold;
-  color: #2675eb;
+  color: #45668e;
   cursor:pointer;
   padding-left: 10px;
   &::before {
@@ -125,7 +218,7 @@ br{
   position: relative;
   font-size: 13px;
   font-weight: bold;
-  color: #2675eb;
+  color: #45668e;
   cursor:pointer;
   padding-left: 10px;
   margin-right: 10px;
