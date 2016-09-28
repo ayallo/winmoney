@@ -206,6 +206,7 @@ a.a1{
       top: 8px;
     }
     &:hover{
+      color:#e94f86;
       &::before {
         content: "";
         position: absolute;
@@ -891,6 +892,10 @@ a.a1{
       text-align: center;
       padding-top: 26px;
       box-shadow: -1px 1px 0px 0px #373c43, -1px 1px 0px 1px #26292f;
+      margin: 0;
+      border-radius: 0;
+      &.pocket_wallet_wrap{ padding-top: 5px; }
+      &.arrow_wrap,&.case_wrap,&.document_wrap{ padding-top: 18px; }
       & a{
         color: #9399a1;
         font-size:10px;
@@ -1234,6 +1239,30 @@ a.a1{
 .pg_account{/*account стили*/
   background-color: #f5f5f5;
 }
+.pg_payments{
+  & .pg_payments_main{
+    display: flex;
+    flex-direction: row;
+
+    & .page_left{
+      width:420px;
+    }
+    & .page_right{
+      width:100%;
+      & .page_right_head{
+        margin-bottom: 40px;
+      }
+      & .page_right_body{
+        & .page_right_body_wrap{
+          width:1170px;
+          margin:0 auto;
+          float:none;
+        }
+      }
+    }
+  }
+}
+
 .head_wrap_table{/*отступ в основной части от верха и до содержимого - фильтры там*/
   padding-top: 30px;
   padding-bottom: 10px;
@@ -1394,6 +1423,16 @@ a.a1{
       padding: 20px 0px;*/
     }
   }
+  &_transfer .modal-dialog {
+    margin:0px;
+    & .modal-content{
+      margin-top: 70px;
+      width: 360px;
+      height: 480px;
+      /*overflow: auto;
+      padding: 20px 0px;*/
+    }
+  }
 }
 
 .navbar{
@@ -1514,6 +1553,7 @@ a.a1{
       & .col.col5t{
         & .hidep{
           display: inline-block;
+          margin-left: 55px;
         }
       }
       & .col.colw2{ width: 20%; }
@@ -1583,7 +1623,7 @@ a.a1{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  //margin-top: 80px;
+  justify-content: center;
   & .row{
     width:360px;
     height:320px;

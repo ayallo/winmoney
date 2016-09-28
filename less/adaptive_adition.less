@@ -111,7 +111,7 @@ p.bullet {
       }
     }
     &.afterslides {
-    padding-top: 200px;
+    padding-top: 270px;
     img {
       margin: 0 auto;
       left: 0 !important;
@@ -139,12 +139,17 @@ p.bullet {
   .footerblock--blockt h3 {
     text-transform: none;
   }
+  .footerblock--block {
+    padding-bottom: 110px;
+  }
   .footerblock--block-wrap {
+    margin-bottom: 0;
     .block_news .data {
       margin-bottom: 12px;
     }
     .block_news {
       width: 330px;
+      padding-bottom: 0;
     }
     &:after {
       display: block;
@@ -156,6 +161,11 @@ p.bullet {
       background: linear-gradient(to right, rgba(245,245,245,0) 0%,rgba(245,245,245,0) 66%,rgba(245,245,245,1) 95%,rgba(245,245,245,1) 100%);
     }
   }
+}
+
+.plaha {
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
 }
 
 .main__menu .myslide_nav a {
@@ -171,7 +181,156 @@ p.bullet {
     color: #4c4d4f;
   }
 }
+.fly__feedback-panel .right-wrap {
+  .feedbackpanel {
+    margin: 0;
+    .feedbackhead {
+      margin-left: 40px;
+      margin-right: 40px;
+      display: inline-block;
+      height: initial;
+      .item {
+        float: left;
+        margin-right: 30px;
+        padding-top: 20px;
+        &:hover {
+          padding-top: 18px;
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+        &.act {
+          padding-top: 18px;
+        }
+      }
+      .btn_close_left {
+        float: right;
+        margin: 26px 0;
+        margin-bottom: 0;
+        color: #9399a1;
+        padding: 0;
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+    .feedbackbdody1 {
+      margin-left: 25px;
+      margin-right: 25px;
+      position: relative;
+      .block:last-child {
+        margin-bottom: 120px;
+      }
+      .block:first-child {
+        margin-top: 40px;
+      }
+      .block.admin {
+        margin-right: 5px;
+        margin-left: auto;
+      }
+      .block.client {
+        margin-bottom: 50px;
+      }
+      .block .time {
+        left: 30px;
+      }
+      .block p {
+        font-weight: 400;
+        font-family: 'PT Serif', serif;
+      }
+      &:before {
+        display: block;
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 40px;
+        top: 0;
+        background: linear-gradient(to top, rgba(42,46,52,0) 0%,rgba(42,46,52,1) 100%);
+        z-index: 2;
+      }
+      &:after {
+        display: block;
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 120px;
+        bottom: 0;
+        background: linear-gradient(to bottom, rgba(42,46,52,0) 0%,rgba(42,46,52,1) 100%);
+      }
+    }
+    .feedbackbottom {
+      margin-left: 40px;
+      margin-right: 40px;
+      .say {
+        width: 6px;
+      }
+    }
+  }
+  .faqpanel {
+    .feedbackpanel;
+    .faqhead {
+      .feedbackhead;
+    }
+    .faqbody {
+      margin-left: 40px;
+      margin-right: 40px;
+      position: relative;
+      .faqbody_scroll .fb_item {
+        h3 {
+          font-weight: 400;
+          line-height: 25px;
+          letter-spacing: 0.02em;
+        }
+        .answer {
+          margin-top: 20px;
+          margin-bottom: 20px;
+          font-weight: 400;
+          line-height: 24px;
+          letter-spacing: 0.02em;
+        }
+        .answer p {
+          font-weight: 400;
+          line-height: 24px;
+          letter-spacing: 0.02em;
+          margin-bottom: 20px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+        &:last-child {
+          margin-bottom: 120px;
+        }
+        &:first-child {
+          margin-top: 40px;
+        }
+      }
+      &:before {
+        display: block;
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 40px;
+        top: 0;
+        background: linear-gradient(to top, rgba(42,46,52,0) 0%,rgba(42,46,52,1) 100%);
+        z-index: 2;
+      }
+      &:after {
+        display: block;
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 120px;
+        bottom: 0;
+        background: linear-gradient(to bottom, rgba(42,46,52,0) 0%,rgba(42,46,52,1) 100%);
+      }
+    }
+  }
+}
 
+.pgabout .footer {
+    display: flex;
+    position: static;
+}
 
 // START About
 .pgabout {
@@ -378,9 +537,9 @@ p.bullet {
 }
 // END About
 
+// START Accounts
 
-
-
+// END Accounts
 
 
 
@@ -650,10 +809,6 @@ p.bullet {
       width: 50%;
     }
   }
-  .fly__chat-panel .right-wrap .feedbackpanel, .fly__feedback-panel .right-wrap .feedbackpanel {
-    margin: 0;
-    padding: 0 12px;
-  }
   .fly__chat-panel .right, .fly__feedback-panel .right {
     width: 100%;
   }
@@ -749,5 +904,10 @@ p.bullet {
   }
   .fly__chat-panel .right-wrap .feedbackpanel .feedbackhead .btn_close_left, .fly__feedback-panel .right-wrap .feedbackpanel .feedbackhead .btn_close_left {
     padding: 0;
+  }
+  .fly__feedback-panel .right-wrap .feedbackpanel .feedbackhead,
+  .fly__feedback-panel .right-wrap .faqpanel .faqhead {
+    margin-left: 24px;
+    margin-right: 24px;
   }
 }

@@ -690,6 +690,7 @@ a {
   }
 }
 .pgaccounts .main__right--table--head .row {
+  padding-right: 17px;
   padding-left: 0;
 }
 .pgaccounts .main__right--table--head .row .col-03 {
@@ -725,8 +726,7 @@ a {
   border-top: 1px solid #e6e6e6;
 }
 .pgaccounts .footer {
-  /* display: none; */
-  opacity: 0;
+  display: none;
 }
 .main__left--menu--item.ts_affiliate::before {
   left: -22px;
@@ -850,6 +850,24 @@ a {
 .pgprogram_cpa .slide_02 .cpa-title-description {
   max-width: 510px;
 }
+@media (min-width: 980px) and (max-width: 1199px) {
+  .pgpayments .table_div .col.col1t img {
+    max-width: 70px;
+  }
+  .pgpayments .table_div {
+    margin-right: 0;
+  }
+  .pgpayments .table_div .col.colw5 {
+    width: 15%;
+  }
+  .pgpayments .table_div .row_head .col.colw5 {
+    width: 15%;
+    height: 70px;
+  }
+  .pgpayments .table_div .col.col2t {
+    padding-left: 30px;
+  }
+}
 @media (min-width: 980px) {
   .pgprogram_cpa .slide_05 .main__center-text {
     margin-left: -10px;
@@ -866,6 +884,76 @@ a {
   padding-left: 20px;
   height: 5px;
 }
-.acc-footer-show {
-  opacity: 1;
+.pgaccounts .footer.acc-footer-show {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+}
+.pgpayments .sel_platsys {
+  margin-bottom: 30px !important;
+}
+.pgpayments .sel_card {
+  margin-bottom: 33px !important;
+}
+.pgpayments strong {
+  margin-left: 11px;
+}
+.pgpayments .sel_banks::before,
+.pgpayments .sel_platsys::before {
+  top: -8px;
+}
+.pgpayments .main__left .head .button02.gray {
+  padding-bottom: 2px;
+}
+.pgpayments .item .epana_panel div {
+  font-weight: bolder;
+}
+.pgpayments .main__left .item .epana_panel div br {
+  line-height: 16px;
+}
+.pgpayments .table_div .row_head {
+  margin-bottom: 10px;
+}
+.pgpayments .table_div .row:hover .col.col5t .hide {
+  margin-left: 55px;
+}
+.pgpayments .table_div .col.col1t,
+.pgpayments .table_div .col.col2t {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.pgpayments .table_div .col.col3t,
+.pgpayments .table_div .col.col4t,
+.pgpayments .table_div .col.col5t {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+     -moz-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.pgpayments .table_div .row.row_head:hover .col.colw2,
+.pgpayments .table_div .row.row_head:hover .col.colw5 {
+  width: 25%;
 }

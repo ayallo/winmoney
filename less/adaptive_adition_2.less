@@ -701,16 +701,22 @@ a {
     }
 }
 
-.pgaccounts .main__right--table--body {
-    margin-top: 115px;
-}
-
-.pgaccounts .main__right--table--head {
-    border-bottom: 1px solid #e6e6e6;
-}
-
-.pgaccounts .main__right--table--head .row .col-02 {
-    padding-left: 18px;
+.pgaccounts {
+    .main__right--table--body {
+        position: absolute;
+        margin-top: 115px;
+        width: 100%;
+    }
+    .main__right--table {
+        position: relative;
+        height: 100%;
+    }
+    .main__right--table--head {
+        border-bottom: 1px solid #e6e6e6;
+    }
+    .main__right--table--head .row .col-02 {
+        padding-left: 28px;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -720,11 +726,12 @@ a {
 }
 
 .pgaccounts .main__right--table--head .row {
+    padding-right: 17px;
     padding-left: 0;
 }
 
 .pgaccounts .main__right--table--head .row .col-03 {
-    padding-left: 10px;
+    padding-left: 20px;
 }
 
 .pgaccounts .main__right--table--body .row .col-01 {
@@ -732,7 +739,10 @@ a {
     letter-spacing: 0.09em;
 }
 
-.pgaccounts .main__right--table--body .row .col-02,
+.pgaccounts .main__right--table--body .row .col-02 {
+    padding: 14px 0px 20px 28px;
+    letter-spacing: 0.02em;
+}
 .pgaccounts .main__right--table--body .row .col-03 {
     padding: 14px 0px 20px 20px;
     letter-spacing: 0.02em;
@@ -745,4 +755,247 @@ a {
 
 .main__left--menu--item a {
     letter-spacing: 0.02em;
+}
+
+.pgaccounts .main__right--table--body .row:hover {
+    border-top: 1px solid #2675eb;
+    border-bottom: 1px solid #2675eb;
+}
+.pgaccounts .main__right--table--body .row.first:hover {
+    border-top: 1px solid #2675eb;
+}
+
+.pgaccounts .main__right--table--body .row.first {
+    border-top: 1px solid #e6e6e6;
+}
+
+.pgaccounts .footer {
+    display: none;
+}
+
+.main__left--menu--item.ts_affiliate::before {
+    left: -22px;
+    width: 36px;
+}
+.main__left--menu--item.ts_affiliate:hover::before {
+    left: -22px;
+    width: 36px;
+}
+.main__left--menu--item.ts_demo:hover::before { left: -14px; }
+.main__left--menu--item.ts_demo::before { left: -14px; }
+
+@media (min-width: 750px) and (max-width: 979px) {
+    .pgaccounts .main__left {
+        width: 206px;
+    }
+}
+
+@media screen and (max-width: 749px) {
+    .pgaccounts .main__right--table--body {
+        margin-top: 54px;
+    }
+    .pgaccounts .main__left--menu--item.ts_standart::before,
+    .pgaccounts .main__left--menu--item.ts_centovye::before,
+    .pgaccounts .main__left--menu--item.ts_ecn::before {
+        left: 20px;
+        width: 32px;
+    }
+    .pgaccounts .main__left--menu--item.ts_demo::before {
+        left: 23px;
+        width: 32px;
+    }
+    .pgaccounts .main__left--menu--item.ts_affiliate::before {
+        left: 15px;
+        width: 38px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .pgaccounts .main__right--table--body .row .col-01 {
+        margin-top: 5px;
+        margin-left: 28px;
+        text-align: left;
+    }
+    .pgaccounts .main__right {
+        width: 100%;
+    }
+    .pgaccounts .main__right--table--head {
+        margin-top: 20px;
+    }
+}
+
+.swiper-container_abo,
+.swiper-container_cpa {
+    overflow-y: hidden;
+}
+
+.swiper-slide.block_news {
+    display: block !important;
+    background-color: initial !important;
+}
+
+.about-lastslide-wrapper {
+    position:relative;
+    height:100%;
+    width: 100%;
+}
+
+.pgabout {
+    .about-lastslide-wrapper .footerblock--blockt {
+        padding-top: 130px;
+        text-align: left;
+    }
+    .swiper-slide {
+        opacity: 0;
+        transition: opacity 0.1s ease-in-out;
+    }
+    .about-lastslide-wrapper .swiper-slide {
+        opacity: 1;
+    }
+    .swiper-slide-active {
+        opacity: 1;
+    }
+}
+
+/* cpa */
+.pgprogram_cpa .slide_05 {
+    .main input {
+        padding-bottom: 15px;
+    }
+    .button01 {
+        margin-left: 3px;
+    }
+    .main__center-head {
+        margin-bottom: 25px;
+    }
+    .main__center-text .social.social__vk:hover {
+        background-image: url(../img/social_vk_p.png);
+    }
+    .main__center-text .social.social__fb:hover {
+        background-image: url(../img/social_fb_p.png);
+    }
+    .main__center-text .social.social__ok:hover {
+        background-image: url(../img/social_ok_p.png);
+    }
+}
+.pgprogram_cpa {
+    .slide_02 {
+        overflow-x: hidden;
+        .center div h2 {
+            font-size: 48px;
+        }
+        .center div:nth-child(1) {
+            width: 63%;
+        }
+        .center div:nth-child(2) {
+            width: 37%;
+        }
+    }
+    .center p.bullet {
+        padding-left: 10px;
+        max-width: 350px;
+    }
+    .cpa-img img {
+        margin-left: 25px;
+    }
+    .slide_02 .cpa-title-description {
+        max-width: 510px;
+    }
+}
+
+@media (min-width: 980px) and (max-width:1199px) {
+    .pgpayments {
+        .table_div .col.col1t img {
+            max-width: 70px;
+        }
+        .table_div {
+            margin-right: 0;
+        }
+        .table_div .col.colw5 {
+            width: 15%;
+        }
+        .table_div .row_head .col.colw5 {
+            width: 15%;
+            height: 70px;
+        }
+        .table_div .col.col2t {
+            padding-left: 30px;
+        }
+    }
+}
+
+@media (min-width: 980px) {
+    .pgprogram_cpa .slide_05 .main__center-text {
+        margin-left: -10px;
+    }
+}
+
+@media (min-width: 560px) {
+    .pgprogram_cpa {
+        .slide_05 .main,
+        .slide_02 .center {
+            width: 52%;
+            max-width: 835px;
+        }
+    }
+}
+
+.pgaccounts .main__right--table--head .row .col-01 {
+    padding-left: 20px;
+    height: 5px;
+}
+
+.pgaccounts .footer.acc-footer-show {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+}
+
+.pgpayments {
+    .sel_platsys {
+        margin-bottom: 30px !important;
+    }
+    .sel_card {
+        margin-bottom: 33px !important;
+    }
+    strong {
+        margin-left: 11px;
+    }
+    .sel_banks::before,
+    .sel_platsys::before {
+        top: -8px;
+    }
+    .main__left .head .button02.gray {
+        padding-bottom: 2px;
+    }
+    .item .epana_panel div {
+        font-weight: bolder;
+    }
+    .main__left .item .epana_panel div br {
+        line-height: 16px;
+    }
+    .table_div {
+        .row_head {
+            margin-bottom: 10px;
+        }
+        .row:hover .col.col5t .hide {
+            margin-left: 55px;
+        }
+        .col.col1t,
+        .col.col2t {
+            display: flex;
+            align-items: center;
+        }
+        .col.col3t,
+        .col.col4t,
+        .col.col5t {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        .row.row_head:hover .col.colw2,
+        .row.row_head:hover .col.colw5 {
+            width: 25%;
+        }
+    }
 }

@@ -12,6 +12,21 @@
 <script>
   $(function () {
     /*payments переключение таблицы-плитки*/
+    $(window).resize(function(){
+      if ($( window ).width()>=700){
+        $('.ch_table').removeClass('hidenp');
+        $('.ch_tile').addClass('hidenp');
+      }else{
+        $('.table_payments').removeClass('table_div').addClass('plitka_div');
+        $('.ch_tile').addClass('hidenp');
+        $('.ch_table').addClass('hidenp');
+      }
+    });
+    if ($( window ).width()<700){/*отобразим всегда плитку*/
+      $('.table_payments').removeClass('table_div').addClass('plitka_div');
+      $('.ch_tile').addClass('hidenp');
+      $('.ch_table').addClass('hidenp');
+    }
     $('.ch_table').click(function(){
       $('.table_payments').removeClass('plitka_div').addClass('table_div');
       $('.ch_table').addClass('hidenp');
