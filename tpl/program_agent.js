@@ -24,7 +24,6 @@
         $('.swiper-container_ind').css({'overflow':'auto'});
         window.onscroll = function() {
           var scrolled = window.pageYOffset || document.documentElement.scrollTop;
-          //console.log(scrolled+"="+posSlide_02.top );
           if( scrolled > posSlide_02.top ){
             $(".head__nav").addClass("sfonom");
           }else {
@@ -41,40 +40,55 @@
         //     freeMode: true
         // });
     }
+
     if (($(".swiper-container_abo").length > 0)){/*тут после последнего слайда идет текст*/
       //$('body,html').animate({scrollTop: 0}, 1);
       var program_abo_Swiper = new Swiper ('.swiper-container_abo', {
-        direction: 'vertical', loop: false, mousewheelControl: true, slidesPerView: 1,
+        direction: 'vertical',
+        loop: false,
+        mousewheelControl: true
       });
-      program_abo_Swiper.slideTo(0, 1);
+      //program_abo_Swiper.slideTo(0, 1);
       program_abo_Swiper.on('slideChangeStart', function (e) {
           $(".head__nav").removeClass("sfonom");
           $(".head__but").hide();
-          $(".footer").hide();
-          $(".main__menu").hide();
+          //$(".footer").hide();
+          //$(".main__menu").hide();
           if (e.activeIndex>=1) {
               $(".statpartner").show();
               $(".head__nav").addClass("sfonom");
-              $(".main__menu").show();
+              //$(".main__menu").show();
           }
+
+          /*
           if(e.activeIndex==4){
             program_abo_Swiper.disableMousewheelControl();
             $(".footer").css({'display':'flex'});
           }
+          */
       });
-      /*возвращаем mousewheel слайдеру*/
+      /*
+      // возвращаем mousewheel слайдеру
       window.onscroll = function() {
         var scrolled = window.pageYOffset || document.documentElement.scrollTop;
         if(scrolled==0) program_abo_Swiper.enableMousewheelControl();
       }
+      */
     }
-    if (($(".swiper-container_news").length > 0)){
-      var swiper = new Swiper('.swiper-container_news', {
-        pagination: '.swiper-pagination',
-        slidesPerView: 2, paginationClickable: true,
-        spaceBetween: 30
-      });
-    }
+
+    $('.about-lastslide-wrapper').perfectScrollbar({
+      wheelSpeed: 0.3,
+      suppressScrollX: true,
+      wheelPropagation: true,
+      swipePropagation: true
+    });
+
+    // if (($(".swiper-container_news").length > 0)){
+    //   var swiper = new Swiper('.swiper-container_news', {
+    //     pagination: '.swiper-pagination', paginationClickable: true,
+    //     slidesPerView: 3
+    //   });
+    // }
 
     if (($(".swiper-container_reg").length > 0)){
       var program_reg_Swiper = new Swiper ('.swiper-container_reg', {

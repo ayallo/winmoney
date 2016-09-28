@@ -1,8 +1,10 @@
-@media screen and (max-width: 1146px) {
-  .head__left_text {
+@media screen and (max-width: 1210px) {
+  .head__right .button {
     display: none;
   }
-  .head__right .button {
+}
+@media screen and (max-width: 1146px) {
+  .head__left_text {
     display: none;
   }
   .pg_account .paddingl_80 {

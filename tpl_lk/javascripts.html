@@ -11,6 +11,19 @@
 <script src="js/jquery.scrollbar/jquery.scrollbar.min.js"></script>
 <script>
   $(function () {
+    /*payments переключение таблицы-плитки*/
+    $('.ch_table').click(function(){
+      $('.table_payments').removeClass('plitka_div').addClass('table_div');
+      $('.ch_table').addClass('hidenp');
+      $('.ch_tile').removeClass('hidenp');
+      return false;
+    });
+    $('.ch_tile').click(function(){
+      $('.table_payments').removeClass('table_div').addClass('plitka_div');
+      $('.ch_tile').addClass('hidenp');
+      $('.ch_table').removeClass('hidenp');
+      return false;
+    });
     /* scrollbar */
     $('.scrollbar-other').scrollbar({
         "ignoreMobile": false
@@ -55,16 +68,11 @@
         $('.head__avatar').removeClass('is-active');
       }
     });
-    /*закрытие меню щелкая вне области меню*/
-    /*$(".fly__profile").click(function(){
-      if ( $(".fly__profile").css('opacity') == '0' ){
-      }else{
-        $('.head__avatar').removeClass('is-active');
-        $("body").css("overflow","auto");
-        $(".fly__profile").hide().css({"opacity":"0","margin-left":"-2000px"}).stop().fadeOut(100, 0);
-      }
-    });*/
-
+    $('.profile_close').click(function(){
+      $("body").css("overflow","auto");
+      $(".fly__profile").hide().css({"opacity":"0","margin-left":"-2000px"}).stop().fadeOut(100, 0);
+      $('.head__avatar').removeClass('is-active');
+    })
     /*модальное размытие*/
     $('.modal').on('hidden.bs.modal', function (e) {
       $('.body_page').removeClass('modal_blur');
@@ -72,21 +80,6 @@
     $('.modal').on('show.bs.modal', function (e) {
       $('.body_page').addClass('modal_blur');
     })
-
-    /* закрыть модальное окно */
-    /*
-    $("body").click(function(e) {
-        var modal = $('.modal');
-
-        if ($(e.target).hasClass('modal-content')) {
-          return false;
-        }
-        if ($('body').hasClass('modal-open')) {
-          modal.fadeOut();
-        }
-    });
-    */
-
     /*иконка около инпута*/
     $('.fi_input_bsh').click(function(){
       var parent = $(this).closest('.edt');
@@ -101,33 +94,47 @@
         parent.find('.fi_input_bsh .tx').html($(this).val());
         parent.find('.fi_input_bsh').show();
     });
-    /*скрытие панелей*/
+    /*скрытие панелей, модальных окон, профиля*/
     $(window).click(function(event) {
       if($(event.target).closest('.in_profile_pass').length) {
         //если щелкаемв поле для ввода то не скрываем панель
-        return false;
+        //return false;
+      }else{
+        if(!$(event.target).closest('.in_profile_pass_p').length) {
+          //если щелчок в не панели скрываем ее
+          if($('.in_profile_pass_p').is(":visible")) {
+            $('.in_profile_pass_p').hide();
+          }
+        }
       }
-      if(!$(event.target).closest('.in_profile_pass_p').length) {
-        //если щелчок в не панели скрываем ее
-        if($('.in_profile_pass_p').is(":visible")) {
-          $('.in_profile_pass_p').hide();
+      //закрытие профиля
+      if($(event.target).closest('.head__avatar_wrap').length) {
+        //если щелкаемв панель то не скрываем панель
+        //return false;
+      }else{
+        if(!$(event.target).closest('.fly__profile .right').length) {
+          //если щелчок в не панели скрываем ее
+          if($('.fly__profile .right').is(":visible")) {
+            $("body").css("overflow","auto");
+            $(".fly__profile").hide().css({"opacity":"0","margin-left":"-2000px"}).stop().fadeOut(100, 0);
+            $('.head__avatar').removeClass('is-active');
+          }
+        }
+      }
+      //закрытие модальных окон
+      if($(event.target).closest('.modal_payment_b, .modal_registration_b').length) {
+        //если щелкаем в панель то не скрываем панель
+        //return false;
+      }else{
+        if(!$(event.target).closest('.modal-content').length) {
+          //если щелчок в не панели скрываем ее
+          if($('.modal-content').is(":visible")) {
+            $('#modal_payment').modal('hide');
+            $('#modal_registration').modal('hide');
+          }
         }
       }
     });
-    /*
-    $('.in_profile_pass').click(function(event){
-        event.stopPropagation();
-    });*/
-    /*$(document).click(function(event) {
-      if(!$(event.target).closest('.in_profile_pass_p').length) {
-        if($('.in_profile_pass_p').is(":visible")) {
-          $('.in_profile_pass_p').hide();
-        }else{
-          $('.in_profile_pass_p').show();
-        }
-      }
-    })*/
-
     /*checkbox checkbox*/
     $('.fi_checkbox .checkbox').click(function(){
       var id=$(this).attr('id').split('_');
@@ -235,6 +242,17 @@
     $("input[name='register_pass1']").pwstrength();
     $("input[name='edit_pass1']").pwstrength();
     /*убираем границу привводе пароля*/
+    $('.pass1').click(function(){
+      var val = $(this).val();
+      if(val==''){
+        $(this).addClass('brb_norm');
+        $('#pwindicator .label').html('пароль не может быть пустым!');
+        $('.button.pink.step_go').addClass('disable');
+      }else {
+        $(this).removeClass('brb_norm');
+        $('.button.pink.step_go').removeClass('disable');
+      }
+    });
     $('.pass1').change(function(){
       var val = $(this).val();
       if(val==''){
@@ -279,18 +297,7 @@
       }
     });
     $(".phone1").mask("+7 (999) 999 99 99");
-    /* adv hovers */
-    /*$('.adv_plitka_img').hover(
-      function() {
-        $('.adv_plitka_img').removeClass('unhover');
-        $('.adv_plitka_img').addClass('unhover');
-        $( this ).removeClass('unhover');
-        $( this ).addClass('hover');
-      }, function() {
-        $('.adv_plitka_img').removeClass('unhover');
-        $( this ).removeClass('hover');
-      }
-    );*/
+
     $('.inp_email').change(function(){
       var valid = ValidMail('.inp_email');
       var input_mess = $(this).siblings('.input_mess');
@@ -312,11 +319,15 @@
       }
     });
     function form_check(err=0){
-      if(err==1) {
-        $('.button.pink.step_go').addClass('disable');
-        return false;
-      }
-      if($('#step_3').find('.err').length){
+      var herr=0;
+      if(err==1) herr=1;
+      if($('#step_3').find('.err').length) herr=1;
+      $('#step_3 input').each(function(key,item){
+        if($(item).val()=='') herr=1;
+      });
+      if($('#registerrules_1').hasClass('checked')){}
+      else { herr=1; }
+      if(herr==1){
         $('.button.pink.step_go').addClass('disable');
       }else{
         $('.button.pink.step_go').removeClass('disable');

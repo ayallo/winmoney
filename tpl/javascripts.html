@@ -448,11 +448,25 @@ jQuery(document).ready(function(){
             wheelPropagation: true,
             swipePropagation: true });
         }
-    	  $('.scroller').perfectScrollbar({ 
-          wheelSpeed: 0.3, 
-          suppressScrollX: true,
-          wheelPropagation: true,
-          swipePropagation: true  });
+		  $('.scroller').perfectScrollbar({ 
+	      wheelSpeed: 0.3, 
+	      suppressScrollX: true,
+	      wheelPropagation: true,
+	      swipePropagation: true  });
+
+
+		var table     = $('.pgaccounts .main__right--table--body');
+		var ac_footer = $('.pgaccounts .footer');
+
+	    table.scroll(function () {
+    		if (this.scrollHeight - this.scrollTop == this.clientHeight) {
+    			ac_footer.addClass('acc-footer-show');
+        		// ac_footer.css('display', 'flex');
+    		} else {
+    			// ac_footer.fadeOut('slow');
+    			ac_footer.removeClass('acc-footer-show');
+    		}
+		});
     });
 </script>
 %SCRIPT%

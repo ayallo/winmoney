@@ -11,9 +11,9 @@
         <a href="/"><div class="head__logo" style="margin:0 auto;"></div></a>
       </div>
       <div class="col-xs-4 col-md-5 text-right head__right">
-        <a href="#"><div class="button blue fs_s16 fs_cw" data-toggle="modal" data-target="#modal_payment">Пополнить счет</div></a>
+        <a href="#"><div class="button blue fs_s16 fs_cw modal_payment_b" data-toggle="modal" data-target="#modal_payment">Пополнить счет</div></a>
         <a href="#"><div class="button pink fs_s16 fs_cw">Открыть счет</div></a>
-        <a href="#"><div class="head__avatar"><img src="img/avtor_01_big.png"></div><div class="head__fio">Неизвестный Б.Г.</div></a>
+        <a href="#" class="head__avatar_wrap"><div class="head__avatar"><img src="img/avtor_01_big.png"></div><div class="head__fio">Неизвестный Б.Г.</div></a>
       </div>
     </div>
   </div>
@@ -232,7 +232,7 @@
       <a href="lk.php?p=account"><div  class="us_menu pocket_wallet"></div> Управление счетами</a>
     </div>
     <div class="item">
-      <a href="index.php?p=payments"><div  class="us_menu arrow"></div> Ввод/вывод</a>
+      <a href="lk.php?p=payments"><div  class="us_menu arrow"></div> Ввод/вывод</a>
     </div>
     <div class="item">
       <a href="lk.php?p=advertising"><div  class="us_menu case"></div> Партнёры</a>
@@ -348,8 +348,10 @@
         </div>
       </div>
       <div class="profile-body-foto-but">
-        <img src="img/lk/bradpitt.png">
-        <a href="#"><div class="button pink fs_s16 fs_cw">Сохранить</div></a>
+        <div class="profile-body-foto-but-img">
+          <img src="img/lk/bradpitt.png">
+        </div>
+        <a href="#"class="profile_close"><div class="button pink fs_s16 fs_cw">Сохранить</div></a>
       </div>
     </div>
   </div>

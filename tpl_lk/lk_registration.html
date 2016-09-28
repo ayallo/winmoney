@@ -52,30 +52,30 @@
         <h2 class="text_align_center">Регистрация</h2>
 
         <div class="inp_wrap marginb_20i">
-          <input type="text" class="fi_input surnameInput brb_norm" name="reg_fam" value="" placeholder="Фамилия" tabindex="0">
+          <input type="text" class="fi_input surnameInput brb_norm" name="reg_fam" value="" placeholder="Фамилия" tabindex="1">
           <div class="input_mess"></div>
         </div>
 
         <div class="inp_wrap_2 marginb_20i">
           <div class="left">
-            <input type="text" class="fi_input reg_imy nameInput brb_norm" name="reg_imy" value="" placeholder="Имя" tabindex="1">
+            <input type="text" class="fi_input reg_imy nameInput brb_norm" name="reg_imy" value="" placeholder="Имя" tabindex="2">
             <div class="input_mess"></div>
           </div>
           <div class="right">
-            <input type="text" class="fi_input reg_otc otchinput brb_norm" name="reg_otc" value="" placeholder="Отчество" tabindex="2">
+            <input type="text" class="fi_input reg_otc otchinput brb_norm" name="reg_otc" value="" placeholder="Отчество" tabindex="3">
             <div class="input_mess"></div>
           </div>
         </div>
 
-        <input type="text" class="fi_input marginb_20i phone1 brb_norm" name="reg_tel" value="" placeholder="Телефон" tabindex="3">
+        <input type="text" class="fi_input marginb_20i phone1 brb_norm" name="reg_tel" value="" placeholder="Телефон" tabindex="4">
 
         <div class="inp_wrap marginb_20i">
-          <input type="text" class="fi_input inp_email brb_norm" name="reg_eml" value="" placeholder="E-mail" tabindex="4">
+          <input type="text" class="fi_input inp_email brb_norm" name="reg_eml" value="" placeholder="E-mail" tabindex="5">
           <div class="input_mess"></div>
         </div>
         <div class="dropdown fi_select marginb_20i">
           <input type="hidden" name="reg_str" id="registerstarna" value="1">
-          <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="tx"><span class="flag rus"></span> Россия</span><span class="caret"></span></button>
+          <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="6"><span class="tx"><span class="flag rus"></span> Россия</span><span class="caret"></span></button>
           <ul class="dropdown-menu" aria-labelledby="dLabel">
             <li><a href="#" id="registerstarna_1"><span class="flag rus"></span> Россия</a></li>
             <li><a href="#" id="registerstarna_2"><span class="flag canada"></span> Канада</a></li>
@@ -84,7 +84,7 @@
         </div>
 
         <div class="inp_wrap">
-          <input type="password" name="register_pass1" data-indicator="pwindicator" class="fi_input fi_input_sspan input-password pass1 brb_norm" value="" placeholder="Введите пароль">
+          <input type="password" name="register_pass1" data-indicator="pwindicator" class="fi_input fi_input_sspan input-password pass1 brb_norm" value="" placeholder="Введите пароль" tabindex="7">
           <span class="btn-show-pass glyphicon glyphicon-eye-open fi_input_span marginb_20i" aria-hidden="true"></span>
           <div id="pwindicator" class="marginb_20i">
             <div class="bar"></div>
@@ -92,19 +92,19 @@
           </div>
         </div>
         <div class="inp_wrap marginb_20i">
-          <input type="password" class="fi_input pass2 brb_norm" name="reg_pod" value="" placeholder="Подтверждение" tabindex="7">
+          <input type="password" class="fi_input pass2 brb_norm" name="reg_pod" value="" placeholder="Подтверждение" tabindex="8">
           <div class="pass_check_status"></div>
         </div>
 
         <div class="wrap_p marginb_40i">
           <div class="fi_checkbox">
             <input type="HIDDEN" name="register_rules" id="registerrules" value="1">
-            <div class="checkbox checked" id="registerrules_1"></div>
+            <div class="checkbox checked" id="registerrules_1" tabindex="9"></div>
             <div class="text fs_s13 fs_w400">Я принимаю условия пользовательского соглашения</div>
           </div>
         </div>
 
-        <div class="button pink step_go" id="step_3_4">Начать работу</div>
+        <div class="button pink step_go disable" id="url_lk">Начать работу</div>
       </form>
       </div>
 
@@ -119,8 +119,12 @@
             alert('Исправьте ошибки');
           }else{
             var id=$(this).attr('id').split('_');
-            $('.step_'+id[1]).addClass('hide');
-            $('.step_'+id[2]).removeClass('hide');
+            if(id[0]=='url'){
+              if(id[1]=='lk') window.location.href = 'lk.php';
+            }else{
+              $('.step_'+id[1]).addClass('hide');
+              $('.step_'+id[2]).removeClass('hide');
+            }
           }
           return false;
         });

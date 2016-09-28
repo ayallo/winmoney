@@ -512,10 +512,11 @@ if($page=='about'||$page=='about2'){/*переделано на новый*/
   $html .= '<body class="pgabout">';
   $html .= '<div class="wrapper">';
   $html .= get_shablon($tpl.'/head_nav.html');
-  $html .= get_shablon($tpl.'/'.$page.'.html');
+  $m[1][]='%inFOOTER%'; $m[2][] = get_shablon($tpl.'/footer.html');
+  $html .= get_shablon($tpl.'/'.$page.'.html',$m);
   $html .= '</div>';
   $m[1][]='%SCRIPT%'; $m[2][] = get_shablon($tpl.'/program_agent.js');
-  $html .= get_shablon($tpl.'/footer.html');
+  //$html .= get_shablon($tpl.'/footer.html');
 }
 if($page=='about_inworld'){
   $m[1][]='%CSS%'; $m[2][] = '<link rel="stylesheet" href="css/pg_about_inworld.css">';
@@ -591,7 +592,11 @@ echo $html;
 
 function get_shablon($file,$m=array()){
   $out = file_get_contents($file);
+
   if(count($m)) $out = str_replace($m[1],$m[2],$out);
+  if($file=='tpl/head_nav.html'&&isset($_GET['client'])&&$_GET['client']==1){
+    $out = str_replace('%hn_client%','',$out);
+  }else $out = str_replace('%hn_client%','hn_clhide',$out);
   return $out;
 }
 function count_proj($dir,$what){

@@ -27,20 +27,23 @@
         }else {
           if((scrolled+100)>slide_02.top) {
             $(".pgpartners .head__nav").addClass("sfonom");
+            $(".confw-btn-foot").addClass("confw-btn-foot--act");
             $(".pgpartners .footer").css({"display":"flex"});
             $(".head__nav .openschet").show();
           }else{
             $(".pgpartners .head__nav").removeClass("sfonom");
+            $(".confw-btn-foot").removeClass("confw-btn-foot--act");
             $(".pgpartners .footer").hide();
             $(".head__nav .openschet").hide();
           }
-
         }
       }
 
 /*=================================================*/
       $(".treelegend").css({"width":$(".tree").width()});
-      var tree = ''; var bx=($(".tree").width()/2), by=($(".tree").height()-40),u;
+      var tree = '';
+      //var bx=($(".tree").width()/2), by=($(".tree").height()-40),u;
+      var bx=215, by=470,u;
       var l=50,l1=110,l2=75,l3=63,l4=50,l5=40;
 
       tree += tree_line(bx,by,bx,(by-l1),"l1",1);
@@ -146,7 +149,7 @@
       function tree_line(x1,y1,x2,y2,cl,id){
         return '<line x1="'+x1+'" y1="'+y1+'" x2="'+x2+'" y2="'+y2+'" class="'+cl+'" id="levid_'+id+'" ></line>';
       }
-      $(".tree").html("<svg>"+tree+"</svg>");
+      $(".tree").html("<svg viewBox='0 0 430 510'>"+tree+"</svg>");
       $("text").hover(
         function() {
           var id = $(this).attr("id").split("_"); var text='';
