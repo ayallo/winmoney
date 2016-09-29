@@ -1,5 +1,5 @@
 <?php
-error_reporting(0);
+//error_reporting(0);
 $tpl = 'tpl';
 
 $page = 'index'; if(isset($_GET['p'])){ $page=htmlspecialchars($_GET['p']); }

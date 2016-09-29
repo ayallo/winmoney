@@ -269,6 +269,45 @@
     float: left;
   }
 }
+@media screen and (max-width: 770px) {
+  .pg_account_left_head {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+       -moz-box-orient: horizontal;
+       -moz-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .pg_account_left_head .pgalh_r {
+    text-align: right;
+  }
+  .pg_account_left_body {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+       -moz-box-orient: horizontal;
+       -moz-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+  .pg_account_left_body div {
+    width: initial;
+  }
+}
 @media screen and (max-width: 570px) {
   .fly__profile .right {
     -webkit-box-orient: vertical;
@@ -408,6 +447,47 @@
   .head__fio {
     display: none;
   }
+  .pg_payments .pg_payments_main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .pg_payments .pg_payments_main .page_left {
+    width: 100%;
+  }
+  .pg_payments .pg_payments_main .page_left .page_left_head {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .pg_payments .pg_payments_main .page_left .page_left_menu {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 0;
+  }
+  .pg_payments .pg_payments_main .page_left .page_left_menu .margin_v18 {
+    margin: 0;
+  }
+  .pg_payments .pg_payments_main .page_left .page_left_menu div a.sel_card::before {
+    top: 8px;
+  }
+  .plitka_div .col.col2t.payments_td_name {
+    width: initial;
+  }
 }
 @media screen and (max-width: 400px) {
   .head__left_text {
@@ -469,5 +549,31 @@
   }
   .plitka_div .row:hover .col.col5t .hidep {
     margin-top: 56px;
+  }
+  .footer__right--soc_vk {
+    margin: 0;
+  }
+  .footer__right--soc_ok {
+    margin: 0 4px;
+  }
+  .pg_account_left_body {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+       -moz-box-orient: horizontal;
+       -moz-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+  .pg_account_left_body div {
+    width: 100%;
   }
 }

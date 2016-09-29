@@ -243,6 +243,9 @@ a.a1:hover {
   display: inline-block;
   margin: 0px 10px;
 }
+.button_round:hover {
+  color: #e94f86;
+}
 .button_round:hover .buttondiv span {
   color: #fff!important;
 }
@@ -928,7 +931,7 @@ a.a1:hover {
      -moz-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  margin-top: 14px;
+  padding-top: 14px;
 }
 .head__avatar {
   display: inline-block;
@@ -1145,28 +1148,30 @@ a.a1:hover {
 }
 .ch_table::before {
   content: "";
-  background-image: url('../img/lk/table.png');
-  background-position: center;
-  background-repeat: no-repeat;
   position: absolute;
   top: 8px;
   left: 8px;
+  background-position: -169px -25px;
   width: 10px;
   height: 10px;
+  background-image: url(../img/lk/spritesheet3.png);
+  background-repeat: no-repeat;
+  display: block;
 }
 .ch_table:hover {
   color: #e94f86;
 }
 .ch_table:hover::before {
   content: "";
-  background-image: url('../img/lk/table_p.png');
-  background-position: center;
-  background-repeat: no-repeat;
   position: absolute;
   top: 8px;
   left: 8px;
+  background-position: -169px -43px;
   width: 10px;
   height: 10px;
+  background-image: url(../img/lk/spritesheet3.png);
+  background-repeat: no-repeat;
+  display: block;
 }
 .ch_table.hidenp {
   display: none;
@@ -1178,28 +1183,30 @@ a.a1:hover {
 }
 .ch_tile::before {
   content: "";
-  background-image: url('../img/lk/tile.png');
-  background-position: center;
-  background-repeat: no-repeat;
   position: absolute;
   top: 8px;
   left: 8px;
+  background-position: -36px -61px;
   width: 10px;
   height: 10px;
+  background-image: url(../img/lk/spritesheet3.png);
+  background-repeat: no-repeat;
+  display: block;
 }
 .ch_tile:hover {
   color: #e94f86;
 }
 .ch_tile:hover::before {
   content: "";
-  background-image: url('../img/lk/tile_p.png');
-  background-position: center;
-  background-repeat: no-repeat;
   position: absolute;
   top: 8px;
   left: 8px;
+  background-position: -56px -61px;
   width: 10px;
   height: 10px;
+  background-image: url(../img/lk/spritesheet3.png);
+  background-repeat: no-repeat;
+  display: block;
 }
 .ch_tile.hidenp {
   display: none;
@@ -1243,12 +1250,12 @@ a.a1:hover {
           border-radius: 0;
 }
 .fly__menu .left_v2 div.item.pocket_wallet_wrap {
-  padding-top: 5px;
+  padding-top: 12px;
 }
 .fly__menu .left_v2 div.item.arrow_wrap,
 .fly__menu .left_v2 div.item.case_wrap,
 .fly__menu .left_v2 div.item.document_wrap {
-  padding-top: 18px;
+  padding-top: 24px;
 }
 .fly__menu .left_v2 div.item a {
   color: #9399a1;
@@ -1263,22 +1270,39 @@ a.a1:hover {
   margin: 0 auto;
 }
 .fly__menu .left_v2 div.item a div.us_menu {
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 100%;
-  height: 36px;
+  margin: 0 auto;
 }
 .fly__menu .left_v2 div.item a div.us_menu.pocket_wallet {
-  background-image: url('../img/lk/pocket_wallet.png');
+  background-position: -5px -121px;
+  width: 30px;
+  height: 26px;
+  background-image: url(../img/lk/spritesheet3.png);
+  background-repeat: no-repeat;
+  display: block;
 }
 .fly__menu .left_v2 div.item a div.us_menu.arrow {
-  background-image: url('../img/lk/arrow.png');
+  background-position: -5px -5px;
+  width: 26px;
+  height: 31px;
+  background-image: url(../img/lk/spritesheet3.png);
+  background-repeat: no-repeat;
+  display: block;
 }
 .fly__menu .left_v2 div.item a div.us_menu.case {
-  background-image: url('../img/lk/case.png');
+  background-position: -113px -5px;
+  width: 30px;
+  height: 28px;
+  background-image: url(../img/lk/spritesheet3.png);
+  background-repeat: no-repeat;
+  display: block;
 }
 .fly__menu .left_v2 div.item a div.us_menu.document {
-  background-image: url('../img/lk/document.png');
+  background-position: -45px -81px;
+  width: 22px;
+  height: 30px;
+  background-image: url(../img/lk/spritesheet3.png);
+  background-repeat: no-repeat;
+  display: block;
 }
 .fly__menu .left_v2 div.item:hover {
   color: #ea5087;
@@ -1297,16 +1321,36 @@ a.a1:hover {
   color: #fff;
 }
 .fly__menu .left_v2 div.item:hover a div.us_menu.pocket_wallet {
-  background-image: url('../img/lk/pocket_wallet_w.png');
+  background-position: -85px -121px;
+  width: 30px;
+  height: 26px;
+  background-image: url(../img/lk/spritesheet3.png);
+  background-repeat: no-repeat;
+  display: block;
 }
 .fly__menu .left_v2 div.item:hover a div.us_menu.arrow {
-  background-image: url('../img/lk/arrow_w.png');
+  background-position: -77px -5px;
+  width: 26px;
+  height: 31px;
+  background-image: url(../img/lk/spritesheet3.png);
+  background-repeat: no-repeat;
+  display: block;
 }
 .fly__menu .left_v2 div.item:hover a div.us_menu.case {
-  background-image: url('../img/lk/case_w.png');
+  background-position: -5px -81px;
+  width: 30px;
+  height: 28px;
+  background-image: url(../img/lk/spritesheet3.png);
+  background-repeat: no-repeat;
+  display: block;
 }
 .fly__menu .left_v2 div.item:hover a div.us_menu.document {
-  background-image: url('../img/lk/document_w.png');
+  background-position: -109px -81px;
+  width: 22px;
+  height: 30px;
+  background-image: url(../img/lk/spritesheet3.png);
+  background-repeat: no-repeat;
+  display: block;
 }
 .fly__profile {
   display: -webkit-box;

@@ -468,6 +468,12 @@
   .pgwebinars .column_2 .item table td.webinars .webin.noact h3 {
     font-size: 16px;
   }
+  .pgpayments .table_div .row_head .col.colw5 {
+    min-width: 127px;
+  }
+  .pgpayments .table_div .row_head .col.colw4 {
+    width: 35%;
+  }
 }
 @media (max-width: 340px) {
   .pgwebinars .column_2 .item table td.webinars .webin h3,
@@ -488,6 +494,41 @@
   }
   .pgpayments .table_div .row_head {
     height: 60px;
+  }
+  .pgpayments .main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+       -moz-box-orient: vertical;
+       -moz-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .pgpayments .head__right-wrapr-r01,
+  .pgpayments .head__right-wrapr-r02,
+  .pgpayments .head__right-wrapr-r03 {
+    margin-top: 2px;
+  }
+  .pgpayments .item.hover,
+  .pgpayments .item.hover.ban_watch {
+    display: none;
+  }
+  .pgpayments .main__left .head {
+    margin: 0 70px;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+       -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .pgpayments .main__left .item.menu {
+    margin-bottom: 20px;
+  }
+  .pgpayments .item.menu strong {
+    white-space: nowrap;
+  }
+  .pgpayments .table_div .row_head .col.colw3 {
+    min-width: 65px;
   }
   .pgprogramagent .lastsslide .agent-container {
     width: auto;
@@ -709,7 +750,7 @@ a {
   letter-spacing: 0.02em;
 }
 .pgaccounts .main__left h2 {
-  margin-top: 28px;
+  margin-top: 29px;
   margin-bottom: 26px;
 }
 .main__left--menu--item a {
@@ -810,6 +851,9 @@ a {
   opacity: 1;
 }
 /* cpa */
+.pgprogram_cpa .slide_05 .main {
+  margin-top: 100px;
+}
 .pgprogram_cpa .slide_05 .main input {
   padding-bottom: 15px;
 }
@@ -828,11 +872,19 @@ a {
 .pgprogram_cpa .slide_05 .main__center-text .social.social__ok:hover {
   background-image: url(../img/social_ok_p.png);
 }
+.pgprogram_cpa .slide_01__center {
+  width: 72%;
+  margin-bottom: 26px;
+}
+.pgprogram_cpa .slide_01__center-text {
+  letter-spacing: 0.01em;
+}
 .pgprogram_cpa .slide_02 {
   overflow-x: hidden;
 }
 .pgprogram_cpa .slide_02 .center div h2 {
   font-size: 48px;
+  margin-bottom: 18px;
 }
 .pgprogram_cpa .slide_02 .center div:nth-child(1) {
   width: 63%;
@@ -840,9 +892,20 @@ a {
 .pgprogram_cpa .slide_02 .center div:nth-child(2) {
   width: 37%;
 }
+.pgprogram_cpa .slide_02 .center div p {
+  margin-bottom: 73px;
+}
 .pgprogram_cpa .center p.bullet {
   padding-left: 10px;
-  max-width: 350px;
+  max-width: 355px;
+}
+.pgprogram_cpa .slide_02 .center div p.bullet,
+.pgprogram_cpa .slide_03 .center div p.bullet,
+.pgprogram_cpa .slide_04 .center div p.bullet {
+  margin-bottom: 42px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0.02em;
 }
 .pgprogram_cpa .cpa-img img {
   margin-left: 25px;
@@ -956,4 +1019,50 @@ a {
 .pgpayments .table_div .row.row_head:hover .col.colw2,
 .pgpayments .table_div .row.row_head:hover .col.colw5 {
   width: 25%;
+}
+.pgpayments .head div:nth-child(1) {
+  font-size: 20px;
+}
+.pgpayments .main__left .item.hover {
+  -webkit-box-shadow: 0px 0px 9px #d6d6d6;
+  -moz-box-shadow: 0px 0px 9px #d6d6d6;
+  box-shadow: 0px 0px 9px #d6d6d6;
+}
+@media (max-width: 560px) {
+  .pgpayments .col.colw5.col5t.align-right {
+    width: 33%;
+    height: 20px;
+    min-height: 20px;
+    margin-bottom: 10px;
+  }
+  .pgpayments .table_div .row:hover .col.colw5 {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+       -moz-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 100%;
+    min-height: 60px;
+  }
+  .pgpayments .table_div .row:hover .col.colw5 .hide {
+    margin-left: 15px;
+    font-size: 11px;
+  }
+}
+@media (max-width: 350px) {
+  .pgpayments .main__left .item.menu {
+    margin: 40px 40px;
+  }
+}
+.pgindex .head__nav.sfonom {
+  background: #33373e;
+  background: -moz-linear-gradient(top, #33373e 0%, #25282d 100%);
+  background: -webkit-linear-gradient(top, #33373e 0%, #25282d 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#33373e), to(#25282d));
+  background: -o-linear-gradient(top, #33373e 0%, #25282d 100%);
+  background: linear-gradient(to bottom, #33373e 0%, #25282d 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#33373e', endColorstr='#25282d', GradientType=0);
+  -webkit-box-shadow: 0 0 26px 0 #000;
+  -moz-box-shadow: 0 0 26px 0 #000;
+  box-shadow: 0 0 26px 0 #000;
 }

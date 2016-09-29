@@ -6,6 +6,7 @@
 <script src="js/masked.js"></script>
 <script src="js/jquery.ui.touch-punch.min.js"></script>
 <script src="js/perfect-scrollbar.jquery.js"></script>
+<script src="js/in-view.min.js"></script>
 <script type="text/javascript" src="js/tablesorter/jquery.tablesorter.js"></script>
 <!-- <script src="js/nicescroll/jquery.nicescroll.js"></script> -->
 <script src="js/jquery.scrollbar/jquery.scrollbar.min.js"></script>
@@ -441,15 +442,15 @@ jQuery(document).ready(function(){
 
 
         // scrollbar
-        if ($(window).width() > 750) {
+        if ($(window).width() > 979) {
           $('.scroller_ind').perfectScrollbar({
             wheelSpeed: 0.3,
             suppressScrollX: true,
             wheelPropagation: true,
             swipePropagation: true });
         }
-		  $('.scroller').perfectScrollbar({ 
-	      wheelSpeed: 0.3, 
+		  $('.scroller').perfectScrollbar({
+	      wheelSpeed: 0.3,
 	      suppressScrollX: true,
 	      wheelPropagation: true,
 	      swipePropagation: true  });
@@ -461,12 +462,24 @@ jQuery(document).ready(function(){
 	    table.scroll(function () {
     		if (this.scrollHeight - this.scrollTop == this.clientHeight) {
     			ac_footer.addClass('acc-footer-show');
-        		// ac_footer.css('display', 'flex');
     		} else {
-    			// ac_footer.fadeOut('slow');
     			ac_footer.removeClass('acc-footer-show');
     		}
 		});
+
+		var slideH    = $('.pgindex .slide_01').height();
+		var head_main = $('.pgindex .head__nav');
+
+	    $('.swiper-container_ind').scroll(function () {
+    		if (this.scrollTop > this.clientHeight) {
+    			head_main.addClass('sfonom');
+    		} else {
+    			head_main.removeClass('sfonom');
+    		}
+		});
+		// this.scrollHeight - высота блока
+		// this.scrollTop - текущая позиция
+		// this.clientHeight - высота экрана
     });
 </script>
 %SCRIPT%
