@@ -170,8 +170,19 @@ jQuery(document).ready(function(){
         );
         /*меню из гамбургера*/
         $(".fly__menu").hide();
+
+	    var needClass = false;
+
         $(".menu-left-position").click(function(){/*щелчок по гамбургеру*/
+
+          
+
           if ( $(".fly__menu").css('opacity') == '0' ) {
+
+          	needClass = $('.head__nav').hasClass('sfonom');
+
+          	$('.head__nav').addClass('sfonom');
+
             $("body").css("overflow","hidden");
             $(".fly__menu").show().css({"opacity":"1","margin-left":"0px"}).stop().fadeTo(200, 1);
             $('.c-hamburger').addClass('is-active');
@@ -181,9 +192,14 @@ jQuery(document).ready(function(){
             $('.column_2').addClass('blur');
             $('.main').addClass('blur');
           } else {
+
+          	if (!needClass) {
+          		$('.head__nav').removeClass('sfonom');
+          	}
+
             $("body").css("overflow","auto");
             $(".fly__menu").hide().css({"opacity":"0","margin-left":"-2000px"}).stop().fadeOut(100, 0);
-            $('.c-hamburger').removeClass('is-active');
+            $('.c-hamburger').removeClass('is-active');   
             $('.slcont-slide').removeClass('blur');
             $('.swiper-slide').removeClass('blur');
             $('.column_1').removeClass('blur');

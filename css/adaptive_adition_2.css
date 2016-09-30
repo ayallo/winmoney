@@ -202,8 +202,8 @@
   .pgpartners_rules .main__center ol li {
     padding-left: 8px;
   }
-  .pgpartners_rules .icon_pdf {
-    margin-left: 45px;
+  .pgpartners_rules div a.icon_pdf {
+    margin-left: 46px;
     display: inline-block;
     margin-top: 20px;
     margin-bottom: 40px;
@@ -234,6 +234,17 @@
     width: auto;
     padding: 5%;
   }
+  .pgprogram_region .center div:nth-child(2) {
+    display: none;
+  }
+}
+.pgpartners_vidy .main__center--block p {
+  font-weight: 600;
+}
+.pgpartners_vidy .main__center--block table td.vidy-description {
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: 0.01em;
 }
 @media (max-width: 480px) {
   .pgprogramagent .slide .centerblock {
@@ -548,6 +559,12 @@
   .treelegend {
     width: 100% !important;
   }
+  .pgprogram_region .slide_05 .main {
+    width: 90%;
+  }
+  .pgprogram_region .slide_05 .main .description {
+    max-width: 500px;
+  }
 }
 .page-about .a-slide1 .centerblock .mainpage {
   width: 580px;
@@ -686,6 +703,9 @@ a {
   .row_head .col:nth-child(2) {
     text-align: left;
   }
+  .pgprogram_region .slide_04 .center {
+    height: 537px;
+  }
 }
 .table_div .row_head .col {
   letter-spacing: 0.09em;
@@ -710,9 +730,14 @@ a {
     margin-left: 4px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .pgaccounts .main__right {
+    width: 74%;
+  }
+}
 .pgaccounts .main__right--table--body {
   position: absolute;
-  margin-top: 115px;
+  margin-top: 132px;
   width: 100%;
 }
 .pgaccounts .main__right--table {
@@ -720,40 +745,42 @@ a {
   height: 100%;
 }
 .pgaccounts .main__right--table--head {
+  padding-top: 93px;
+  padding-bottom: 16px;
   border-bottom: 1px solid #e6e6e6;
-}
-.pgaccounts .main__right--table--head .row .col-02 {
-  padding-left: 28px;
-}
-@media screen and (min-width: 1200px) {
-  .pgaccounts .main__right {
-    width: 74%;
-  }
 }
 .pgaccounts .main__right--table--head .row {
   padding-right: 17px;
   padding-left: 0;
 }
+.pgaccounts .main__right--table--head .row .col-02 {
+  padding-left: 27px;
+  font-size: 16px;
+}
 .pgaccounts .main__right--table--head .row .col-03 {
-  padding-left: 20px;
+  padding-left: 14px;
+  font-size: 16px;
 }
 .pgaccounts .main__right--table--body .row .col-01 {
+  padding-top: 16px;
+  padding-bottom: 16px;
   font-weight: bold;
   letter-spacing: 0.09em;
+  line-height: 2.2;
 }
 .pgaccounts .main__right--table--body .row .col-02 {
-  padding: 14px 0px 20px 28px;
+  padding: 14px 0px 20px 24px;
   letter-spacing: 0.02em;
 }
 .pgaccounts .main__right--table--body .row .col-03 {
-  padding: 14px 0px 20px 20px;
+  padding: 14px 0px 20px 7px;
   letter-spacing: 0.02em;
 }
 .pgaccounts .main__left h2 {
   margin-top: 29px;
   margin-bottom: 26px;
 }
-.main__left--menu--item a {
+.pgaccounts .main__left--menu--item a {
   letter-spacing: 0.02em;
 }
 .pgaccounts .main__right--table--body .row:hover {
@@ -769,18 +796,11 @@ a {
 .pgaccounts .footer {
   display: none;
 }
-.main__left--menu--item.ts_affiliate::before {
+.pgaccounts .main__left--menu--item.ts_affiliate::before {
   left: -22px;
   width: 36px;
 }
-.main__left--menu--item.ts_affiliate:hover::before {
-  left: -22px;
-  width: 36px;
-}
-.main__left--menu--item.ts_demo:hover::before {
-  left: -14px;
-}
-.main__left--menu--item.ts_demo::before {
+.pgaccounts .main__left--menu--item.ts_demo::before {
   left: -14px;
 }
 @media (min-width: 750px) and (max-width: 979px) {
@@ -1028,6 +1048,35 @@ a {
   -moz-box-shadow: 0px 0px 9px #d6d6d6;
   box-shadow: 0px 0px 9px #d6d6d6;
 }
+.pgpartners_rules .main__center div:nth-child(1) {
+  width: 440px;
+  margin: 17px 155px 0 105px;
+  padding-right: 0;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+}
+.pgpartners_rules .main__menu {
+  margin-top: 12px;
+}
+.pgpartners_rules .main__center div:nth-child(2) {
+  margin-top: 20px;
+}
+.pgpartners_rules .main__center div:nth-child(2) p {
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  font-weight: 400;
+}
+.pgpartners_rules .main__center div ol li {
+  letter-spacing: 0.02em;
+  line-height: 24px;
+}
+.pgpartners_rules ol li {
+  padding-left: 5px;
+}
+.pgpartners_rules a.icon_pdf {
+  margin-left: 43px;
+}
 @media (max-width: 560px) {
   .pgpayments .col.colw5.col5t.align-right {
     width: 33%;
@@ -1065,4 +1114,171 @@ a {
   -webkit-box-shadow: 0 0 26px 0 #000;
   -moz-box-shadow: 0 0 26px 0 #000;
   box-shadow: 0 0 26px 0 #000;
+}
+.pgprogram_region .center h2 {
+  letter-spacing: 0.01em;
+}
+.pgprogram_region .description {
+  letter-spacing: 0.02em;
+}
+.pgprogram_region .slide_02 .center div:nth-child(2) {
+  top: 45px;
+  right: 0;
+}
+.pgprogram_region .slide_03 .center div:nth-child(2) {
+  top: 105px;
+  right: -50px;
+}
+.pgprogram_region .slide_04 .center div:nth-child(2) {
+  top: 80px;
+  right: 200px;
+}
+.pgprogram_region .slide_04 .center div img {
+  position: relative;
+}
+.pgprogram_region .slide_04 .center div p.bullet {
+  max-width: 450px;
+}
+.pgprogram_region .slide_05 .main {
+  max-width: 845px;
+  margin-top: 146px;
+}
+.pgprogram_region .slide_05 .main__center-head {
+  margin-bottom: 25px;
+}
+.pgprogram_region .slide_05 .main__center-text {
+  margin-left: -10px;
+}
+.pgprogram_region .slide_02 .center,
+.pgprogram_region .slide_03 .center,
+.pgprogram_region .slide_04 .center {
+  position: relative;
+  display: block;
+  max-width: 1010px;
+  margin-left: 11%;
+  margin-top: 176px;
+  /* margin-top: 11%; */
+  /* margin-left: 212px; */
+}
+.pgprogram_region .slide_02 .center div:nth-child(1),
+.pgprogram_region .slide_03 .center div:nth-child(1),
+.pgprogram_region .slide_04 .center div:nth-child(1) {
+  width: 52%;
+}
+.pgprogram_region .slide_02 .center div:nth-child(2),
+.pgprogram_region .slide_03 .center div:nth-child(2),
+.pgprogram_region .slide_04 .center div:nth-child(2) {
+  position: absolute;
+  width: auto;
+}
+.pgprogram_region .slide_02 .center div h2,
+.pgprogram_region .slide_03 .center div h2,
+.pgprogram_region .slide_04 .center div h2 {
+  font-size: 48px;
+  margin-bottom: 18px;
+}
+.pgprogram_region .slide_02 .center div p,
+.pgprogram_region .slide_03 .center div p,
+.pgprogram_region .slide_04 .center div p {
+  margin-bottom: 73px;
+  line-height: 25px;
+  letter-spacing: 0.02em;
+}
+.pgprogram_region .slide_02 .center div p.bullet,
+.pgprogram_region .slide_03 .center div p.bullet,
+.pgprogram_region .slide_04 .center div p.bullet {
+  max-width: 410px;
+  margin-bottom: 42px;
+  line-height: 25px;
+  letter-spacing: 0.02em;
+  padding-left: 10px;
+}
+@media (max-width: 1199px) {
+  .pgprogram_region .slide_02 .center div img,
+  .pgprogram_region .slide_03 .center div img {
+    width: 360px;
+    height: auto;
+  }
+  .pgprogram_region .center div p.description {
+    margin-bottom: 40px;
+  }
+  .pgprogram_region .slide_02 .center div p.bullet,
+  .pgprogram_region .slide_03 .center div p.bullet,
+  .pgprogram_region .slide_04 .center div p.bullet {
+    margin-bottom: 20px;
+  }
+  .pgprogram_region .slide_02 .center div:nth-child(2) {
+    top: 105px;
+    right: 0;
+  }
+  .pgprogram_region .slide_03 .center div:nth-child(2) {
+    top: 105px;
+    right: 0;
+  }
+  .pgprogram_region .slide_04 .center div:nth-child(2) {
+    top: 80px;
+    right: 120px;
+  }
+}
+@media (min-width: 761px) and (max-width: 979px) {
+  .pgprogram_region .slide_02 .center div img,
+  .pgprogram_region .slide_03 .center div img {
+    width: 230px !important;
+    height: auto;
+  }
+  .pgprogram_region .center .description {
+    max-width: 400px;
+  }
+  .pgprogram_region .slide_02 .center div:nth-child(2) {
+    top: 45px;
+    right: -160px;
+  }
+  .pgprogram_region .slide_02 .center div p.bullet {
+    max-width: 400px;
+  }
+  .pgprogram_region .slide_03 .center div:nth-child(2) {
+    top: 105px;
+    right: -150px;
+  }
+  .pgprogram_region .slide_04 .center div:nth-child(2) {
+    top: 60px;
+    right: -150px;
+  }
+  .pgprogram_region .slide_04 .center div img {
+    position: relative;
+  }
+  .pgprogram_region .slide_04 .center div p.bullet {
+    max-width: 450px;
+  }
+}
+@media (max-width: 750px) {
+  .pgaccounts .main__right--table--head {
+    padding-top: 23px;
+    padding-bottom: 8px;
+  }
+  .pgaccounts .main__right--table--head .row .col-02 {
+    padding-left: 23px;
+  }
+  .pgaccounts .main__right--table--head .row .col-03 {
+    padding-left: 6px;
+  }
+}
+@media screen and (max-width: 560px) {
+  .pgaccounts .main__right--table--body .row .col-01 {
+    margin-left: 0;
+    padding-left: 12px;
+    padding-top: 7px;
+  }
+  .pgaccounts .main__right--table--head {
+    padding-top: 28px;
+    margin-top: 0;
+  }
+  .pgaccounts .main__right--table--head .row .col-03 {
+    padding-left: 6px;
+    font-size: 12px;
+  }
+  .pgaccounts .main__right--table--head .row .col-02 {
+    padding-left: 23px;
+    font-size: 12px;
+  }
 }
