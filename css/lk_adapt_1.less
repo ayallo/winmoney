@@ -1,6 +1,34 @@
+.fs_Pragmatica {
+    font-family: 'Pragmatica';
+    font-weight: 300 !important;
+}
+// Сашины стили замена шрифта
+.body_page .block .head__left {
+    font-family: 'Pragmatica';
+}
+// Сашины стили замена шрифта
+.head__right.lk__first-head-btn {
+    padding-top: 0;
+}
+
+.text_bl1 {
+    font-weight: 600;
+}
+.fi_input {
+    font-weight: 600;
+}
+.fs_wbold {
+    font-weight: 600;
+}
+.alert-warning {
+    font-weight: 600;
+}
+.lk_dashboard .alert.alert-warning.alert-dismissible {
+    position: relative;
+}
 .body_page .lk__first {
     /* padding: 35px 23px;*/
-    padding: 35px 30px;
+    // padding: 35px 30px; конфликт
     .row.tablediv_row.tablediv_row_hover {
       .col-xs-3 {
         width: 23%;
@@ -81,7 +109,8 @@
 
 .body_page {
   .fi_radio_wrap {
-      font-weight: bold;
+      // font-weight: bold;
+      font-weight: 600 ;
   }
   .block.img_01 {
     h3 {
@@ -204,7 +233,7 @@
     position: absolute;
     top: 50%;
     right: 25px;
-    margin-top: -17px;
+    margin-top: -15px;
     /* width: 100px;*/
     height: 30px;
     padding: 0;
@@ -256,7 +285,7 @@
 }
 .lk_dashboard {
   .text-right.head__right {
-      height: 70px;
+      // height: 70px;
       display: -webkit-box;
       display: -webkit-flex;
       display: -moz-box;
@@ -464,4 +493,164 @@
   }
 
 
+}
+
+
+@media (max-width: 880px) {
+
+}
+
+@media (max-width: 767px) {}
+@media (max-width: 640px) {
+  .asdgsdagsdg {
+    position: relative;
+  }
+}
+@media (max-width: 570px) {
+  .body_page {
+    .alert-dismissible {
+      .close {
+          right: 20px;
+      }
+      a {
+        font-weight: 600 !important;
+        display: block;
+        margin-top: 3px;
+      }
+    }
+  }
+  .lk_dashboard {
+    .body_page .fi_radio_wrap {
+        padding-left: 0;
+    }
+    .bl_video {
+        margin: 0 auto;
+        width: 70%;
+        .bl_video_text_panel .data {
+            font-size: 13px;
+        }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .body_page {
+    .alert-dismissible {
+      a {
+          display: inline-block;
+      }
+      .close {
+          right: 20px;
+          margin: 0;
+          padding: 0;
+          // top: 20px;
+          margin-top: -15px;
+          width: 30px;
+          span {
+              top: auto;
+              margin: 0;
+          }
+          .lk__close-top {
+              margin: 0;
+              padding: 0;
+              display: none;
+          }
+      }
+    }
+  }
+  .lk_dashboard {
+    .bl_video {
+        margin: 0 auto;
+        width: 80%;
+    }
+  }
+  .body_page {
+    .lk__block {
+      .block {
+        .row.marginb_20:last-child {
+            margin-bottom: 7px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .lk_dashboard {
+    .bl_video {
+        margin: 0 auto;
+        width: 90%;
+    }
+  }
+  .body_page {
+    .block.bl_blue .divtext {
+        padding-left: 10px;
+    }
+  }
+}
+@media (max-width: 360px) {
+  .body_page {
+    .alert-dismissible {
+      a {
+          font-size: 14px;
+      }
+    }
+    .fi_radio_wrap {
+        font-size: 14px;
+    }
+  }
+}
+@media (max-width: 320px) {
+  .body_page {
+    .col-xs-5.col-mini.fi_radio_wrap {
+        width: 40%;
+    }
+    .lk__block {
+      .block {
+        .row.marginb_20:last-child {
+            margin-bottom: 7px;
+        }
+      }
+    }
+    .lk__video {
+      .bl_video {
+        .bl_video_text_panel {
+            padding: 0px 0px 10px 14px;
+        }
+      }
+    }
+  }
+  .lk_dashboard .bl_video {
+      width: 100%;
+  }
+  .tablediv_head_col.tablediv_head_col {
+    &-1 {
+        padding-right: 0;
+    }
+    &-2 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    &-3 {
+        padding-left: 0;
+    }
+  }
+
+  .row.marginb_20.marginb_40.lk__adapt-radio {
+      margin: 0;
+      margin-bottom: 25px;
+      .col-xs-4.fs_s20.fs_Pragmatica.col-mini {
+          padding: 0 !important;
+          width: 100%;
+          margin-bottom: 15px;
+      }
+      .col-xs-3.col-mini.fi_radio_wrap {
+          width: auto;
+          margin-right: 60px;
+          margin-left: 10px;
+      }
+      .col-xs-5.col-mini.fi_radio_wrap {
+          width: auto;
+      }
+  }
 }

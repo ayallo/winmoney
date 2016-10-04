@@ -23,19 +23,19 @@
   height: 50%;
   background-image: url('/img/partnersprogram_01.png');
   background-repeat: no-repeat;
-  background-position: 110% 20px;
+  background-position: 109% 17px;
   -webkit-background-size: contain;
      -moz-background-size: contain;
        -o-background-size: contain;
           background-size: contain;
-  margin-top: 70px;
   max-height: 430px;
 }
 .pgprogramagent .slide-zarabotok .zarabotok-title {
   width: 61%;
 }
 .pgprogramagent .slide-zarabotok .zarabotok-title h2 {
-  font: 48px/66px 'Open Sans Light';
+  font: 48px/66px 'Open Sans';
+  font-weight: 300;
   letter-spacing: 0.01em;
   margin-bottom: 20px;
 }
@@ -46,17 +46,28 @@
   font-weight: normal;
 }
 .pgprogramagent .slide-zarabotok p.bullet {
-  margin-bottom: 22px;
+  margin-bottom: 27px;
+  line-height: 25px;
 }
 .pgprogramagent .slide-zarabotok a {
   display: inline-block;
   margin-bottom: 20px;
+}
+.pgprogramagent .slide-zarabotok.zarabotok1 {
+  width: 900px;
+  margin-left: 4%;
+  margin-top: 5%;
+  /* margin-top: 70px; */
+}
+.pgprogramagent .slide-zarabotok.zarabotok1 p.bullet {
+  margin-bottom: 40px;
 }
 /* второй слайд */
 .pgprogramagent .slide-zarabotok.zarabotok2 {
   background-image: url('/img/partnersprogram_02.png');
   background-position: 112% 12px;
   width: 900px;
+  margin-left: 6%;
 }
 .pgprogramagent .slide-zarabotok.zarabotok2 .zarabotok-title p {
   width: 75%;
@@ -81,14 +92,15 @@
 .pgprogramagent .slide-help {
   background-image: url('/img/partnersprogram_03.png');
   background-repeat: no-repeat;
-  -webkit-background-size: 35% 35%;
-     -moz-background-size: 35%;
-       -o-background-size: 35%;
-          background-size: 35%;
+  -webkit-background-size: 36% 36%;
+     -moz-background-size: 36%;
+       -o-background-size: 36%;
+          background-size: 36%;
   background-position: 100% 100%;
 }
 .pgprogramagent .slide-help .slide-zarabotok.help {
   background-image: none;
+  margin-left: 2%;
 }
 .pgprogramagent .slide-help .zarabotok-title p {
   width: 90% !important;
@@ -105,18 +117,30 @@
 }
 .pgprogramagent .lastsslide .agent-container {
   width: 900px;
-  margin-top: 70px;
+  margin-left: 5%;
+  margin-top: 10.5%;
+  /* margin-top: 70px; */
 }
 .pgprogramagent .lastsslide .agent-wrapper {
   width: 67%;
 }
+.pgprogramagent .lastsslide .agent-wrapper p {
+  line-height: 25px;
+  letter-spacing: 0.02em;
+  font-weight: 600;
+  max-width: 577px;
+  margin-left: -3px;
+  margin-bottom: 53px;
+}
 .pgprogramagent .lastsslide .agent-wrapper h2 {
-  font: 48px/66px 'Open Sans Light';
+  font: 48px/66px 'Open Sans';
   letter-spacing: 0.01em;
   margin-bottom: 20px;
+  font-weight: 300;
 }
 .pgprogramagent .lastsslide .get_partners {
   margin-bottom: 0;
+  margin-left: -15px;
 }
 .pgprogramagent .slide .centerblock_540 {
   margin-top: 0;
@@ -158,11 +182,22 @@
          -o-background-size: 52%;
             background-size: 52%;
   }
+  .pgprogramagent .slide-zarabotok {
+    -webkit-background-size: 52% 52%;
+       -moz-background-size: 52%;
+         -o-background-size: 52%;
+            background-size: 52%;
+  }
+  .pgprogramagent .slide-zarabotok,
+  .pgprogramagent .slide-help {
+    background-image: none !important;
+  }
   .pgprogramagent .lastsslide .agent-wrapper {
     width: 100%;
   }
   .pgprogramagent .lastsslide .agent-wrapper h2 {
-    font: 48px/50px 'Open Sans Light';
+    font: 48px/50px 'Open Sans';
+    font-weight: 300;
   }
   .pgprogramagent .lastsslide .agent-wrapper p {
     margin-bottom: 40px;
@@ -253,12 +288,9 @@
   .pgprogramagent .slide .centerblock .mainpage h2 {
     font-size: 1.3em;
   }
-  .pgprogramagent .slide-zarabotok,
-  .pgprogramagent .slide-help {
-    background-image: none !important;
-  }
   .pgprogramagent .lastsslide .agent-wrapper h2 {
-    font: 36px/50px 'Open Sans Light';
+    font: 36px/50px 'Open Sans';
+    font-weight: 300;
   }
   .pgprogramagent .lastsslide .agent-wrapper p {
     font-size: 14px;
@@ -273,57 +305,8 @@
     width: 100%;
   }
   .pgprogramagent .zarabotok-title h2 {
-    font: 32px/44px 'Open Sans Light' !important;
-  }
-}
-@media (max-width: 400px) {
-  .pgprogramagent .slide .centerblock {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-       -moz-box-orient: horizontal;
-       -moz-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-  .pgprogramagent .slide .centerblock .mainpage h2 {
-    font-size: 1.1em;
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .pgprogramagent .slide .centerblock .zarabotok-title h2 {
-    margin-left: 0;
-  }
-  .pgprogramagent .slide .centerblock .zarabotok-title p {
-    font-size: 14px;
-    margin-left: 0;
-    margin-bottom: 24px;
-  }
-  .pgprogramagent .slide .centerblock p.bullet {
-    font-size: initial;
-    margin-left: 50px;
-  }
-  .pgprogramagent .slide .centerblock .zarabotok-text p {
-    font-size: 14px;
-  }
-  .pgprogramagent .slide-zarabotok {
-    margin-top: 20px;
-  }
-  .agent-container {
-    width: 100% !important;
-  }
-  .agent-wrapper h2 {
-    margin: 10px 0 10px 0 !important;
-    font: 21px/34px 'Open Sans Light' !important;
-  }
-  .agent-wrapper p {
-    font-size: 13px !important;
-    margin: 0 !important;
-  }
-  .agent-wrapper .get_partners input {
-    width: auto;
-    margin: 12px 0 20px 0;
-    font-size: 24px;
+    font: 32px/44px 'Open Sans' !important;
+    font-weight: 300;
   }
 }
 @media (max-width: 980px) {
@@ -336,8 +319,13 @@
   .pgprogram_agent_rules .main__center div:nth-child(2) {
     margin: 0 auto 50px auto;
   }
-  .pgprogram_agent_rules .main__center div:nth-child(2) a {
+  .pgprogram_agent_rules .main__center div.lastblock a.icon_pdf {
+    display: inline-block;
+    margin-top: 5px;
     margin-left: 45px;
+  }
+  .pgprogram_agent_rules .main__center div.lastblock a:first-child {
+    margin-left: 4px;
   }
 }
 @media (min-width: 400px) and (max-width: 980px) {
@@ -345,8 +333,9 @@
     display: none;
   }
   .pgprogram_cpa .slide_05 .main__center-head h2 {
-    font: 36px/50px 'Open Sans Light';
+    font: 36px/50px 'Open Sans';
     margin-bottom: 20px;
+    font-weight: 300;
   }
   .pgprogram_cpa .slide_05 .main__center-head p {
     font-size: 16px;
@@ -565,6 +554,9 @@
   .pgprogram_region .slide_05 .main .description {
     max-width: 500px;
   }
+  .pgprogram_agent_reward .main__center--block.row div:nth-child(2) {
+    margin-top: 25px;
+  }
 }
 .page-about .a-slide1 .centerblock .mainpage {
   width: 580px;
@@ -736,9 +728,9 @@ a {
   }
 }
 .pgaccounts .main__right--table--body {
-  position: absolute;
   margin-top: 132px;
-  width: 100%;
+  /* position: absolute; */
+  /* width: 100%; */
 }
 .pgaccounts .main__right--table {
   position: relative;
@@ -976,12 +968,6 @@ a {
   position: absolute;
   bottom: 0;
 }
-.pgpayments .sel_platsys {
-  margin-bottom: 30px !important;
-}
-.pgpayments .sel_card {
-  margin-bottom: 33px !important;
-}
 .pgpayments strong {
   margin-left: 11px;
 }
@@ -1096,6 +1082,31 @@ a {
   .pgpayments .table_div .row:hover .col.colw5 .hide {
     margin-left: 15px;
     font-size: 11px;
+  }
+  .pgbonus .slide_02 .text {
+    padding: 0 25px;
+    text-align: left;
+  }
+  .pgbonus .slide_02 .text h2 {
+    font-size: 40px;
+  }
+  .pgbonus .slide_02 .text p {
+    margin-bottom: 30px;
+  }
+  .pgbonus .slide_03 .sl_03 .sl_03__text {
+    width: 96%;
+  }
+  .pgbonus .slide_03 .sl_03 div h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+  }
+  .pgbonus .slide_03 .sl_03 div a {
+    display: inline-block;
+    margin-top: 15px;
+  }
+  .pgbonus .slide_02 .bonus-img,
+  .pgbonus .slide_03 .bonus-img {
+    display: none;
   }
 }
 @media (max-width: 350px) {
@@ -1280,5 +1291,208 @@ a {
   .pgaccounts .main__right--table--head .row .col-02 {
     padding-left: 23px;
     font-size: 12px;
+  }
+}
+@media (max-width: 400px) {
+  .pgprogramagent .slide .centerblock {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+       -moz-box-orient: horizontal;
+       -moz-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .pgprogramagent .slide .centerblock .mainpage h2 {
+    font-size: 1.1em;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .pgprogramagent .slide .centerblock .zarabotok-title h2 {
+    margin-left: 0;
+  }
+  .pgprogramagent .slide .centerblock .zarabotok-title p {
+    font-size: 14px;
+    margin-left: 0;
+    margin-bottom: 24px;
+  }
+  .pgprogramagent .slide .centerblock p.bullet {
+    font-size: initial;
+    margin-left: 61px;
+  }
+  .pgprogramagent .slide .centerblock .zarabotok-text p {
+    font-size: 14px;
+  }
+  .pgprogramagent .slide-zarabotok {
+    margin-top: 20px;
+  }
+  .agent-container {
+    width: 100% !important;
+  }
+  .agent-wrapper h2 {
+    margin: 10px 0 10px 0 !important;
+    font: 21px/34px 'Open Sans' !important;
+  }
+  .agent-wrapper p {
+    font-size: 13px !important;
+    margin: 0 !important;
+  }
+  .agent-wrapper .get_partners input {
+    width: auto;
+    margin: 12px 0 20px 0;
+    font-size: 24px;
+  }
+  .pgbonus .slide_02 .text h2,
+  .pgbonus .slide_03 .sl_03 div h2 {
+    font-size: 28px;
+  }
+  .pgbonus .slide_02 .text p {
+    font-size: 16px;
+  }
+  .pgbonus .slide_03 .sl_03 div p {
+    margin-bottom: 15px;
+  }
+}
+.pgprogram_agent_reward .main__center {
+  padding-top: 27px;
+  padding-left: 21px;
+  padding-right: 0;
+}
+.pgprogram_agent_reward .main__center--block h2 {
+  letter-spacing: 0.01em;
+  margin-bottom: 25px;
+}
+.pgprogram_agent_reward .main__center--block p {
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: 0.02em;
+}
+.pgprogram_agent_reward .main__center--block.calc {
+  margin-top: 35px;
+  margin-left: 5%;
+  max-width: 1060px;
+  -webkit-box-shadow: 0px 20px 100px #e4e3e3;
+  -moz-box-shadow: 0px 20px 100px #e4e3e3;
+  box-shadow: 0px 20px 100px #e4e3e3;
+}
+.pgprogram_agent_reward .main__center--block.calc div.right > div {
+  margin-bottom: 0;
+}
+.pgprogram_agent_reward .main__center--block.calc div.right div:first-child {
+  margin-bottom: 74px;
+}
+.pgprogram_agent_reward .main__center--block.calc div.right > div p {
+  letter-spacing: 0.09em;
+}
+.pgprogram_agent_reward .main__center--block.calc div.left {
+  width: 680px;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+.pgprogram_agent_reward .main__center--block.calc div.left table {
+  width: 100%;
+}
+.pgprogram_agent_reward .main__center--block.calc div.left table td.head {
+  font-weight: bold;
+  letter-spacing: 0.09em;
+}
+.pgprogram_agent_reward .main__center--block.calc div.left h2 {
+  letter-spacing: 0.01em;
+  text-align: left;
+  margin-top: 56px;
+  margin-bottom: 31px;
+}
+.pgprogram_agent_reward .main__center--block.calc div.left .fi_select {
+  max-width: 258px;
+}
+.pgprogram_agent_reward .main__center--block.calc div.left .fi_select .tx.sel {
+  letter-spacing: 0.02em;
+  font-weight: 600;
+}
+.pgprogram_agent_reward .main__center--block.calc div.left .tr-after-dropdown {
+  display: block;
+  margin-top: 28px;
+}
+.pgprogram_agent_reward .main__center--block.calc div.left td.range {
+  padding-top: 2px;
+  padding-bottom: 24px;
+}
+.pgprogram_agent_reward .main__center--block.calc div.left table td.td-dropdown2 {
+  padding-left: 20px;
+}
+.pgprogram_agent_reward .main__center--block.calc div.right {
+  width: 380px;
+  padding-bottom: 14px;
+}
+.pgprogram_agent_reward .main__center--block.row.lasttable {
+  max-width: 930px;
+}
+.pgprogram_agent_reward .main__center--block.row.lasttable th {
+  font-weight: bold;
+  letter-spacing: 0.09em;
+}
+.pgprogram_agent_reward .main__center--block.row.lasttable .thead-title th {
+  padding-bottom: 16px;
+}
+.pgprogram_agent_reward .main__center--block.row.lasttable .tr-pt-serif td,
+.pgprogram_agent_reward .main__center--block.row.lasttable .table-text {
+  font-family: 'PT Serif';
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+}
+.pgprogram_agent_reward .main__center--block.row.lasttable .table-text:first-child {
+  margin-bottom: 22px;
+}
+.pgprogram_agent_reward .main__center--block.row.lasttable .mute {
+  max-width: 320px;
+  letter-spacing: 0.02em;
+  font-weight: 400;
+  line-height: 20px;
+}
+.pgprogram_agent_reward .main__menu,
+.pgprogram_agent_rules .main__menu {
+  top: 43px;
+}
+.pgbonus .slide_02 .text p {
+  line-height: 25px;
+  max-width: 540px;
+}
+@media (max-width: 640px) {
+  .pgbonus .main__menu {
+    width: auto;
+    padding-top: 30px;
+  }
+  .pgbonus .main__menu .myslide_nav {
+    text-align: left;
+    padding-left: 13px;
+    line-height: 2.4;
+  }
+}
+@media (max-width: 400px) {
+  .pgbonus .main__menu,
+  .pgprogramagent .main__menu,
+  .pgprogram_region .main__menu,
+  .pgpartners_internet .main__menu {
+    padding-top: 22px;
+  }
+  .pgbonus .main__menu .myslide_nav,
+  .pgprogramagent .main__menu .myslide_nav,
+  .pgprogram_region .main__menu .myslide_nav,
+  .pgpartners_internet .main__menu .myslide_nav {
+    text-align: left;
+    line-height: 1.8;
+  }
+  .pgprogram_region .main__menu {
+    padding-top: 22px;
+  }
+  .pgprogramagent .main__menu {
+    padding-left: 7%;
+  }
+  .pgprogramagent .slide-zarabotok.zarabotok2 {
+    margin-left: 4%;
+  }
+  .pgprogram_region .main__menu {
+    padding-left: 9%;
   }
 }

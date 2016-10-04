@@ -1,0 +1,37 @@
+.lk_dashboard .fly__profile .right .flag.rus {
+  margin-left: 0;
+}
+.lk_dashboard .fly__profile .right .pass-code {
+  margin-top: 10px;
+}
+.lk_dashboard .fly__profile .right .profile-body .profile-body-form .in_profile_pass_p {
+  padding: 34px 19px 20px 20px;
+}
+.lk_dashboard .fly__profile .right .profile-body .profile-body-form .edt img {
+  margin-top: 4px;
+  margin-right: 8px;
+}
+.lk_dashboard .fly__profile .right .profile-body .profile-body-form .col-xs-4 {
+  font-weight: bold;
+  letter-spacing: 0.09em;
+}
+.lk_dashboard .fly__profile .right .profile-body .profile-body-form .in_profile_pass_p div input.fi_input_sm {
+  padding-bottom: 7px;
+  margin: 0 0 38px 0;
+  border-bottom: 2px solid #ebebeb;
+  letter-spacing: 0.09em;
+}
+@media (max-width: 400px) {
+  .lk_dashboard .fly__profile .right .profile-body .profile-body-form {
+    min-height: 305px;
+    max-width: 350px;
+    padding-left: 0;
+  }
+  .lk_dashboard .fly__profile .right .profile-body .profile-body-form .in_profile_pass_p {
+    position: absolute;
+    top: 26%;
+    left: 0px;
+    right: 0px;
+    min-height: 240px;
+  }
+}

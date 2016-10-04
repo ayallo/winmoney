@@ -1,0 +1,90 @@
+.dropdown--right .dropdown-menu {
+  left: auto;
+  right: 0;
+}
+.adv_plitka_blok {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.adv_plitka_img {
+  margin: 0;
+}
+.adv_400x240 {
+  width: 100%;
+  height: 100%;
+}
+.adv_plitka_wrap_400x240 {
+  width: 400px;
+  height: 240px;
+}
+@media screen and (max-width: 1400px) {
+  .adv_plitka_blok.adv_row_400x240 {
+    width: 840px;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+       -moz-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+@media screen and (max-width: 880px) {
+  .adv_plitka_blok.adv_row_400x240 {
+    width: 100%;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .lk_advertising .adv-head__buttons {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+       -moz-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+  .lk_advertising .adv-head__buttons .button_round {
+    margin-left: 10px;
+    margin-bottom: 5px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .lk_advertising .adv-head__buttons {
+    width: 100%;
+  }
+  .lk_advertising .adv-head__title {
+    width: 100%;
+  }
+  .lk_advertising .adv-head__title h3 {
+    text-align: center;
+  }
+}
