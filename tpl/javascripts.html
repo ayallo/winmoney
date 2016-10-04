@@ -66,6 +66,10 @@ jQuery(document).ready(function(){
     var y = $('#'+id[1]+'.bukvasW').offset();
     var vy = Math.abs(etop.top) + y.top - 340;
     $('.scrollbar-other-bukvas').scrollTop(vy);
+    $('.ueva_listalka > .bukvas-right').addClass('bukvas--open');
+  });
+  $('.ueva_listalka').mouseleave(function () {
+    $(this).find('> .bukvas-right').removeClass('bukvas--open');
   });
 });
   $(function () {
@@ -175,7 +179,7 @@ jQuery(document).ready(function(){
 
         $(".menu-left-position").click(function(){/*щелчок по гамбургеру*/
 
-          
+
 
           if ( $(".fly__menu").css('opacity') == '0' ) {
 
@@ -199,7 +203,7 @@ jQuery(document).ready(function(){
 
             $("body").css("overflow","auto");
             $(".fly__menu").hide().css({"opacity":"0","margin-left":"-2000px"}).stop().fadeOut(100, 0);
-            $('.c-hamburger').removeClass('is-active');   
+            $('.c-hamburger').removeClass('is-active');
             $('.slcont-slide').removeClass('blur');
             $('.swiper-slide').removeClass('blur');
             $('.column_1').removeClass('blur');
@@ -465,11 +469,17 @@ jQuery(document).ready(function(){
             wheelPropagation: true,
             swipePropagation: true });
         }
-		  $('.scroller').perfectScrollbar({
-	      wheelSpeed: 0.3,
-	      suppressScrollX: true,
-	      wheelPropagation: true,
-	      swipePropagation: true  });
+		$('.scroller').perfectScrollbar({
+	      	wheelSpeed: 0.3,
+	      	suppressScrollX: true,
+	      	wheelPropagation: true,
+	      	swipePropagation: true
+	    });
+
+		$('.pgaccounts .main__right--table--body').perfectScrollbar({
+	      	wheelSpeed: 0.3,
+	      	suppressScrollX: true
+	    });
 
 
 		var table     = $('.pgaccounts .main__right--table--body');

@@ -1,0 +1,146 @@
+.dropdown--right {
+  .dropdown-menu {
+    left: auto;
+    right: 0;
+  }
+}
+
+
+// START LK Adv
+
+.adv_plitka_blok {
+    width: 1300px;
+    margin: 0 auto;
+    .adv_plitka_img {
+      margin: 0;
+    }
+    &.adv_row_400x240 {
+      width: 1300px;
+    }
+    .adv_plitka_wrap_400x240 {
+      width: 400px;
+      height: 240px;
+    }
+    &.adv_row_485x90 {
+      width: 1545px;
+    }
+    .adv_plitka_wrap_485x90 {
+      width: 485px;
+      height: 90px;
+    }
+    .adv_400x240, .adv_485x90, .adv_120x600 {
+      width: 100%;
+      height: 100%;
+    }
+    .adv_plitka_wrap_120x600 {
+      width: 120px;
+      height: 600px;
+    }
+}
+
+@media screen and (max-width: 1599px) {
+  .adv_plitka_blok{
+    &.adv_row_485x90 {
+      width: 1040px;
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .adv_plitka_blok {
+    &.adv_row_400x240 {
+      width: 870px;
+    }
+    &.adv_row_120x600 {
+      width: 870px;
+    }
+  }
+
+}
+
+@media screen and (max-width: 1060px) {
+  .adv_plitka_blok {
+    &.adv_row_485x90 {
+      width: 100%;
+    }
+    & .adv_plitka_wrap_485x90 {
+      float: none;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      max-width: 485px;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .adv_plitka_blok {
+    &.adv_row_120x600 {
+      width: 450px;
+    }
+  }
+}
+@media screen and (max-width: 880px) {
+  .adv_plitka_blok {
+    &.adv_row_400x240 {
+      width: 100%;
+    }
+    & .adv_plitka_wrap_400x240 {
+      float: none;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      max-width: 400px;
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .lk_advertising {
+    .adv-head__buttons {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      flex-wrap: wrap;
+      .button_round {
+        margin-left: 10px;
+        margin-bottom: 5px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 570px) {
+  .adv_plitka_blok {
+    &.adv_row_120x600 {
+      width: 310px;
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+  .lk_advertising {
+    .adv-head__buttons {
+      width: 100%;
+    }
+    .adv-head__title {
+      width: 100%;
+      h3 {
+        text-align: center;
+      }
+    }
+  }
+}
+@media screen and (max-width: 360px) {
+  .adv_plitka_blok {
+    &.adv_row_120x600 {
+      width: 100%;
+    }
+    & .adv_plitka_wrap_120x600 {
+      float: none;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      max-width: 120px;
+    }
+  }
+}
+
+// END LK Adv

@@ -6,7 +6,7 @@ $page = 'index'; if(isset($_GET['p'])){ $page=htmlspecialchars($_GET['p']); }
 
 $html = ''; $m=array();
 //страницы с навигацией БЕЛОЙ с классом sfonom
-$apage = array( 'accounts','analytics_articles','analytics_article','analytics_calendar','analytics_video','webinars','news_all','news_one','contracts','contracts_c6','contracts_c8','contracts_cfd','contracts_zs','contracts_m7','contracts_m8','contracts_m9','payments','indicators','indicator','program_agent_reward','program_agent_partners','program_agent_rules','partners_vidy','partners_reward','partners_net','partners_rules','program_region_reward' );
+$apage = array( 'accounts','analytics_articles','analytics_article','analytics_calendar','analytics_video','webinars','news_all','news_one','contracts','contracts_c6','contracts_c8','contracts_cfd','contracts_zs','contracts_m7','contracts_m8','contracts_m9','payments','indicators','indicator','program_agent_reward','program_agent_partners','program_agent_rules','partners_vidy','partners_reward','partners_net','partners_rules','program_region_reward', 'bonus_rules' );
 if (in_array($page, $apage)) {
   $m[1][]='%dopclass%'; $m[2][]='sfonom';
 }else {
@@ -48,13 +48,26 @@ if($page=='index'){
   $m[1][]='%SCRIPT%'; $m[2][] = get_shablon($tpl.'/program_agent.js');
 }
 
-if($page=='accounts'||$page=='indicators'||$page=='indicator'){
+if($page=='accounts'){
   $m[1][]='%CSS%'; $m[2][] = '<link rel="stylesheet" href="css/pg_accounts.css">';
   $m[1][]='%SCRIPT%'; $m[2][]='';
 
   $html .= get_shablon($tpl.'/head.html',$m);
   $html = str_replace('%TITLE%',$page,$html);
-  $html .= '<body class="pgaccounts pgindicators">';
+  $html .= '<body class="pgaccounts dd__pgaccounts">';
+  $html .= '<div class="wrapper">';
+  $html .= get_shablon($tpl.'/head_nav.html',$m);
+  $html .= get_shablon($tpl.'/'.$page.'.html');
+  $html .= get_shablon($tpl.'/footer.html');
+  $html .= '</div>';
+}
+if($page=='indicators'||$page=='indicator'){
+  $m[1][]='%CSS%'; $m[2][] = '<link rel="stylesheet" href="css/pg_accounts.css">';
+  $m[1][]='%SCRIPT%'; $m[2][]='';
+
+  $html .= get_shablon($tpl.'/head.html',$m);
+  $html = str_replace('%TITLE%',$page,$html);
+  $html .= '<body class="pgindicators">';
   $html .= '<div class="wrapper">';
   $html .= get_shablon($tpl.'/head_nav.html',$m);
   $html .= get_shablon($tpl.'/'.$page.'.html');
@@ -71,7 +84,7 @@ if($page=='bonus'||$page=='bonus_get'||$page=='bonus_withdrawal'||$page=='bonus_
   if($page=='bonus_withdrawal'||$page=='bonus_rules'||$page=='bonus_activation') $class="bonus_get"; else $class=$page;
   $html .= '<body class="pg'.$class.'">';
   $html .= '<div class="wrapper">';
-  $html .= get_shablon($tpl.'/head_nav.html');
+  $html .= get_shablon($tpl.'/head_nav.html', $m);
   $html .= get_shablon($tpl.'/'.$page.'.html');
   $html .= get_shablon($tpl.'/footer.html');
   $html .= '</div>';

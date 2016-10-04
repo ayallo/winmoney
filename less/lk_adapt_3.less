@@ -1,0 +1,133 @@
+.lk_dashboard {
+    .fly__profile .right {
+        background: white;
+
+        .profile-menu {
+            flex-shrink: 0;
+        }
+
+        .flag.rus {
+            margin-left: 0;
+        }
+        .pass-code {
+            margin-top: 10px;
+            align-items: center;
+            img {
+                max-height: 50px;
+            }
+        }
+        .in_profile_pass { letter-spacing: 0.2em;}
+        .in_profile_pass::-webkit-input-placeholder { color: #2675eb;}
+        .in_profile_pass::-moz-placeholder { color: #2675eb;}
+        .in_profile_pass::-moz-placeholder { color: #2675eb;}
+        .in_profile_pass:-ms-input-placeholder { color: #2675eb;}
+
+        .profile-body {
+            position: relative;
+            align-items: flex-start;
+            overflow-y: auto;
+            overflow-x: hidden;
+            .row {
+                flex-shrink: 0;
+            }
+        }
+
+        .profile-body .profile-body-form {
+            flex-shrink: 0;
+            padding-left: 28px;
+
+            .in_profile_pass_p {
+                width: 260px;
+                height: 319px;
+                margin-left: 87px;
+                margin-bottom: 40px;
+                padding: 34px 19px 20px 20px;
+                -webkit-box-shadow: 0px 9px 40px rgba(0, 0, 0, 0.11);
+                -moz-box-shadow: 0px 9px 40px rgba(0, 0, 0, 0.11);
+                box-shadow: 0px 9px 40px rgba(0, 0, 0, 0.11);
+                flex-shrink: 1;
+            }
+            .edt img {
+                margin-top: 4px;
+                margin-right: 8px;
+            }
+            .col-xs-4 {
+                font-weight: bold;
+                letter-spacing: 0.09em;
+            }
+            .in_profile_pass_p div {
+                input.fi_input_sm:first-child {
+                    letter-spacing: 0.2em;
+                }
+                input.fi_input_sm {
+                    padding-bottom: 7px;
+                    margin: 0 0 38px 0;
+                    border-bottom: 2px solid #ebebeb;
+                    background: transparent;
+                    font: 300 16px 'Open Sans', sans-serif;
+                    font-weight: 600;
+                    color: #555555;
+
+                    &::-webkit-input-placeholder {
+                        font-size: 10px;
+                        font-weight: bold;
+                        letter-spacing: 0.09em;
+                        color: #a8a8a8;
+                    }
+                    &::-moz-placeholder {
+                        font-size: 10px;
+                        font-weight: bold;
+                        letter-spacing: 0.09em;
+                        color: #a8a8a8;
+                    }
+                    &::-moz-placeholder {
+                        font-size: 10px;
+                        font-weight: bold;
+                        letter-spacing: 0.09em;
+                        color: #a8a8a8;
+                    }
+                    &:-ms-input-placeholder {
+                        font-size: 10px;
+                        font-weight: bold;
+                        letter-spacing: 0.09em;
+                        color: #a8a8a8;
+                    }
+                }
+                input.input-code {
+                    margin-left: 20px;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 570px) {
+    .lk_dashboard .fly__profile .right {
+        .profile-menu div a {
+            justify-content: center;
+        }
+        .profile-body {
+            align-items: center;
+        }
+        .profile-body .profile-body-form {
+            width: 100%;
+            min-height: 305px;
+            max-width: 350px;
+            padding-left: 0;
+            padding-right: 0;
+            .in_profile_pass_p {
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+@media (min-width: 571px) and (max-width: 1024px)  {
+    .lk_dashboard .fly__profile .right {
+        .profile_close {
+            position: fixed;
+            bottom: 0;
+        }
+    }
+}

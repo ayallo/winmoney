@@ -16,8 +16,13 @@
 /* .pgpartners .slcont-slide.slide_02 .main__center {*/
 /*     padding-top: 140px;*/
 /* }*/
-.main__left--menu--item.ts_centovye::before {
+.main__left--menu--item.ts_centovye {
+  &::before {
+      width: 25px;
+  }
+  &:hover::before {
     width: 25px;
+  }
 }
 // .pgaccounts .main__right--table--body {
 //     height: 90%;
@@ -811,6 +816,61 @@
 // end страница payments
 // end страница payments
 // end страница payments
+.pgaccounts {
+  .main {
+    &__right--table--body {
+        position: relative;
+        height: 100%;
+        margin-top: 0;
+        width: 100%;
+    }
+  }
+}
+//safari account
+//safari account
+.pgaccounts {
+  .main {
+    &__left {
+        width: 420px;
+        position: fixed;
+        top: 70px;
+        left: 0;
+        bottom: 0;
+        z-index: 92;
+    }
+    &__right {
+        height: 100%;
+        position: absolute;
+        padding-left: 420px;
+        // padding-bottom: 55px;
+        bottom: 55px;
+        &--table--body {
+            padding-bottom: 0;
+            // padding-bottom: 132px;
+            padding-top: 132px;
+            // margin-bottom: 132px;
+        }
+        &--table--head {
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 99;
+        }
+    }
+  }
+  // .footer.acc-footer-show {
+  //     /* display: -webkit-box; */
+  //     /* display: -webkit-flex; */
+  //     display: -moz-box;
+  //     display: -ms-flexbox;
+  //     /* display: flex; */
+  //     /* position: absolute; */
+  //     /* bottom: 0; */
+  //     display: none;
+  // }
+}
+//end safari account
+//end safari account
 
 @media only screen and (min-width:1501px) and (max-width:1920px){
   .swiper-container_ind {
@@ -1077,6 +1137,23 @@
       }
       &__center-footer .mcft_block h2 {
         margin-top: 11px;
+      }
+    }
+  }
+  .pgaccounts {
+    .main {
+      &__right {
+        // &--table--body {
+        //     margin-top: 0;
+        //     position: relative;
+        //     width: 100%;
+        //     padding-bottom: 200px;
+        // }
+        &--table {
+            // position: relative;
+            // height: 100%;
+            // height: 100vh; //тест сафари
+        }
       }
     }
   }
@@ -1387,6 +1464,9 @@
   // end страница payments
   // end страница payments
   // end страница payments
+  .pgaccounts .main__right--table--head .row .col-03 {
+      padding-left: 17px;
+  }
 }
 
 
@@ -2006,6 +2086,45 @@
       }
     }
   }
+  .pgaccounts.dd__pgaccounts {
+    .main {
+      &__left {
+        width: 310px;
+      }
+      &__left--menu {
+        margin-left: 70px;
+      }
+      &__right {
+          padding-left: 310px;
+      }
+      &__right--table--body {
+          .row {
+            .col-01 {
+              padding-left: 10px;
+            }
+            .col-02 {
+                padding: 14px 4px 20px 24px;
+            }
+            .col-03 {
+                padding: 14px 4px 20px 7px;
+            }
+          }
+      }
+      &__right--table--head {
+        .row {
+          // .col-02 {
+          //     padding-left: 35px;
+          // }
+          // .col-03 {
+          //     padding-left: 20px;
+          // }
+        }
+      }
+    }
+    .main__right--table--body .row .col-02, .main__right--table--body .row .col-03 {
+        font-size: 15px;
+    }
+  }
 }
 
 @media (max-width: 749px){
@@ -2130,6 +2249,87 @@
       }
     }
   }
+
+  .pgaccounts {
+    .main {
+      &__right {
+        &--table--head {
+          .row {
+            .col-02 {
+                padding-left: 27px;
+            }
+            .col-03 {
+                padding-left: 17px;
+            }
+          }
+        }
+        &--table--body {
+            // padding-bottom: 124px;
+        }
+      }
+    }
+  }
+
+  .pgaccounts.dd__pgaccounts {
+    .main {
+      &__left--menu--item {
+            margin: 3px 0;
+        a {
+           font-size: 15px;
+         }
+      }
+      &__left {
+        width: 232px;
+        h2 {
+            margin: 0;
+            font-size: 16px;
+            // margin-left: 40px;
+            margin-left: 30px;
+            // margin-top: 36px;
+            margin-top: 18px;
+            margin-bottom: 15px;
+        }
+        &--menu {
+            margin-left: 40px;
+        }
+      }
+      &__right {
+          padding-left: 232px;
+      }
+      &__right--table--head {
+          padding-top: 73px;
+          padding-bottom: 16px;
+      }
+      &__right--table--body {
+          padding-top: 112px;
+      }
+    }
+    // .main__left--menu--item.ts_standart::before,  .main__left--menu--item.ts_centovye::before,  .main__left--menu--item.ts_ecn::before, .main__left--menu--item.ts_affiliate::before, .main__left--menu--item.ts_demo::before {
+    //     left: 0px;
+    //     width: 36px;
+    // }
+    .main__left h2 {
+        display: block;
+    }
+    .main__left--menu--item.ts_standart::before {
+        left: -1px;
+    }
+    .main__left--menu--item.ts_centovye::before {
+        left: -2px;
+    }
+    .main__left--menu--item.ts_affiliate::before {
+        left: -6px;
+    }
+    .main__left--menu--item.ts_demo::before {
+        left: 3px;
+    }
+    .main__left--menu--item.ts_ecn::before {
+        left: 1px;
+    }
+    .main__left--menu--item.ts_standart, .main__left--menu--item.ts_centovye, .main__left--menu--item.ts_affiliate, .main__left--menu--item.ts_demo, .main__left--menu--item.ts_ecn {
+        padding-left: 41px;
+    }
+  }
 }
 
 
@@ -2194,7 +2394,60 @@
       }
     }
   }
-
+  .pgaccounts.dd__pgaccounts {
+    .main {
+      &__right--table--head {
+            // padding-top: 66px;
+            padding-top: 11px;
+            padding-bottom: 11px;
+        .row {
+          .col-02 {
+              font-size: 15px;
+          }
+          .col-03 {
+              font-size: 15px;
+          }
+        }
+      }
+      &__right--table--body {
+          padding-top: 98px;
+          padding-top: 43px;
+          // padding-top: 43px;
+      }
+      &__right {
+          bottom: 0;
+      }
+      &__left {
+        h2 {
+            font-size: 15px;
+            margin-left: 18px;
+            margin-top: 11px;
+            margin-bottom: 8px;
+        }
+      }
+      &__left--menu--item a {
+          font-size: 14px;
+      }
+      &__left--menu--item.ts_standart {
+          padding: 5px 10px 7px 30px;
+      }
+      &__left--menu--item.ts_centovye {
+          padding: 5px 10px 7px 30px;
+      }
+      &__left--menu--item.ts_affiliate {
+          padding: 10px 10px 10px 30px;
+      }
+      &__left--menu--item.ts_demo {
+          padding: 10px 10px 10px 30px;
+      }
+      &__left--menu--item.ts_ecn {
+          padding: 10px 10px 10px 30px;
+      }
+    }
+    .footer.acc-footer-show {
+        display: none;
+    }
+  }
 }
 
 
@@ -2295,6 +2548,25 @@
   // }
 }
 
+
+
+@media (max-width: 480px){
+  .pgaccounts {
+    .main__left {
+      padding-bottom: 0;
+      h2 {
+          font-size: 12px;
+          padding-left: 17px;
+      }
+    }
+    .main__right {
+      &--table--body {
+          padding-bottom: 200px;
+          // padding-bottom: 55px;
+      }
+    }
+  }
+}
 
 
 @media (max-width: 470px){

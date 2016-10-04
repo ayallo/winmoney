@@ -3,14 +3,12 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.pwstrength.js"></script>
 <script src="js/masked.js"></script>
-<script src="js/perfect-scrollbar.jquery.js"></script>
 <script src="js/countdown/jquery.plugin.min.js"></script>
 <script src="js/countdown/jquery.countdown.js"></script>
 <script src="js/countdown/jquery.countdown-ru.js"></script>
 <!--script src="js/docs.min.js"></script>
 <script src="js/ie10-viewport-bug-workaround.js"></script-->
 <script src="js/jquery.scrollbar/jquery.scrollbar.min.js"></script>
-<script src="js/Swiper-3.3.1/dist/js/swiper.min.js"></script>
 <script>
   $(function () {
     /*payments переключение таблицы-плитки*/
@@ -139,7 +137,7 @@
         }
       }
       //закрытие модальных окон
-      if($(event.target).closest('.modal_payment_b, .modal_registration_b, .modal_transfer_b').length) {
+      if($(event.target).closest('.modal_payment_b, .modal_registration_b').length) {
         //если щелкаем в панель то не скрываем панель
         //return false;
       }else{
@@ -148,7 +146,6 @@
           if($('.modal-content').is(":visible")) {
             $('#modal_payment').modal('hide');
             $('#modal_registration').modal('hide');
-            $('#modal_transfer').modal('hide');
           }
         }
       }
@@ -370,40 +367,6 @@
         //document.getElementById('message').innerHTML = output;
         return valid;
     }
-/*
-    $('.profile-body.scroller').perfectScrollbar({
-        wheelSpeed: 0.3,
-        suppressScrollX: true
-    });
-*/
-
-    /* сортировка div таблиц */
-    // $('.row_head .col').click(function(){
-    //   //определяем столбец
-    //   var stolbec,val0,val1,val2;
-    //   if($(this).hasClass('colw1')) stolbec = 'colw1';
-    //   if($(this).hasClass('colw2')) stolbec = 'colw2';
-    //   if($(this).hasClass('colw3')) stolbec = 'colw3';
-    //   if($(this).hasClass('colw4')) stolbec = 'colw4';
-    //   if($(this).hasClass('colw5')) stolbec = 'colw5';
-    //   //$('.table_div .col').each(function(key,item){
-    //     //
-    //   //});
-    //   //создадим массив из данных по выбранному столбцу
-    //
-    //   var c = jQuery.makeArray($(".table_div .col"));
-    //   c.sort(function (a, b) {
-    //     var cola = $(a).find("."+stolbec);
-    //     var colb = $(b).find("."+stolbec);
-    //     a = $(cola).text();
-    //     b = $(colb).text();
-    //     if (a && b) {
-    //       return a.toUpperCase().localeCompare(b.toUpperCase());
-    //     }
-    //     return 0;
-    //   });
-    //   $(c).appendTo(".table_div");
-    // });
   });
   %SCRIPT%
   /*gamburger*/
@@ -421,12 +384,6 @@
       });
     }
   })();
-</script>
-<script>
-var swiperlkash = new Swiper('.lk__adpt-slider-cont', {
-    pagination: '.lk__adpt-slider-pag',
-    paginationClickable: true
-});
 </script>
 </body>
 </html>

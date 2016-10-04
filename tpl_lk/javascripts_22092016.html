@@ -1,0 +1,222 @@
+
+<script src="js/jquery-1.12.4.js"></script>
+
+<script src="js/bootstrap.min.js"></script>
+<!--script src="js/docs.min.js"></script>
+<script src="js/ie10-viewport-bug-workaround.js"></script-->
+<script src="js/jquery.scrollbar/jquery.scrollbar.min.js"></script>
+<script>
+  $(function () {
+    /* scrollbar */
+    $('.scrollbar-other').scrollbar({
+        "ignoreMobile": false
+    });
+    /*меню из гамбургера*/
+    $(".fly__menu").hide();
+    $(".c-hamburger").click(function(){/*щелчок по гамбургеру*/
+      if ( $(".fly__menu").css('opacity') == '0' ){
+        $("body").css("overflow","hidden");
+        $(".fly__menu").show().css({"opacity":"1","margin-left":"0px"}).stop().fadeTo(200, 1);
+        $('.c-hamburger').addClass('is-active');
+        $(".fly__profile").hide().css({"opacity":"0","margin-left":"-2000px"}).stop().fadeOut(100, 0);
+        $('.head__avatar').removeClass('is-active');
+      }else{
+        $("body").css("overflow","auto");
+        $(".fly__menu").hide().css({"opacity":"0","margin-left":"-2000px"}).stop().fadeOut(100, 0);
+        $('.c-hamburger').removeClass('is-active');
+      }
+    });
+    $(".fly__menu").click(function(){/*закрытие меню щелкая вне области меню*/
+      if ( $(".fly__menu").css('opacity') == '0' ){
+      }else{
+        $('.c-hamburger').removeClass('is-active');
+        $("body").css("overflow","auto");
+        //$(".fly__menu").hide().css({"opacity":"0","margin-left":"-200px"}).stop().fadeTo(100, 0);
+        $(".fly__menu").hide().css({"opacity":"0","margin-left":"-2000px"}).stop().fadeOut(100, 0);
+      }
+    });
+    /*профиль из аватара*/
+    $(".fly__profile").hide();
+    /*щелчок по гамбургеру*/
+    $(".head__avatar").click(function(){
+      if ( $(".fly__profile").css('opacity') == '0' ){
+        $("body").css("overflow","hidden");
+        $(".fly__profile").show().css({"opacity":"1","margin-left":"0px"}).stop().fadeTo(200, 1);
+        $('.head__avatar').addClass('is-active');
+        $(".fly__menu").hide().css({"opacity":"0","margin-left":"-2000px"}).stop().fadeOut(100, 0);
+        $('.c-hamburger').removeClass('is-active');
+      }else{
+        $("body").css("overflow","auto");
+        $(".fly__profile").hide().css({"opacity":"0","margin-left":"-2000px"}).stop().fadeOut(100, 0);
+        $('.head__avatar').removeClass('is-active');
+      }
+    });
+    /*закрытие меню щелкая вне области меню*/
+    /*$(".fly__profile").click(function(){
+      if ( $(".fly__profile").css('opacity') == '0' ){
+      }else{
+        $('.head__avatar').removeClass('is-active');
+        $("body").css("overflow","auto");
+        $(".fly__profile").hide().css({"opacity":"0","margin-left":"-2000px"}).stop().fadeOut(100, 0);
+      }
+    });*/
+
+    /*модальное размытие*/
+    $('.modal').on('hidden.bs.modal', function (e) {
+      $('.body_page').removeClass('modal_blur');
+    })
+    $('.modal').on('show.bs.modal', function (e) {
+      $('.body_page').addClass('modal_blur');
+    })
+    /*иконка около инпута*/
+    $('.fi_input_bsh').click(function(){
+      var parent = $(this).closest('.edt');
+      $(this).hide();
+      parent.find('.fi_input_inp').show();
+      parent.find('.fi_input_inp input').focus();
+    });
+    $(".fi_input_inp input").hover(function(){
+    }, function(){
+      var parent = $(this).closest('.edt');
+      parent.find('.fi_input_inp').hide();
+      parent.find('.fi_input_bsh .tx').html($(this).val());
+      parent.find('.fi_input_bsh').show();
+    });
+/*скрытие панелей*/
+/*$(window).click(function() {
+  if($('.in_profile_pass_p').is(":visible")) {
+    $('.in_profile_pass_p').hide();
+  }
+});
+
+$('.in_profile_pass').click(function(event){
+    event.stopPropagation();
+});*/
+    /*$(document).click(function(event) {
+
+      if(!$(event.target).closest('.in_profile_pass_p').length) {
+        if($('.in_profile_pass_p').is(":visible")) {
+          $('.in_profile_pass_p').hide();
+        }else{
+          $('.in_profile_pass_p').show();
+        }
+      }
+    })*/
+
+    /*checkbox checkbox*/
+    $('.fi_checkbox .checkbox').click(function(){
+      var id=$(this).attr('id').split('_');
+      if($(this).hasClass('checked')){
+        $(this).removeClass('checked');
+        $('#'+id[0]).val('0');
+      }else{
+        $(this).addClass('checked');
+        $('#'+id[0]).val('1');
+      }
+    });
+    /*radio checkbox*/
+    $('.fi_radio_wrap span').click(function(){
+      var id=$(this).attr('id').split('_');
+      $('#'+id[0]).val(id[1]);
+      $('[id^="'+id[0]+'_"]').removeClass('checked');
+      $(this).addClass('checked');
+    });
+    /*selects */
+    $('.fi_select ul li a').click(function(){
+      var id = $(this).attr("id").split("_");
+      var tx = $(this).html();
+      var fi_select = $(this).closest('.fi_select');
+      fi_select.removeClass('open');
+      var button = $(this).closest('.fi_select').find('button');
+      button.attr("aria-expanded","false");
+      var buttontx = $(this).closest('.fi_select').find('button').find('.tx');
+      buttontx.html(tx).removeClass('nosel');
+      $('#'+id[0]).val(id[1]);
+      return false;
+    });
+    /*adv select*/
+    $('.adv_select ul li a').click(function(){
+      var id = $(this).attr("id").split("_");
+      var tx = $(this).html();
+      var fi_select = $(this).closest('.fi_select_v1');
+      fi_select.removeClass('open');
+      var button = $(this).closest('.fi_select_v1').find('.buttondiv');
+      button.attr("aria-expanded","false");
+      var buttontx = $(this).closest('.fi_select_v1').find('.buttondiv').find('.tx');
+      buttontx.html(tx).removeClass('nosel');
+      var oldclass= $('#'+id[0]).val();
+      $('#'+id[0]).val(id[1]);
+
+      $('.adv_plitka_img').removeClass('adv_'+oldclass).addClass('adv_'+id[1]);
+      $('[class ^= adv_plitka_wrap_]').removeClass('adv_plitka_wrap_'+oldclass).addClass('adv_plitka_wrap_'+id[1]);
+      $('.adv_plitka_blok').removeClass('adv_row_'+oldclass).addClass('adv_row_'+id[1]);
+
+      return false;
+    });
+    /*фильтр в статьях новостях*/
+    $('.filter_p').hide();
+    $('.filter_wrap .filter_r').click(function(){/*раскрытие фильтра*/
+      var filter_p = $(this).closest('.filter_wrap').find('.filter_p');
+      if($(this).hasClass('act')){
+        $(this).removeClass('act');
+        filter_p.hide();
+      }else{
+        $(this).addClass('act');
+        filter_p.show();
+      }
+    });
+    $('.filter_p .select02').click(function(){/*выпадание одного из фильтра*/
+      var flmu = $(this).find('.filter_flymenu');
+      if( flmu.css('display') == 'none'){
+        $('.filter_flymenu').hide();
+        flmu.show();
+      }else{
+        flmu.hide();
+      }
+    });
+    $('.filter_flymenu a').click(function(){/*выбор из выпавшего меню, элемента*/
+      var filter_fm = $(this).closest('.filter_flymenu');
+      var select02tx = filter_fm.closest('.select02').find('.tx');
+      select02tx.html($(this).html());
+      filter_fm.hide();
+      return false;
+    });
+    $('.in_profile_pass_p').hide();
+    $('.in_profile_pass').click(function(){
+      $('.in_profile_pass_p').show();
+    })
+    $('.in_profile_pass_c').click(function(){
+      $('.in_profile_pass_p').hide();
+    })
+    /*adv hovers*/
+    /*$('.adv_plitka_img').hover(
+      function() {
+        $('.adv_plitka_img').removeClass('unhover');
+        $('.adv_plitka_img').addClass('unhover');
+        $( this ).removeClass('unhover');
+        $( this ).addClass('hover');
+      }, function() {
+        $('.adv_plitka_img').removeClass('unhover');
+        $( this ).removeClass('hover');
+      }
+    );*/
+  });
+  %SCRIPT%
+  /*gamburger*/
+  (function() {
+    "use strict";
+    var toggles = document.querySelectorAll(".c-hamburger");
+    for (var i = toggles.length - 1; i >= 0; i--) {
+      var toggle = toggles[i];
+      toggleHandler(toggle);
+    };
+    function toggleHandler(toggle) {
+      toggle.addEventListener( "click", function(e) {
+        e.preventDefault();
+        (this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
+      });
+    }
+  })();
+</script>
+</body>
+</html>

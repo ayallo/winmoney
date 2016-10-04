@@ -1,11 +1,75 @@
+.lk_dashboard .fly__profile .right {
+  background: white;
+}
+.lk_dashboard .fly__profile .right .profile-menu {
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+}
 .lk_dashboard .fly__profile .right .flag.rus {
   margin-left: 0;
 }
 .lk_dashboard .fly__profile .right .pass-code {
   margin-top: 10px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+              -ms-grid-row-align: center;
+          align-items: center;
+}
+.lk_dashboard .fly__profile .right .pass-code img {
+  max-height: 50px;
+}
+.lk_dashboard .fly__profile .right .in_profile_pass {
+  letter-spacing: 0.2em;
+}
+.lk_dashboard .fly__profile .right .in_profile_pass::-webkit-input-placeholder {
+  color: #2675eb;
+}
+.lk_dashboard .fly__profile .right .in_profile_pass::-moz-placeholder {
+  color: #2675eb;
+}
+.lk_dashboard .fly__profile .right .in_profile_pass::-moz-placeholder {
+  color: #2675eb;
+}
+.lk_dashboard .fly__profile .right .in_profile_pass:-ms-input-placeholder {
+  color: #2675eb;
+}
+.lk_dashboard .fly__profile .right .profile-body {
+  position: relative;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+     -moz-box-align: start;
+      -ms-flex-align: start;
+              -ms-grid-row-align: flex-start;
+          align-items: flex-start;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.lk_dashboard .fly__profile .right .profile-body .row {
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+}
+.lk_dashboard .fly__profile .right .profile-body .profile-body-form {
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  padding-left: 28px;
 }
 .lk_dashboard .fly__profile .right .profile-body .profile-body-form .in_profile_pass_p {
+  width: 260px;
+  height: 319px;
+  margin-left: 87px;
+  margin-bottom: 40px;
   padding: 34px 19px 20px 20px;
+  -webkit-box-shadow: 0px 9px 40px rgba(0, 0, 0, 0.11);
+  -moz-box-shadow: 0px 9px 40px rgba(0, 0, 0, 0.11);
+  box-shadow: 0px 9px 40px rgba(0, 0, 0, 0.11);
+  -webkit-flex-shrink: 1;
+      -ms-flex-negative: 1;
+          flex-shrink: 1;
 }
 .lk_dashboard .fly__profile .right .profile-body .profile-body-form .edt img {
   margin-top: 4px;
@@ -15,23 +79,76 @@
   font-weight: bold;
   letter-spacing: 0.09em;
 }
+.lk_dashboard .fly__profile .right .profile-body .profile-body-form .in_profile_pass_p div input.fi_input_sm:first-child {
+  letter-spacing: 0.2em;
+}
 .lk_dashboard .fly__profile .right .profile-body .profile-body-form .in_profile_pass_p div input.fi_input_sm {
   padding-bottom: 7px;
   margin: 0 0 38px 0;
   border-bottom: 2px solid #ebebeb;
-  letter-spacing: 0.09em;
+  background: transparent;
+  font: 300 16px 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: #555555;
 }
-@media (max-width: 400px) {
+.lk_dashboard .fly__profile .right .profile-body .profile-body-form .in_profile_pass_p div input.fi_input_sm::-webkit-input-placeholder {
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 0.09em;
+  color: #a8a8a8;
+}
+.lk_dashboard .fly__profile .right .profile-body .profile-body-form .in_profile_pass_p div input.fi_input_sm::-moz-placeholder {
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 0.09em;
+  color: #a8a8a8;
+}
+.lk_dashboard .fly__profile .right .profile-body .profile-body-form .in_profile_pass_p div input.fi_input_sm::-moz-placeholder {
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 0.09em;
+  color: #a8a8a8;
+}
+.lk_dashboard .fly__profile .right .profile-body .profile-body-form .in_profile_pass_p div input.fi_input_sm:-ms-input-placeholder {
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 0.09em;
+  color: #a8a8a8;
+}
+.lk_dashboard .fly__profile .right .profile-body .profile-body-form .in_profile_pass_p div input.input-code {
+  margin-left: 20px;
+  margin-bottom: 5px;
+}
+@media (max-width: 570px) {
+  .lk_dashboard .fly__profile .right .profile-menu div a {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .lk_dashboard .fly__profile .right .profile-body {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+                -ms-grid-row-align: center;
+            align-items: center;
+  }
   .lk_dashboard .fly__profile .right .profile-body .profile-body-form {
+    width: 100%;
     min-height: 305px;
     max-width: 350px;
     padding-left: 0;
+    padding-right: 0;
   }
   .lk_dashboard .fly__profile .right .profile-body .profile-body-form .in_profile_pass_p {
-    position: absolute;
-    top: 26%;
-    left: 0px;
-    right: 0px;
-    min-height: 240px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 571px) and (max-width: 1024px) {
+  .lk_dashboard .fly__profile .right .profile_close {
+    position: fixed;
+    bottom: 0;
   }
 }

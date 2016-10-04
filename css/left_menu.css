@@ -1,5 +1,4 @@
-.scrollbar-other,
-.scrollbar-other-bukvas {
+.scrollbar-other {
   height: 100%;
   overflow: auto;
   overflow-x: hidden;
@@ -40,7 +39,7 @@
   position: fixed;
   background: rgba(255, 255, 255, 0.9);
   top: 70px;
-  left: 0px;
+  left: 0;
   right: 0;
   bottom: 0;
   z-index: 2000;
@@ -70,92 +69,6 @@
 }
 .fly__menu .left a:hover {
   color: #e94f86;
-}
-.fly__menu .left .left-menu-head-client {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-     -moz-box-orient: horizontal;
-     -moz-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-     -moz-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-     -moz-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.fly__menu .left .left-menu-head-client div.item {
-  width: 25%;
-  text-align: center;
-  padding-top: 26px;
-  -webkit-box-shadow: 1px 1px 0px 0px #373c43, 1px 1px 0px 1px #26292f;
-     -moz-box-shadow: 1px 1px 0px 0px #373c43, 1px 1px 0px 1px #26292f;
-          box-shadow: 1px 1px 0px 0px #373c43, 1px 1px 0px 1px #26292f;
-  height: 106px;
-}
-.fly__menu .left .left-menu-head-client div.item a {
-  color: #9399a1;
-  font-size: 10px;
-}
-.fly__menu .left .left-menu-head-client div.item a img {
-  margin: 0 auto;
-}
-.fly__menu .left .left-menu-head-client div.item a div.us_menu {
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 100%;
-  height: 36px;
-  cursor: pointer;
-}
-.fly__menu .left .left-menu-head-client div.item a div.us_menu.pocket_wallet {
-  background-image: url('../img/lk/pocket_wallet.png');
-}
-.fly__menu .left .left-menu-head-client div.item a div.us_menu.arrow {
-  background-image: url('../img/lk/arrow.png');
-}
-.fly__menu .left .left-menu-head-client div.item a div.us_menu.case {
-  background-image: url('../img/lk/case.png');
-}
-.fly__menu .left .left-menu-head-client div.item a div.us_menu.document {
-  background-image: url('../img/lk/document.png');
-}
-.fly__menu .left .left-menu-head-client div.item:hover {
-  background: #1b1d21;
-  background: -moz-linear-gradient(top, #1b1d21 0%, #25282e 100%);
-  background: -webkit-linear-gradient(top, #1b1d21 0%, #25282e 100%);
-  background: -webkit-gradient(linear, left top, left bottom, from(#1b1d21), to(#25282e));
-  background: -o-linear-gradient(top, #1b1d21 0%, #25282e 100%);
-  background: linear-gradient(to bottom, #1b1d21 0%, #25282e 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1b1d21', endColorstr='#25282e', GradientType=0);
-}
-.fly__menu .left .left-menu-head-client div.item:hover a {
-  color: #fff;
-}
-.fly__menu .left .left-menu-head-client div.item:hover a div.us_menu.pocket_wallet {
-  background-image: url('../img/lk/pocket_wallet_w.png');
-}
-.fly__menu .left .left-menu-head-client div.item:hover a div.us_menu.arrow {
-  background-image: url('../img/lk/arrow_w.png');
-}
-.fly__menu .left .left-menu-head-client div.item:hover a div.us_menu.case {
-  background-image: url('../img/lk/case_w.png');
-}
-.fly__menu .left .left-menu-head-client div.item:hover a div.us_menu.document {
-  background-image: url('../img/lk/document_w.png');
-}
-.fly__menu .left .left-menu-head-client.hn_clhide {
-  display: none;
 }
 .fly__menu .left-menu-head {
   display: -webkit-box;

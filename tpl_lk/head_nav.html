@@ -372,7 +372,8 @@
       <div><a href="#" class="act"><img src="img/lk/profile_docs.png"> Документы</a></div>
       <div><a href="#"><img src="img/lk/profile_exit.png"> Выйти</a></div>
     </div>
-    <div class="profile-body scroller scrollbar-other">
+    <div class="profile-body scroller">
+    <!--<div class="profile-body scroller scrollbar-other">-->
       <div class="profile-body-form container-fluid">
         <div class="row">
           <div class="col-xs-4 text_head fs_w400 text_align_right">Фамилия</div>
@@ -407,19 +408,19 @@
         <div class="row">
           <div class="col-xs-4 text_head fs_w400 text_align_right">пароль</div>
           <div class="col-xs-8 text_16b">
-            <input type="TEXT" name="pass0" value="" class="fi_input in_profile_pass" placeholder="введите пароль">
+            <input type="password" name="pass0" value="" class="fi_input in_profile_pass" placeholder="* * * * * *">
           </div>
         </div>
         <div class="in_profile_pass_p">
           <div>
-            <input type="TEXT" name="pass1" value="" class="fi_input fi_input_sm" placeholder="НОВЫЙ ПАРОЛЬ">
+            <input type="password" name="pass1" value="" class="fi_input fi_input_sm" placeholder="НОВЫЙ ПАРОЛЬ">
           </div>
           <div>
-            <input type="TEXT" name="pass2" value="" class="fi_input fi_input_sm" placeholder="ПОВТОРИТЕ ПАРОЛЬ">
+            <input type="password" name="pass2" value="" class="fi_input fi_input_sm" placeholder="ПОВТОРИТЕ ПАРОЛЬ">
           </div>
           <div class="pass-code">
             <img src="img/lk/captcha.png">
-            <input type="TEXT" name="code" value="" class="fi_input fi_input_sm" placeholder="КОД">
+            <input type="TEXT" name="code" value="" class="fi_input fi_input_sm input-code" placeholder="КОД">
           </div>
           <div class="last_div">
             <div class="button_round br_blue in_profile_pass_c">Подтвердить</div>
