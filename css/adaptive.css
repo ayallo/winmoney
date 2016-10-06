@@ -8,9 +8,6 @@
   .pgaccounts .main__right {
     width: 70%;
   }
-  .head__tel {
-    display: none;
-  }
   .head__but {
     display: none;
   }
@@ -5481,6 +5478,9 @@
   }
   .slide .centerblock_540 {
     margin-top: 10px;
+  }
+  .social {
+    margin: 0px 2px!important;
   }
   .fly__menu .left .menu-footer .tel {
     width: initial!important;

@@ -20,23 +20,27 @@
         $('.ch_tile').addClass('hidenp');
       }else{
         $('.table_payments').removeClass('table_div').addClass('plitka_div');
+        $('.page_right_body_wrap').addClass('aa__pay-table');
         $('.ch_tile').addClass('hidenp');
         $('.ch_table').addClass('hidenp');
       }
     });
     if ($( window ).width()<700){/*отобразим всегда плитку*/
       $('.table_payments').removeClass('table_div').addClass('plitka_div');
+      $('.page_right_body_wrap').addClass('aa__pay-table');
       $('.ch_tile').addClass('hidenp');
       $('.ch_table').addClass('hidenp');
     }
     $('.ch_table').click(function(){
       $('.table_payments').removeClass('plitka_div').addClass('table_div');
+      $('.page_right_body_wrap').removeClass('aa__pay-table');
       $('.ch_table').addClass('hidenp');
       $('.ch_tile').removeClass('hidenp');
       return false;
     });
     $('.ch_tile').click(function(){
       $('.table_payments').removeClass('table_div').addClass('plitka_div');
+      $('.page_right_body_wrap').addClass('aa__pay-table');
       $('.ch_tile').addClass('hidenp');
       $('.ch_table').removeClass('hidenp');
       return false;
@@ -336,7 +340,10 @@
         form_check(1);
       }
     });
-    function form_check(err=0){
+    function form_check(err){
+      if (parseInt(err)) {
+        err = 0;
+      }
       var herr=0;
       if(err==1) herr=1;
       if($('#step_3').find('.err').length) herr=1;
@@ -370,12 +377,31 @@
         //document.getElementById('message').innerHTML = output;
         return valid;
     }
-/*
-    $('.profile-body.scroller').perfectScrollbar({
-        wheelSpeed: 0.3,
-        suppressScrollX: true
+
+    /* страница accounts - показ/скрытие блока с информацией */
+
+    var buttonInfo = $('.lk_account .button-info');
+    var infoBlock  = $('.lk_account .account-info');
+
+    buttonInfo.click(function() {
+
+     // if (buttonInfo.is(":visible").length) {
+
+        buttonInfo.toggleClass('info-act');
+
+        if ($('.account-info:visible').length) {
+            infoBlock.slideUp();
+        } else {
+            infoBlock.slideDown();
+        }
     });
-*/
+
+  /*
+      $('.profile-body.scroller').perfectScrollbar({
+          wheelSpeed: 0.3,
+          suppressScrollX: true
+      });
+  */
 
     /* сортировка div таблиц */
     // $('.row_head .col').click(function(){

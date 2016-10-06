@@ -1,101 +1,461 @@
-.lk_dashboard {
-    .fly__profile .right {
-        background: white;
 
-        .profile-menu {
+.fly__profile .right {
+    background: white;
+
+    .profile-menu {
+        flex-shrink: 0;
+    }
+
+    .flag.rus {
+        margin-left: 0;
+    }
+    .pass-code {
+        margin-top: 10px;
+        align-items: center;
+        img {
+            max-height: 50px;
+        }
+    }
+    .in_profile_pass { letter-spacing: 0.2em;}
+    .in_profile_pass::-webkit-input-placeholder { color: #2675eb;}
+    .in_profile_pass::-moz-placeholder { color: #2675eb;}
+    .in_profile_pass::-moz-placeholder { color: #2675eb;}
+    .in_profile_pass:-ms-input-placeholder { color: #2675eb;}
+
+    .profile-body {
+        position: relative;
+        align-items: flex-start;
+        overflow-y: auto;
+        overflow-x: hidden;
+        .row {
             flex-shrink: 0;
         }
+    }
 
-        .flag.rus {
-            margin-left: 0;
+    .profile-body .profile-body-form {
+        flex-shrink: 0;
+        padding-left: 28px;
+
+        .in_profile_pass_p {
+            width: 260px;
+            height: 319px;
+            margin-left: 87px;
+            margin-bottom: 40px;
+            padding: 34px 19px 20px 20px;
+            -webkit-box-shadow: 0px 9px 40px rgba(0, 0, 0, 0.11);
+            -moz-box-shadow: 0px 9px 40px rgba(0, 0, 0, 0.11);
+            box-shadow: 0px 9px 40px rgba(0, 0, 0, 0.11);
+            flex-shrink: 1;
         }
-        .pass-code {
-            margin-top: 10px;
-            align-items: center;
-            img {
-                max-height: 50px;
-            }
+        .edt img {
+            margin-top: 4px;
+            margin-right: 8px;
         }
-        .in_profile_pass { letter-spacing: 0.2em;}
-        .in_profile_pass::-webkit-input-placeholder { color: #2675eb;}
-        .in_profile_pass::-moz-placeholder { color: #2675eb;}
-        .in_profile_pass::-moz-placeholder { color: #2675eb;}
-        .in_profile_pass:-ms-input-placeholder { color: #2675eb;}
-
-        .profile-body {
-            position: relative;
-            align-items: flex-start;
-            overflow-y: auto;
-            overflow-x: hidden;
-            .row {
-                flex-shrink: 0;
-            }
+        .col-xs-4 {
+            font-weight: bold;
+            letter-spacing: 0.09em;
         }
+        .in_profile_pass_p div {
+            input.fi_input_sm:first-child {
+                letter-spacing: 0.2em;
+            }
+            input.fi_input_sm {
+                padding-bottom: 7px;
+                margin: 0 0 38px 0;
+                border-bottom: 2px solid #ebebeb;
+                background: transparent;
+                font: 300 16px 'Open Sans', sans-serif;
+                font-weight: 600;
+                color: #555555;
 
-        .profile-body .profile-body-form {
-            flex-shrink: 0;
-            padding-left: 28px;
-
-            .in_profile_pass_p {
-                width: 260px;
-                height: 319px;
-                margin-left: 87px;
-                margin-bottom: 40px;
-                padding: 34px 19px 20px 20px;
-                -webkit-box-shadow: 0px 9px 40px rgba(0, 0, 0, 0.11);
-                -moz-box-shadow: 0px 9px 40px rgba(0, 0, 0, 0.11);
-                box-shadow: 0px 9px 40px rgba(0, 0, 0, 0.11);
-                flex-shrink: 1;
-            }
-            .edt img {
-                margin-top: 4px;
-                margin-right: 8px;
-            }
-            .col-xs-4 {
-                font-weight: bold;
-                letter-spacing: 0.09em;
-            }
-            .in_profile_pass_p div {
-                input.fi_input_sm:first-child {
-                    letter-spacing: 0.2em;
+                &::-webkit-input-placeholder {
+                    font-size: 10px;
+                    font-weight: bold;
+                    letter-spacing: 0.09em;
+                    color: #a8a8a8;
                 }
-                input.fi_input_sm {
-                    padding-bottom: 7px;
-                    margin: 0 0 38px 0;
-                    border-bottom: 2px solid #ebebeb;
-                    background: transparent;
-                    font: 300 16px 'Open Sans', sans-serif;
+                &::-moz-placeholder {
+                    font-size: 10px;
+                    font-weight: bold;
+                    letter-spacing: 0.09em;
+                    color: #a8a8a8;
+                }
+                &::-moz-placeholder {
+                    font-size: 10px;
+                    font-weight: bold;
+                    letter-spacing: 0.09em;
+                    color: #a8a8a8;
+                }
+                &:-ms-input-placeholder {
+                    font-size: 10px;
+                    font-weight: bold;
+                    letter-spacing: 0.09em;
+                    color: #a8a8a8;
+                }
+            }
+            input.input-code {
+                margin-left: 20px;
+                margin-bottom: 5px;
+            }
+        }
+    }
+}
+
+.lk_account.lk_account_edit {
+    .tablediv01 {
+        display: flex;
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        .tablediv01_tr_td_head {
+            display: none;
+        }
+
+        .sort {
+            padding-right: 28px;
+            cursor: pointer;
+
+            &:after {
+                content: "";
+                position: absolute;
+                width: 10px;
+                height: 6px;
+                background-image: url(../img/icon-sort.png);
+                background-repeat: no-repeat;
+                display: block;
+                right: 11px;
+                top: 5px;
+            }
+        }
+
+        .text_head {
+            text-align: right;
+            font-weight: bold;
+            line-height: 16px;
+            letter-spacing: 0.09em;
+        }
+
+        .cell-text-small,
+        .cell-date {
+            font-size: 10px;
+            font-weight: 600;
+            color: #4c4d4f;
+            text-align: right;
+            letter-spacing: 0.06em;
+        }
+        .cell-text-normal {
+            font-family: 'PT Serif';
+            font-size: 16px;
+            color: #4c4d4f;
+            text-align: right;
+            letter-spacing: 0.02em;
+        }
+        .cell-description {
+            font-size: 10px;
+            font-weight: 600;
+            line-height: 18px;
+            color: #a8a8a8;
+            letter-spacing: 0.06em;
+        }
+        .no-commission {
+            font-size: 10px;
+            font-weight: 600;
+            letter-spacing: 0.06em;
+            color: #4c4d4f;
+            text-align: right;
+        }
+        .acc-number {
+            font-size: 10px;
+            font-weight: bold;
+            line-height: 16px;
+            letter-spacing: 0.09em;
+            color: #b2b2b2;
+            text-align: right;
+            text-transform: uppercase;
+        }
+    }
+
+    .line-year {
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #cccccc;
+    }
+
+    .pg_account_left_head {
+        margin-top: 40px;
+        padding-left: 80px;
+        .pgalh_l,
+        .pgalh_r {
+            display: inline-block;
+        }
+        .pgalh_l {
+            margin-right: 25px;
+            font-family: 'Pragmatica';
+            font-size: 20px;
+            letter-spacing: 0.04em;
+        }
+        .pgalh_r {
+            .button_round {
+             // padding: 3px 6px 4px 15px;
+                padding: 3px 29px 4px 15px;
+                font-weight: 600;
+                img {
+                    display: none;
+                }
+                &.img-info:after {
+                    content: "";
+                    position: absolute;
+                    background-image: url('../img/lk/info.png');
+                    background-repeat: no-repeat;
+                    right: 15px;
+                    top: 6px;
+                    width: 5px;
+                    height: 14px;
+                }
+                &.info-act::after {
+                    background-image: url('../img/lk/info_gray.png');
+                }
+                &.info-act,
+                &:hover {
+                    color: #4c4d4f;
+                }
+            }
+        }
+    }
+    .pg_account_left_body {
+        margin-top: 20px;
+        padding-left: 65px;
+        .acc_menu_item {
+            margin: 13px 0px;
+        }
+        a {
+            font-weight: 600;
+            letter-spacing: 0.02em;
+        }
+
+        /* блок информации */
+        .account-info {
+            margin-bottom: 5px;
+            display: none;
+
+            .account-info__line {
+                margin-bottom: 18px;
+
+                .col-left {
+                    width: 124px;
+                    text-align: right;
+                    font-size: 10px;
                     font-weight: 600;
-                    color: #555555;
+                    letter-spacing: 0.09em;
+                    color: #b2b2b2;
+                    padding-right: 28px;
+                }
+                .col-right {
+                    text-align: left;
+                    font-family: 'PT Serif';
+                    font-size: 16px;
+                    letter-spacing: 0.02em;
+                    color: #4c4d4f;
+                }
+                .col-left,
+                .col-right {
+                    display: inline-block;
 
-                    &::-webkit-input-placeholder {
-                        font-size: 10px;
-                        font-weight: bold;
-                        letter-spacing: 0.09em;
-                        color: #a8a8a8;
-                    }
-                    &::-moz-placeholder {
-                        font-size: 10px;
-                        font-weight: bold;
-                        letter-spacing: 0.09em;
-                        color: #a8a8a8;
-                    }
-                    &::-moz-placeholder {
-                        font-size: 10px;
-                        font-weight: bold;
-                        letter-spacing: 0.09em;
-                        color: #a8a8a8;
-                    }
-                    &:-ms-input-placeholder {
-                        font-size: 10px;
-                        font-weight: bold;
-                        letter-spacing: 0.09em;
-                        color: #a8a8a8;
+                }
+            }
+        }
+    }
+
+    .head_wrap_table {
+        padding-top: 44px;
+        .filter_r {
+            width: 100px;
+            padding: 5px 24px 7px 14px;
+            border: 2px solid #eceff3;
+            color: #2675eb;
+
+            &.act,
+            &:hover {
+                color: #4c4d4f;
+            }
+            &::after {
+                width: 12px;
+                height: 12px;
+                right: 11px;
+                top: 5px;
+            }
+            &.act::after {
+                width: 12px;
+                height: 12px;
+                right: 11px;
+                top: 5px;
+            }
+        }
+    }
+
+    .tablediv01_head {
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 1541px) {
+    .lk_account.lk_account_edit {
+        .pg_account_left {
+            .pg_account_left_head {
+                .pgalh_l {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1300px) {
+    .lk_account.lk_account_edit {
+        .pg_account_left {
+
+            .pg_account_left_head {
+                padding-left: 30px;
+                .pgalh_l {
+                    margin-bottom: 20px;
+                }
+            }
+
+            .pg_account_left_body {
+                padding-left: 16px;
+
+                .account-info {
+                    width: 100%;
+                    &__line {
+                        .col-left {
+                            text-align: left;
+                        }
+                        .col-right {
+                            width: 100%;
+                        }
                     }
                 }
-                input.input-code {
-                    margin-left: 20px;
-                    margin-bottom: 5px;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .lk_account.lk_account_edit {
+
+        .pg_account_left {
+            .pg_account_left_head {
+                padding: 0 30px;
+                display: block;
+                &::before,
+                &::after {
+                    display: none;
+                }
+                .pgalh_l {
+                    font-size: 18px;
+                    margin: 0 0 20px 0;
+                }
+            }
+            .pg_account_left_body {
+                padding: 0 15px;
+                margin-bottom: 25px;
+                .account-info {
+                    &__line {
+                        .col-left {
+                            text-align: left;
+                        }
+                        .col-right {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+
+        .pg_account_right {
+
+            .filter_wrap {
+                padding-left: 15px;
+                padding-top: 35px;
+                padding-bottom: 25px;
+            }
+
+            .tablediv01_head {
+                display: none;
+            }
+
+            .tablediv01 {
+                flex-direction: column;
+
+                .tablediv01_tr_td_head {
+                    display: block;
+                    font-size: 11px;
+                    font-weight: 600;
+                    text-align: left;
+                }
+                .cell {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 22px;
+
+                    &.cell-text-small,
+                    &.no-commission,
+                    .cell-date, {
+                        font-size: 13px;
+                    }
+                    /* блок "создано/номер" */
+                    &.cell-text-small .created {
+                        line-height: 23px;
+                    }
+                    &.cell-text-normal {
+                        font-size: 18px;
+                    }
+                    .cell-date {
+                        margin-bottom: 4px;
+                    }
+                    .acc-number {
+                        margin-top: 4px;
+                        font-size: 14px;
+                    }
+                }
+
+                .cell-description {
+                    width: 100%;
+                    font-size: 14px;
+                    font-weight: 400;
+                    letter-spacing: 0.05em;
+
+                    .tablediv01_tr_td_head {
+                        margin-bottom: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .lk_account.lk_account_edit {
+        .pg_account_left {
+            .pg_account_left_head {
+                display: flex;
+                justify-content: space-between;
+                .pgalh_l {
+                    margin: 0;
+                }
+            }
+            .pg_account_left_body {
+                .account-info {
+                    width: 100%;
+                    &__line {
+                        .col-right {
+                            width: auto;
+                        }
+                    }
                 }
             }
         }
@@ -118,6 +478,29 @@
             padding-right: 0;
             .in_profile_pass_p {
                 margin: 0 auto;
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .lk_account.lk_account_edit {
+        .pg_account_left_body {
+            .account-info {
+                .account-info__line {
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: space-between;
+                    .col-left {
+                        text-align: left;
+                    }
+                    .col-right {
+                        text-align: right;
+                    }
+                    div {
+                        width: auto;
+                    }
+                }
             }
         }
     }

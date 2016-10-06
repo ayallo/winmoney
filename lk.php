@@ -15,7 +15,12 @@ if($page=='dashboard'||$page=='account'||$page=='payments'||$page=='advertising'
   $m[1][]='%DATE%'; $m[2][] = date_rus();
   $html .= get_shablon($tpl.'/head.html',$m);
   $html = str_replace('%TITLE%',$page,$html);
-  $html .= '<body class="lk_'.$page.'">';
+
+  if ($page=='account') {
+      $html .= '<body class="lk_'.$page.' lk_account_edit">';
+  } else {
+      $html .= '<body class="lk_'.$page.'">';
+  }
   $html .= get_shablon($tpl.'/head_nav.html',$m);
   $html .= get_shablon($tpl.'/lk_'.$page.'.html');
   $html .= get_shablon($tpl.'/footer.html');

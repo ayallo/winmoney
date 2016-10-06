@@ -29,12 +29,12 @@
             $(".pgpartners .head__nav").addClass("sfonom");
             $(".confw-btn-foot").addClass("confw-btn-foot--act");
             $(".pgpartners .footer").css({"display":"flex"});
-            $(".head__nav .openschet").show();
+            $(".head__nav .statpartner").show();
           }else{
             $(".pgpartners .head__nav").removeClass("sfonom");
             $(".confw-btn-foot").removeClass("confw-btn-foot--act");
             $(".pgpartners .footer").hide();
-            $(".head__nav .openschet").hide();
+            $(".head__nav .statpartner").hide();
           }
         }
       }

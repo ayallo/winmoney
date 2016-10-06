@@ -29,7 +29,7 @@ if($page=='payments'){
   $m[1][]='%SCRIPT%'; $m[2][] = '';
   $html .= get_shablon($tpl.'/head.html',$m);
   $html = str_replace('%TITLE%',$page,$html);
-  $html .= '<body class="pg'.$page.'">';
+  $html .= '<body class="pg'.$page.' aa__payments nav--fixed">';
   $html .= '<div class="wrapper">';
   $html .= get_shablon($tpl.'/head_nav.html',$m);
   $html .= get_shablon($tpl.'/'.$page.'.html');
@@ -585,7 +585,7 @@ if($page=='news_all'||$page=='news_one'){
   $html .= get_shablon($tpl.'/head.html',$m);
 
   $html = str_replace('%TITLE%',$page,$html);
-  $html .= '<body class="pg'.$page.'">';
+  $html .= '<body class="pg'.$page.' nav--fixed">';
   $html .= '<div class="wrapper_page">';
   $html .= get_shablon($tpl.'/head_nav.html',$m);
   $html .= get_shablon($tpl.'/'.$page.'.html');
@@ -598,7 +598,7 @@ if($page=='webinars'){
   $html .= get_shablon($tpl.'/head.html',$m);
 
   $html = str_replace('%TITLE%',$page,$html);
-  $html .= '<body class="pg'.$page.'">';
+  $html .= '<body class="pg'.$page.' nav--fixed">';
   $html .= '<div class="wrapper_page">';
   $html .= get_shablon($tpl.'/head_nav.html',$m);
   $html .= get_shablon($tpl.'/'.$page.'.html');
