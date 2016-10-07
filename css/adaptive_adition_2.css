@@ -263,9 +263,20 @@
 .fly__menu .left .menu-footer .fb:hover::before {
   left: -16px;
 }
+.fly__menu .left .menu-footer .vk span,
+.fly__menu .left .menu-footer .fb span {
+  position: relative;
+  font-size: 13px;
+  color: #9399a1;
+  cursor: pointer;
+  font-weight: 600;
+}
 .fly__menu .left a:hover,
+.fly__menu .left a span:hover,
 .fly__menu .left .menu-footer .fb:hover,
-.fly__menu .left .menu-footer .vk:hover {
+.fly__menu .left .menu-footer .fb span:hover,
+.fly__menu .left .menu-footer .vk:hover,
+.fly__menu .left .menu-footer .vk span:hover {
   color: white;
 }
 a {
@@ -571,9 +582,6 @@ a {
       -ms-flex-negative: 0;
           flex-shrink: 0;
 }
-.pgpartners_rules .main__menu {
-  margin-top: 12px;
-}
 .pgpartners_rules .main__center div:nth-child(2) {
   margin-top: 20px;
 }
@@ -683,9 +691,7 @@ a {
   padding-left: 10px;
 }
 .pgprogram_agent_reward .main__center {
-  padding-top: 27px;
-  padding-left: 21px;
-  padding-right: 0;
+  padding: 27px 21px 0 21px;
 }
 .pgprogram_agent_reward .main__center--block h2 {
   letter-spacing: 0.01em;
@@ -698,7 +704,7 @@ a {
 }
 .pgprogram_agent_reward .main__center--block.calc {
   margin-top: 35px;
-  margin-left: 5%;
+  margin-left: 6%;
   max-width: 1060px;
   -webkit-box-shadow: 0px 20px 100px #e4e3e3;
   -moz-box-shadow: 0px 20px 100px #e4e3e3;
@@ -738,9 +744,8 @@ a {
   letter-spacing: 0.02em;
   font-weight: 600;
 }
-.pgprogram_agent_reward .main__center--block.calc div.left .tr-after-dropdown {
-  display: block;
-  margin-top: 28px;
+.pgprogram_agent_reward .main__center--block.calc div.left .tr-after-dropdown td.head {
+  padding-top: 28px;
 }
 .pgprogram_agent_reward .main__center--block.calc div.left td.range {
   padding-top: 2px;
@@ -782,6 +787,7 @@ a {
 .pgprogram_agent_reward .main__menu,
 .pgprogram_agent_rules .main__menu {
   top: 43px;
+  z-index: 90;
 }
 .pgbonus .slide_02 .text p {
   line-height: 25px;
@@ -891,6 +897,68 @@ a {
   font-weight: 600;
   letter-spacing: 0.06em;
   color: #7f8081;
+}
+.pgprogramagent .main__menu,
+.pgprogram_cpa .main__menu,
+.pgprogram_region .main__menu,
+.pgabout_inworld .main__menu,
+.pgpartners_internet .main__menu {
+  top: 62px;
+  z-index: 90;
+}
+.pgpartners_vidy .main__menu,
+.pgpartners_net .main__menu,
+.pgpartners_rules .main__menu {
+  top: 42px;
+  z-index: 90;
+}
+.pgindicators .content {
+  position: relative;
+}
+.pgindicators .content .fly__calculator,
+.pgindicators .content .fly__chat {
+  z-index: 90;
+}
+.pgauth .wrapper {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.chat-fixed,
+.calc-fixed {
+  position: fixed;
+  z-index: 90;
+  -webkit-transition: bottom 0.6s;
+  -o-transition: bottom 0.6s;
+  -moz-transition: bottom 0.6s;
+  transition: bottom 0.6s;
+}
+.pgbonus_get .main__menu {
+  z-index: 91;
+}
+.pgbonus .main__menu {
+  background: transparent;
+}
+.fly__calculator.calc-act {
+  bottom: 120px;
+}
+.fly__chat.chat-act {
+  bottom: 60px;
+}
+.pgpartners_reward {
+  overflow: hidden;
+}
+@media (min-height: 801px) {
+  .pgprogram_agent_partners .calc-fixed,
+  .pgpartners_net .calc-fixed {
+    bottom: 120px;
+  }
+  .pgprogram_agent_partners .chat-fixed,
+  .pgpartners_net .chat-fixed {
+    bottom: 60px;
+  }
 }
 @media (min-width: 980px) {
   .pgprogram_cpa .slide_05 .main__center-text {
@@ -1113,7 +1181,14 @@ a {
   .pgprogram_region .slide_05 .main .description {
     max-width: 500px;
   }
-  .pgprogram_agent_reward .main__center--block.row div:nth-child(2) {
+  .pgprogram_agent_reward .main__center .main__center--block img {
+    margin-top: 40px;
+  }
+  .pgprogram_agent_reward .main__center .main__center--block.calc {
+    margin-left: 0;
+    margin-bottom: 35px;
+  }
+  .pgprogram_agent_reward .main__center .main__center--block.row div:nth-child(2) {
     margin-top: 25px;
   }
   .pgbonus_get .panel_gray,
@@ -1281,6 +1356,14 @@ a {
                 -ms-grid-row-align: center;
             align-items: center;
   }
+  .pgprogram_agent_reward .main__center .main__center--block.calc div.left {
+    padding-left: 18px;
+    padding-right: 16px;
+  }
+  .pgprogram_agent_reward .main__center .main__center--block.calc div.right {
+    padding-left: 6px;
+    padding-right: 6px;
+  }
 }
 @media (max-width: 750px) {
   .pgaccounts .main__right--table--head {
@@ -1407,6 +1490,65 @@ a {
     display: none;
   }
 }
+@media (max-width: 522px) {
+  .pgprogram_agent_reward .main__center .main__center--block.calc div.left .range2 td {
+    padding-right: 40px;
+  }
+  .pgprogram_agent_reward .main__center .main__center--block.calc div.left h2 {
+    margin-top: 46px;
+  }
+}
+@media (max-width: 480px) {
+  .fly__calculator-panel .right {
+    width: 100%;
+  }
+  .pgprogramagent .slide .centerblock {
+    width: 90%;
+  }
+  .pgprogramagent .slide .centerblock .mainpage h2 {
+    font-size: 1.3em;
+  }
+  .pgprogramagent .lastsslide .agent-wrapper h2 {
+    font: 36px/50px 'Open Sans';
+    font-weight: 300;
+  }
+  .pgprogramagent .lastsslide .agent-wrapper p {
+    font-size: 14px;
+  }
+  .pgauth .auth .abody table td input {
+    font-size: 14px;
+  }
+  .pgprogram_agent_reward .main__center .main__center--block.calc {
+    height: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 30px;
+  }
+  .pgprogram_agent_reward .main__center .main__center--block.calc div.left {
+    width: 100%;
+    padding: 0 6%;
+  }
+  .pgprogram_agent_reward .main__center .main__center--block.calc div.left h2 {
+    margin-top: 25px;
+  }
+  .pgprogram_agent_reward .main__center .main__center--block.calc div.right {
+    width: 100%;
+    padding: 20px 0;
+  }
+  .pgprogram_agent_reward .main__center .main__center--block.calc div.right div:first-child {
+    margin-bottom: 28px;
+  }
+}
 @media (max-width: 425px) {
   .pgpartners_vidy table br {
     line-height: 19px;
@@ -1427,24 +1569,6 @@ a {
   .pgprogramagent .zarabotok-title h2 {
     font: 32px/44px 'Open Sans' !important;
     font-weight: 300;
-  }
-}
-@media (max-width: 480px) {
-  .pgprogramagent .slide .centerblock {
-    width: 90%;
-  }
-  .pgprogramagent .slide .centerblock .mainpage h2 {
-    font-size: 1.3em;
-  }
-  .pgprogramagent .lastsslide .agent-wrapper h2 {
-    font: 36px/50px 'Open Sans';
-    font-weight: 300;
-  }
-  .pgprogramagent .lastsslide .agent-wrapper p {
-    font-size: 14px;
-  }
-  .pgauth .auth .abody table td input {
-    font-size: 14px;
   }
 }
 @media (max-width: 400px) {
@@ -1633,6 +1757,29 @@ a {
     margin-right: 0;
     margin-bottom: 20px;
   }
+  .pgprogram_agent_reward .main__center--block h2 {
+    font-size: 38px;
+  }
+  .pgprogram_agent_reward .main__center--block .reward-desc br {
+    display: none;
+  }
+  .fly__menu .left .menu-footer .vk,
+  .fly__menu .left .menu-footer .fb {
+    width: 10px;
+    height: 18px;
+  }
+  .fly__menu .left .menu-footer .vk span,
+  .fly__menu .left .menu-footer .fb span {
+    display: none;
+  }
+  .fly__menu .left .menu-footer .fb::before,
+  .fly__menu .left .menu-footer .fb:hover::before {
+    left: -20px;
+  }
+  .fly__menu .left .menu-footer .vk::before,
+  .fly__menu .left .menu-footer .vk:hover::before {
+    left: -10px;
+  }
 }
 @media (max-width: 350px) {
   .pgpayments .main__left .item.menu {
@@ -1643,5 +1790,31 @@ a {
   .pgwebinars .column_2 .item table td.webinars .webin h3,
   .pgwebinars .column_2 .item table td.webinars .webin.noact h3 {
     font-size: 14px;
+  }
+  .fly__calculator-panel .right-wrap .calcbody div.head {
+    margin-bottom: 10px;
+  }
+  .fly__calculator-panel .right-wrap .calcbody div.head h2 {
+    font-size: 18px;
+  }
+}
+@media (max-height: 580px) {
+  .fly__calculator-panel .right {
+    padding-bottom: 0;
+  }
+  .fly__calculator-panel .right .right-wrap {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .fly__calculator-panel .right .right-wrap .calcbody {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .fly__calculator-panel .right .right-wrap .calcbody .head {
+    margin-bottom: 0;
+  }
+  .fly__calculator-panel .right .right-wrap .calcresult {
+    margin-top: 40px;
+    position: relative;
   }
 }

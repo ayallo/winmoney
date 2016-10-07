@@ -325,9 +325,31 @@ jQuery(document).ready(function(){
           }
           e.stopPropagation();
         });*/
+
+		var chat1,
+			chat2,
+			chat3;
+
         $(".slide_01__center-chat, .fly__chat, .fly__feedback").click(function(){
+
           $(".fly__feedback-panel").css({"opacity":"1"}).show();
           $("body").css("overflow","hidden");
+
+          chat1 = $('.slide_01__center-chat').css('opacity');
+		  chat2 = $('.fly__chat').css('opacity') ;
+		  chat3 = $('.fly__feedback').css('opacity') ;
+
+          if ((chat1) || (chat2) || (chat3)) {
+
+          	needClass = $('.head__nav').hasClass('sfonom');
+
+          	//$('.head__nav').addClass('sfonom');
+
+          } else {
+			if (!needClass) {
+				//$('.head__nav').removeClass('sfonom');
+			}
+          }
         });
         $(".faqpanel").hide();
         $(".fb_item").click(function(){
@@ -479,8 +501,27 @@ jQuery(document).ready(function(){
 		$('.pgaccounts .main__right--table--body').perfectScrollbar({
 	      	wheelSpeed: 0.3,
 	      	suppressScrollX: true
-	    });
+	  });
 
+      $('.fly__calculator-panel .right-wrap').perfectScrollbar({
+          wheelSpeed: 0.3,
+          suppressScrollX: true
+    });
+
+ // var overallH = document.height;
+    var calc = $('.fly__calculator.calc-fixed');
+    var chat = $('.fly__chat.chat-fixed');
+
+    // кнопки обратной связи и калькулятора
+    function bottomButtonsUp() {
+        calc.css('bottom', '120px');
+        chat.css('bottom', '60px');
+    }
+
+    function bottomButtonsDown() {
+        calc.css('bottom', '70px');
+        chat.css('bottom', '10px');
+    }
 
 		var table     = $('.pgaccounts .main__right--table--body');
 		var ac_footer = $('.pgaccounts .footer');
@@ -488,25 +529,43 @@ jQuery(document).ready(function(){
 	    table.scroll(function () {
     		if (this.scrollHeight - this.scrollTop == this.clientHeight) {
     			ac_footer.addClass('acc-footer-show');
+          bottomButtonsUp();
     		} else {
     			ac_footer.removeClass('acc-footer-show');
+          bottomButtonsDown();
     		}
 		});
 
 		var slideH    = $('.pgindex .slide_01').height();
 		var head_main = $('.pgindex .head__nav');
 
-	    $('.swiper-container_ind').scroll(function () {
-    		if (this.scrollTop > this.clientHeight) {
-    			head_main.addClass('sfonom');
-    		} else {
-    			head_main.removeClass('sfonom');
-    		}
+	  $('.swiper-container_ind').scroll(function () {
+  		if (this.scrollTop > this.clientHeight) {
+  			head_main.addClass('sfonom');
+  		} else {
+  			head_main.removeClass('sfonom');
+  		}
 		});
 		// this.scrollHeight - высота блока
 		// this.scrollTop - текущая позиция
 		// this.clientHeight - высота экрана
+
+
+    /* отъезжание кнопок обратной связи/калькулятора */
+
+    $(window).scroll(function () {
+      if ($(".footer").is(":visible")) {
+        if ($(this).scrollTop() == $(document).height() - $(this).height()) {
+            bottomButtonsUp();
+        } else {
+            bottomButtonsDown();
+        }
+      }
     });
+
+    // calc.animate({'bottom': '70px'}, 'fast');
+    // chat.animate({'bottom': '10px'}, 'fast');
+});
 </script>
 %SCRIPT%
 
@@ -539,6 +598,42 @@ jQuery(document).ready(function(){
         } else { f(); }
     })(document, window, "yandex_metrika_callbacks");
 </script>
+
+<script>
+  $(function(){
+    $('.validation').on('input', function(){
+      var     err      = false,
+          message      = '',
+          messageBlock = $(this).parents('.input').find('.input__message');
+
+      console.log(messageBlock);
+
+      if ($(this).val().length > 0) {
+        if ($(this).data('valid-email') !== undefined) {
+          var pattern = /^([a-z0-9_\.-])+@[a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,4}$/i;
+          if(!(pattern.test($(this).val()))){
+            err     = true;
+            message = 'Неверный e-mail';
+          }
+        }
+        if (err) {
+          $(this).addClass('validation--error');
+          messageBlock.text(message);
+          $(this).removeClass('validation--success');
+        } else {
+          $(this).removeClass('validation--error');
+          messageBlock.text('');
+          $(this).addClass('validation--success');
+        }
+      } else {
+        $(this).removeClass('validation--error');
+        messageBlock.text('');
+        $(this).removeClass('validation--success');
+      }
+    });
+  });
+</script>
+
 <noscript><div><img src="https://mc.yandex.ru/watch/39220565?ut=noindex" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
 </body>

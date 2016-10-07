@@ -17,6 +17,19 @@ function initMobile () {
   }
 };
 
+var calc = $('.fly__calculator.calc-fixed');
+var chat = $('.fly__chat.chat-fixed');
+
+function partButtonsUp() {
+  calc.addClass('calc-act');
+  chat.addClass('chat-act');
+}
+
+function partButtonsDown() {
+  calc.removeClass('calc-act');
+  chat.removeClass('chat-act');
+}
+
 var program_ind_Swiper = undefined;
 function initSwiper() {
     var screenWidth = $(window).width();
@@ -57,9 +70,6 @@ function initSwiper() {
         // }
     }
 }
-
-
-
 
 
 //Swiper plugin initialization
@@ -149,7 +159,7 @@ if (($(".swiper-container_ind").length > 0)) {
           //$(".footer").hide();
           //$(".main__menu").hide();
           if (e.activeIndex>=1) {
-              $(".statpartner").show();
+              $(".openschet").show();
               $(".head__nav").addClass("sfonom");
               //$(".main__menu").show();
           }
@@ -198,8 +208,12 @@ if (($(".swiper-container_ind").length > 0)) {
               $(".head__nav").addClass("sfonom");
               $(".main__menu").show();
           }
-          if(e.activeIndex==4){ $(".footer").css({"display":"flex"}); }
-          console.log(e.activeIndex);
+          if(e.activeIndex==4) { 
+            $(".footer").css({"display":"flex"});
+            partButtonsUp();
+          } else {
+            partButtonsDown();
+          }
       });
     }
     if (($(".swiper-container_cpa").length > 0)){
@@ -214,7 +228,12 @@ if (($(".swiper-container_ind").length > 0)) {
               $(".statpartner").show();
               $(".head__nav").addClass("sfonom");
           }
-          if(e.activeIndex==2){ $(".footer").css({"display":"flex"}); }
+          if(e.activeIndex==2) {
+            $(".footer").css({"display":"flex"});
+            partButtonsUp();
+          } else {
+            partButtonsDown();
+          }
       });
     }
     if (($(".swiper-container").length > 0)){
@@ -237,7 +256,6 @@ if (($(".swiper-container_ind").length > 0)) {
           }
           if(e.activeIndex==1){ $("#myslideTo_1").addClass("act"); }
           if(e.activeIndex==4){ $(".footer").css({"display":"flex"}); }
-
       });
     }
   });

@@ -14,7 +14,7 @@
 .pgnews_all__but.openschet,
 .pgnews_one__but.openschet,
 .pgwebinars__but.openschet {
-  display: none;
+  display: block;
 }
 .pganalytics_articles__but.getbonus,
 .pganalytics_article__but.getbonus,
@@ -32,7 +32,7 @@
 .pgnews_all__but.statpartner,
 .pgnews_one__but.statpartner,
 .pgwebinars__but.statpartner {
-  display: block;
+  display: none;
 }
 .pganalytics_articles__right-wrapr,
 .pganalytics_article__right-wrapr,
@@ -84,15 +84,15 @@
      -moz-box-shadow: 0 0px 26px 0 #000;
           box-shadow: 0 0px 26px 0 #000;
 }
-.pganalytics_articles .head__but.statpartner,
-.pganalytics_article .head__but.statpartner,
-.pganalytics_calendar .head__but.statpartner,
-.pganalytics_video .head__but.statpartner,
-.pgnews_all .head__but.statpartner,
-.pgnews_one .head__but.statpartner,
-.pgwebinars .head__but.statpartner {
+.pganalytics_articles .head__but.openschet,
+.pganalytics_article .head__but.openschet,
+.pganalytics_calendar .head__but.openschet,
+.pganalytics_video .head__but.openschet,
+.pgnews_all .head__but.openschet,
+.pgnews_one .head__but.openschet,
+.pgwebinars .head__but.openschet {
   display: block;
-  colror: #fff;
+  color: #fff;
 }
 .pganalytics_articles .main__menu,
 .pganalytics_article .main__menu,

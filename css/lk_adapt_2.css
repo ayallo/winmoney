@@ -2,6 +2,21 @@
   left: auto;
   right: 0;
 }
+.validation {
+  -webkit-transition: border 0.4s ease-in-out;
+  -o-transition: border 0.4s ease-in-out;
+  -moz-transition: border 0.4s ease-in-out;
+  transition: border 0.4s ease-in-out;
+}
+.validation.validation--success {
+  border-bottom-color: #6cce51;
+}
+.validation.validation--error {
+  border-bottom-color: #f44;
+}
+.input__message {
+  font-size: 12px;
+}
 .adv_plitka_blok {
   width: 1300px;
   margin: 0 auto;

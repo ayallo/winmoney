@@ -263,9 +263,21 @@
     left: -16px;
 }
 
+.fly__menu .left .menu-footer .vk span,
+.fly__menu .left .menu-footer .fb span {
+    position: relative;
+    font-size: 13px;
+    color: #9399a1;
+    cursor: pointer;
+    font-weight: 600;
+}
+
 .fly__menu .left a:hover,
+.fly__menu .left a span:hover,
 .fly__menu .left .menu-footer .fb:hover,
-.fly__menu .left .menu-footer .vk:hover {
+.fly__menu .left .menu-footer .fb span:hover,
+.fly__menu .left .menu-footer .vk:hover,
+.fly__menu .left .menu-footer .vk span:hover {
     color: white;
 }
 
@@ -586,9 +598,6 @@ a {
         padding-right: 0;
         flex-shrink: 0;
     }
-    .main__menu {
-        margin-top: 12px;
-    }
     .main__center div:nth-child(2) {
         margin-top: 20px;
     }
@@ -705,9 +714,7 @@ a {
 
 .pgprogram_agent_reward {
     .main__center {
-        padding-top: 27px;
-        padding-left: 21px;
-        padding-right: 0;
+        padding: 27px 21px 0 21px;
     }
 
     .main__center--block {
@@ -723,7 +730,7 @@ a {
     }
     .main__center--block.calc {
         margin-top: 35px;
-        margin-left: 5%;
+        margin-left: 6%;
         max-width: 1060px;
         -webkit-box-shadow: 0px 20px 100px #e4e3e3;
         -moz-box-shadow: 0px 20px 100px #e4e3e3;
@@ -764,9 +771,8 @@ a {
                 letter-spacing: 0.02em;
                 font-weight: 600;
             }
-            .tr-after-dropdown {
-                display: block;
-                margin-top: 28px;
+            .tr-after-dropdown td.head {
+                padding-top: 28px;
             }
             td.range {
                 padding-top: 2px;
@@ -812,6 +818,7 @@ a {
 .pgprogram_agent_reward .main__menu,
 .pgprogram_agent_rules .main__menu {
     top: 43px;
+    z-index: 90;
 }
 
 .pgbonus .slide_02 .text p {
@@ -906,6 +913,72 @@ a {
                 }
             }
         }
+    }
+}
+
+.pgprogramagent .main__menu,
+.pgprogram_cpa .main__menu,
+.pgprogram_region .main__menu,
+.pgabout_inworld .main__menu,
+.pgpartners_internet .main__menu {
+    top: 62px;
+    z-index: 90;
+}
+
+.pgpartners_vidy .main__menu,
+.pgpartners_net .main__menu,
+.pgpartners_rules .main__menu {
+    top: 42px;
+    z-index: 90;
+}
+
+.pgindicators .content {
+    position: relative;
+    .fly__calculator,
+    .fly__chat {
+        z-index: 90;
+    }
+}
+
+.pgauth .wrapper {
+    justify-content: center;
+}
+
+.chat-fixed,
+.calc-fixed {
+    position: fixed;
+    z-index: 90;
+    transition: bottom 0.6s;
+}
+
+.pgbonus_get .main__menu {
+    z-index: 91;
+}
+.pgbonus .main__menu {
+    background: transparent;
+}
+
+.fly__calculator {
+    &.calc-act {
+        bottom: 120px;
+    }
+}
+.fly__chat {
+    &.chat-act {
+        bottom: 60px;
+    }
+}
+
+.pgpartners_reward {
+    overflow: hidden;
+}
+
+// "заглушка"
+@media (min-height: 801px) {
+    .pgprogram_agent_partners,
+    .pgpartners_net {
+        .calc-fixed { bottom: 120px; }
+        .chat-fixed { bottom: 60px; }
     }
 }
 
@@ -1172,8 +1245,19 @@ a {
     }
 
     .pgprogram_agent_reward {
-        .main__center--block.row div:nth-child(2) {
-            margin-top: 25px;
+        .main__center {
+            .main__center--block {
+                img {
+                    margin-top: 40px;
+                }
+            }
+            .main__center--block.calc {
+                margin-left: 0;
+                margin-bottom: 35px;
+            }
+            .main__center--block.row div:nth-child(2) {
+                margin-top: 25px;
+            }
         }
     }
 
@@ -1337,6 +1421,21 @@ a {
              }
         }
     }
+
+    .pgprogram_agent_reward {
+        .main__center {
+            .main__center--block.calc {
+                div.left {
+                    padding-left: 18px;
+                    padding-right: 16px;
+                }
+                div.right {
+                    padding-left: 6px;
+                    padding-right: 6px;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 750px) {
@@ -1477,6 +1576,79 @@ a {
     }
 }
 
+@media (max-width: 522px) {
+    .pgprogram_agent_reward {
+        .main__center {
+            .main__center--block.calc {
+                div.left {
+                    .range2 td {
+                        padding-right: 40px;
+                    }
+                    h2 {
+                        margin-top: 46px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+
+    .fly__calculator-panel {
+        .right {
+            width: 100%;
+        }
+    }
+
+    .pgprogramagent {
+        .slide .centerblock {
+            width: 90%;
+        }
+        .slide .centerblock .mainpage h2 {
+            font-size: 1.3em;
+        }
+
+        .lastsslide .agent-wrapper {
+            h2 {
+                font: 36px/50px 'Open Sans';
+                font-weight: 300;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+    .pgauth .auth .abody table td input {
+        font-size: 14px;
+    }
+
+    .pgprogram_agent_reward {
+        .main__center {
+            .main__center--block.calc {
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 30px;
+                div.left {
+                    width: 100%;
+                    padding: 0 6%;
+                    h2 {
+                        margin-top: 25px;
+                    }
+                }
+                div.right {
+                    width: 100%;
+                    padding: 20px 0;
+                    div:first-child {
+                        margin-bottom: 28px;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 425px) {
     .pgpartners_vidy {
         table br {
@@ -1502,30 +1674,6 @@ a {
             font: 32px/44px 'Open Sans' !important;
             font-weight: 300;
         }
-    }
-}
-
-@media (max-width: 480px) {
-    .pgprogramagent {
-        .slide .centerblock {
-            width: 90%;
-        }
-        .slide .centerblock .mainpage h2 {
-            font-size: 1.3em;
-        }
-
-        .lastsslide .agent-wrapper {
-            h2 {
-                font: 36px/50px 'Open Sans';
-                font-weight: 300;
-            }
-            p {
-                font-size: 14px;
-            }
-        }
-    }
-    .pgauth .auth .abody table td input {
-        font-size: 14px;
     }
 }
 
@@ -1734,7 +1882,41 @@ a {
              }
          }
     }
+
+    .pgprogram_agent_reward {
+        .main__center--block {
+            h2 {
+                font-size: 38px;
+            }
+            .reward-desc br {
+                display: none;
+            }
+        }
+    }
+
+    .fly__menu .left .menu-footer {
+        .vk, .fb {
+            width: 10px;
+            height: 18px;
+            span {
+                display: none;
+            }
+        }
+        .fb::before,
+        .fb:hover::before {
+            left: -20px;
+        }
+        .vk::before,
+        .vk:hover::before {
+            left: -10px;
+        }
+    }
 }
+
+// .fly__chat-panel, .fly__feedback-panel,
+// .fly__calculator-panel {
+//     position: fixed;
+// }
 
 @media (max-width: 350px) {
     .pgpayments .main__left .item.menu {
@@ -1747,6 +1929,37 @@ a {
         .webin h3,
         .webin.noact h3 {
             font-size: 14px;
+        }
+    }
+    .fly__calculator-panel {
+        .right-wrap .calcbody div.head {
+            margin-bottom: 10px;
+            h2 {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@media (max-height: 580px) {
+    .fly__calculator-panel {
+        .right {
+            padding-bottom: 0;
+            .right-wrap {
+                padding-left: 0;
+                padding-right: 0;
+                .calcbody {
+                    padding-left: 30px;
+                    padding-right: 30px;
+                    .head {
+                        margin-bottom: 0;
+                    }
+                }
+                .calcresult {
+                    margin-top: 40px;
+                    position: relative;
+                }
+            }
         }
     }
 }

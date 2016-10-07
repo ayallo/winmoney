@@ -1,0 +1,25 @@
+@media (max-width:425px) {
+    .oleg-style-scroller {
+        display: block !important;
+    }
+
+    .oleg-profile-body-foto-but-img {
+        margin-bottom: 0 !important;
+        margin-top: 0 !important;
+        padding: 40px 0;
+    }
+
+    .oleg-profile-body-foto-but-img-btn {
+        display: block;
+        padding-bottom: 40px;
+    }
+
+    .oleg-profile-body-foto-but-img-btn-in {
+        margin-bottom: 0 !important;
+    }
+
+    .oleg-profile-body-foto-but {
+        height: auto !important;
+        margin: 0 auto;
+    }
+}

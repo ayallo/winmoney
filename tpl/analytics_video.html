@@ -184,7 +184,10 @@
       <div class="item-item">
         <p class="text">Оставьте ваш e-mail, чтобы получать нашу аналитику</p>
         <form method="POST">
-          <input type="TEXT" name="" id="" value="" placeholder="Ваш E-mail">
+          <div class="input">
+            <input type="TEXT" name="" id="" value="" class="validation" data-valid-email placeholder="Ваш E-mail">
+            <div class="input__message"></div>
+          </div>
         </form>
       </div>
 
@@ -201,3 +204,6 @@
     <div class="video_label"></div>
   </div>
 </div>
+
+<div class="fly__calculator calc-fixed"></div>
+<div class="fly__chat chat-fixed"></div>

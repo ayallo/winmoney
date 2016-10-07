@@ -1,4 +1,4 @@
-@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&subset=latin,cyrillic';
+/*@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&subset=latin,cyrillic';*/
 @import 'https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700i&subset=latin,cyrillic';
 
 /*
@@ -12,7 +12,7 @@
 
 @font-face {
     font-family: "Pragmatica";
-    src: url("../fonts/Pragmatica-Light.ttf") format("truetype");
+    src: url("/fonts/Pragmatica-Light.ttf") format("truetype");
     font-style: normal;
     font-weight: 300;
 }
@@ -32,6 +32,26 @@
     font-weight: 300;
 }*/
 
+@font-face {
+    font-family: 'Open Sans';
+    src: url("/fonts/Open Sans Light.woff") format("woff");
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url("/fonts/Open Sans Regular.woff") format("woff");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url("/fonts/Open Sans Semibold.woff") format("woff");
+    font-style: normal;
+    font-weight: 600;
+}
 
 * { font: 300 16px 'Open Sans', sans-serif; }
 

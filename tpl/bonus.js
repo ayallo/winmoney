@@ -1,11 +1,15 @@
 <script type="text/javascript">
-    $(document).ready(function(){
+    $(document).ready(function() {
+
       var bonus_Swiper = new Swiper ('.swiper-container', {
         direction: 'vertical',
         loop: false,
         mousewheelControl: true,
         slidesPerView: 1,
       });
+
+      var calc = $('.fly__calculator.calc-fixed');
+      var chat = $('.fly__chat.chat-fixed');
 
       bonus_Swiper.on('slideChangeStart', function (e) {
           $(".head__nav").removeClass("sfonom");
@@ -22,10 +26,15 @@
               $(".main__menu").show();
           }
           if(e.activeIndex==1){
-            $("#myslideTo_1").addClass("act");
+              $("#myslideTo_1").addClass("act");
           }
           if(e.activeIndex==2){
-            $(".footer").css({"display":"flex"});
+              $(".footer").css({"display":"flex"});
+              calc.addClass('calc-act');
+              chat.addClass('chat-act');
+          } else {
+              calc.removeClass('calc-act');
+              chat.removeClass('chat-act');
           }
       });
     });

@@ -20,7 +20,7 @@ if($page=='auth'){
   $html = str_replace('%TITLE%',$page,$html);
   $html .= '<body class="pg'.$page.'">';
   $html .= '<div class="wrapper">';
-  $html .= get_shablon($tpl.'/head_nav.html');
+  //$html .= get_shablon($tpl.'/head_nav.html');
   $html .= get_shablon($tpl.'/'.$page.'.html');
   $html .= '</div>';
 }
@@ -81,7 +81,7 @@ if($page=='bonus'||$page=='bonus_get'||$page=='bonus_withdrawal'||$page=='bonus_
 
   $html .= get_shablon($tpl.'/head.html',$m);
   $html = str_replace('%TITLE%',$page,$html);
-  if($page=='bonus_withdrawal'||$page=='bonus_rules'||$page=='bonus_activation') $class="bonus_get"; else $class=$page;
+  if($page=='bonus_withdrawal'||$page=='bonus_rules'||$page=='bonus_activation') $class="bonus_get nav--fixed"; else $class=$page;  
   $html .= '<body class="pg'.$class.'">';
   $html .= '<div class="wrapper">';
   $html .= get_shablon($tpl.'/head_nav.html', $m);
@@ -397,7 +397,7 @@ if($page=='partners_vidy'){
   $html .= get_shablon($tpl.'/head.html',$m);
 
   $html = str_replace('%TITLE%',$page,$html);
-  $html .= '<body class="pgpartners_vidy">';
+  $html .= '<body class="pgpartners_vidy nav--fixed">';
   $html .= '<div class="wrapper">';
   $html .= get_shablon($tpl.'/head_nav.html',$m);
   $html .= get_shablon($tpl.'/partners_vidy.html');
@@ -423,7 +423,7 @@ if($page=='partners_rules'){
   $html .= get_shablon($tpl.'/head.html',$m);
 
   $html = str_replace('%TITLE%',$page,$html);
-  $html .= '<body class="pgpartners_rules">';
+  $html .= '<body class="pgpartners_rules nav--fixed">';
   $html .= '<div class="wrapper">';
   $html .= get_shablon($tpl.'/head_nav.html',$m);
   $html .= get_shablon($tpl.'/partners_rules.html');
@@ -463,7 +463,7 @@ if($page=='program_region_reward'){
   $html .= get_shablon($tpl.'/head.html',$m);
 
   $html = str_replace('%TITLE%',$page,$html);
-  $html .= '<body class="pgprogram_agent_reward">';
+  $html .= '<body class="pgprogram_agent_reward nav--fixed">';
   $html .= '<div class="wrapper">';
   $html .= get_shablon($tpl.'/head_nav.html',$m);
   $html .= get_shablon($tpl.'/program_region_reward.html');
@@ -503,7 +503,7 @@ if($page=='program_agent_reward'){
   $html .= get_shablon($tpl.'/head.html',$m);
 
   $html = str_replace('%TITLE%',$page,$html);
-  $html .= '<body class="pgprogram_agent_reward">';
+  $html .= '<body class="pgprogram_agent_reward nav--fixed">';
   $html .= '<div class="wrapper">';
   $html .= get_shablon($tpl.'/head_nav.html',$m);
   $html .= get_shablon($tpl.'/program_agent_reward.html');
@@ -516,7 +516,7 @@ if($page=='program_agent_rules'){
   $html .= get_shablon($tpl.'/head.html',$m);
 
   $html = str_replace('%TITLE%',$page,$html);
-  $html .= '<body class="pgprogram_agent_rules">';
+  $html .= '<body class="pgprogram_agent_rules nav--fixed">';
   $html .= '<div class="wrapper">';
   $html .= get_shablon($tpl.'/head_nav.html',$m);
   $html .= get_shablon($tpl.'/program_agent_rules.html');
@@ -572,7 +572,7 @@ if($page=='analytics_articles'||$page=='analytics_article'||$page=='analytics_ca
   $html .= get_shablon($tpl.'/head.html',$m);
 
   $html = str_replace('%TITLE%',$page,$html);
-  $html .= '<body class="pg'.$page.'">';
+  $html .= '<body class="pg'.$page.' nav--fixed">';
   $html .= '<div class="wrapper_page">';
   $html .= get_shablon($tpl.'/head_nav.html',$m);
   $html .= get_shablon($tpl.'/'.$page.'.html');

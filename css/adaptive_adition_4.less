@@ -1,10 +1,32 @@
 .pgpayments .table_div .row {
+    -webkit-transition: -webkit-box-shadow 0.3s;
+    transition: -webkit-box-shadow 0.3s;
+    -moz-transition: box-shadow 0.3s, -moz-box-shadow 0.3s;
+    -o-transition: box-shadow 0.3s;
     transition: box-shadow 0.3s;
+    transition: box-shadow 0.3s, -webkit-box-shadow 0.3s, -moz-box-shadow 0.3s;
 }
 
 .pgpartners .slcont-slide.slide_01 {
   height: 100vh !important;
 }
+/* анимация иконки меню*/
+.c-hamburger--htx span {
+  -webkit-transition: background 0s 0.3s;
+  -moz-transition: background 0s 0.3s;
+  -o-transition: background 0s 0.3s;
+  transition: background 0s 0.3s;
+}
+.c-hamburger--htx.is-active span {
+  -webkit-transition: background 0s 0s;
+  -moz-transition: background 0s 0s;
+  -o-transition: background 0s 0s;
+  transition: background 0s 0s;
+} 
+.c-hamburger--htx.is-active {
+  background-color: transparent;
+}
+/* end анимация иконки меню*/
 
 .fly__menu .left {
     height: 100%;
@@ -13,9 +35,9 @@
 .treelegend {
     width: auto !important;
 }
-/* .pgpartners .slcont-slide.slide_02 .main__center {*/
-/*     padding-top: 140px;*/
-/* }*/
+ /* .pgpartners .slcont-slide.slide_02 .main__center {*/
+ /*    padding-top: 140px;*/
+ /*  }*/
 .main__left--menu--item.ts_centovye {
   &::before {
       width: 25px;
@@ -24,12 +46,12 @@
     width: 25px;
   }
 }
-// .pgaccounts .main__right--table--body {
-//     height: 90%;
-// }
-/*3 кнопки баг*/
-/*3 кнопки баг*/
-/*3 кнопки баг*/
+ /* .pgaccounts .main__right--table--body {*/
+    /*  height: 90%;*/
+ /* }*/
+/* 3 кнопки баг*/
+/* 3 кнопки баг*/
+/* 3 кнопки баг*/
 .head {
   &__right-wrapr {
     &-r01 {
@@ -65,9 +87,9 @@
 .head__nav.sfonom .head__right-wrapr-r01, .head__nav.sfonom .head__right-wrapr-r02, .head__nav.sfonom .head__right-wrapr-r03 {
     margin-top: 0;
 }
-/*3 кнопки баг*/
-/*3 кнопки баг*/
-/*3 кнопки баг*/
+/* кнопки 3 баг*/
+/* кнопки 3 баг*/
+/* кнопки 3 баг*/
 
 .pgindex .slide_01 .main__footer .index_clients_01 div:nth-child(1), .pgindex .slide_01 .main__footer .index_clients_02 div:nth-child(1), .pgindex .slide_01 .main__footer .index_clients_03 div:nth-child(1), .pgindex .slide_01 .main__footer .index_clients_04 div:nth-child(1) {
     margin: 0;
@@ -505,12 +527,12 @@
         .treelegend {
           &__level {
               /* padding-left: 57px;*/
-              // padding-left: 47px; конфликт
+              /* padding-left: 47px; конфликт*/
               padding-top: 6px;
           }
           &__descrip {
               /* padding-left: 57px;*/
-              // padding-left: 47px; конфликт
+              /* padding-left: 47px; конфликт*/
           }
         }
         .mcft_block-right {
@@ -612,84 +634,84 @@
 /* 3 иконки*/
 /* 3 иконки*/
 /* 3 иконки*/
-// .analytics {
-//   &.col .item {
-//     p {
-//       font-weight: 400;
-//       letter-spacing: 0.6px;
-//       line-height: 1.5;
-//     }
-//     .plaha__left {
-//         font-weight: 600;
-//         letter-spacing: 1px;
-//     }
-//   }
-// }
-// .col.calendar {
-//   .item {
-//     h3 {
-//         font-weight: 600;
-//     }
-//   }
-// }
-// .bonuses.col {
-//   .item {
-//     h3 {
-//         font-weight: 600 !important;
-//         line-height: normal;
-//     }
-//     p {
-//         font-weight: 400;
-//         letter-spacing: 0.3px;
-//         line-height: 1.6;
-//     }
-//   }
-// }
-// .webinars.col {
-//   .item {
-//     p {
-//         font-weight: 400 !important;
-//         font-family: 'PT Serif', serif;
-//     }
-//     .plaha__left {
-//         letter-spacing: 1.1px;
-//     }
-//   }
-// }
-// .col.quotes {
-//     .catr__col-1-val{
-//         font-weight: 600 !important;
-//     }
-//     .catr__col-4-val{
-//         font-weight: 600 !important;
-//     }
-// }
-// .news.col {
-//   .head {
-//       /* margin-bottom: 11px;*/
-//       margin-bottom: 22px;
-//   }
-//   .item {
-//     p {
-//         font-weight: 400 !important;
-//         font-family: 'PT Serif',serif;
-//         letter-spacing: 0.4px;
-//         line-height: 1.5;
-//     }
-//   }
-// }
-// страница аналитики
-// страница аналитики
-// страница аналитики
+/* .analytics {*/
+/*   &.col .item {*/
+/*     p {*/
+/*       font-weight: 400;*/
+/*       letter-spacing: 0.6px;*/
+/*       line-height: 1.5;*/
+/*     }*/
+/*     .plaha__left {*/
+/*         font-weight: 600;*/
+/*         letter-spacing: 1px;*/
+/*     }*/
+/*   }*/
+/* }*/
+/* .col.calendar {*/
+/*   .item {*/
+/*     h3 {*/
+/*         font-weight: 600;*/
+/*     }*/
+/*   }*/
+/* }*/
+/* .bonuses.col {*/
+/*   .item {*/
+/*     h3 {*/
+/*         font-weight: 600 !important;*/
+/*         line-height: normal;*/
+/*     }*/
+/*     p {*/
+/*         font-weight: 400;*/
+/*         letter-spacing: 0.3px;*/
+/*         line-height: 1.6;*/
+/*     }*/
+/*   }*/
+/* }*/
+/* .webinars.col {*/
+/*   .item {*/
+/*     p {*/
+/*         font-weight: 400 !important;*/
+/*         font-family: 'PT Serif', serif;*/
+/*     }*/
+/*     .plaha__left {*/
+/*         letter-spacing: 1.1px;*/
+/*     }*/
+/*   }*/
+/* }*/
+/* .col.quotes {*/
+/*     .catr__col-1-val{*/
+/*         font-weight: 600 !important;*/
+/*     }*/
+/*     .catr__col-4-val{*/
+/*         font-weight: 600 !important;*/
+/*     }*/
+/* }*/
+/* .news.col {*/
+/*   .head {*/
+/*       /* margin-bottom: 11px;*/
+/*       margin-bottom: 22px;*/
+/*   }*/
+/*   .item {*/
+/*     p {*/
+/*         font-weight: 400 !important;*/
+/*         font-family: 'PT Serif',serif;*/
+/*         letter-spacing: 0.4px;*/
+/*         line-height: 1.5;*/
+/*     }*/
+/*   }*/
+/* }*/
+/* страница аналитики*/
+/* страница аналитики*/
+/* страница аналитики*/
 .pganalytics_articles {
 }
-// страница аналитики
-// страница аналитики
-// страница аналитики
+/* страница аналитики*/
+/* страница аналитики*/
+/* страница аналитики*/
 
-// страница спецификация контрактов
-// страница спецификация контрактов
-// страница спецификация контрактов
+/* страница спецификация контрактов*/
+/* страница спецификация контрактов*/
+/* страница спецификация контрактов*/
 .pgcontracts {
   .main__left {
     width: 421px;
@@ -704,13 +726,13 @@
     }
   }
 }
-// end страница спецификация контрактов
-// end страница спецификация контрактов
-// end страница спецификация контрактов
+/* end страница спецификация контрактов*/
+/* end страница спецификация контрактов*/
+/* end страница спецификация контрактов*/
 
-// страница payments
-// страница payments
-// страница payments
+/* страница payments*/
+/* страница payments*/
+/* страница payments*/
 .pgpayments .table_div .col.col3t, .pgpayments .table_div .col.col4t, .pgpayments .table_div .col.col5t {
     white-space: nowrap;
 }
@@ -732,7 +754,7 @@
           padding-top: 30px;
       .item.menu {
           margin: 0;
-          // padding: 40px 80px;
+          /* padding: 40px 80px;*/
           padding: 40px 30px 52px 80px;
           div {
               margin-bottom: 28px;
@@ -765,6 +787,10 @@
         }
       }
       .head {
+          -webkit-box-pack: justify;
+          -webkit-justify-content: space-between;
+          -moz-box-pack: justify;
+          -ms-flex-pack: justify;
           justify-content: space-between;
           padding-left: 80px;
           padding-right: 26px;
@@ -779,10 +805,12 @@
         }
     }
     .row_head {
+          -webkit-flex-wrap: nowrap;
+          -ms-flex-wrap: nowrap;
           flex-wrap: nowrap;
-      // &:hover {
-      //     flex-wrap: nowrap;
-      // }
+      /* &:hover {*/
+      /*     flex-wrap: nowrap;*/
+      /* }*/
       .col {
           min-height: 32px;
       }
@@ -795,7 +823,7 @@
           height: auto;
       }
       .col.colw3 {
-          // padding: 0;
+          /* padding: 0;*/
           padding-left: 0;
           padding-right: 0;
           padding: 0;
@@ -813,9 +841,9 @@
     }
   }
 }
-// end страница payments
-// end страница payments
-// end страница payments
+/* end страница payments*/
+/* end страница payments*/
+/* end страница payments*/
 .pgaccounts {
   .main {
     &__right--table--body {
@@ -826,8 +854,10 @@
     }
   }
 }
-//safari account
-//safari account
+
+
+/*safari account*/
+/*safari account*/
 .pgaccounts {
   .main {
     &__left {
@@ -842,13 +872,13 @@
         height: 100%;
         position: absolute;
         padding-left: 420px;
-        // padding-bottom: 55px;
+        /* padding-bottom: 55px;*/
         bottom: 55px;
         &--table--body {
             padding-bottom: 0;
-            // padding-bottom: 132px;
+            /* padding-bottom: 132px;*/
             padding-top: 132px;
-            // margin-bottom: 132px;
+            /* margin-bottom: 132px;*/
         }
         &--table--head {
             position: absolute;
@@ -858,19 +888,79 @@
         }
     }
   }
-  // .footer.acc-footer-show {
-  //     /* display: -webkit-box; */
-  //     /* display: -webkit-flex; */
-  //     display: -moz-box;
-  //     display: -ms-flexbox;
-  //     /* display: flex; */
-  //     /* position: absolute; */
-  //     /* bottom: 0; */
-  //     display: none;
-  // }
 }
-//end safari account
-//end safari account
+/* end safari account*/
+/* end safari account*/
+/* dropdown*/
+/* .aa {*/
+/*   &__drop-btn {*/
+/*       border: 2px solid #2675eb;*/
+/*       border-radius: 100px;*/
+/*       // color: #68a4fd;*/
+/*       // padding: 1px 17px 3px 17px;*/
+/*       padding: 1px 32px 3px 17px;*/
+/*       display: inline-block;*/
+/*       cursor: pointer;*/
+/*       position: relative;*/
+/*       display: inline-block !important;*/
+/*       transition: 0s;*/
+/*       &:before {*/
+/*           content: "";*/
+/*           position: absolute;*/
+/*           // right: 4px;*/
+/*           // top: 6px;*/
+/*           right: 10px;*/
+/*           top: 7px;*/
+/**/
+/*           background-position: -76px -139px;*/
+/*           width: 14px;*/
+/*           height: 13px;*/
+/*           background-image: url(../img/spritesheet1.png);*/
+/*           background-repeat: no-repeat;*/
+/*           display: block;*/
+/*       }*/
+/*       span.tx {*/
+/*           font-size: 13px;*/
+/*           font-weight: bold;*/
+/*           color: #2675eb;*/
+/*       }*/
+/*   }*/
+/*   &__drop-down {*/
+/*       position: absolute;*/
+/*       background-color: #fff;*/
+/*       z-index: 92;*/
+/*       border: 3px solid #f2f3f2;*/
+/*       box-shadow: 0 2px 10px rgba(154, 134, 134, 0.68);*/
+/*       display: block;*/
+/*       ul {*/
+/*           list-style: none;*/
+/*           margin: 0;*/
+/*           padding: 0;*/
+/*       }*/
+/*       li {*/
+/*           margin: 0;*/
+/*           padding: 0;*/
+/*           padding: 8px 0;*/
+/*           padding-left: 20px;*/
+/*           padding-right: 10px;*/
+/*       }*/
+/*       a {*/
+/*          &:active {*/
+/*             color: #4c4d4f;*/
+/*             text-decoration: none;*/
+/*          }*/
+/*          &:hover {*/
+/*             color: #e94f86;*/
+/*             text-decoration: none;*/
+/*          }*/
+/*       }*/
+/*   }*/
+/*   &__drop-down-line1 {*/
+/*       border-bottom: 3px solid #f2f3f2;*/
+/*   }*/
+/* }*/
+/* end dropdown*/
+
 
 @media only screen and (min-width:1501px) and (max-width:1920px){
   .swiper-container_ind {
@@ -1143,16 +1233,16 @@
   .pgaccounts {
     .main {
       &__right {
-        // &--table--body {
-        //     margin-top: 0;
-        //     position: relative;
-        //     width: 100%;
-        //     padding-bottom: 200px;
-        // }
+        /* &--table--body {*/
+        /*     margin-top: 0;*/
+        /*     position: relative;*/
+        /*     width: 100%;*/
+        /*     padding-bottom: 200px;*/
+        /* }*/
         &--table {
-            // position: relative;
-            // height: 100%;
-            // height: 100vh; //тест сафари
+            /* position: relative;*/
+            /* height: 100%;*/
+            /* height: 100vh; //тест сафари*/
         }
       }
     }
@@ -1428,9 +1518,9 @@
       font-size: 14px;
       padding-top: 21px;
   }
-  // страница payments
-  // страница payments
-  // страница payments
+  /* страница payments*/
+  /* страница payments*/
+  /* страница payments*/
   .pgpayments {
     .main {
       &__left {
@@ -1452,18 +1542,18 @@
     }
     .table_div {
         margin-top: 40px;
-        // .col.col2t {
-        //     padding: 15px 15px;
-        // }
+        /* .col.col2t {*/
+        /*     padding: 15px 15px;*/
+        /* }*/
         .col.col4t {
             white-space: normal;
             white-space: initial;
         }
     }
   }
-  // end страница payments
-  // end страница payments
-  // end страница payments
+  /* end страница payments*/
+  /* end страница payments*/
+  /* end страница payments*/
   .pgaccounts .main__right--table--head .row .col-03 {
       padding-left: 17px;
   }
@@ -1795,9 +1885,9 @@
       padding-top: 100px;
   }
 
-  // .block_round_big {
-  //     margin-bottom: 0;
-  // }
+  /* .block_round_big {*/
+  /*     margin-bottom: 0;*/
+  /* }*/
 
   th.catr__col-4 {
       text-align: center !important;
@@ -1952,10 +2042,10 @@
   }
   .pgpayments {
     .table_div {
-      // .col.col3t{
-      //     // white-space: nowrap;
-      //     text-align: center;
-      // }
+      /* .col.col3t{*/
+      /*     // white-space: nowrap;*/
+      /*     text-align: center;*/
+      /* }*/
       .col {
           height: 66px;
       }
@@ -1975,14 +2065,14 @@
                 width: 24%;
             }
             .col.colw5 {
-                // width: 15%;
-                // width: 37%;
+                /* width: 15%;*/
+                /* width: 37%;*/
                 width: 33%;
             }
           }
       }
       .row.row_head {
-          // padding-left: 0;
+          /* padding-left: 0;*/
           &:hover {
             .col.colw2 {
                 width: 15%;
@@ -1997,8 +2087,8 @@
                 width: 30%;
             }
             .col.colw5 {
-                // width: 15%;
-                // width: 37%;
+                /* width: 15%;*/
+                /* width: 37%;*/
                 width: 15%;
             }
           }
@@ -2033,10 +2123,22 @@
           }
           .item.menu {
               margin: 0;
-              // padding: 40px 30px 42px 40px;
+              /* padding: 40px 30px 42px 40px;*/
               padding: 40px 40px 42px 40px;
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -moz-box;
+              display: -ms-flexbox;
               display: flex;
+              -webkit-box-pack: justify;
+              -webkit-justify-content: space-between;
+              -moz-box-pack: justify;
+              -ms-flex-pack: justify;
               justify-content: space-between;
+              -webkit-box-align: center;
+              -webkit-align-items: center;
+              -moz-box-align: center;
+              -ms-flex-align: center;
               align-items: center;
           }
           .item.menu div {
@@ -2051,6 +2153,10 @@
     }
   }
   .pgpayments .table_div .col.col3t, .pgpayments .table_div .col.col4t, .pgpayments .table_div .col.col5t {
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -moz-box-pack: center;
+      -ms-flex-pack: center;
       justify-content: center;
   }
   .pgprogram_agent_rules {
@@ -2112,17 +2218,48 @@
       }
       &__right--table--head {
         .row {
-          // .col-02 {
-          //     padding-left: 35px;
-          // }
-          // .col-03 {
-          //     padding-left: 20px;
-          // }
+          /* .col-02 {*/
+          /*     padding-left: 35px;*/
+          /* }*/
+          /* .col-03 {*/
+          /*     padding-left: 20px;*/
+          /* }*/
         }
       }
     }
     .main__right--table--body .row .col-02, .main__right--table--body .row .col-03 {
         font-size: 15px;
+    }
+  }
+}
+
+@media (max-width: 768px){
+  .pgcontracts {
+    .main {
+      &__left {
+          padding-top: 20px;
+          h2 {
+              margin-left: 78px;
+              font-family: "Pragmatica";
+              font-weight: 300;
+              font-size: 20px;
+              display: block;
+              margin-top: 0 !important;
+              margin-bottom: 10px !important;
+              margin-left: 0 !important;
+              padding-left: 26px;
+          }
+      }
+    }
+  }
+  .pgcontracts {
+    .main__left--menu01.small {
+      .main__left--menu01--item {
+          margin-right: 16px !important;
+          /* margin-right: 16px; */
+          margin-bottom: 6px !important;
+          margin-top: 2px !important;
+      }
     }
   }
 }
@@ -2203,9 +2340,9 @@
   .fly__menu .left .scroller .niceScroll_lm2 {
       margin-top: 30px;
   }
-// страница payments
-// страница payments
-// страница payments
+/* страница payments*/
+/* страница payments*/
+/* страница payments*/
 .pgpayments {
   .table_div {
     .col.col2t {
@@ -2231,9 +2368,9 @@
     }
   }
 }
-// end страница payments
-// end страница payments
-// end страница payments
+/* end страница payments*/
+/* end страница payments*/
+/* end страница payments*/
   .pgprogram_agent_rules {
     .main {
         padding-top: 80px;
@@ -2264,7 +2401,7 @@
           }
         }
         &--table--body {
-            // padding-bottom: 124px;
+            /* padding-bottom: 124px;*/
         }
       }
     }
@@ -2283,9 +2420,9 @@
         h2 {
             margin: 0;
             font-size: 16px;
-            // margin-left: 40px;
+            /* margin-left: 40px;*/
             margin-left: 30px;
-            // margin-top: 36px;
+            /* margin-top: 36px;*/
             margin-top: 18px;
             margin-bottom: 15px;
         }
@@ -2304,10 +2441,10 @@
           padding-top: 112px;
       }
     }
-    // .main__left--menu--item.ts_standart::before,  .main__left--menu--item.ts_centovye::before,  .main__left--menu--item.ts_ecn::before, .main__left--menu--item.ts_affiliate::before, .main__left--menu--item.ts_demo::before {
-    //     left: 0px;
-    //     width: 36px;
-    // }
+    /* .main__left--menu--item.ts_standart::before,  .main__left--menu--item.ts_centovye::before,  .main__left--menu--item.ts_ecn::before, .main__left--menu--item.ts_affiliate::before, .main__left--menu--item.ts_demo::before {*/
+    /*     left: 0px;*/
+    /*     width: 36px;*/
+    /* }*/
     .main__left h2 {
         display: block;
     }
@@ -2397,7 +2534,7 @@
   .pgaccounts.dd__pgaccounts {
     .main {
       &__right--table--head {
-            // padding-top: 66px;
+            /* padding-top: 66px;*/
             padding-top: 11px;
             padding-bottom: 11px;
         .row {
@@ -2412,12 +2549,14 @@
       &__right--table--body {
           padding-top: 98px;
           padding-top: 43px;
-          // padding-top: 43px;
+          /* padding-top: 43px;*/
       }
       &__right {
           bottom: 0;
+          padding-left: 210px;
       }
       &__left {
+            width: 210px;
         h2 {
             font-size: 15px;
             margin-left: 18px;
@@ -2429,19 +2568,32 @@
           font-size: 14px;
       }
       &__left--menu--item.ts_standart {
-          padding: 5px 10px 7px 30px;
+          padding: 5px 10px 7px 41px;
       }
       &__left--menu--item.ts_centovye {
-          padding: 5px 10px 7px 30px;
+          padding: 5px 10px 7px 41px;
       }
       &__left--menu--item.ts_affiliate {
-          padding: 10px 10px 10px 30px;
+          padding: 5px 10px 7px 41px;
+          &::before {
+              top: 9px;
+          }
       }
       &__left--menu--item.ts_demo {
-          padding: 10px 10px 10px 30px;
+          padding: 5px 10px 7px 41px;
+          &::before {
+              top: 1px;
+          }
       }
       &__left--menu--item.ts_ecn {
-          padding: 10px 10px 10px 30px;
+          padding: 5px 10px 7px 41px;
+      }
+      &__left--menu {
+          margin-left: 30px;
+      }
+      &__right--table--body .row .col-01 {
+          letter-spacing: normal;
+          line-height: 1.8;
       }
     }
     .footer.acc-footer-show {
@@ -2516,36 +2668,196 @@
   .swiper-slide.slide_02 {
       padding-top: 85px;
   }
-  // .pgpayments {
-  //   .table_div {
-  //     .row {
-  //         width: 360px;
-  //         height: 320px;
-  //         margin: 10px;
-  //         background-color: #fff;
-  //         position: relative;
-  //         flex-wrap: wrap;
-  //         &.row_head {
-  //             display: none;
-  //         }
-  //     }
-  //     .col img {
-  //         width: auto;
-  //     }
-  //     .col.col1t {
-  //         position: absolute;
-  //         right: 50px;
-  //         bottom: 40px;
-  //     }
-  //   }
-  //   .main {
-  //     &__right {
-  //         &--main{
-  //               background-color: transparent;
-  //         }
-  //     }
-  //   }
-  // }
+  .pgpayments.aa__payments {
+    /* блок*/
+    .table_div {
+          /* margin-top: 0;*/
+          margin-top: 30px;
+          margin-bottom: 30px;
+      .row {
+          width: 360px;
+          height: 320px;
+          margin: 10px;
+          background-color: #fff;
+          position: relative;
+          -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+          display: block;
+          margin: 10px auto;
+          &.row_head {
+              display: none;
+          }
+      }
+      .col img {
+          width: auto;
+      }
+      .col.col1t {
+          position: absolute;
+          right: 50px;
+          bottom: 40px;
+      }
+      .col.col2t {
+          padding-left: 30px;
+          width: 100%;
+          font-size: 16px;
+          font-weight: 600;
+          padding-top: 40px;
+          line-height: normal;
+          -webkit-box-ordinal-group: 2;
+          -webkit-order: 1;
+          -moz-box-ordinal-group: 2;
+          -ms-flex-order: 1;
+          order: 1;
+          margin-bottom: 18px;
+      }
+      .col.col3t {
+          display: none;
+      }
+      .col.col4t {
+          -webkit-box-ordinal-group: 4;
+          -webkit-order: 3;
+          -moz-box-ordinal-group: 4;
+          -ms-flex-order: 3;
+          order: 3;
+          width: 45%;
+          display: inline-block;
+          float: right;
+          text-align: left;
+          font-size: 16px;
+          padding-right: 20px;
+          &::before {
+              content: "Ввод за транзакцию";
+              display: block;
+              font-size: 10px;
+              font-weight: bold;
+              color: #b2b2b2;
+              font-family: 'Open Sans', sans-serif;
+          }
+      }
+      .col.col5t {
+          -webkit-box-ordinal-group: 3;
+          -webkit-order: 2;
+          -moz-box-ordinal-group: 3;
+          -ms-flex-order: 2;
+          order: 2;
+          width: 45%;
+          display: inline-block;
+          float: left;
+          text-align: left;
+          font-size: 16px;
+          padding-left: 30px;
+          /* .hide {*/
+          /*     margin-left: 0;*/
+          /*     display: block;*/
+          /* }*/
+          &::before {
+            content: "комиссия";
+            display: block;
+            font-size: 10px;
+            font-weight: bold;
+            color: #b2b2b2;
+            font-family: 'Open Sans', sans-serif;
+          }
+      }
+      .row:hover {
+        .col.colw2 {
+            width: 100%;
+        }
+        .col.colw4 {
+            width: 45%;
+        }
+        .col.colw5 {
+            width: 45%;
+            height: auto;
+            .hide {
+                margin-left: 0;
+                margin-right: 20px;
+                display: block;
+                margin-top: 40px;
+            }
+        }
+      }
+    }
+    .main {
+      &__right {
+            padding: 0;
+          &--main{
+                background-color: transparent;
+          }
+      }
+      &__left {
+        .item.menu {
+            padding-bottom: 10px;
+        }
+      }
+    }
+  }
+  .pgaccounts.dd__pgaccounts {
+    .main {
+      &__left--menu--item::before {
+          display: none;
+          padding-left: 0;
+      }
+      &__left--menu--item {
+        &.ts_standart {
+            padding: 5px 10px 7px 10px;
+        }
+        &.ts_centovye {
+            padding: 5px 10px 7px 10px;
+        }
+        &.ts_affiliate {
+            padding: 5px 10px 7px 10px;
+        }
+        &.ts_demo {
+            padding: 5px 10px 7px 10px;
+        }
+        &.ts_ecn {
+            padding: 5px 10px 7px 10px;
+        }
+      }
+      &__left {
+          width: 180px;
+      }
+      &__right {
+          padding-left: 180px;
+      }
+      &__right--table--head {
+        .row {
+          .col-02 {
+              font-size: 13px;
+          }
+          .col-03 {
+              font-size: 13px;
+          }
+        }
+      }
+      &__right--table--body {
+          padding-top: 41px;
+          .row {
+            .col-01 {
+                margin-top: 0;
+                margin-left: 0;
+                text-align: left;
+            }
+          }
+      }
+      &__right--table--head {
+          margin-top: 0;
+      }
+    }
+    .main__right--table--body .row .col-02, .main__right--table--body .row .col-03 {
+        font-size: 14px;
+    }
+  }
+  .pgpayments.aa__payments .table_div {
+    .col.col4t::before {
+        text-transform: uppercase;
+    }
+    .col.col5t::before {
+        text-transform: uppercase;
+    }
+  }
 }
 
 
@@ -2562,7 +2874,56 @@
     .main__right {
       &--table--body {
           padding-bottom: 200px;
-          // padding-bottom: 55px;
+          /* padding-bottom: 55px;*/
+      }
+    }
+  }
+
+  .pgaccounts.dd__pgaccounts {
+    .main {
+      &__right {
+          padding-left: 0;
+          padding-top: 80px;
+      }
+      &__right--table--body {
+          padding-bottom: 0;
+      }
+      &__left {
+          width: 100%;
+          height: 80px;
+          &--menu--item {
+              padding: 0 !important;
+              display: block;
+              width: auto !important;
+          }
+          &--menu {
+              margin-left: 0;
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -moz-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-pack: justify;
+              -webkit-justify-content: space-between;
+              -moz-box-pack: justify;
+              -ms-flex-pack: justify;
+              justify-content: space-between;
+              padding: 0 20px;
+          }
+          h2 {
+              padding-left: 0;
+              margin-left: 0;
+              text-align: center;
+              margin-top: 14px !important;
+              margin-bottom: 5px !important;
+          }
+      }
+    }
+  }
+  .pgpayments.aa__payments {
+    .table_div {
+      .col.col1t {
+          right: 60px;
       }
     }
   }
@@ -2871,7 +3232,30 @@
   .swiper-container_ind .column_4 .col {
       padding: 25px 10px 20px 10px;
   }
-
+  .pgpayments.aa__payments {
+    .main {
+      &__left {
+        .head {
+            margin: 0;
+            padding: 0 18px;
+        }
+        .item.menu {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+      }
+    }
+    .table_div {
+      .col.col1t {
+          width: auto;
+      }
+      .row:hover {
+        .col.colw1 {
+            width: auto;
+        }
+      }
+    }
+  }
 }
 
 
@@ -2913,7 +3297,7 @@
   .fly__menu .left .scroller {
       padding-left: 60px;
   }
-//
+/**/
   .pgprogram_agent_rules {
     .main__center {
       div:nth-child(1) {
@@ -2932,6 +3316,26 @@
               left: 50%;
               margin-left: -15px;
           }
+      }
+    }
+  }
+  .pgaccounts.dd__pgaccounts {
+    .main {
+      &__left--menu {
+          padding: 0 12px;
+      }
+    }
+  }
+  .pgpayments.aa__payments {
+    .table_div {
+      .row {
+          width: 310px;
+          height: 280px;
+      }
+      .row:hover {
+        .col.colw5 {
+            width: 50%;
+        }
       }
     }
   }
@@ -2961,9 +3365,101 @@
   .ui-datepicker-inline {
       right: 25px;
   }
+  .pgaccounts.dd__pgaccounts {
+    .main {
+      &__left--menu {
+          padding: 0 20px;
+          -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+          -webkit-box-pack: start;
+          -webkit-justify-content: flex-start;
+          -moz-box-pack: start;
+          -ms-flex-pack: start;
+          justify-content: flex-start;
+      }
+      &__left--menu--item {
+          margin-right: 15px;
+      }
+      &__left {
+          height: 105px;
+      }
+      &__right {
+          padding-top: 105px;
+      }
+    }
+  }
+  .pgaccounts.dd__pgaccounts {
+    .main {
+      &__right--table--body {
+        .row {
+          .col-01 {
+              padding-left: 7px;
+          }
+          .col-02 {
+              padding: 14px 4px 20px 14px;
+              letter-spacing: normal;
+              font-size: 13px;
+              text-align: center;
+          }
+          .col-03 {
+              /* font-size: 14px;*/
+              letter-spacing: normal;
+              font-size: 13px;
+              text-align: center;
+              padding-left: 14px;
+          }
+        }
+      }
+      &__right--table--head {
+        .row {
+            padding-right: 0;
+            .col-03 {
+                padding-left: 23px;
+            }
+        }
+      }
+    }
+  }
+  .pgpayments.aa__payments {
+    .table_div {
+          margin-bottom: 5px;
+          margin-top: 30px;
+      .row {
+          width: 300px;
+          height: 270px;
+          margin: 0px auto 20px auto;
+      }
+      .row:hover {
+        .col.colw5 {
+          .hide {
+              margin-right: 10px;
+          }
+        }
+      }
+      .col.col1t {
+          right: 40px;
+      }
+    }
+    .main {
+      &__left {
+        .head {
+            padding: 0;
+        }
+        .item.menu {
+              padding-bottom: 0;
+          div {
+              margin-bottom: 24px;
+          }
+          .sel_banks {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
 
 }
-
 
 
 @media only screen and (min-width:641px) and (max-width:749px) and (max-height:470px) and (orientation:landscape){

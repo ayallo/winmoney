@@ -1,3 +1,18 @@
+.validation {
+  -webkit-transition: border 0.4s ease-in-out;
+  -o-transition: border 0.4s ease-in-out;
+  -moz-transition: border 0.4s ease-in-out;
+  transition: border 0.4s ease-in-out;
+}
+.validation.validation--success {
+  border-bottom-color: #6cce51 !important;
+}
+.validation.validation--error {
+  border-bottom-color: #f44 !important;
+}
+.input__message {
+  font-size: 12px;
+}
 .head__nav .menu-left-position {
   width: 81px;
 }
@@ -731,7 +746,6 @@ p.bullet {
   -webkit-align-items: flex-start;
      -moz-box-align: start;
       -ms-flex-align: start;
-              -ms-grid-row-align: flex-start;
           align-items: flex-start;
 }
 .pgabout .centerblock.div1row_imgbot p {
@@ -1206,7 +1220,6 @@ p.bullet {
   -webkit-align-items: center;
      -moz-box-align: center;
       -ms-flex-align: center;
-              -ms-grid-row-align: center;
           align-items: center;
 }
 .pgbonus_get .slcont-slide .slide_06__head table td {
@@ -1229,7 +1242,6 @@ p.bullet {
   -webkit-align-items: center;
      -moz-box-align: center;
       -ms-flex-align: center;
-              -ms-grid-row-align: center;
           align-items: center;
 }
 .pganalytics_video .col.video .item {
