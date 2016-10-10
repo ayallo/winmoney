@@ -304,6 +304,7 @@
   font-size: 10px;
   margin: 0;
   padding: 0;
+  /* float: none !important;*/
 }
 .lk_dashboard .text-right.head__right {
   /* height: 70px;*/
@@ -334,14 +335,20 @@
   height: auto;
 }
 .lk_dashboard .head__avatar img {
-  width: 42px;
-  height: 42px;
   top: auto;
   position: relative;
 }
 .lk_dashboard .alert.alert-warning.alert-dismissible {
   margin-bottom: 5px;
   margin-top: 2px;
+}
+.lk_dashboard .alert .close {
+  /* .lk__close-top {*/
+  /*     float: none !important;*/
+  /* }*/
+}
+.lk_dashboard .alert .close span {
+  float: left !important;
 }
 .head__left_text {
   padding-top: 0;
@@ -843,7 +850,8 @@
 }
 .fly__menu .left .scroller .niceScroll_lm2 {
   margin-top: 40px;
-  padding-bottom: 60px;
+  /* padding-bottom: 60px;*/
+  padding-bottom: 140px;
 }
 .fly__menu .left .menu-main a,
 .fly__menu .left .menu-dop a,
@@ -857,6 +865,33 @@
 }
 .lk_documents .body_page .block .head__right {
   padding-top: 0;
+}
+.fly__menu .left .left-menu-head-client div.item {
+  margin-top: 0;
+  -webkit-border-top-left-radius: 0;
+  -moz-border-radius-topleft: 0;
+  border-top-left-radius: 0;
+  -webkit-border-top-right-radius: 0;
+  -moz-border-radius-topright: 0;
+  border-top-right-radius: 0;
+}
+.head__avatar {
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+}
+.head__avatar.is-active {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.head__avatar.is-active::after {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.head__avatar.is-active img {
+  -webkit-filter: blur(2px);
+  filter: blur(2px);
 }
 @media (max-width: 1400px) {
   .lk_payments .table_div .row_head .col.colw2 {
@@ -966,7 +1001,7 @@
   }
   .body_page .lk__video .bl_video img {
     width: 100%;
-    height: 100%;
+    height: auto;
   }
   .body_page .block {
     padding: 20px;
@@ -1380,6 +1415,9 @@
   .lk_payments .adpt__paym-left-round h3 br {
     display: none;
   }
+  .fly__feedback-panel .right-wrap .feedbackpanel .feedbackbdody1:after {
+    height: 50px;
+  }
 }
 @media (max-width: 640px) {
   .asdgsdagsdg {
@@ -1532,6 +1570,8 @@
     /* top: 20px;*/
     margin-top: -15px;
     width: 30px;
+    display: inline-block;
+    text-align: center;
   }
   .body_page .alert-dismissible .close span {
     top: auto;
@@ -1566,6 +1606,11 @@
   }
   .lk_documents .body_page .alert-dismissible .close {
     font-size: 0;
+    display: inline-block;
+    text-align: center;
+  }
+  .lk_dashboard .alert .close span {
+    float: none !important;
   }
 }
 @media (max-width: 375px) {
