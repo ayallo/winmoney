@@ -17,6 +17,26 @@
 .input__message {
   font-size: 12px;
 }
+.notification {
+  margin-left: 20px;
+  color: #fff;
+  margin-top: 25px;
+}
+.notification:focus {
+  color: #fff;
+}
+.notification .badge {
+  margin-top: -24px;
+  margin-left: -6px;
+  position: relative;
+  z-index: 2;
+}
+.notification__img {
+  float: left;
+}
+.fly__menu .left {
+  height: 100%;
+}
 .adv_plitka_blok {
   width: 1300px;
   margin: 0 auto;
@@ -119,6 +139,11 @@
 @media screen and (max-width: 570px) {
   .adv_plitka_blok.adv_row_120x600 {
     width: 310px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .head__left .notification {
+    display: none;
   }
 }
 @media screen and (max-width: 400px) {

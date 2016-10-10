@@ -58,10 +58,14 @@
         $('.c-hamburger').addClass('is-active');
         $(".fly__profile").hide().css({"opacity":"0","margin-left":"-2000px"}).stop().fadeOut(100, 0);
         $('.head__avatar').removeClass('is-active');
+        $('body').addClass('menu-open');
+        $('html').addClass('menu-open');
       }else{
         $("body").css("overflow","auto");
         $(".fly__menu").hide().css({"opacity":"0","margin-left":"-2000px"}).stop().fadeOut(100, 0);
         $('.c-hamburger').removeClass('is-active');
+        $('body').removeClass('menu-open');
+        $('html').removeClass('menu-open');
       }
     });
     $(".fly__menu").click(function(){/*закрытие меню щелкая вне области меню*/
@@ -69,8 +73,9 @@
       }else{
         $('.c-hamburger').removeClass('is-active');
         $("body").css("overflow","auto");
-        //$(".fly__menu").hide().css({"opacity":"0","margin-left":"-200px"}).stop().fadeTo(100, 0);
         $(".fly__menu").hide().css({"opacity":"0","margin-left":"-2000px"}).stop().fadeOut(100, 0);
+        $('body').removeClass('menu-open');
+        $('html').removeClass('menu-open');
       }
     });
     /*профиль из аватара*/
@@ -97,9 +102,13 @@
     /*модальное размытие*/
     $('.modal').on('hidden.bs.modal', function (e) {
       $('.body_page').removeClass('modal_blur');
+      $('body').removeClass('menu-open');
+      $('html').removeClass('menu-open');
     })
     $('.modal').on('show.bs.modal', function (e) {
       $('.body_page').addClass('modal_blur');
+      $('body').addClass('menu-open');
+      $('html').addClass('menu-open');
     })
     /*иконка около инпута*/
     $('.fi_input_bsh').click(function(){
@@ -421,15 +430,19 @@
       }
     });
 
-     /*правая панель калькулятор*/
+     /* правая панель калькулятор */
      $(".fly__calculator-panel").hide();
-     $(".fly__calculator-close").click(function(){/*закрытие правой панели*/
+     $(".fly__calculator-close").click(function(){ /* закрытие правой панели */
        $(".fly__calculator-panel").css({"opacity":"0"}).hide();
        $("body").css("overflow","auto");
+        $('body').removeClass('menu-open');
+        $('html').removeClass('menu-open');
      });
      $(".fly__calculator").click(function(){
        $(".fly__calculator-panel").css({"opacity":"1"}).show();
        $("body").css("overflow","hidden");
+        $('body').addClass('menu-open');
+        $('html').addClass('menu-open');
      });
      $(".calcresult_more").click(function() {
        if ( $(".calcresult .hide").css('display') == 'none' ){
@@ -469,20 +482,24 @@
          }
      });
 
-     /*правая панель чата*/
+     /* правая панель чата */
      $(".fly__feedback-panel").hide();
-     $(".fly__feedback-close").click(function(){/*закрытие правой панели*/
+     $(".fly__feedback-close").click(function(){ /* закрытие правой панели */
        $(".fly__feedback-panel").css({"opacity":"0"}).hide();
        $("body").css("overflow","auto");
+       $('body').removeClass('menu-open');
+       $('html').removeClass('menu-open');
      });
 
-     /*закрытие левой и правой панелей*/
+     /* закрытие левой и правой панелей */
      $('.fly__calculator-panel').click(function(){
        var panel = $('.fly__calculator-panel .right');
        if (panel.is(':hover')) {}
        else {
          $(".fly__calculator-panel").css({"opacity":"0"}).hide();
          $("body").css("overflow","auto");
+         $('body').removeClass('menu-open');
+         $('html').removeClass('menu-open');
        };
      });
      $('.fly__feedback-panel').click(function(){
@@ -491,6 +508,8 @@
        else {
          $(".fly__feedback-panel").css({"opacity":"0"}).hide();
          $("body").css("overflow","auto");
+         $('body').removeClass('menu-open');
+         $('html').removeClass('menu-open');
        };
      });
      $('.fly__menu').click(function(){
@@ -512,6 +531,8 @@
     $(".slide_01__center-chat, .fly__chat, .fly__feedback").click(function(){
        $(".fly__feedback-panel").css({"opacity":"1"}).show();
        $("body").css("overflow","hidden");
+       $('body').addClass('menu-open');
+       $('html').addClass('menu-open');
     });
 
     $(".faqpanel").hide();

@@ -837,7 +837,6 @@
   width: 100%!important;
   height: 100%!important;
   cursor: pointer;
-  z-index: 999;
 }
 .pganalytics_articles .column_2 .col.articles.hover .item .plaha__left {
   color: #a8a8a8;

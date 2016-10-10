@@ -204,9 +204,13 @@
 .swiper-container_abo.page-about,
 .page-about .swiper-slide,
 .page-about .swiper-wrapper,
-.pgabout,
-.wrapper {
+.pgabout .wrapper,
+.pgabout {
   height: 100vh !important;
+}
+.wrapper {
+  height: 100% !important;
+  /* height: 100vh !important; */
 }
 .big-slide {
   display: block;
@@ -326,6 +330,9 @@ a {
 }
 .pgcontracts .main__left--menu01.small .main__left--menu01--item {
   margin: 5px 0 12px 0;
+}
+.pgaccounts .wrapper {
+  overflow: hidden;
 }
 .pgaccounts .main__right--table--body {
   margin-top: 132px;
@@ -950,6 +957,38 @@ a {
 .pgpartners_reward {
   overflow: hidden;
 }
+.head__nav.sfonom-temp {
+  background: #33373e;
+  background: -moz-linear-gradient(top, #33373e 0%, #25282d 100%);
+  background: -webkit-linear-gradient(top, #33373e 0%, #25282d 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#33373e), to(#25282d));
+  background: -o-linear-gradient(top, #33373e 0%, #25282d 100%);
+  background: linear-gradient(to bottom, #33373e 0%, #25282d 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#33373e', endColorstr='#25282d', GradientType=0);
+  -webkit-box-shadow: 0 0 26px 0 #000;
+  -moz-box-shadow: 0 0 26px 0 #000;
+  box-shadow: 0 0 26px 0 #000;
+  -webkit-box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+.head__nav.sfonom-temp .head__right-wrapr-r01,
+.head__nav.sfonom-temp .head__right-wrapr-r02,
+.head__nav.sfonom-temp .head__right-wrapr-r03 {
+  border-color: #727b85;
+}
+.pgwebinars .column_2 .item table .webin__right {
+  display: table-row;
+}
+.menu-open {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.scroll-wrapper > .scroll-content {
+  overflow-x: hidden !important;
+}
 @media (min-height: 801px) {
   .pgprogram_agent_partners .calc-fixed,
   .pgpartners_net .calc-fixed {
@@ -1337,8 +1376,15 @@ a {
   .pgprogram_cpa .cpa-img {
     display: none;
   }
+  .pgprogram_cpa .slide_02 .center {
+    padding-left: 10px;
+  }
   .pgprogram_cpa .slide_02 .center div p.cpa-title-description {
     margin-bottom: 35px !important;
+  }
+  .pgprogram_cpa .slide_01__center {
+    width: 84%;
+    margin-left: 10%;
   }
   .pgbonus_get .slcont-slide.slide_07 .panel_gray {
     margin-bottom: 40px;
@@ -1461,7 +1507,7 @@ a {
   }
   .pgprogram_cpa .slide_05 .main,
   .pgprogram_cpa .slide_02 .center {
-    width: 52%;
+    width: 95%;
     max-width: 835px;
   }
   .pgbonus .slide_02 .text {
@@ -1569,6 +1615,25 @@ a {
   .pgprogramagent .zarabotok-title h2 {
     font: 32px/44px 'Open Sans' !important;
     font-weight: 300;
+  }
+  .pgwebinars .column_2 .item table,
+  .pgwebinars .column_2 .item tbody,
+  .pgwebinars .column_2 .item tr,
+  .pgwebinars .column_2 .item td {
+    display: inline-block;
+  }
+  .pgwebinars .column_2 .item table tr {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .pgwebinars .column_2 .item table td.webinars {
+    width: 100%;
+  }
+  .pgwebinars .column_2 .item table td.webinars .webin .hide {
+    margin-top: 16px;
+  }
+  .pgwebinars .column_2 .item table td.data {
+    margin-left: 18px;
   }
 }
 @media (max-width: 400px) {
@@ -1721,6 +1786,25 @@ a {
   .pgwebinars .column_2 .item table td.webinars .webin.noact h3 {
     font-size: 16px;
   }
+  .pgprogram_cpa .slide_05 .main__center-head {
+    margin-bottom: 20px;
+  }
+  .pgprogram_cpa .slide_05 .main__center-head h2 {
+    font-size: 27px;
+  }
+  .pgprogram_cpa .slide_05 .social_wrap {
+    display: block;
+  }
+  .pgprogram_cpa .slide_05 .social_wrap a:first-child {
+    display: block;
+    margin: 0 0 16px 0;
+    text-align: left;
+    float: none;
+  }
+  .pgprogram_cpa .slide_05 .social_wrap a {
+    float: left;
+    margin-right: 15px !important;
+  }
   .pgpayments .table_div .row_head .col.colw5 {
     min-width: 127px;
   }
@@ -1757,6 +1841,9 @@ a {
     margin-right: 0;
     margin-bottom: 20px;
   }
+  .pgabout .slide .centerblock .div1row_right h2 {
+    margin-top: 0;
+  }
   .pgprogram_agent_reward .main__center--block h2 {
     font-size: 38px;
   }
@@ -1787,8 +1874,27 @@ a {
   }
 }
 @media (max-width: 340px) {
+  .pgwebinars .column_2 .item {
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+  .pgwebinars .column_2 .item table td.webinars .hide {
+    font-size: 12px;
+  }
   .pgwebinars .column_2 .item table td.webinars .webin h3,
   .pgwebinars .column_2 .item table td.webinars .webin.noact h3 {
+    font-size: 14px;
+  }
+  .pgbonus .slide_03 .sl_03 {
+    margin-top: 78px;
+  }
+  .pgbonus .slide_03 .sl_03 div h2 {
+    margin-bottom: 10px;
+  }
+  .pgbonus .slide_03 .sl_03 div a {
+    margin-top: 0;
+  }
+  .pgbonus .slide_03 .sl_03 div p {
     font-size: 14px;
   }
   .fly__calculator-panel .right-wrap .calcbody div.head {

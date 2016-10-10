@@ -175,17 +175,16 @@ jQuery(document).ready(function(){
         /*меню из гамбургера*/
         $(".fly__menu").hide();
 
-	    var needClass = false;
+	    // var needClass = false;
 
-        $(".menu-left-position").click(function(){/*щелчок по гамбургеру*/
+        $(".menu-left-position").click(function(){ /* щелчок по гамбургеру */
 
-
+          $('.head__nav').toggleClass('sfonom-temp');
 
           if ( $(".fly__menu").css('opacity') == '0' ) {
 
-          	needClass = $('.head__nav').hasClass('sfonom');
-
-          	$('.head__nav').addClass('sfonom');
+          	// needClass = $('.head__nav').hasClass('sfonom');
+          	// $('.head__nav').addClass('sfonom');
 
             $("body").css("overflow","hidden");
             $(".fly__menu").show().css({"opacity":"1","margin-left":"0px"}).stop().fadeTo(200, 1);
@@ -197,10 +196,12 @@ jQuery(document).ready(function(){
             $('.main').addClass('blur');
           } else {
 
+          	/*
           	if (!needClass) {
           		$('.head__nav').removeClass('sfonom');
           	}
-
+			*/
+			
             $("body").css("overflow","auto");
             $(".fly__menu").hide().css({"opacity":"0","margin-left":"-2000px"}).stop().fadeOut(100, 0);
             $('.c-hamburger').removeClass('is-active');
@@ -217,10 +218,14 @@ jQuery(document).ready(function(){
         $(".fly__calculator-close").click(function(){/*закрытие правой панели*/
           $(".fly__calculator-panel").css({"opacity":"0"}).hide();
           $("body").css("overflow","auto");
+          $('.head__nav').removeClass('sfonom-temp');
+          $('html').removeClass('menu-open');
         });
         $(".fly__calculator").click(function(){
           $(".fly__calculator-panel").css({"opacity":"1"}).show();
           $("body").css("overflow","hidden");
+          $('.head__nav').addClass('sfonom-temp');
+          $('html').addClass('menu-open');
         });
         $(".calcresult_more").click(function() {
           if ( $(".calcresult .hide").css('display') == 'none' ){
@@ -261,9 +266,11 @@ jQuery(document).ready(function(){
         });
         /*правая панель чата*/
         $(".fly__feedback-panel").hide();
-        $(".fly__feedback-close").click(function(){/*закрытие правой панели*/
+        $(".fly__feedback-close").click(function(){ /* закрытие правой панели */
           $(".fly__feedback-panel").css({"opacity":"0"}).hide();
           $("body").css("overflow","auto");
+          $('.head__nav').removeClass('sfonom-temp');
+          $('html').removeClass('menu-open');
         });
         /*скроллинг правой и левой панели*/
         /*$('.feedbackbdody1').niceScroll('.feedback_scroll', {
@@ -277,7 +284,6 @@ jQuery(document).ready(function(){
         });*/
 
 
-
         /*закрытие левой и правой панелей*/
         $('.fly__calculator-panel').click(function(){
           var panel = $('.fly__calculator-panel .right');
@@ -285,6 +291,8 @@ jQuery(document).ready(function(){
           else {
             $(".fly__calculator-panel").css({"opacity":"0"}).hide();
             $("body").css("overflow","auto");
+            $('.head__nav').removeClass('sfonom-temp');
+	          $('html').removeClass('menu-open');
           };
         });
         $('.fly__feedback-panel').click(function(){
@@ -293,12 +301,15 @@ jQuery(document).ready(function(){
           else {
             $(".fly__feedback-panel").css({"opacity":"0"}).hide();
             $("body").css("overflow","auto");
+            $('.head__nav').removeClass('sfonom-temp');
+            $('html').removeClass('menu-open');
           };
         });
         $('.fly__menu').click(function(){
           var panel = $('.fly__menu .left');
           if (panel.is(':hover')) {
           } else {
+          	$('.head__nav').removeClass('sfonom-temp');
             $('.c-hamburger').removeClass('is-active');
             $('.slcont-slide').removeClass('blur');
             $('.swiper-slide').removeClass('blur');
@@ -327,9 +338,10 @@ jQuery(document).ready(function(){
         });*/
 
         $(".slide_01__center-chat, .fly__chat, .fly__feedback").click(function(){
-
           $(".fly__feedback-panel").css({"opacity":"1"}).show();
           $("body").css("overflow","hidden");
+          $('.head__nav').addClass('sfonom-temp');
+          $('html').addClass('menu-open');
         });
         $(".faqpanel").hide();
         $(".fb_item").click(function(){
@@ -541,6 +553,11 @@ jQuery(document).ready(function(){
             bottomButtonsDown();
         }
       }
+      /*
+      if ($('html').hasClass('menu-open')) {
+          $('body').scrollTop(0);
+      }
+      */
     });
 
     // calc.animate({'bottom': '70px'}, 'fast');

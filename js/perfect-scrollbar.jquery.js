@@ -1052,7 +1052,7 @@ function bindTouchHandler(element, i, supportsTouch, supportsIePointer) {
       if (easingLoop !== null) {
         clearInterval(easingLoop);
       }
-
+      // console.log('Swipe propagation!', e);
       e.stopPropagation();
     }
   }

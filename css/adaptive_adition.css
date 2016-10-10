@@ -47,7 +47,7 @@
   -webkit-box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.3);
      -moz-box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.3);
           box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.3);
-  z-index: 100;
+  z-index: 200;
 }
 .head__nav.sfonom .head__logo {
   background-image: url(../img/logo.png);
@@ -541,6 +541,42 @@ p.bullet {
 .pgaccounts .main__right {
   width: 100% !important;
 }
+.pgindicators .scroll-wrapper.main__right {
+  position: relative;
+  height: auto;
+}
+.pgindicators .scroll-wrapper.main__right > .main__right {
+  position: relative;
+  top: 0;
+  bottom: 0;
+}
+.pgindicators .main__left {
+  position: relative;
+}
+.pgindicators .ueva_listalka {
+  position: absolute;
+  top: 70px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  padding-bottom: 0;
+}
+.ueva_listalka .scroll-wrapper .bukvas-left {
+  min-width: 50px;
+}
+.ueva_listalka .scroll-wrapper.bukvas-left {
+  margin: 0px 12px;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+}
+.pgindicators .wrapper {
+  height: 100% !important;
+}
+.pgindicators .content.main {
+  height: 100%;
+}
 .pgindicators .main__left {
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
@@ -594,6 +630,8 @@ p.bullet {
 .ueva_listalka .bukvas-left .fons {
   margin-top: 7px;
   margin-bottom: 28px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .ueva_listalka .bukvas-left .bukvas_one {
   margin-bottom: 6px;
@@ -620,26 +658,31 @@ p.bullet {
   .pgindicators .main__right .main__right_body h2 {
     margin-top: 0;
   }
+  .pgindicators .ueva_listalka {
+    top: 90px;
+  }
 }
 @media screen and (max-width: 768px) {
   .pgindicators .main__left {
     width: 86px;
     padding-top: 24px;
     position: relative;
-    height: 100%;
+    height: auto;
     padding-bottom: 0;
   }
   .main__left h2 {
     display: none;
   }
-  .ueva_listalka {
+  .pgindicators .ueva_listalka {
+    top: 0;
+    padding-top: 0;
     height: 100%;
     padding-bottom: 0;
     background-color: #f5f5f5;
   }
   .ueva_listalka .bukvas-left {
-    margin: 0;
-    padding: 0 24px;
+    margin: 0 !important;
+    padding: 0 14px;
     z-index: 100;
     background-color: whitesmoke;
   }
@@ -746,6 +789,7 @@ p.bullet {
   -webkit-align-items: flex-start;
      -moz-box-align: start;
       -ms-flex-align: start;
+              -ms-grid-row-align: flex-start;
           align-items: flex-start;
 }
 .pgabout .centerblock.div1row_imgbot p {
@@ -1220,6 +1264,7 @@ p.bullet {
   -webkit-align-items: center;
      -moz-box-align: center;
       -ms-flex-align: center;
+              -ms-grid-row-align: center;
           align-items: center;
 }
 .pgbonus_get .slcont-slide .slide_06__head table td {
@@ -1242,6 +1287,7 @@ p.bullet {
   -webkit-align-items: center;
      -moz-box-align: center;
       -ms-flex-align: center;
+              -ms-grid-row-align: center;
           align-items: center;
 }
 .pganalytics_video .col.video .item {

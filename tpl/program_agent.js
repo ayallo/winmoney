@@ -208,7 +208,7 @@ if (($(".swiper-container_ind").length > 0)) {
               $(".head__nav").addClass("sfonom");
               $(".main__menu").show();
           }
-          if(e.activeIndex==4) { 
+          if(e.activeIndex==4) {
             $(".footer").css({"display":"flex"});
             partButtonsUp();
           } else {
@@ -255,7 +255,12 @@ if (($(".swiper-container_ind").length > 0)) {
               $(".main__menu").show();
           }
           if(e.activeIndex==1){ $("#myslideTo_1").addClass("act"); }
-          if(e.activeIndex==4){ $(".footer").css({"display":"flex"}); }
+          if(e.activeIndex==4){
+            $(".footer").css({"display":"flex"});
+            partButtonsUp();
+          } else {
+            partButtonsDown();
+          }
       });
     }
   });

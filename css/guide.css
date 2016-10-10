@@ -1073,7 +1073,7 @@ strong {
   font-family: 'PT Serif', serif !important;
 }
 .subscribe .item-item input {
-  border-bottom: 1px solid #d7d7d7!important;
+  border-bottom: 1px solid #d7d7d7;
   width: 100%!important;
   margin-bottom: 20px!important;
   margin-top: 50px;
@@ -1355,7 +1355,7 @@ strong {
   width: 100%;
   height: 100%;
   cursor: pointer;
-  z-index: 999;
+  z-index: 80;
 }
 .column_4 {
   /*блок из 4х колонок*/

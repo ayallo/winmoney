@@ -22,7 +22,7 @@
   -moz-transition: background 0s 0s;
   -o-transition: background 0s 0s;
   transition: background 0s 0s;
-} 
+}
 .c-hamburger--htx.is-active {
   background-color: transparent;
 }
@@ -168,6 +168,7 @@
         font-weight: 300;
         /* pp*/
         /* pp*/
+        border-radius: 0;
     }
     &__center-text {
         margin-bottom: 167px;
@@ -334,6 +335,7 @@
 
         font-family: "Pragmatica";
         font-weight: 300;
+        border-radius: 0;
     }
     &__center-text .openschet {
         margin: 0;
@@ -862,8 +864,10 @@
   .main {
     &__left {
         width: 420px;
-        position: fixed;
-        top: 70px;
+        // position: fixed;
+        // top: 70px;
+        position: absolute;
+        top: 0;
         left: 0;
         bottom: 0;
         z-index: 92;
@@ -960,7 +964,11 @@
 /*   }*/
 /* }*/
 /* end dropdown*/
-
+body.pganalytics_articles {
+  .column_2 .col .item .video::before {
+      z-index: 80;
+  }
+}
 
 @media only screen and (min-width:1501px) and (max-width:1920px){
   .swiper-container_ind {
@@ -2262,6 +2270,9 @@
       }
     }
   }
+  .fly__feedback-panel .right-wrap .feedbackpanel .feedbackbdody1:after {
+      height: 50px;
+  }
 }
 
 @media (max-width: 749px){
@@ -2857,6 +2868,9 @@
     .col.col5t::before {
         text-transform: uppercase;
     }
+  }
+  .pgabout .slide .centerblock.afterslides {
+      padding-top: 70px;
   }
 }
 

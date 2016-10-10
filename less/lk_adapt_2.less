@@ -20,6 +20,28 @@
   }
 }
 
+.notification {
+  margin-left: 20px;
+  color: #fff;
+  margin-top: 25px;
+  &:focus {
+    color: #fff;
+  }
+  .badge {
+    margin-top: -24px;
+    margin-left: -6px;
+    position: relative;
+    z-index: 2;
+  }
+  &__img {
+    float: left;
+  }
+}
+
+.fly__menu .left {
+  height: 100%;
+}
+
 
 // START LK Adv
 
@@ -130,6 +152,13 @@
     }
   }
 }
+
+@media screen and (max-width: 500px) {
+  .head__left .notification {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 400px) {
   .lk_advertising {
     .adv-head__buttons {
