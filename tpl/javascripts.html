@@ -326,30 +326,10 @@ jQuery(document).ready(function(){
           e.stopPropagation();
         });*/
 
-		var chat1,
-			chat2,
-			chat3;
-
         $(".slide_01__center-chat, .fly__chat, .fly__feedback").click(function(){
 
           $(".fly__feedback-panel").css({"opacity":"1"}).show();
           $("body").css("overflow","hidden");
-
-          chat1 = $('.slide_01__center-chat').css('opacity');
-		  chat2 = $('.fly__chat').css('opacity') ;
-		  chat3 = $('.fly__feedback').css('opacity') ;
-
-          if ((chat1) || (chat2) || (chat3)) {
-
-          	needClass = $('.head__nav').hasClass('sfonom');
-
-          	//$('.head__nav').addClass('sfonom');
-
-          } else {
-			if (!needClass) {
-				//$('.head__nav').removeClass('sfonom');
-			}
-          }
         });
         $(".faqpanel").hide();
         $(".fb_item").click(function(){

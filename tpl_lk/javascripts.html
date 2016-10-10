@@ -508,6 +508,40 @@
        };
      });
 
+
+    $(".slide_01__center-chat, .fly__chat, .fly__feedback").click(function(){
+       $(".fly__feedback-panel").css({"opacity":"1"}).show();
+       $("body").css("overflow","hidden");
+    });
+
+    $(".faqpanel").hide();
+    $(".fb_item").click(function(){
+      $(".faqbody_scroll > .answer").hide();
+      $(".faqbody_scroll > .fb_item").removeClass("hover");
+      $(this).parent(".faqbody_scroll").addClass("hover");
+      $(this).addClass("hover");
+      $(this).find(".answer").toggle();
+    })
+    $(".fed").click(function(){
+      if ($(this).hasClass("act")){
+      }else{
+        $(".faqpanel").hide();
+        $(".feedbackpanel").show();
+      }
+    });
+    $(".faq").click(function(){
+      if ($(this).hasClass("act")){
+      }else{
+        $(".faqpanel").show();
+        $(".feedbackpanel").hide();
+      }
+    });
+
+    $('.fly__calculator-panel .right-wrap').perfectScrollbar({
+        wheelSpeed: 0.3,
+        suppressScrollX: true
+    });
+
   /*
       $('.profile-body.scroller').perfectScrollbar({
           wheelSpeed: 0.3,
