@@ -432,6 +432,9 @@ a {
 .pgabout .swiper-slide-active {
   opacity: 1;
 }
+.pgabout .head__nav.sfonom .c-hamburger.is-active span {
+  background: none;
+}
 .pgabout .head__nav.sfonom .c-hamburger span {
   background-color: white;
 }

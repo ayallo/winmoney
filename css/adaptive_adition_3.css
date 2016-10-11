@@ -40,3 +40,14 @@
     width: 200%;
   }
 }
+@media (max-width: 425px) {
+  .wrapper{
+  	z-index: 999;
+  }
+  .head__nav.sfonom {
+    width: 100%;
+    position: fixed;
+    display: block;
+    z-index: 999999999;
+  }
+}

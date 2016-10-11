@@ -186,6 +186,18 @@ if (($(".swiper-container_ind").length > 0)) {
       wheelPropagation: true,
       swipePropagation: true
     });
+    
+    $('.about-lastslide-wrapper').scrollTop(1);
+
+    $('.about-lastslide-wrapper').scroll(function(e) {
+
+      if($('.about-lastslide-wrapper').scrollTop() === 0) {
+        console.log('$(.scroller) reach top ^');
+        $('.about-lastslide-wrapper').parents('.swiper-container-vertical');
+        var myBigSwiper = $('.about-lastslide-wrapper').parents('.swiper-container-vertical')[0].swiper;
+        myBigSwiper.slidePrev();
+      }
+    });
 
     // if (($(".swiper-container_news").length > 0)){
     //   var swiper = new Swiper('.swiper-container_news', {

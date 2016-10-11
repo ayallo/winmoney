@@ -17,18 +17,18 @@ gulp.task('less', function () {
   });
   return gulp.src('./less/*.less')
     .pipe(l)
-    .pipe(gulp.dest('./css/'))
-    .pipe(connect.reload());
+    .pipe(gulp.dest('./css/'));
+    // .pipe(connect.reload());
 });
 gulp.task('connect', function() {
-  connect.server({
-    root: './',
-    livereload: true
-  });
+  // connect.server({
+  //   root: './',
+  //   livereload: true
+  // });
 });
 gulp.task('html', function() {
-  return gulp.src('./*.html')
-    .pipe(connect.reload());
+  return gulp.src('./*.html');
+    // .pipe(connect.reload());
 })
 gulp.task('watch', function() {
   gulp.watch('./less/*.less', ['less']);
