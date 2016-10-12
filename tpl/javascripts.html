@@ -352,6 +352,7 @@ jQuery(document).ready(function(){
         $(".slide_01__center-chat, .fly__chat, .fly__feedback").click(function(){
           $(".fly__feedback-panel").css({"opacity":"1"}).show();
           $("body").css("overflow","hidden");
+          $("body").css("height","100% !important");
           $('.head__nav').addClass('sfonom-temp');
           $('html').addClass('menu-open');
         });
@@ -543,12 +544,14 @@ jQuery(document).ready(function(){
 		var slideH    = $('.pgindex .slide_01').height();
 		var head_main = $('.pgindex .head__nav');
 
-	  $('.swiper-container_ind').scroll(function () {
-  		if (this.scrollTop > this.clientHeight) {
-  			head_main.addClass('sfonom');
-  		} else {
-  			head_main.removeClass('sfonom');
-  		}
+	  $(document).scroll(function () {
+      if (head_main.length > 0) {
+        if ($(document).scrollTop() > (slideH - 200)) {
+          head_main.addClass('sfonom');
+        } else {
+          head_main.removeClass('sfonom');
+        }
+      }
 		});
 		// this.scrollHeight - высота блока
 		// this.scrollTop - текущая позиция

@@ -1,3 +1,20 @@
+@media (max-width: 425px) {
+  .pgindex .wrapper {
+    height: auto !important;
+  }
+  .pgindex .slide_01 {
+    height: 100vh !important;
+  }
+  .pgindex .swiper-container_ind {
+    height: auto !important;
+  }
+  .pgindex {
+    height: auto !important;
+  }
+}
+.menu-open .pgindex {
+  height: 100% !important;
+}
 .pgindex .slide_01,
 .pgpartners .slcont-slide.slide_01,
 .pgbonus .slide_01,
