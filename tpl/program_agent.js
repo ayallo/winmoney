@@ -37,17 +37,19 @@ function initSwiper() {
         program_ind_Swiper = new Swiper ('.swiper-container_ind', {
           direction: 'vertical', loop: false, mousewheelControl: true, slidesPerView: 1,
         });
+        $(".footer").hide();
         program_ind_Swiper.on('slideChangeStart', function (e) {
             $(".head__nav").removeClass("sfonom");
             $(".head__but").hide();
-            $(".footer").hide();
             $(".main__menu").hide();
             if (e.activeIndex>=1) {
                 $(".openschet").show();
                 $(".head__nav").addClass("sfonom");
                 $(".main__menu").show();
             }
-            if(e.activeIndex==4){ $(".footer").css({"display":"flex"}); }
+            if(e.activeIndex==2){ $(".footer").css({"display":"flex"}); } else {
+              $(".footer").hide();
+            }
         });
     } else if (screenWidth <= 979 && program_ind_Swiper != undefined) {
         program_ind_Swiper.destroy();
@@ -186,7 +188,7 @@ if (($(".swiper-container_ind").length > 0)) {
       wheelPropagation: true,
       swipePropagation: true
     });
-    
+
     $('.about-lastslide-wrapper').scrollTop(1);
 
     $('.about-lastslide-wrapper').scroll(function(e) {

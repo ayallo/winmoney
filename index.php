@@ -47,6 +47,7 @@ if($page=='index'){
   $html .= '<div class="wrapper">';
   $html .= get_shablon($tpl.'/head_nav.html');
   $html .= get_shablon($tpl.'/index.html');
+  $html .= get_shablon($tpl.'/footer.html');
   $html .= '</div>';
   $m[1][]='%SCRIPT%'; $m[2][] = get_shablon($tpl.'/program_agent.js');
 }

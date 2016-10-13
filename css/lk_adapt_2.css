@@ -2,6 +2,15 @@
   left: auto;
   right: 0;
 }
+.lk_account #dLabel .fs_b {
+  color: #555555 !important;
+  margin-right: 0;
+  font-size: 20px !important;
+  cursor: pointer;
+}
+.relative {
+  position: relative;
+}
 .navbar {
   z-index: 10000;
 }
