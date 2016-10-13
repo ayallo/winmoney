@@ -543,7 +543,7 @@
 }
 .pganalytics_video .video_div .video_show .video_close {
   content: "";
-  background: url("../img/close_button.png") no-repeat;
+  background: url("../img/close_button_wh.png") no-repeat;
   -webkit-background-size: cover;
      -moz-background-size: cover;
        -o-background-size: cover;
