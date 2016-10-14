@@ -444,6 +444,7 @@
                         & h2 {
                             font-size:20px;
                             color: #fff;
+                            margin-top: 0;
                         }
                     }
 
@@ -515,6 +516,10 @@
                     flex-wrap: nowrap;
                     background: #fff;
 
+                    .more-info {
+                        display: none;
+                    }
+
                     & .res {
                         font-size: 48px;
                         color: #2675eb;
@@ -530,9 +535,10 @@
                         color: #2675eb;
                         margin-top: 20px;
                         margin-bottom: 10px;
+                        cursor: pointer;
                     }
 
-                    & .hide {
+                    & .more-info {
                         display: none;
 
                         & table {
