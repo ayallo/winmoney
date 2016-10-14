@@ -16,7 +16,11 @@
 
       if (($(".swiper-container_re").length > 0)){
         var reward_Swiper = new Swiper ('.swiper-container_re', {
-          direction: 'vertical', loop: false, mousewheelControl: true, slidesPerView: 1,
+          direction: 'vertical',
+          loop: false,
+          mousewheelControl: true,
+          slidesPerView: 1,
+          mousewheelControl: true
         });
         reward_Swiper.on('slideChangeStart', function (e) {
           //$(".statpartner").show();
@@ -33,8 +37,11 @@
       }
       if (($(".swiper-container_pi1").length > 0)){
         var bonus_Swiper = new Swiper ('.swiper-container_pi1', {
-          direction: 'vertical',loop: false,
-          mousewheelControl: true,slidesPerView: 1,
+          direction: 'vertical',
+          loop: false,
+          mousewheelControl: true,
+          slidesPerView: 1,
+          mousewheelControl: true
         });
         bonus_Swiper.on('slideChangeStart', function (e) {
           $(".head__nav").removeClass("sfonom");

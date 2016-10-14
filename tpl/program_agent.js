@@ -35,7 +35,11 @@ function initSwiper() {
     var screenWidth = $(window).width();
     if(screenWidth > 979 && program_ind_Swiper == undefined) {
         program_ind_Swiper = new Swiper ('.swiper-container_ind', {
-          direction: 'vertical', loop: false, mousewheelControl: true, slidesPerView: 1,
+          direction: 'vertical',
+          loop: false,
+          mousewheelControl: true,
+          keyboardControl: true,
+          slidesPerView: 1
         });
         $(".footer").hide();
         program_ind_Swiper.on('slideChangeStart', function (e) {
@@ -152,6 +156,7 @@ if (($(".swiper-container_ind").length > 0)) {
       var program_abo_Swiper = new Swiper ('.swiper-container_abo', {
         direction: 'vertical',
         loop: false,
+        keyboardControl: true,
         mousewheelControl: true
       });
       //program_abo_Swiper.slideTo(0, 1);
@@ -210,7 +215,11 @@ if (($(".swiper-container_ind").length > 0)) {
 
     if (($(".swiper-container_reg").length > 0)){
       var program_reg_Swiper = new Swiper ('.swiper-container_reg', {
-        direction: 'vertical', loop: false, mousewheelControl: true, slidesPerView: 1,
+        direction: 'vertical', 
+        loop: false, 
+        mousewheelControl: true,
+        slidesPerView: 1,
+        keyboardControl: true
       });
       program_reg_Swiper.on('slideChangeStart', function (e) {
           $(".head__nav").removeClass("sfonom");
@@ -232,7 +241,11 @@ if (($(".swiper-container_ind").length > 0)) {
     }
     if (($(".swiper-container_cpa").length > 0)){
       var program_cpa_Swiper = new Swiper ('.swiper-container_cpa', {
-        direction: 'vertical', loop: false, mousewheelControl: true, slidesPerView: 1,
+        direction: 'vertical', 
+        loop: false,
+        mousewheelControl: true,
+        keyboardControl: true,
+        slidesPerView: 1
       });
       program_cpa_Swiper.on('slideChangeStart', function (e) {
           $(".head__nav").removeClass("sfonom");
@@ -255,7 +268,8 @@ if (($(".swiper-container_ind").length > 0)) {
         direction: 'vertical',
         loop: false,
         mousewheelControl: true,
-        slidesPerView: 1,
+        keyboardControl: true,
+        slidesPerView: 1
       });
       program_agent_Swiper.on('slideChangeStart', function (e) {
           $(".head__nav").removeClass("sfonom");
