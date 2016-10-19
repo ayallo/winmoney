@@ -15,7 +15,6 @@
   -webkit-align-items: center;
      -moz-box-align: center;
       -ms-flex-align: center;
-              -ms-grid-row-align: center;
           align-items: center;
 }
 .fly__profile .right .pass-code img {
@@ -47,7 +46,6 @@
   -webkit-align-items: flex-start;
      -moz-box-align: start;
       -ms-flex-align: start;
-              -ms-grid-row-align: flex-start;
           align-items: flex-start;
   overflow-y: auto;
   overflow-x: hidden;
@@ -1555,7 +1553,6 @@
     -webkit-align-items: center;
        -moz-box-align: center;
         -ms-flex-align: center;
-                -ms-grid-row-align: center;
             align-items: center;
   }
   .lk_dashboard .fly__profile .right .profile-body .profile-body-form {

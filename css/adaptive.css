@@ -202,7 +202,6 @@
     -webkit-align-items: flex-start !important;
        -moz-box-align: start !important;
         -ms-flex-align: start !important;
-                -ms-grid-row-align: flex-start !important;
             align-items: flex-start !important;
   }
   .slide_02 .center,
@@ -888,7 +887,6 @@
     -webkit-align-items: flex-start;
        -moz-box-align: start;
         -ms-flex-align: start;
-                -ms-grid-row-align: flex-start;
             align-items: flex-start;
   }
   .pgprogramagent .main__footer-block {
@@ -1130,7 +1128,6 @@
     -webkit-align-items: flex-start !important;
        -moz-box-align: start !important;
         -ms-flex-align: start !important;
-                -ms-grid-row-align: flex-start !important;
             align-items: flex-start !important;
   }
   .slide_02 .center,
@@ -1876,7 +1873,6 @@
     -webkit-align-items: flex-start;
        -moz-box-align: start;
         -ms-flex-align: start;
-                -ms-grid-row-align: flex-start;
             align-items: flex-start;
   }
   .pgprogramagent .main__footer-block {
@@ -2051,7 +2047,6 @@
     -webkit-align-items: flex-start !important;
        -moz-box-align: start !important;
         -ms-flex-align: start !important;
-                -ms-grid-row-align: flex-start !important;
             align-items: flex-start !important;
   }
   .slide_02 .center,
@@ -2797,7 +2792,6 @@
     -webkit-align-items: flex-start;
        -moz-box-align: start;
         -ms-flex-align: start;
-                -ms-grid-row-align: flex-start;
             align-items: flex-start;
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
@@ -2978,7 +2972,6 @@
     -webkit-align-items: flex-start !important;
        -moz-box-align: start !important;
         -ms-flex-align: start !important;
-                -ms-grid-row-align: flex-start !important;
             align-items: flex-start !important;
   }
   .slide_02 .center,
@@ -3548,7 +3541,6 @@
     -webkit-align-items: flex-start;
        -moz-box-align: start;
         -ms-flex-align: start;
-                -ms-grid-row-align: flex-start;
             align-items: flex-start;
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
@@ -3853,7 +3845,6 @@
     -webkit-align-items: flex-start;
        -moz-box-align: start;
         -ms-flex-align: start;
-                -ms-grid-row-align: flex-start;
             align-items: flex-start;
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
@@ -4288,7 +4279,6 @@
     -webkit-align-items: flex-start !important;
        -moz-box-align: start !important;
         -ms-flex-align: start !important;
-                -ms-grid-row-align: flex-start !important;
             align-items: flex-start !important;
   }
   .slide_02 .center,
@@ -4534,6 +4524,7 @@
   .pgabout .slide_03 .center {
     -webkit-align-self: center;
         -ms-flex-item-align: center;
+                -ms-grid-row-align: center;
             align-self: center;
     position: relative;
   }
@@ -5115,7 +5106,6 @@
     -webkit-align-items: flex-start;
        -moz-box-align: start;
         -ms-flex-align: start;
-                -ms-grid-row-align: flex-start;
             align-items: flex-start;
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
@@ -5349,7 +5339,6 @@
     -webkit-align-items: flex-start;
        -moz-box-align: start;
         -ms-flex-align: start;
-                -ms-grid-row-align: flex-start;
             align-items: flex-start;
   }
   .pgpartners_reward .slide_01 .center,
@@ -5473,7 +5462,6 @@
     -webkit-align-items: flex-start;
        -moz-box-align: start;
         -ms-flex-align: start;
-                -ms-grid-row-align: flex-start;
             align-items: flex-start;
   }
   .slide .centerblock_540 {

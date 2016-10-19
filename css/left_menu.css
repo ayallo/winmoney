@@ -289,11 +289,22 @@
       -ms-flex-pack: distribute;
           justify-content: space-around;
 }
+.fly__menu .left .menu-footer .lang:hover{
+    background-color: #478df7;
+    color: #292e34;
+
+}
+.fly__menu .left .menu-footer .lang:hover .lang-drop{
+    display: block;
+}
 .fly__menu .left .menu-footer .lang {
-  font-size: 13px;
-  color: #9399a1;
-  background: #1c1f24;
+  font-size: 10px;
+    cursor: pointer;
+    background-color: #478df7;
+    color: #292e34;
+    line-height: 20px;
   padding: 0 8px;
+    position: relative;
   -webkit-border-radius: 10px;
      -moz-border-radius: 10px;
           border-radius: 10px;
@@ -329,7 +340,7 @@
   height: 16px;
   position: absolute;
   left: -18px;
-  top: 1px;
+  top: -1px;
   background-image: url("../img/social_vk_menu.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -343,7 +354,7 @@
   height: 16px;
   position: absolute;
   left: -18px;
-  top: 1px;
+  top: -1px;
   background-image: url("../img/footer_soc_vk_r.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -360,7 +371,7 @@
   height: 16px;
   position: absolute;
   left: -18px;
-  top: 1px;
+  top: -2px;
   background-image: url("../img/social_fb_menu.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -374,8 +385,63 @@
   height: 16px;
   position: absolute;
   left: -18px;
-  top: 1px;
+  top: -2px;
   background-image: url("../img/footer_soc_fc_r.png");
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.lang-drop li{
+    list-style: none;
+    margin: 0;
+}
+.lang-drop a:after{
+    content: '';
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAKCAYAAADVTVykAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RjJCRTcwMDg5NUQ2MTFFNjlDQTE4NUE3NjgzRDc4NDciIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RjJCRTcwMDk5NUQ2MTFFNjlDQTE4NUE3NjgzRDc4NDciPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpGMkJFNzAwNjk1RDYxMUU2OUNBMTg1QTc2ODNENzg0NyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpGMkJFNzAwNzk1RDYxMUU2OUNBMTg1QTc2ODNENzg0NyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PifjGuQAAADcSURBVHjaxNPLCkFRFMbx7ZKZkQmew3WgGCgT1/ACEs/gAQwZKo9gIi+ACVMjRRnhBVxGSvmvWkqnM5GO89WvTqe911r7XDyZXMHYJICKSiOq977JHWdsMMUMD+sir83GKrboYIk8gvB8KYSi1uhqzZq1mf/j2oc+Smjrxl8ipz2oMbIYIYkentYnIM1TuuDX5naRmgmt37e+gjrKevqrcS63jz719wDycQ3QwsU4n4v2GkpvGaCBPVbmf1ljh6ZXf7WJ+X+kZ0UGiGPhwgBzxGSAMI4uDHBC5CXAAHQZKLqDg7HoAAAAAElFTkSuQmCC);
+    width: 32px;
+    height: 10px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: inline-block;
+}
+.lang-drop a:hover:after{
+    display: none;
+}
+.lang-drop a:hover{
+    background: #9399a1;
+    color: #292e34 !important;
+}
+.lang-drop a{
+    -webkit-transition: color 0s;
+    -o-transition: color 0s;
+    -moz-transition: color 0s;
+    transition: color 0s;
+    width: 32px;
+    line-height: 20px;
+    display: block;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    font-family: "Open Sans";
+    font-size: 10px;
+    color: #9399a1;
+    text-align: center;
+    background-clip: padding-box;
+    position: relative;
+
+}
+.lang-drop ul{
+    max-height: 100%;
+    width: 200px;
+    overflow: auto;
+}
+.lang-drop{
+    display: none;
+    position: absolute;
+    width: 32px;
+    left: 0;
+    bottom: 100%;
+    height: 80px;
+    overflow: hidden;
 }

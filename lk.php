@@ -9,13 +9,15 @@ $html = ''; $m=array();
 if($page=='registration'||$page=='popup1'||$page=='popup2'){
   $html .= get_shablon($tpl.'/lk_'.$page.'.html');
 }
-if($page=='dashboard'||$page=='account'||$page=='payments'||$page=='advertising'||$page=='advertising_one'||$page=='documents'){
-  $m[1][]='%CSS%'; $m[2][] = '';
+if($page=='document'||$page=='dashboard'||$page=='account'||$page=='payments'||$page=='advertising'||$page=='advertising_one'||$page=='documents'){
+    $m[1][]='%CSS%'; $m[2][] = '<link rel="stylesheet" href="css/pg_accounts.css"> <link rel="stylesheet" href="css/pages.css">';
   $m[1][]='%SCRIPT%'; $m[2][] = '';
   $m[1][]='%DATE%'; $m[2][] = date_rus();
   $html .= get_shablon($tpl.'/head.html',$m);
   $html = str_replace('%TITLE%',$page,$html);
-
+    if ($page=='document') {
+        $html .= '<body class="pgaccounts dd__pgaccounts pgdocument">';
+    }
   if ($page=='account') {
       $html .= '<body class="lk_'.$page.' lk_account_edit">';
   } else {
@@ -24,6 +26,7 @@ if($page=='dashboard'||$page=='account'||$page=='payments'||$page=='advertising'
   $html .= get_shablon($tpl.'/head_nav.html',$m);
   $html .= get_shablon($tpl.'/lk_'.$page.'.html');
   $html .= get_shablon($tpl.'/footer.html');
+    $m[1][]='%SCRIPT%'; $m[2][] = get_shablon($tpl.'/document.js');
 }
 
 if(!count($m)){ $m[1][]='%SCRIPT%'; $m[2][]=''; $m[1][]='%CSS%'; $m[2][]='';}

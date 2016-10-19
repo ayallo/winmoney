@@ -885,7 +885,6 @@ p.bullet {
   -webkit-align-items: flex-start;
      -moz-box-align: start;
       -ms-flex-align: start;
-              -ms-grid-row-align: flex-start;
           align-items: flex-start;
 }
 .pgabout .centerblock.div1row_imgbot p {
@@ -1361,7 +1360,6 @@ p.bullet {
   -webkit-align-items: center;
      -moz-box-align: center;
       -ms-flex-align: center;
-              -ms-grid-row-align: center;
           align-items: center;
 }
 .pgbonus_get .slcont-slide .slide_06__head table td {
@@ -1384,7 +1382,6 @@ p.bullet {
   -webkit-align-items: center;
      -moz-box-align: center;
       -ms-flex-align: center;
-              -ms-grid-row-align: center;
           align-items: center;
 }
 .pganalytics_video .col.video .item {

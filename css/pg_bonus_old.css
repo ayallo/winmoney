@@ -119,7 +119,6 @@ a .getbonus {
   -webkit-align-items: baseline;
      -moz-box-align: baseline;
       -ms-flex-align: baseline;
-              -ms-grid-row-align: baseline;
           align-items: baseline;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
@@ -182,6 +181,7 @@ a .getbonus {
           flex-basis: auto;
   -webkit-align-self: auto;
       -ms-flex-item-align: auto;
+              -ms-grid-row-align: auto;
           align-self: auto;
   margin: 0 auto;
 }
@@ -239,7 +239,6 @@ a .getbonus {
   -webkit-align-items: baseline;
      -moz-box-align: baseline;
       -ms-flex-align: baseline;
-              -ms-grid-row-align: baseline;
           align-items: baseline;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
@@ -300,6 +299,7 @@ a .getbonus {
           flex-basis: auto;
   -webkit-align-self: auto;
       -ms-flex-item-align: auto;
+              -ms-grid-row-align: auto;
           align-self: auto;
   margin: 0 auto;
   margin-top: 150px;

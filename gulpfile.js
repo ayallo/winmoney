@@ -1,5 +1,5 @@
 var gulp = require('gulp');
-var gutil = require('gulp-util');
+//var gutil = require('gulp-util');
 var less = require('gulp-less');
 var path = require('path');
 var connect = require('gulp-connect');
@@ -21,10 +21,11 @@ gulp.task('less', function () {
     // .pipe(connect.reload());
 });
 gulp.task('connect', function() {
-  // connect.server({
-  //   root: './',
-  //   livereload: true
-  // });
+   connect.server({
+     root: './',
+     port: 8888,
+     livereload: true
+   });
 });
 gulp.task('html', function() {
   return gulp.src('./*.html');

@@ -1,0 +1,83 @@
+<div class="fly__calculator-panel">
+  <div class="right">
+    <div class="right-wrap">
+      <div class="calcbody">
+        <div class="head">
+          <h2>Калькулятор трейдера</h2>
+          <div class="btn_close_left fly__calculator-close">Закрыть</div>
+        </div>
+        <form method="POST" class="calc_trajd">
+          <table style="width:100%;">
+          <tr>
+            <td colspan="2" class="head">Инструмент</td>
+          </tr>
+          <tr>
+            <td colspan="2" class="">
+              <div class="fi_select black">
+                <input type="hidden" name="calcinstrument" value="0.5" id="sel_1">
+                <div class="tx sel">GBPUSD</div>
+                <div class="pn">
+                  <div class="it" id="calcinstrument_0.5">GBPUSD</div>
+                  <div class="it" id="calcinstrument_0.8">GBPUSD2</div>
+                  <div class="it" id="calcinstrument_0.9">GBPUSD3</div>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="head" width="50%">Плечо</td>
+            <td class="head" width="50%">Валюта</td>
+          </tr>
+          <tr>
+            <td class="">
+              <div class="fi_select black">
+                <input type="hidden" name="calcplecho" value="1.5" id="sel_2">
+                <div class="tx sel">1:5</div>
+                <div class="pn">
+                  <div class="it" id="calcplecho_1.5">1:5</div>
+                  <div class="it" id="calcplecho_1.4">1:4</div>
+                  <div class="it" id="calcplecho_1.3">1:3</div>
+                </div>
+              </div>
+            </td>
+            <td class="">
+              <div class="fi_select black">
+                <input type="hidden" name="calcvaluta" value="0" id="sel_3">
+                <div class="tx">валюта</div>
+                <div class="pn">
+                  <div class="it" id="calcvaluta_1">USD</div>
+                  <div class="it" id="calcvaluta_0.6">RUB</div>
+                  <div class="it" id="calcvaluta_0.9">JUA</div>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="head">ЛОТ</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="input">
+              <input type="text" value="" placeholder=" ">
+            </td>
+            <td></td>
+          </tr>
+        </table></form>
+      </div>
+      <div class="calcresult">
+        <div class="res">25.75 USD</div>
+        <div class="leg">маржа</div>
+        <div class="hide">
+          <table>
+            <tr><td>Размер контракта</td><td></td><td>80000 AUD</td></tr>
+            <tr><td>Стоимость пункта</td><td></td><td>5.16 EUR</td></tr>
+            <tr><td>Swap short (pips)</td><td>-0.31 pips</td><td>-1.62 EUR</td></tr>
+            <tr><td>Swap long (pips)</td><td>10 pips</td><td>51.6 EUR</td></tr>
+            <tr><td>Спред</td><td>8 pips</td><td>6.16 EUR</td></tr>
+          </table>
+        </div>
+        <div class="but button02 gray calcresult_more">подробнее</div>
+      </div>
+    </div>
+  </div>
+</div>

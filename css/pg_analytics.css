@@ -660,7 +660,6 @@
   -webkit-align-items: baseline;
      -moz-box-align: baseline;
       -ms-flex-align: baseline;
-              -ms-grid-row-align: baseline;
           align-items: baseline;
 }
 .pganalytics_calendar .calendar_table .row .border .col:nth-child(2) div {
