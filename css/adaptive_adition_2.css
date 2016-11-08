@@ -1,6 +1,14 @@
 .pgnews_one .item p,
-.pgnews_all .item p {
+.pgnews_all .item p,
+.pganalytics_article .item p {
   font-family: "PT Serif", serif;
+}
+.pganalytics_article .wrapper_page {
+  min-height: 100%;
+  margin-bottom: -55px;
+}
+.pganalytics_article .push {
+  height: 55px;
 }
 .pgprogramagent .slide .centerblock {
   width: 80%;

@@ -631,8 +631,9 @@ if($page=='analytics_articles'||$page=='analytics_article'||$page=='analytics_ca
   $html .= '<div class="wrapper_page">';
   $html .= get_shablon($tpl.'/head_nav.html',$m);
   $html .= get_shablon($tpl.'/'.$page.'.html');
-  $html .= get_shablon($tpl.'/footer.html');
+  $html .= '<div class="push"></div>';
   $html .= '</div>';
+  $html .= get_shablon($tpl.'/footer.html');
 }
 if($page=='news_all'||$page=='news_one'){
   $m[1][]='%CSS%'; $m[2][] = '<link rel="stylesheet" href="css/pg_analytics.css">';
