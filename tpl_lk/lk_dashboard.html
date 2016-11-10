@@ -99,22 +99,38 @@
       <div class="row marginb_20 marginb_40 lk__adapt-radio">
         <input type="HIDDEN" name="firperevod" id="firperevod" value="2">
         <div class="col-xs-4 fs_s20 fs_Pragmatica col-mini lk__dash-h2" style="padding-left:15px;">Перевод</div>
-        <div class="col-xs-3 col-mini fi_radio_wrap"><span class="fi_radio" id="firperevod_1"></span>Счет</div>
-        <div class="col-xs-5 col-mini fi_radio_wrap"><span class="fi_radio checked" id="firperevod_2"></span>Кошелек</div>
+        <!--<div class="col-xs-3 col-mini fi_radio_wrap"><span class="fi_radio" id="firperevod_1"></span>Счет</div>-->
+        <!--<div class="col-xs-5 col-mini fi_radio_wrap"><span class="fi_radio checked" id="firperevod_2"></span>Кошелек</div>-->
       </div>
 
       <div class="row marginb_20">
-        <div class="col-xs-12 text_head fs_w400">счёт отправитель</div>
+        <div class="col-xs-12 text_head fs_w400">счёт отправителя</div>
       </div>
       <div class="row marginb_20">
         <div class="col-xs-12 fs_w400">
           <div class="dropdown fi_select">
             <input type="hidden" name="perevodscotpr" id="perevodscotpr" value="1">
             <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="tx">Cent</span><span class="caret"></span></button>
-            <ul class="dropdown-menu" aria-labelledby="dLabel">
-              <li><a href="#" id="perevodscotpr_1">Cent</a></li>
-              <li><a href="#" id="perevodscotpr_2">Dollars</a></li>
-              <li><a href="#" id="perevodscotpr_3">Russian</a></li>
+            <ul class="dropdown-menu dropdown-acc-list" aria-labelledby="dLabel">
+              <li>
+                <div class="acc-item">
+                  <div class="acc-caption">Кошельки</div>
+                  <a href="#" id="perevodscotpr_1">#334420</a>
+                  <a href="#" id="perevodscotpr_2">#334421</a>
+                </div>
+              </li>
+              <li>
+                <div class="acc-item">
+                  <div class="acc-caption">Торговые счета</div>
+                  <a href="#" id="perevodscotpr_3">#334425</a>
+                </div>
+              </li>
+              <li>
+                <div class="acc-item">
+                  <div class="acc-caption">Демо счета</div>
+                  <a href="#" id="perevodscotpr_4">#334426</a>
+                </div>
+              </li>
             </ul>
           </div>
         </div>
@@ -164,12 +180,14 @@
         <div class="bl_video_play"></div>
       </div>
       <h4>Подписка</h4>
-      <p>Оставьте ваш e-mail, чтобы получать нашу аналитику</p>
-      <div class="input">
-        <input type="TEXT" name="" class="fi_input regular border_bottom lk__adapt-email validation" placeholder="Ваш E-mail" data-valid-email>
-        <div class="input__message"></div>
-      </div>
-
+      <p>Оставьте ваш e-mail, чтобы получать нашу аналитику</p>
+      <form action="" method="POST">
+	      <div class="input">
+	        <input type="TEXT" name="" class="fi_input regular border_bottom lk__adapt-email validation" placeholder="Ваш E-mail" data-valid-email>
+	        <input type="submit" class="input-submit-arrow">
+	        <div class="input__message"></div>
+	      </div>
+      </form>
     </div>
   </div>
 
@@ -187,10 +205,26 @@
           <div class="dropdown fi_select">
             <input type="hidden" name="popolnenie_schet" id="popolnenieschet" value="0">
             <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="tx nosel">Выберите счёт</span><span class="caret"></span></button>
-            <ul class="dropdown-menu" aria-labelledby="dLabel">
-              <li><a href="#" id="popolnenieschet_1">Cent</a></li>
-              <li><a href="#" id="popolnenieschet_2">Dollars</a></li>
-              <li><a href="#" id="popolnenieschet_3">Russian</a></li>
+            <ul class="dropdown-menu dropdown-acc-list" aria-labelledby="dLabel">
+              <li>
+                <div class="acc-item">
+                  <div class="acc-caption">Кошельки</div>
+                  <a href="#" id="popolnenieschet_1">#334420</a>
+                  <a href="#" id="popolnenieschet_2">#334421</a>
+                </div>
+              </li>
+              <li>
+                <div class="acc-item">
+                  <div class="acc-caption">Торговые счета</div>
+                  <a href="#" id="popolnenieschet_3">#334425</a>
+                </div>
+              </li>
+              <li>
+                <div class="acc-item">
+                  <div class="acc-caption">Демо счета</div>
+                  <a href="#" id="popolnenieschet_4">#334426</a>
+                </div>
+              </li>
             </ul>
           </div>
         </div>
@@ -208,11 +242,39 @@
           <div class="dropdown fi_select">
             <input type="hidden" name="popolnenie_sysplat" id="popolneniesysplat" value="0">
             <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="tx nosel">Выберите систему платежей</span><span class="caret"></span></button>
-            <ul class="dropdown-menu" aria-labelledby="dLabel">
-              <li><a href="#" id="popolneniesysplat_1">WebMoney</a></li>
-              <li><a href="#" id="popolneniesysplat_2">Яндекс.Деньги</a></li>
-              <li><a href="#" id="popolneniesysplat_3">Visa</a></li>
-              <li><a href="#" id="popolneniesysplat_4">Maestro</a></li>
+            <ul class="dropdown-menu dropdown-payments" aria-labelledby="dLabel">
+              <li>
+              	<div class="dropdown-payments__item">
+              		<div class="dropdown-payments__img">
+              			<img src="./img/payments/webmoney.png">
+              		</div>
+              		<a href="#" id="popolneniesysplat_1">WebMoney</a>
+              	</div>
+              </li>
+              <li>
+              	<div class="dropdown-payments__item">
+              		<div class="dropdown-payments__img">
+              			<img src="./img/payments/yandex-money.png">
+              		</div>
+             		<a href="#" id="popolneniesysplat_2">Яндекс.Деньги</a>
+             	</div>
+              </li>
+              <li>
+              	<div class="dropdown-payments__item">
+              		<div class="dropdown-payments__img">
+              			<img src="./img/payments/visa.png">
+              		</div>
+              		<a href="#" id="popolneniesysplat_3">Visa</a>
+              	</div>
+              </li>
+              <li>
+              	<div class="dropdown-payments__item">
+              		<div class="dropdown-payments__img">
+              			<img src="./img/payments/maestro.png">
+              		</div>
+              		<a href="#" id="popolneniesysplat_4">Maestro</a>
+              	</div>
+              </li>
             </ul>
           </div>
         </div>

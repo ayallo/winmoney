@@ -11,6 +11,7 @@
 <script src="js/ie10-viewport-bug-workaround.js"></script-->
 <script src="js/jquery.scrollbar/jquery.scrollbar.min.js"></script>
 <script src="js/Swiper-3.3.1/dist/js/swiper.min.js"></script>
+<script src="js/jquery.airStickyBlock.js"></script>
 <script>
   $(function () {
     /*payments переключение таблицы-плитки*/
@@ -563,12 +564,18 @@
         suppressScrollX: true
     });
 
-  /*
+    // страница счета - фиксация левого блока
+    $('.airSticky').airStickyBlock({
+        offsetTop: 68
+    });
+
+
+    /*
       $('.profile-body.scroller').perfectScrollbar({
           wheelSpeed: 0.3,
           suppressScrollX: true
       });
-  */
+    */
 
     /* сортировка div таблиц */
     // $('.row_head .col').click(function(){

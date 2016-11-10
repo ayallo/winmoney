@@ -1004,6 +1004,29 @@ a {
 .scroll-wrapper > .scroll-content {
   overflow-x: hidden !important;
 }
+.item.subscribe form {
+  position: relative;
+}
+.item.subscribe form input {
+  padding-bottom: 6px;
+}
+.item form .input-submit-arrow {
+  padding: 0 10px;
+  margin: 0 !important;
+  width: 12px !important;
+  height: 12px;
+  position: absolute;
+  top: 7px;
+  right: -5px;
+  background: url(../img/icon-right-blue.png) no-repeat center;
+  -webkit-background-size: contain;
+     -moz-background-size: contain;
+       -o-background-size: contain;
+          background-size: contain;
+  color: transparent;
+  cursor: pointer;
+  border: none;
+}
 @media (min-height: 801px) {
   .pgprogram_agent_partners .calc-fixed,
   .pgpartners_net .calc-fixed {

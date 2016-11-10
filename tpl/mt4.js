@@ -219,8 +219,8 @@ if (($(".swiper-container_ind").length > 0)) {
 
     if (($(".swiper-container_reg").length > 0)){
       var program_reg_Swiper = new Swiper ('.swiper-container_reg', {
-        direction: 'vertical', 
-        loop: false, 
+        direction: 'vertical',
+        loop: false,
         mousewheelControl: true,
         slidesPerView: 1,
         keyboardControl: true
@@ -245,7 +245,7 @@ if (($(".swiper-container_ind").length > 0)) {
     }
     if (($(".swiper-container_cpa").length > 0)){
       var program_cpa_Swiper = new Swiper ('.swiper-container_cpa', {
-        direction: 'vertical', 
+        direction: 'vertical',
         loop: false,
         mousewheelControl: true,
         keyboardControl: true,
