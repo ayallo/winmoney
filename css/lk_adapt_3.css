@@ -122,7 +122,6 @@ form .input-submit-arrow {
   -webkit-align-items: center;
      -moz-box-align: center;
       -ms-flex-align: center;
-              -ms-grid-row-align: center;
           align-items: center;
 }
 .fly__profile .right .pass-code img {
@@ -154,7 +153,6 @@ form .input-submit-arrow {
   -webkit-align-items: flex-start;
      -moz-box-align: start;
       -ms-flex-align: start;
-              -ms-grid-row-align: flex-start;
           align-items: flex-start;
   overflow-y: auto;
   overflow-x: hidden;
@@ -1654,6 +1652,9 @@ form .input-submit-arrow {
   .fly__feedback-panel .right-wrap .feedbackpanel .feedbackbdody1:after {
     height: 40px;
   }
+  .profile-menu__item span {
+    font-size: 14px;
+  }
 }
 @media (max-width: 570px) {
   .lk_dashboard .fly__profile .right .profile-menu div a {
@@ -1668,7 +1669,6 @@ form .input-submit-arrow {
     -webkit-align-items: center;
        -moz-box-align: center;
         -ms-flex-align: center;
-                -ms-grid-row-align: center;
             align-items: center;
   }
   .lk_dashboard .fly__profile .right .profile-body .profile-body-form {
@@ -1680,6 +1680,9 @@ form .input-submit-arrow {
   }
   .lk_dashboard .fly__profile .right .profile-body .profile-body-form .in_profile_pass_p {
     margin: 0 auto;
+  }
+  .profile-menu__item span {
+    display: none;
   }
 }
 @media (max-width: 480px) {
