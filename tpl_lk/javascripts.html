@@ -12,8 +12,13 @@
 <script src="js/jquery.scrollbar/jquery.scrollbar.min.js"></script>
 <script src="js/Swiper-3.3.1/dist/js/swiper.min.js"></script>
 <script src="js/jquery.airStickyBlock.js"></script>
+<script src="js/select2.min.js"></script>
 <script>
   $(function () {
+
+    // select2 для страницы открытия счета
+    $(".open-acc__select").select2();
+
     /*payments переключение таблицы-плитки*/
     $(window).resize(function(){
       if ($( window ).width()>=768){

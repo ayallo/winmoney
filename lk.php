@@ -9,8 +9,8 @@ $html = ''; $m=array();
 if($page=='registration'||$page=='popup1'||$page=='popup2'){
   $html .= get_shablon($tpl.'/lk_'.$page.'.html');
 }
-if($page=='document'||$page=='dashboard'||$page=='account'||$page=='payments'||$page=='advertising'||$page=='advertising_one'||$page=='documents'){
-    $m[1][]='%CSS%'; $m[2][] = '<link rel="stylesheet" href="css/pg_accounts.css"> <link rel="stylesheet" href="css/pages.css">';
+if($page=='document'||$page=='dashboard'||$page=='account'||$page=='payments'||$page=='advertising'||$page=='advertising_one'||$page=='documents'||$page='new'){
+  $m[1][]='%CSS%'; $m[2][] = '<link rel="stylesheet" href="css/pg_accounts.css"> <link rel="stylesheet" href="css/pages.css">';
   $m[1][]='%SCRIPT%'; $m[2][] = '';
   $m[1][]='%DATE%'; $m[2][] = date_rus();
   $html .= get_shablon($tpl.'/head.html',$m);
