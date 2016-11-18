@@ -21,6 +21,16 @@
         minimumResultsForSearch: Infinity
     });
 
+    $('.open-acc__select').on('select2:open', function (evt) {
+    	var row = $(evt.target).closest('.open-acc__row');
+    	row.addClass('row-active');
+	});
+
+	$('.open-acc__select').on('select2:close', function (evt) {
+		var row = $(evt.target).closest('.open-acc__row');
+    	row.removeClass('row-active');
+	});
+
     /*payments переключение таблицы-плитки*/
     $(window).resize(function(){
       if ($( window ).width()>=768){
