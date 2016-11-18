@@ -17,7 +17,9 @@
   $(function () {
 
     // select2 для страницы открытия счета
-    $(".open-acc__select").select2();
+    $(".open-acc__select").select2({
+        minimumResultsForSearch: Infinity
+    });
 
     /*payments переключение таблицы-плитки*/
     $(window).resize(function(){
