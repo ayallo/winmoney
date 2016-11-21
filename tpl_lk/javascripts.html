@@ -21,14 +21,31 @@
         minimumResultsForSearch: Infinity
     });
 
+    var rows = $('.open-acc__row');
+
+    rows.hover(function(e) {
+    	rows.removeClass('row-active');
+    	$(this).addClass('row-active');
+	});
+
+
+    rows.mouseleave(function(e) {
+
+    	var selectActive = rows.hasClass('select-active');
+    	if (!selectActive) {
+    		rows.removeClass('row-active');
+    	}
+	});
+
+
     $('.open-acc__select').on('select2:open', function (evt) {
     	var row = $(evt.target).closest('.open-acc__row');
-    	row.addClass('row-active');
+    	row.addClass('row-active select-active');
 	});
 
 	$('.open-acc__select').on('select2:close', function (evt) {
-		var row = $(evt.target).closest('.open-acc__row');
-    	row.removeClass('row-active');
+    	var row = $(evt.target).closest('.open-acc__row');
+    	row.removeClass('select-active');
 	});
 
     /*payments переключение таблицы-плитки*/
