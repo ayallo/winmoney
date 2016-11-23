@@ -140,7 +140,7 @@
     display: none;
   }
 }
-@media screen and (max-width: 979px) {
+@media (max-width: 1035px) {
   .nav {
     display: none;
   }
