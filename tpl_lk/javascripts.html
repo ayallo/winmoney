@@ -13,11 +13,17 @@
 <script src="js/Swiper-3.3.1/dist/js/swiper.min.js"></script>
 <script src="js/jquery.airStickyBlock.js"></script>
 <script src="js/select2.min.js"></script>
+<script src="js/ticket.js"></script>
+
 <script>
   $(function () {
 
     // select2 для страницы открытия счета
     $(".open-acc__select").select2({
+        minimumResultsForSearch: Infinity
+    });
+
+    $(".tickets-form__select").select2({
         minimumResultsForSearch: Infinity
     });
 
@@ -696,5 +702,6 @@ $(function(){
   });
 });
 </script>
+<script src="js/select2custom.js"></script>
 </body>
 </html>

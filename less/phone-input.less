@@ -12,22 +12,22 @@
 }
 .select-arrow-top{
   .select-arrows;
-  top: 13px;
+  top: 9px;
   background: url(../img/select/select-arrow-top.png) no-repeat;
 }
 .select-arrow-bottom{
   .select-arrows;
-  top: 22px;
+  top: 18px;
   background: url(../img/select/select-arrow-bottom.png) no-repeat;
 }
 .select-arrow-top--blue{
   .select-arrows--blue;
-  top: 10px;
+  top: 7px;
   background: url(../img/select/select-arrow-top--blue.png) no-repeat;
 }
 .select-arrow-bottom--blue{
   .select-arrows--blue;
-  top: 17px;
+  top: 14px;
   background: url(../img/select/select-arrow-bottom--blue.png) no-repeat;
 }
 .select-wrapper{
@@ -66,4 +66,78 @@
 }
 .phone-country.in-phone_style_two{
   width: auto;
+}
+.phone-country.in-phone_style_one + .select2-container--default{
+  margin-top: -4px;
+  margin-left: 9px;
+}
+.get_partners .phone-country.in-phone_style_one + .select2-container--default{
+  margin-left: 13px;
+}
+
+.slide_05 .main__center-text .phone-country.in-phone_style_one + .select2-container--default{
+  margin-left: 13px;
+}
+.slide_05 .main__center-text .phone-form .phone-country.in-phone_style_one + .select2-container--default{
+  margin-left: 3px;
+}
+input.in-phone_style_one{
+  margin-top: 10px !important;
+}
+.get_partners input.in-phone_style_one{
+  margin-left: 10px;
+  margin-top: 10px !important;
+}
+@media (max-width:1035px){
+  .get_partners input.in-phone_style_one{
+    margin-left: 0;
+  }
+  input.in-phone_style_one{
+    margin-left: 0 !important;
+  }
+}
+.phone-country.in-phone_style_one + .select2-container--default .select2-selection--single {
+  border: none;
+  background-color: #1a2462;
+  border-radius: 25px;
+  height: auto;
+  color: #fff;
+  span{
+    color: #fff;
+    font-family: "Pragmatica", sans-serif;
+    font-weight: 300;
+    padding: 6px 25px;
+    font-size: 21px;
+    line-height: 30px;
+  }
+  .select2-selection__arrow{
+    display: none;
+  }
+}
+.phone-country.in-phone_style_two + .select2-container--default .select2-selection--single {
+  min-width: 68px;
+  border-radius: 20px;
+  border: 2px solid #edeff3;
+  border-radius: 25px;
+  height: auto;
+  span{
+    padding: 3px 5px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #2675eb;
+    line-height: normal;
+  }
+  .select2-selection__arrow{
+    display: none;
+  }
+}
+.select2-dropdown{
+  z-index: 2500 !important;
+  min-width: 100px;
+}
+.edt .select2-container--default{
+  margin-top: -4px;
+}
+.select2-results{
+  min-width: 100px;
 }
