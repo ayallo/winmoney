@@ -244,16 +244,30 @@
           font-size: 16px; font-weight: bold;
           color: @color_gray1_4c4d4f;
           margin-bottom: 40px;
+          form{
+            text-align: left;
+          }
           & input{
-            width: 324px;
-            margin-left: 13px; margin-top: 53px; margin-bottom: 24px; padding-bottom: 5px;
-            appearance: none;
-            background: none;
-            font-size: 32px;
-            color: #2675eb;
-            padding: 0px;
-            border-bottom: 3px solid #2675eb;
-            letter-spacing: 2px;
+            margin-left: 13px; margin-top: 53px; margin-bottom: 24px;
+            display: inline-block;
+            width: 220px;
+          }
+          & select{
+            margin-left: 13px;
+            margin-bottom: 0;
+          }
+          .in-phone_style_one{
+            background-color: #1a2462;
+            border-radius: 25px;
+            font-family: "Pragmatica", sans-serif;
+            font-weight: 300;
+            padding: 6px 25px;
+            font-size: 21px;
+            line-height: 30px;
+            color: #fff;
+            -webkit-appearance: none;
+            -moz-appearance:    none;
+            appearance:         none;
           }
           & .statpartner{
             margin-left: 13px;
@@ -392,7 +406,7 @@
           & h2{ font-size:48px; margin-bottom: 26px; }
           & p{ font-size:16px; font-weight: bold; width: 80%; }
         }
-        &-text{
+        &{
           font-size: 16px; font-weight: bold;
           color: @color_gray1_4c4d4f;
           margin-bottom: 40px;
@@ -480,7 +494,7 @@
       text-align: left;
       width: 80%;
       z-index: 3;
-      &-text{
+      &{
         font-size: 48px;
         color:#ffffff;
         margin-bottom: 40px;
@@ -567,16 +581,30 @@
           font-size: 16px; font-weight: bold;
           color: @color_gray1_4c4d4f;
           margin-bottom: 40px;
+          form{
+            text-align: left;
+          }
           & input{
-            width: 324px;
-            margin-left: 13px; margin-top: 53px; margin-bottom: 24px; padding-bottom: 5px;
-            appearance: none;
-            background: none;
-            font-size: 32px;
-            color: #2675eb;
-            padding: 0px;
-            border-bottom: 3px solid #2675eb;
-            letter-spacing: 2px;
+            margin-left: 13px; margin-top: 53px; margin-bottom: 24px;
+            display: inline-block;
+            width: 220px !important;
+          }
+          & select{
+            margin-left: 13px;
+            margin-bottom: 0;
+          }
+          .in-phone_style_one{
+            background-color: #1a2462;
+            border-radius: 25px;
+            font-family: "Pragmatica", sans-serif;
+            font-weight: 300;
+            padding: 6px 25px;
+            font-size: 21px;
+            line-height: 30px;
+            color: #fff;
+            -webkit-appearance: none;
+            -moz-appearance:    none;
+            appearance:         none;
           }
           & .statpartner{
             margin-left: 13px;
@@ -631,4 +659,29 @@
 }
 .pgabout_inworld{
 
+}
+.phone-form{
+  text-align: left;
+  input{
+    margin-left: 13px; margin-top: 53px; margin-bottom: 24px;
+    display: inline-block;
+    width: 220px !important;
+
+  }
+  select{
+    margin-bottom: 0;
+  }
+  .in-phone_style_one{
+    background-color: #1a2462;
+    border-radius: 25px;
+    font-family: "Pragmatica", sans-serif;
+    font-weight: 300;
+    padding: 6px 25px !important;
+    font-size: 21px;
+    line-height: 30px;
+    color: #fff;
+    -webkit-appearance: none;
+    -moz-appearance:    none;
+    appearance:         none;
+  }
 }

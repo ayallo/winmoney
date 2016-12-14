@@ -275,8 +275,10 @@ a.a1{
   }
 }
 .fi_input{
+  display: inline-block;
    font-weight: bold;
-   width:100%;
+   width: 100%;
+   max-width:130px;
    padding-bottom: 10px;
    &.regular{
      font-weight: normal;
@@ -1061,6 +1063,8 @@ a.a1{
             & .col-xs-8{
               &.edt{
                 color:#2675eb;
+                padding-right: 0;
+                padding-left: 0;
                 & img{
                   float:left;
                 }
@@ -1867,4 +1871,9 @@ a.a1{
 }
 .head__avatar.is-active {
     //top: 0;
+}
+@media (max-width:355px) {
+  .fs_w400{
+    width: 24% !important;
+  }
 }
