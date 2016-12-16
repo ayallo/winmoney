@@ -27,7 +27,7 @@
           $(".footer").css({"display":"none"});
           //$(".main__menu").hide();
           //if (e.activeIndex==0) { $(".main__menu").show(); }
-          if (e.activeIndex==2) { 
+          if (e.activeIndex==2) {
             $(".footer").css({"display":"flex"});
             inetButtonsUp();
           } else {
@@ -44,6 +44,7 @@
           mousewheelControl: true
         });
         bonus_Swiper.on('slideChangeStart', function (e) {
+          partners_select2.select2("close");
           $(".head__nav").removeClass("sfonom");
           $(".head__but").hide();
           $(".main__menu").hide();
@@ -54,8 +55,8 @@
               $(".main__menu").show();
           }
           if(e.activeIndex==1){ $("#myslideTo_1").addClass("act"); }
-          if(e.activeIndex==4){ 
-            $(".footer").css({"display":"flex","position":"fixed","bottom":"0px","left":"0px"}); 
+          if(e.activeIndex==4){
+            $(".footer").css({"display":"flex","position":"fixed","bottom":"0px","left":"0px"});
             inetButtonsUp();
           } else {
             inetButtonsDown();

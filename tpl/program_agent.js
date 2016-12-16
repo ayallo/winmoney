@@ -43,6 +43,7 @@ function initSwiper() {
         });
         $(".footer").hide();
         program_ind_Swiper.on('slideChangeStart', function (e) {
+            main_select2.select2("close");
             $(".head__nav").removeClass("sfonom");
             $(".head__but").hide();
             $(".main__menu").hide();
@@ -215,13 +216,14 @@ if (($(".swiper-container_ind").length > 0)) {
 
     if (($(".swiper-container_reg").length > 0)){
       var program_reg_Swiper = new Swiper ('.swiper-container_reg', {
-        direction: 'vertical', 
-        loop: false, 
+        direction: 'vertical',
+        loop: false,
         mousewheelControl: true,
         slidesPerView: 1,
         keyboardControl: true
       });
       program_reg_Swiper.on('slideChangeStart', function (e) {
+          partners_select2.select2("close");
           $(".head__nav").removeClass("sfonom");
           $(".head__but").hide();
           $(".footer").hide();
@@ -241,13 +243,14 @@ if (($(".swiper-container_ind").length > 0)) {
     }
     if (($(".swiper-container_cpa").length > 0)){
       var program_cpa_Swiper = new Swiper ('.swiper-container_cpa', {
-        direction: 'vertical', 
+        direction: 'vertical',
         loop: false,
         mousewheelControl: true,
         keyboardControl: true,
         slidesPerView: 1
       });
       program_cpa_Swiper.on('slideChangeStart', function (e) {
+          partners_select2.select2("close");
           $(".head__nav").removeClass("sfonom");
           $(".head__but").hide();
           $(".footer").hide();
@@ -272,6 +275,7 @@ if (($(".swiper-container_ind").length > 0)) {
         slidesPerView: 1
       });
       program_agent_Swiper.on('slideChangeStart', function (e) {
+          partners_select2.select2("close");
           $(".head__nav").removeClass("sfonom");
           $(".head__but").hide();
           $(".main__menu").hide();
