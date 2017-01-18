@@ -14,9 +14,13 @@
 <script src="js/jquery.airStickyBlock.js"></script>
 <script src="js/select2.min.js"></script>
 <script src="js/ticket.js"></script>
+<script src="js/clipboard.min.js"></script>
 
 <script>
   $(function () {
+
+    // сопирование реферальной ссылки в буфер обмена
+    new Clipboard('.btn-copy');
 
     // select2 для страницы открытия счета
     $(".open-acc__select").select2({
